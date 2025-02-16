@@ -19,6 +19,6 @@ public class PufferfishAPI implements ModInitializer {
     }
 
     public String getModLoader() {
-        return "NeoForge";
+        return "Fabric";
     }
 }
