@@ -1,22 +1,22 @@
 package org.eu.awesomekalin.pufferfishapi;
 
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(PufferfishAPI.MODID)
 public class PufferfishAPI {
     public static final String MODID = "pufferfishapi";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static IEventBus eventBus;
+    public static FMLJavaModLoadingContext context;
 
-    public PufferfishAPI(IEventBus modEventBus) {
+    public PufferfishAPI(FMLJavaModLoadingContext loadingContext) {
         LOGGER.info("Initialising Pufferfish API");
-        eventBus = modEventBus;
+        context = loadingContext;
     }
 
     public String getMinecraftVersion() {
@@ -24,6 +24,6 @@ public class PufferfishAPI {
     }
 
     public String getModLoader() {
-        return "NeoForge";
+        return "Forge";
     }
 }

@@ -7,20 +7,21 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.SwordHolder;
 
 public class ItemRegistry {
-    private final DeferredRegister.Items register;
+    private final DeferredRegister<Item> register;
 
     public ItemRegistry(String modId) {
-        register = DeferredRegister.createItems(modId);
+        register = DeferredRegister.create(ForgeRegistries.ITEMS, modId);
     }
 
     public void register() {
-        register.register(PufferfishAPI.eventBus);
+        register.register(PufferfishAPI.context.getModEventBus());
     }
 
     public ItemRegistryHolder registerSword(String name, SwordHolder swordHolder) {

@@ -3,7 +3,7 @@ package org.eu.awesomekalin.pufferfishapi.registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraftforge.registries.DeferredRegister;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 
@@ -17,7 +17,7 @@ public class CreativeTabRegistry {
     }
 
     public void register() {
-        register.register(PufferfishAPI.eventBus);
+        register.register(PufferfishAPI.context.getModEventBus());
     }
 
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
