@@ -9,7 +9,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
-import org.eu.awesomekalin.pufferfishapi.holders.SwordHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
 import net.minecraft.registry.tag.TagKey;
 
 public class ItemRegistry {
@@ -21,35 +21,35 @@ public class ItemRegistry {
 
     public void register() {}
 
-    public ItemRegistryHolder registerSword(String name, SwordHolder swordHolder) {
+    public ItemRegistryHolder registerSword(String name, ToolHolder toolHolder) {
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new SwordItem(
                 new ToolMaterial(TagKey.of(
                         RegistryKeys.BLOCK,
                         Identifier.of(
-                                swordHolder.material.incorrectForBlocksTag.namespace,
-                                swordHolder.material.incorrectForBlocksTag.path
+                                toolHolder.material.incorrectForBlocksTag.namespace,
+                                toolHolder.material.incorrectForBlocksTag.path
                         )
                 ),
-                        swordHolder.material.durability,
-                        swordHolder.material.speed,
-                        swordHolder.material.attackDamageBonus,
-                        swordHolder.material.enchantValue,
+                        toolHolder.material.durability,
+                        toolHolder.material.speed,
+                        toolHolder.material.attackDamageBonus,
+                        toolHolder.material.enchantValue,
                         TagKey.of(
                                 RegistryKeys.ITEM,
                                 Identifier.of(
-                                        swordHolder.material.repairTag.namespace,
-                                        swordHolder.material.repairTag.path
+                                        toolHolder.material.repairTag.namespace,
+                                        toolHolder.material.repairTag.path
                                 )
                         )
                 ),
 
-                swordHolder.attackDamage,
-                swordHolder.attackSpeed,
+                toolHolder.attackDamage,
+                toolHolder.attackSpeed,
                 new Item.Settings().registryKey(
                         RegistryKey.of(
                                 RegistryKeys.ITEM,
                                 Identifier.of(
-                                        swordHolder.identifier.namespace, swordHolder.identifier.path
+                                        toolHolder.identifier.namespace, toolHolder.identifier.path
                                 )
                         )
                 )

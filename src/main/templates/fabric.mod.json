@@ -2,7 +2,7 @@
     "schemaVersion": 1,
     "id": "${mod_id}",
     "version": "${mod_version}",
-    "name": "Pufferfish API",
+    "name": "${mod_name}",
     "description": "${mod_description}",
     "authors": [
         "${mod_authors}"
