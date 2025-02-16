@@ -1,12 +1,11 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.world.item.Item;
-import net.neoforged.neoforge.registries.DeferredItem;
+import net.minecraft.item.Item;
 
 public class ItemRegistryHolder {
-    public final DeferredItem<Item> data;
+    public final Item data;
 
-    public ItemRegistryHolder(DeferredItem<Item> item) {
+    public ItemRegistryHolder(Item item) {
         this.data = item;
     }
 }

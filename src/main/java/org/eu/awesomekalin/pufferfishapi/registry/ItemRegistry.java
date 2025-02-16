@@ -1,54 +1,54 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
-import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
+import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.SwordHolder;
+import net.minecraft.registry.tag.TagKey;
 
 public class ItemRegistry {
-    private final DeferredRegister.Items register;
+    private final String modId;
 
     public ItemRegistry(String modId) {
-        register = DeferredRegister.createItems(modId);
+        this.modId = modId;
     }
 
-    public void register() {
-        register.register(PufferfishAPI.eventBus);
-    }
+    public void register() {}
 
     public ItemRegistryHolder registerSword(String name, SwordHolder swordHolder) {
-        return new ItemRegistryHolder(register.register(name, () -> new SwordItem(new net.minecraft.world.item.ToolMaterial(
-                TagKey.create(
-                        Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new SwordItem(
+                new ToolMaterial(TagKey.of(
+                        RegistryKeys.BLOCK,
+                        Identifier.of(
                                 swordHolder.material.incorrectForBlocksTag.namespace,
                                 swordHolder.material.incorrectForBlocksTag.path
                         )
                 ),
-                swordHolder.material.durability,
-                swordHolder.material.speed,
-                swordHolder.material.attackDamageBonus,
-                swordHolder.material.enchantValue,
-                ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
-                                swordHolder.material.repairTag.namespace,
-                                swordHolder.material.repairTag.path
+                        swordHolder.material.durability,
+                        swordHolder.material.speed,
+                        swordHolder.material.attackDamageBonus,
+                        swordHolder.material.enchantValue,
+                        TagKey.of(
+                                RegistryKeys.ITEM,
+                                Identifier.of(
+                                        swordHolder.material.repairTag.namespace,
+                                        swordHolder.material.repairTag.path
+                                )
                         )
-                )
-        ),
+                ),
+
                 swordHolder.attackDamage,
                 swordHolder.attackSpeed,
-                new Item.Properties().setId(
-                        ResourceKey.create(
-                                Registries.ITEM,
-                                ResourceLocation.fromNamespaceAndPath(
+                new Item.Settings().registryKey(
+                        RegistryKey.of(
+                                RegistryKeys.ITEM,
+                                Identifier.of(
                                         swordHolder.identifier.namespace, swordHolder.identifier.path
                                 )
                         )

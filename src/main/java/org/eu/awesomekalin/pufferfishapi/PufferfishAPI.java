@@ -1,22 +1,17 @@
 package org.eu.awesomekalin.pufferfishapi;
 
+import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
-
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(PufferfishAPI.MODID)
-public class PufferfishAPI {
+public class PufferfishAPI implements ModInitializer {
     public static final String MODID = "pufferfishapi";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static IEventBus eventBus;
 
-    public PufferfishAPI(IEventBus modEventBus) {
+    @Override
+    public void onInitialize() {
         LOGGER.info("Initialising Pufferfish API");
-        eventBus = modEventBus;
     }
 
     public String getMinecraftVersion() {
