@@ -1,6 +1,5 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.util.ToolMaterial;
 
 public class SwordHolder {
