@@ -1,4 +1,4 @@
-name: Build
+name: Build NeoForge 1.21.4
 
 on: [push, pull_request]
 
@@ -20,6 +20,8 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
 
       - name: Grant permission to execute gradlew
         run: sudo chmod +x ./gradlew
