@@ -21,7 +21,8 @@ public class ItemRegistry {
 
     public void register() {}
 
-    public ItemRegistryHolder registerSword(String name, ToolHolder toolHolder) {
+    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
+        final String name = toolHolder.identifier.path;
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new SwordItem(
                 new ToolMaterial(TagKey.of(
                         RegistryKeys.BLOCK,
