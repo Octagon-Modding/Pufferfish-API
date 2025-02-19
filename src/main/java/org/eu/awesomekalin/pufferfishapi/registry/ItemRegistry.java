@@ -24,7 +24,8 @@ public class ItemRegistry {
         register.register(PufferfishAPI.context.getModEventBus());
     }
 
-    public ItemRegistryHolder registerSword(String name, ToolHolder toolHolder) {
+    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
+        final String name = toolHolder.identifier.path;
         return new ItemRegistryHolder(register.register(name, () -> new SwordItem(new net.minecraft.world.item.ToolMaterial(
                 TagKey.create(
                         Registries.BLOCK,
