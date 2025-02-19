@@ -10,47 +10,48 @@ import net.minecraft.world.item.SwordItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
-import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.SwordHolder;
 
 public class ItemRegistry {
     private final DeferredRegister.Items register;
+    private final String modId;
 
     public ItemRegistry(String modId) {
         register = DeferredRegister.createItems(modId);
+        this.modId = modId;
     }
 
     public void register() {
         register.register(PufferfishAPI.eventBus);
     }
 
-    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        final String name = toolHolder.identifier.path;
-        return new ItemRegistryHolder(register.register(name, () -> new SwordItem(new net.minecraft.world.item.ToolMaterial(
+    public ItemRegistryHolder registerSword(SwordHolder swordHolder) {
+        return new ItemRegistryHolder(register.register(swordHolder.name, () -> new SwordItem(new net.minecraft.world.item.ToolMaterial(
                 TagKey.create(
                         Registries.BLOCK,
                         ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.incorrectForBlocksTag.namespace,
-                                toolHolder.material.incorrectForBlocksTag.path
+                                swordHolder.material.incorrectForBlocksTag.namespace,
+                                swordHolder.material.incorrectForBlocksTag.path
                         )
                 ),
-                toolHolder.material.durability,
-                toolHolder.material.speed,
-                toolHolder.material.attackDamageBonus,
-                toolHolder.material.enchantValue,
+                swordHolder.material.durability,
+                swordHolder.material.speed,
+                swordHolder.material.attackDamageBonus,
+                swordHolder.material.enchantValue,
                 ItemTags.create(
                         ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.repairTag.namespace,
-                                toolHolder.material.repairTag.path
+                                swordHolder.material.repairTag.namespace,
+                                swordHolder.material.repairTag.path
                         )
                 )
         ),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
+                swordHolder.attackDamage,
+                swordHolder.attackSpeed,
                 new Item.Properties().setId(
                         ResourceKey.create(
                                 Registries.ITEM,
                                 ResourceLocation.fromNamespaceAndPath(
-                                        toolHolder.identifier.namespace, toolHolder.identifier.path
+                                        modId, swordHolder.name
                                 )
                         )
                 )
