@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./build/libs/*
-          name: Pufferfish API for NeoForge 1.21.4
+          name: Pufferfish API for NeoForge 1.21.1
