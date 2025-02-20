@@ -55,7 +55,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, "temp"), new PickaxeItem(new ToolMaterial(TagKey.of(
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new PickaxeItem(new ToolMaterial(TagKey.of(
                 RegistryKeys.BLOCK,
                 Identifier.of(
                         toolHolder.material.incorrectForBlocksTag.namespace,
@@ -89,7 +89,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, "temp"), new AxeItem(new ToolMaterial(TagKey.of(
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new AxeItem(new ToolMaterial(TagKey.of(
                 RegistryKeys.BLOCK,
                 Identifier.of(
                         toolHolder.material.incorrectForBlocksTag.namespace,
