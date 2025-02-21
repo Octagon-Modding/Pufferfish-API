@@ -44,7 +44,7 @@ public class ItemRegistry {
             public TagKey<Block> getIncorrectBlocksForDrops() {
                 return TagKey.create(
                         Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.incorrectForBlocksTag.namespace,
                                 toolHolder.material.incorrectForBlocksTag.path
                         )
@@ -59,7 +59,7 @@ public class ItemRegistry {
             @Override
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.repairTag.namespace,
                                 toolHolder.material.repairTag.path
                         )
@@ -93,7 +93,7 @@ public class ItemRegistry {
             public TagKey<Block> getIncorrectBlocksForDrops() {
                 return TagKey.create(
                         Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.incorrectForBlocksTag.namespace,
                                 toolHolder.material.incorrectForBlocksTag.path
                         )
@@ -108,7 +108,7 @@ public class ItemRegistry {
             @Override
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.repairTag.namespace,
                                 toolHolder.material.repairTag.path
                         )
@@ -142,7 +142,7 @@ public class ItemRegistry {
             public TagKey<Block> getIncorrectBlocksForDrops() {
                 return TagKey.create(
                         Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.incorrectForBlocksTag.namespace,
                                 toolHolder.material.incorrectForBlocksTag.path
                         )
@@ -157,7 +157,7 @@ public class ItemRegistry {
             @Override
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
+                        new ResourceLocation(
                                 toolHolder.material.repairTag.namespace,
                                 toolHolder.material.repairTag.path
                         )
