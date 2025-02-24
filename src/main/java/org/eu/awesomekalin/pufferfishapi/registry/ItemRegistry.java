@@ -1,5 +1,9 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.type.ConsumableComponent;
+import net.minecraft.component.type.ConsumableComponents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -7,8 +11,11 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.MobEffectHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
 import net.minecraft.registry.tag.TagKey;
+
+import java.util.List;
 
 public class ItemRegistry {
     private final String modId;
@@ -120,5 +127,16 @@ public class ItemRegistry {
                         )
                 )
         )));
+    }
+
+    public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
+        ConsumableComponent.Builder effectsComponent = ConsumableComponents.food();
+
+        effects.forEach((effect) -> {
+            effectsComponent.consumeEffect(effect.getEffectFromEnum());
+        });
+
+        Item.Settings itemProperties = new Item.Settings().food(new FoodComponent(nutrition, saturation, alwaysEat), effectsComponent.build());
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new Item(itemProperties)));
     }
 }
