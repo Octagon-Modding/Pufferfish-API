@@ -4,13 +4,17 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.MobEffectHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
+
+import java.util.List;
 
 public class ItemRegistry {
     private final DeferredRegister.Items register;
@@ -168,5 +172,20 @@ public class ItemRegistry {
         return new ItemRegistryHolder(register.register(toolHolder.name, () -> new AxeItem(tier,
                 new Item.Properties().attributes(AxeItem.createAttributes(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
         )));
+    }
+
+    public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
+        FoodProperties.Builder foodProperties = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturation);
+
+        if (alwaysEat) {
+            foodProperties.alwaysEdible();
+        }
+
+        effects.forEach((effect) -> {
+            foodProperties.effect(effect.getEffectFromEnum(), effect.probability);
+        });
+
+        Item.Properties itemProperties = new Item.Properties().food(foodProperties.build());
+        return new ItemRegistryHolder(register.registerSimpleItem(name, itemProperties));
     }
 }

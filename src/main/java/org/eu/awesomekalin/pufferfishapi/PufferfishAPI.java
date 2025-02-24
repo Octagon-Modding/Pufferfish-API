@@ -11,7 +11,7 @@ import net.neoforged.fml.common.Mod;
 @Mod(PufferfishAPI.MODID)
 public class PufferfishAPI {
     public static final String MODID = "pufferfishapi";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static IEventBus eventBus;
 
     public PufferfishAPI(IEventBus modEventBus) {
