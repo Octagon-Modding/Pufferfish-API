@@ -7,7 +7,7 @@ import com.mojang.logging.LogUtils;
 
 public class PufferfishAPI implements ModInitializer {
     public static final String MODID = "pufferfishapi";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     @Override
     public void onInitialize() {
