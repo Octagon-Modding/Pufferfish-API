@@ -1,6 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
 import net.minecraft.block.Block;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
@@ -8,8 +9,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.MobEffectHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
 import net.minecraft.registry.tag.TagKey;
+
+import java.util.List;
 
 public class ItemRegistry {
     private final String modId;
@@ -168,5 +172,18 @@ public class ItemRegistry {
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new AxeItem(tier,
                 new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
         )));
+    }
+
+    public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
+        FoodComponent.Builder foodBuilder = new FoodComponent.Builder().nutrition(nutrition).saturationModifier(saturation);
+
+        if (alwaysEat) foodBuilder.alwaysEdible();
+
+        effects.forEach((effect) -> {
+            foodBuilder.statusEffect(effect.getEffectFromEnum(), effect.probability);
+        });
+
+        Item.Settings itemProperties = new Item.Settings().food(foodBuilder.build());
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new Item(itemProperties)));
     }
 }
