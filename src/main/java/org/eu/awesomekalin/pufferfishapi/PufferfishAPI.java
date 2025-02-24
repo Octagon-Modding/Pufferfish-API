@@ -11,7 +11,7 @@ import com.mojang.logging.LogUtils;
 @Mod(PufferfishAPI.MODID)
 public class PufferfishAPI {
     public static final String MODID = "pufferfishapi";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static FMLJavaModLoadingContext context;
 
     public PufferfishAPI(FMLJavaModLoadingContext loadingContext) {
