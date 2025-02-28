@@ -24,8 +24,8 @@ public class ItemRegistry {
 
     public void register() {}
 
-    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        final ToolMaterial tier = new ToolMaterial() {
+    private ToolMaterial getToolMaterial(ToolHolder toolHolder) {
+        return new ToolMaterial() {
             @Override
             public int getDurability() {
                 return toolHolder.material.durability;
@@ -68,6 +68,10 @@ public class ItemRegistry {
                 ));
             }
         };
+    }
+
+    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
+        final ToolMaterial tier = getToolMaterial(toolHolder);
 
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new SwordItem(tier,
                 new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(tier, ((int) toolHolder.attackDamage), toolHolder.attackSpeed))
@@ -75,49 +79,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        final ToolMaterial tier = new ToolMaterial() {
-            @Override
-            public int getDurability() {
-                return toolHolder.material.durability;
-            }
-
-            @Override
-            public float getMiningSpeedMultiplier() {
-                return toolHolder.material.speed;
-            }
-
-            @Override
-            public float getAttackDamage() {
-                return toolHolder.material.attackDamageBonus;
-            }
-
-            @Override
-            public TagKey<Block> getInverseTag() {
-                return TagKey.of(
-                        RegistryKeys.BLOCK,
-                        Identifier.of(
-                                toolHolder.material.incorrectForBlocksTag.namespace,
-                                toolHolder.material.incorrectForBlocksTag.path
-                        )
-                );
-            }
-
-            @Override
-            public int getEnchantability() {
-                return toolHolder.material.enchantValue;
-            }
-
-            @Override
-            public Ingredient getRepairIngredient() {
-                return Ingredient.fromTag(TagKey.of(
-                        RegistryKeys.ITEM,
-                        Identifier.of(
-                                toolHolder.material.repairTag.namespace,
-                                toolHolder.material.repairTag.path
-                        )
-                ));
-            }
-        };
+        final ToolMaterial tier = getToolMaterial(toolHolder);
 
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new PickaxeItem(tier,
                 new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
@@ -125,49 +87,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        final ToolMaterial tier = new ToolMaterial() {
-            @Override
-            public int getDurability() {
-                return toolHolder.material.durability;
-            }
-
-            @Override
-            public float getMiningSpeedMultiplier() {
-                return toolHolder.material.speed;
-            }
-
-            @Override
-            public float getAttackDamage() {
-                return toolHolder.material.attackDamageBonus;
-            }
-
-            @Override
-            public TagKey<Block> getInverseTag() {
-                return TagKey.of(
-                        RegistryKeys.BLOCK,
-                        Identifier.of(
-                                toolHolder.material.incorrectForBlocksTag.namespace,
-                                toolHolder.material.incorrectForBlocksTag.path
-                        )
-                );
-            }
-
-            @Override
-            public int getEnchantability() {
-                return toolHolder.material.enchantValue;
-            }
-
-            @Override
-            public Ingredient getRepairIngredient() {
-                return Ingredient.fromTag(TagKey.of(
-                        RegistryKeys.ITEM,
-                        Identifier.of(
-                                toolHolder.material.repairTag.namespace,
-                                toolHolder.material.repairTag.path
-                        )
-                ));
-            }
-        };
+        final ToolMaterial tier = getToolMaterial(toolHolder);
 
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new AxeItem(tier,
                 new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
