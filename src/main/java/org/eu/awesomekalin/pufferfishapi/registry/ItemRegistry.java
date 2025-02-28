@@ -27,8 +27,8 @@ public class ItemRegistry {
         register.register(PufferfishAPI.eventBus);
     }
 
-    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        final Tier tier = new Tier() {
+    private Tier getTier(ToolHolder toolHolder) {
+        return new Tier() {
             @Override
             public int getUses() {
                 return toolHolder.material.durability;
@@ -70,6 +70,10 @@ public class ItemRegistry {
                 ));
             }
         };
+    }
+
+    public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
+        final Tier tier = getTier(toolHolder);
 
         return new ItemRegistryHolder(register.register(toolHolder.name, () -> new SwordItem(tier,
                 new Item.Properties().attributes(SwordItem.createAttributes(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
@@ -77,48 +81,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        final Tier tier = new Tier() {
-            @Override
-            public int getUses() {
-                return toolHolder.material.durability;
-            }
-
-            @Override
-            public float getSpeed() {
-                return toolHolder.material.speed;
-            }
-
-            @Override
-            public float getAttackDamageBonus() {
-                return toolHolder.material.attackDamageBonus;
-            }
-
-            @Override
-            public TagKey<Block> getIncorrectBlocksForDrops() {
-                return TagKey.create(
-                        Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.incorrectForBlocksTag.namespace,
-                                toolHolder.material.incorrectForBlocksTag.path
-                        )
-                );
-            }
-
-            @Override
-            public int getEnchantmentValue() {
-                return toolHolder.material.enchantValue;
-            }
-
-            @Override
-            public Ingredient getRepairIngredient() {
-                return Ingredient.of(ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.repairTag.namespace,
-                                toolHolder.material.repairTag.path
-                        )
-                ));
-            }
-        };
+        final Tier tier = getTier(toolHolder);
 
         return new ItemRegistryHolder(register.register(toolHolder.name, () -> new PickaxeItem(tier,
                 new Item.Properties().attributes(PickaxeItem.createAttributes(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
@@ -126,48 +89,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        final Tier tier = new Tier() {
-            @Override
-            public int getUses() {
-                return toolHolder.material.durability;
-            }
-
-            @Override
-            public float getSpeed() {
-                return toolHolder.material.speed;
-            }
-
-            @Override
-            public float getAttackDamageBonus() {
-                return toolHolder.material.attackDamageBonus;
-            }
-
-            @Override
-            public TagKey<Block> getIncorrectBlocksForDrops() {
-                return TagKey.create(
-                        Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.incorrectForBlocksTag.namespace,
-                                toolHolder.material.incorrectForBlocksTag.path
-                        )
-                );
-            }
-
-            @Override
-            public int getEnchantmentValue() {
-                return toolHolder.material.enchantValue;
-            }
-
-            @Override
-            public Ingredient getRepairIngredient() {
-                return Ingredient.of(ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
-                                toolHolder.material.repairTag.namespace,
-                                toolHolder.material.repairTag.path
-                        )
-                ));
-            }
-        };
+        final Tier tier = getTier(toolHolder);
 
         return new ItemRegistryHolder(register.register(toolHolder.name, () -> new AxeItem(tier,
                 new Item.Properties().attributes(AxeItem.createAttributes(tier, toolHolder.attackDamage, toolHolder.attackSpeed))
