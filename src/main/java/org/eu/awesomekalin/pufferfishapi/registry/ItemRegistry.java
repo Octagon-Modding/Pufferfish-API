@@ -88,6 +88,22 @@ public class ItemRegistry {
         )));
     }
 
+    public ItemRegistryHolder registerShovel(ToolHolder toolHolder) {
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new ShovelItem(getToolMaterial(toolHolder),
+                toolHolder.attackDamage,
+                toolHolder.attackDamage,
+                getToolProperties(toolHolder)
+        )));
+    }
+
+    public ItemRegistryHolder registerHoe(ToolHolder toolHolder) {
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new HoeItem(getToolMaterial(toolHolder),
+                toolHolder.attackDamage,
+                toolHolder.attackDamage,
+                getToolProperties(toolHolder)
+        )));
+    }
+
     public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
         Consumable.Builder builder = Consumable.builder();
 
