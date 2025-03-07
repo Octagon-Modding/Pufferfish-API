@@ -22,7 +22,7 @@ public class MobEffectHolder {
         SLOWNESS,
         HASTE,
         MINING_FATIGUE,
-        HARMING,
+        STRENGTH,
         HEALING,
         INSTANT_DAMAGE,
         JUMP_BOOST,
@@ -76,8 +76,8 @@ public class MobEffectHolder {
                 return new StatusEffectInstance(StatusEffects.MINING_FATIGUE, duration, amplifier);
             }
 
-            case HARMING -> {
-                return new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, duration, amplifier);
+            case STRENGTH -> {
+                return new StatusEffectInstance(StatusEffects.STRENGTH, duration, amplifier);
             }
 
             case HEALING -> {
