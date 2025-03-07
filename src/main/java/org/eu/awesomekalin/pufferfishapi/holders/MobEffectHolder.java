@@ -23,7 +23,7 @@ public class MobEffectHolder {
         SLOWNESS,
         HASTE,
         MINING_FATIGUE,
-        HARMING,
+        STRENGTH,
         HEALING,
         INSTANT_DAMAGE,
         JUMP_BOOST,
@@ -77,8 +77,8 @@ public class MobEffectHolder {
                 return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, amplifier), probability);
             }
 
-            case HARMING -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HARM, duration, amplifier), probability);
+            case STRENGTH -> {
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, duration, amplifier), probability);
             }
 
             case HEALING -> {
@@ -86,7 +86,7 @@ public class MobEffectHolder {
             }
 
             case INSTANT_DAMAGE -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HARM, duration, amplifier), probability);
             }
 
             case JUMP_BOOST -> {
