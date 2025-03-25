@@ -88,12 +88,12 @@ public class ItemRegistry {
                 ), armorHolder.assetId);
     }
 
-    private Item.Settings getToolProperties(ToolHolder toolHolder) {
+    private Item.Settings getBasicProperties(String name) {
         return new Item.Settings().registryKey(
                 RegistryKey.of(
                         RegistryKeys.ITEM,
                         Identifier.of(
-                                modId, toolHolder.name
+                                modId, name
                         )
                 )
         );
@@ -104,7 +104,7 @@ public class ItemRegistry {
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
+                getBasicProperties(toolHolder.name)
         )));
     }
 
@@ -113,7 +113,7 @@ public class ItemRegistry {
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
+                getBasicProperties(toolHolder.name)
         )));
     }
 
@@ -122,7 +122,7 @@ public class ItemRegistry {
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
+                getBasicProperties(toolHolder.name)
         )));
     }
 
@@ -131,7 +131,7 @@ public class ItemRegistry {
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
+                getBasicProperties(toolHolder.name)
         )));
     }
 
@@ -140,7 +140,7 @@ public class ItemRegistry {
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
+                getBasicProperties(toolHolder.name)
         )));
     }
 
@@ -163,12 +163,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.HELMET,
-                                new Item.Settings().registryKey(
-                                        RegistryKey.of(
-                                                RegistryKeys.ITEM,
-                                                Identifier.of(modId, name)
-                                        )
-                                )
+                                getBasicProperties(name)
                         )
                 )
         );
@@ -182,12 +177,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.CHESTPLATE,
-                                new Item.Settings().registryKey(
-                                        RegistryKey.of(
-                                                RegistryKeys.ITEM,
-                                                Identifier.of(modId, name)
-                                        )
-                                )
+                                getBasicProperties(name)
                         )
                 )
         );
@@ -201,12 +191,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.LEGGINGS,
-                                new Item.Settings().registryKey(
-                                        RegistryKey.of(
-                                                RegistryKeys.ITEM,
-                                                Identifier.of(modId, name)
-                                        )
-                                )
+                                getBasicProperties(name)
                         )
                 )
         );
@@ -220,12 +205,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.BOOTS,
-                                new Item.Settings().registryKey(
-                                        RegistryKey.of(
-                                                RegistryKeys.ITEM,
-                                                Identifier.of(modId, name)
-                                        )
-                                )
+                                getBasicProperties(name)
                         )
                 )
         );
