@@ -19,11 +19,11 @@ public class PufferfishAPI {
         eventBus = modEventBus;
     }
 
-    public String getMinecraftVersion() {
+    public static String getMinecraftVersion() {
         return "1.21.1";
     }
 
-    public String getModLoader() {
+    public static String getModLoader() {
         return "NeoForge";
     }
 }
