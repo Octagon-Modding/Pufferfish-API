@@ -1,13 +1,11 @@
 package org.eu.awesomekalin.pufferfishapi;
 
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(PufferfishAPI.MODID)
 public class PufferfishAPI {
     public static final String MODID = "pufferfishapi";
@@ -19,11 +17,11 @@ public class PufferfishAPI {
         context = loadingContext;
     }
 
-    public String getMinecraftVersion() {
+    public static String getMinecraftVersion() {
         return "1.21.1";
     }
 
-    public String getModLoader() {
+    public static String getModLoader() {
         return "Forge";
     }
 }
