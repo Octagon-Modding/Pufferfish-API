@@ -14,11 +14,11 @@ public class PufferfishAPI implements ModInitializer {
         LOGGER.info("Initialising Pufferfish API");
     }
 
-    public String getMinecraftVersion() {
+    public static String getMinecraftVersion() {
         return "1.21.1";
     }
 
-    public String getModLoader() {
+    public static String getModLoader() {
         return "Fabric";
     }
 }
