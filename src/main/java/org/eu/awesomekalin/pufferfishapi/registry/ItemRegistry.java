@@ -1,7 +1,12 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
+import com.mojang.datafixers.util.Either;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderOwner;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.food.FoodProperties;
@@ -10,11 +15,12 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
-import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
-import org.eu.awesomekalin.pufferfishapi.holders.MobEffectHolder;
-import org.eu.awesomekalin.pufferfishapi.holders.ToolHolder;
+import org.eu.awesomekalin.pufferfishapi.holders.*;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class ItemRegistry {
     private final DeferredRegister.Items register;
@@ -72,6 +78,56 @@ public class ItemRegistry {
         };
     }
 
+    private Holder<ArmorMaterial> getArmorMaterial(ArmorHolder armorHolder) {
+        return new Holder<ArmorMaterial> () {
+            @Override
+            public ArmorMaterial value() {
+                return new ArmorMaterial(
+                        armorHolder.defense,
+                        armorHolder.enchantmentValue,
+                        new Holder<SoundEvent>() {
+                            @Override
+                            public SoundEvent value() {
+                                return SoundEventsHolder.getSoundEvent(armorHolder.equipSound);
+                            }
+
+                            @Override public boolean isBound() {return false;}
+                            @Override public boolean is(ResourceLocation resourceLocation) {return false;}
+                            @Override public boolean is(ResourceKey<SoundEvent> resourceKey) {return false;}
+                            @Override public boolean is(Predicate<ResourceKey<SoundEvent>> predicate) {return false;}
+                            @Override public boolean is(TagKey<SoundEvent> tagKey) {return false;}
+                            @Override public boolean is(Holder<SoundEvent> holder) {return false;}
+                            @Override public Stream<TagKey<SoundEvent>> tags() {return Stream.empty();}
+                            @Override public Either<ResourceKey<SoundEvent>, SoundEvent> unwrap() {return null;}
+                            @Override public Optional<ResourceKey<SoundEvent>> unwrapKey() {return Optional.empty();}
+                            @Override public Kind kind() {return null;}
+                            @Override public boolean canSerializeIn(HolderOwner<SoundEvent> holderOwner) {return false;}
+                        },
+                        () -> Ingredient.of(ItemTags.create(
+                                new ResourceLocation(
+                                        armorHolder.repairIngredient.namespace,
+                                        armorHolder.repairIngredient.path)
+                        )),
+                        armorHolder.assetId,
+                        armorHolder.toughness,
+                        armorHolder.knockbackResistance
+                );
+            }
+
+            @Override public boolean isBound() {return false;}
+            @Override public boolean is(ResourceLocation resourceLocation) {return false;}
+            @Override public boolean is(ResourceKey<ArmorMaterial> resourceKey) {return false;}
+            @Override public boolean is(Predicate<ResourceKey<ArmorMaterial>> predicate) {return false;}
+            @Override public boolean is(TagKey<ArmorMaterial> tagKey) {return false;}
+            @Override public boolean is(Holder<ArmorMaterial> holder) {return false;}
+            @Override public Stream<TagKey<ArmorMaterial>> tags() {return Stream.empty();}
+            @Override public Either<ResourceKey<ArmorMaterial>, ArmorMaterial> unwrap() {return null;}
+            @Override public Optional<ResourceKey<ArmorMaterial>> unwrapKey() {return Optional.empty();}
+            @Override public Kind kind() {return null;}
+            @Override public boolean canSerializeIn(HolderOwner<ArmorMaterial> holderOwner) {return false;}
+        };
+    }
+
     public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
         final Tier tier = getTier(toolHolder);
 
@@ -125,5 +181,57 @@ public class ItemRegistry {
 
         Item.Properties itemProperties = new Item.Properties().food(foodProperties.build());
         return new ItemRegistryHolder(register.registerSimpleItem(name, itemProperties));
+    }
+
+    public ItemRegistryHolder registerHelmet(String name, ArmorHolder armorHolder) {
+        return new ItemRegistryHolder(
+                register.registerItem(
+                        name,
+                        props -> new ArmorItem(
+                                getArmorMaterial(armorHolder),
+                                ArmorItem.Type.HELMET,
+                                props
+                        )
+                )
+        );
+    }
+
+    public ItemRegistryHolder registerChestplate(String name, ArmorHolder armorHolder) {
+        return new ItemRegistryHolder(
+                register.registerItem(
+                        name,
+                        props -> new ArmorItem(
+                                getArmorMaterial(armorHolder),
+                                ArmorItem.Type.CHESTPLATE,
+                                props
+                        )
+                )
+        );
+    }
+
+    public ItemRegistryHolder registerLeggings(String name, ArmorHolder armorHolder) {
+        return new ItemRegistryHolder(
+                register.registerItem(
+                        name,
+                        props -> new ArmorItem(
+                                getArmorMaterial(armorHolder),
+                                ArmorItem.Type.LEGGINGS,
+                                props
+                        )
+                )
+        );
+    }
+
+    public ItemRegistryHolder registerBoots(String name, ArmorHolder armorHolder) {
+        return new ItemRegistryHolder(
+                register.registerItem(
+                        name,
+                        props -> new ArmorItem(
+                                getArmorMaterial(armorHolder),
+                                ArmorItem.Type.BOOTS,
+                                props
+                        )
+                )
+        );
     }
 }
