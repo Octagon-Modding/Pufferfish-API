@@ -13,6 +13,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.Consumable;
+import net.minecraft.world.item.component.Weapon;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -91,54 +92,60 @@ public class ItemRegistry {
                 ), armorHolder.assetId);
     }
 
-    private Item.Properties getToolProperties(ToolHolder toolHolder) {
-        return new Item.Properties().setId(
+    private Item.Properties addIdToProperties(String name, Item.Properties properties) {
+        return properties.setId(
                 ResourceKey.create(
                         Registries.ITEM,
                         ResourceLocation.fromNamespaceAndPath(
-                                modId, toolHolder.name
+                                modId, name
                         )
                 )
         );
     }
 
     public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new SwordItem(getToolMaterial(toolHolder), toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
-        )));
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(addIdToProperties(
+                toolHolder.name, new Item.Properties().sword(
+                    getToolMaterial(toolHolder), toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+            )
+        ))));
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new PickaxeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
-        )));
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(addIdToProperties(
+                toolHolder.name, new Item.Properties().pickaxe(
+                        getToolMaterial(toolHolder), toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
+        ))));
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new AxeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
-        )));
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(addIdToProperties(
+                toolHolder.name, new Item.Properties().axe(
+                        getToolMaterial(toolHolder), toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
+        ))));
     }
 
     public ItemRegistryHolder registerShovel(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new ShovelItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
-        )));
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(addIdToProperties(
+                toolHolder.name, new Item.Properties().shovel(
+                        getToolMaterial(toolHolder), toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
+        ))));
     }
 
     public ItemRegistryHolder registerHoe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new HoeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getToolProperties(toolHolder)
-        )));
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(addIdToProperties(
+                toolHolder.name, new Item.Properties().hoe(
+                        getToolMaterial(toolHolder), toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
+        ))));
     }
 
     public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
@@ -157,12 +164,13 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerHelmet(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.HELMET,
-                                props
+                        () -> new Item(
+                                addIdToProperties(name, new Item.Properties().humanoidArmor(
+                                    getArmorMaterial(armorHolder),
+                                    ArmorType.HELMET
+                                ))
                         )
                 )
         );
@@ -170,12 +178,13 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerChestplate(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.CHESTPLATE,
-                                props
+                        () -> new Item(
+                                addIdToProperties(name, new Item.Properties().humanoidArmor(
+                                        getArmorMaterial(armorHolder),
+                                        ArmorType.CHESTPLATE
+                                ))
                         )
                 )
         );
@@ -183,12 +192,13 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerLeggings(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.LEGGINGS,
-                                props
+                        () -> new Item(
+                                addIdToProperties(name, new Item.Properties().humanoidArmor(
+                                        getArmorMaterial(armorHolder),
+                                        ArmorType.LEGGINGS
+                                ))
                         )
                 )
         );
@@ -196,12 +206,13 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerBoots(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.BOOTS,
-                                props
+                        () -> new Item(
+                                addIdToProperties(name, new Item.Properties().humanoidArmor(
+                                        getArmorMaterial(armorHolder),
+                                        ArmorType.LEGGINGS
+                                ))
                         )
                 )
         );

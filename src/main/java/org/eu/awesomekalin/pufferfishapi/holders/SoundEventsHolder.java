@@ -2,6 +2,8 @@ package org.eu.awesomekalin.pufferfishapi.holders;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.animal.wolf.WolfSoundVariant;
+import net.minecraft.world.entity.animal.wolf.WolfSoundVariants;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
 public enum SoundEventsHolder {
@@ -1654,7 +1656,57 @@ public enum SoundEventsHolder {
     ZOMBIE_VILLAGER_STEP,
     APPLY_EFFECT_BAD_OMEN,
     APPLY_EFFECT_TRIAL_OMEN,
-    APPLY_EFFECT_RAID_OMEN;
+    APPLY_EFFECT_RAID_OMEN,
+    PUGLIN_WOLF_AMBIENT,
+    PUGLIN_WOLF_DEATH,
+    PUGLIN_WOLF_GROWL,
+    PUGLIN_WOLF_HURT,
+    PUGLIN_WOLF_PANT,
+    PUGLIN_WOLF_WHINE,
+    SAD_WOLF_AMBIENT,
+    SAD_WOLF_DEATH,
+    SAD_WOLF_GROWL,
+    SAD_WOLF_HURT,
+    SAD_WOLF_PANT,
+    SAD_WOLF_WHINE,
+    ANGRY_WOLF_AMBIENT,
+    ANGRY_WOLF_DEATH,
+    ANGRY_WOLF_GROWL,
+    ANGRY_WOLF_HURT,
+    ANGRY_WOLF_PANT,
+    ANGRY_WOLF_WHINE,
+    GRUMPY_WOLF_AMBIENT,
+    GRUMPY_WOLF_DEATH,
+    GRUMPY_WOLF_GROWL,
+    GRUMPY_WOLF_HURT,
+    GRUMPY_WOLF_PANT,
+    GRUMPY_WOLF_WHINE,
+    BIG_WOLF_AMBIENT,
+    BIG_WOLF_DEATH,
+    BIG_WOLF_GROWL,
+    BIG_WOLF_HURT,
+    BIG_WOLF_PANT,
+    BIG_WOLF_WHINE,
+    CUTE_WOLF_AMBIENT,
+    CUTE_WOLF_DEATH,
+    CUTE_WOLF_GROWL,
+    CUTE_WOLF_HURT,
+    CUTE_WOLF_PANT,
+    CUTE_WOLF_WHINE,
+    FIREFLY_BUSH_IDLE,
+    LEAF_LITTER_BREAK,
+    LEAF_LITTER_STEP,
+    LEAF_LITTER_PLACE,
+    LEAF_LITTER_HIT,
+    LEAF_LITTER_FALL,
+    DEAD_BUSH_IDLE,
+    SAND_IDLE,
+    SAND_WIND,
+    IRON_BREAK,
+    IRON_STEP,
+    IRON_PLACE,
+    IRON_HIT,
+    IRON_FALL;
 
     public static SoundEvent getSoundEvent(SoundEventsHolder sound) {
         switch (sound) {
@@ -2376,7 +2428,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.CAMEL_HURT;
             }
             case CAMEL_SADDLE -> {
-                return SoundEvents.CAMEL_SADDLE;
+                return SoundEvents.CAMEL_SADDLE.value();
             }
             case CAMEL_SIT -> {
                 return SoundEvents.CAMEL_SIT;
@@ -3903,7 +3955,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.HORSE_LAND;
             }
             case HORSE_SADDLE -> {
-                return SoundEvents.HORSE_SADDLE;
+                return SoundEvents.HORSE_SADDLE.value();
             }
             case HORSE_STEP -> {
                 return SoundEvents.HORSE_STEP;
@@ -4014,7 +4066,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.ITEM_FRAME_ROTATE_ITEM;
             }
             case ITEM_BREAK -> {
-                return SoundEvents.ITEM_BREAK;
+                return SoundEvents.ITEM_BREAK.value();
             }
             case ITEM_PICKUP -> {
                 return SoundEvents.ITEM_PICKUP;
@@ -4959,7 +5011,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.PIG_HURT;
             }
             case PIG_SADDLE -> {
-                return SoundEvents.PIG_SADDLE;
+                return SoundEvents.PIG_SADDLE.value();
             }
             case PIG_STEP -> {
                 return SoundEvents.PIG_STEP;
@@ -5427,10 +5479,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.SHEEP_STEP;
             }
             case SHIELD_BLOCK -> {
-                return SoundEvents.SHIELD_BLOCK;
+                return SoundEvents.SHIELD_BLOCK.value();
             }
             case SHIELD_BREAK -> {
-                return SoundEvents.SHIELD_BREAK;
+                return SoundEvents.SHIELD_BREAK.value();
             }
             case SHROOMLIGHT_BREAK -> {
                 return SoundEvents.SHROOMLIGHT_BREAK;
@@ -5706,7 +5758,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.STRIDER_EAT;
             }
             case STRIDER_SADDLE -> {
-                return SoundEvents.STRIDER_SADDLE;
+                return SoundEvents.STRIDER_SADDLE.value();
             }
             case SLIME_DEATH_SMALL -> {
                 return SoundEvents.SLIME_DEATH_SMALL;
@@ -6420,7 +6472,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.WITHER_SPAWN;
             }
             case WOLF_ARMOR_BREAK -> {
-                return SoundEvents.WOLF_ARMOR_BREAK;
+                return SoundEvents.WOLF_ARMOR_BREAK.value();
             }
             case WOLF_ARMOR_CRACK -> {
                 return SoundEvents.WOLF_ARMOR_CRACK;
@@ -6432,22 +6484,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.WOLF_ARMOR_REPAIR;
             }
             case WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_AMBIENT;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).ambientSound().value();
             }
             case WOLF_DEATH -> {
-                return SoundEvents.WOLF_DEATH;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).deathSound().value();
             }
             case WOLF_GROWL -> {
-                return SoundEvents.WOLF_GROWL;
-            }
-            case WOLF_HOWL -> {
-                return SoundEvents.WOLF_HOWL;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).growlSound().value();
             }
             case WOLF_HURT -> {
-                return SoundEvents.WOLF_HURT;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).hurtSound().value();
             }
             case WOLF_PANT -> {
-                return SoundEvents.WOLF_PANT;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).pantSound().value();
             }
             case WOLF_SHAKE -> {
                 return SoundEvents.WOLF_SHAKE;
@@ -6456,7 +6505,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.WOLF_STEP;
             }
             case WOLF_WHINE -> {
-                return SoundEvents.WOLF_WHINE;
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).whineSound().value();
             }
             case WOODEN_DOOR_CLOSE -> {
                 return SoundEvents.WOODEN_DOOR_CLOSE;
@@ -6607,6 +6656,160 @@ public enum SoundEventsHolder {
             }
             case APPLY_EFFECT_RAID_OMEN -> {
                 return SoundEvents.APPLY_EFFECT_RAID_OMEN;
+            }
+            case PUGLIN_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).growlSound().value();
+            }
+            case PUGLIN_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).hurtSound().value();
+            }
+            case PUGLIN_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).whineSound().value();
+            }
+            case PUGLIN_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).pantSound().value();
+            }
+            case PUGLIN_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).deathSound().value();
+            }
+            case PUGLIN_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).ambientSound().value();
+            }
+            case SAD_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).growlSound().value();
+            }
+            case SAD_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).hurtSound().value();
+            }
+            case SAD_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).whineSound().value();
+            }
+            case SAD_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).pantSound().value();
+            }
+            case SAD_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).deathSound().value();
+            }
+            case SAD_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).ambientSound().value();
+            }
+            case ANGRY_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).growlSound().value();
+            }
+            case ANGRY_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).hurtSound().value();
+            }
+            case ANGRY_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).whineSound().value();
+            }
+            case ANGRY_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).pantSound().value();
+            }
+            case ANGRY_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).deathSound().value();
+            }
+            case ANGRY_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).ambientSound().value();
+            }
+            case GRUMPY_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).growlSound().value();
+            }
+            case GRUMPY_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).hurtSound().value();
+            }
+            case GRUMPY_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).whineSound().value();
+            }
+            case GRUMPY_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).pantSound().value();
+            }
+            case GRUMPY_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).deathSound().value();
+            }
+            case GRUMPY_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).ambientSound().value();
+            }
+            case BIG_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).growlSound().value();
+            }
+            case BIG_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).hurtSound().value();
+            }
+            case BIG_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).whineSound().value();
+            }
+            case BIG_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).pantSound().value();
+            }
+            case BIG_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).deathSound().value();
+            }
+            case BIG_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).ambientSound().value();
+            }
+            case CUTE_WOLF_GROWL -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).growlSound().value();
+            }
+            case CUTE_WOLF_HURT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).hurtSound().value();
+            }
+            case CUTE_WOLF_WHINE -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).whineSound().value();
+            }
+            case CUTE_WOLF_PANT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).pantSound().value();
+            }
+            case CUTE_WOLF_DEATH -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).deathSound().value();
+            }
+            case CUTE_WOLF_AMBIENT -> {
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).ambientSound().value();
+            }
+            case FIREFLY_BUSH_IDLE -> {
+                return SoundEvents.FIREFLY_BUSH_IDLE;
+            }
+            case LEAF_LITTER_BREAK -> {
+                return SoundEvents.LEAF_LITTER_BREAK;
+            }
+            case LEAF_LITTER_STEP -> {
+                return SoundEvents.LEAF_LITTER_STEP;
+            }
+            case LEAF_LITTER_PLACE -> {
+                return SoundEvents.LEAF_LITTER_PLACE;
+            }
+            case LEAF_LITTER_HIT -> {
+                return SoundEvents.LEAF_LITTER_HIT;
+            }
+            case LEAF_LITTER_FALL -> {
+                return SoundEvents.LEAF_LITTER_FALL;
+            }
+            case DEAD_BUSH_IDLE -> {
+                return SoundEvents.DEAD_BUSH_IDLE;
+            }
+            case SAND_IDLE -> {
+                return SoundEvents.SAND_IDLE;
+            }
+            case SAND_WIND -> {
+                return SoundEvents.SAND_WIND;
+            }
+            case IRON_BREAK -> {
+                return SoundEvents.IRON_BREAK;
+            }
+            case IRON_STEP -> {
+                return SoundEvents.IRON_STEP;
+            }
+            case IRON_PLACE -> {
+                return SoundEvents.IRON_PLACE;
+            }
+            case IRON_HIT -> {
+                return SoundEvents.IRON_HIT;
+            }
+            case IRON_FALL -> {
+                return SoundEvents.IRON_FALL;
+            }
+            case WOLF_HOWL -> {
+                PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
+                return null;
             }
         }
 
