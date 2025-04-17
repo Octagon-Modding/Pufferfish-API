@@ -19,11 +19,11 @@ public class PufferfishAPI {
         context = loadingContext;
     }
 
-    public String getMinecraftVersion() {
+    public static String getMinecraftVersion() {
         return "1.20.6";
     }
 
-    public String getModLoader() {
+    public static String getModLoader() {
         return "Forge";
     }
 }
