@@ -20,7 +20,7 @@ public class PufferfishAPI {
     }
 
     public static String getMinecraftVersion() {
-        return "1.21.4";
+        return "1.21.5";
     }
 
     public static String getModLoader() {

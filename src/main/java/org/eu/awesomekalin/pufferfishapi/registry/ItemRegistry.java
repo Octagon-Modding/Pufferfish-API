@@ -104,18 +104,22 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new SwordItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(
+                getBasicProperties(toolHolder.name).sword(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new PickaxeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(
+                getBasicProperties(toolHolder.name).pickaxe(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
@@ -161,10 +165,11 @@ public class ItemRegistry {
         return new ItemRegistryHolder(
                 register.register(
                         name,
-                        () -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.HELMET,
-                                getBasicProperties(name)
+                        () -> new Item(
+                                getBasicProperties(name).humanoidArmor(
+                                    getArmorMaterial(armorHolder),
+                                    ArmorType.HELMET
+                                )
                         )
                 )
         );
@@ -174,10 +179,11 @@ public class ItemRegistry {
         return new ItemRegistryHolder(
                 register.register(
                         name,
-                        () -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.CHESTPLATE,
-                                getBasicProperties(name)
+                        () -> new Item(
+                                getBasicProperties(name).humanoidArmor(
+                                    getArmorMaterial(armorHolder),
+                                    ArmorType.CHESTPLATE
+                                )
                         )
                 )
         );
@@ -187,10 +193,11 @@ public class ItemRegistry {
         return new ItemRegistryHolder(
                 register.register(
                         name,
-                        () -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.LEGGINGS,
-                                getBasicProperties(name)
+                        () -> new Item(
+                                getBasicProperties(name).humanoidArmor(
+                                    getArmorMaterial(armorHolder),
+                                    ArmorType.LEGGINGS
+                                )
                         )
                 )
         );
@@ -200,10 +207,11 @@ public class ItemRegistry {
         return new ItemRegistryHolder(
                 register.register(
                         name,
-                        () -> new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                ArmorType.BOOTS,
-                                getBasicProperties(name)
+                        () -> new Item(
+                                getBasicProperties(name).humanoidArmor(
+                                    getArmorMaterial(armorHolder),
+                                    ArmorType.BOOTS
+                                )
                         )
                 )
         );

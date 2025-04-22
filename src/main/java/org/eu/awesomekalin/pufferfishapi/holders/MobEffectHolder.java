@@ -62,39 +62,39 @@ public class MobEffectHolder {
     public ApplyStatusEffectsConsumeEffect getEffectFromEnum() {
         switch (effect) {
             case SWIFTNESS -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, duration, amplifier), probability);
             }
 
             case SLOWNESS -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SLOWNESS, duration, amplifier), probability);
             }
 
             case HASTE -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DIG_SPEED, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE, duration, amplifier), probability);
             }
 
             case MINING_FATIGUE -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, duration, amplifier), probability);
             }
 
             case STRENGTH -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.STRENGTH, duration, amplifier), probability);
             }
 
             case HEALING -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEAL, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, duration, amplifier), probability);
             }
 
             case INSTANT_DAMAGE -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HARM, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.INSTANT_DAMAGE, duration, amplifier), probability);
             }
 
             case JUMP_BOOST -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, duration, amplifier), probability);
             }
 
             case NAUSEA -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.CONFUSION, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.NAUSEA, duration, amplifier), probability);
             }
 
             case REGENERATION -> {
@@ -102,7 +102,7 @@ public class MobEffectHolder {
             }
 
             case RESISTANCE -> {
-                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, duration, amplifier), probability);
+                return new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.RESISTANCE, duration, amplifier), probability);
             }
 
             case FIRE_RESISTANCE -> {
