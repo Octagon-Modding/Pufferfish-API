@@ -100,47 +100,52 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new SwordItem(
-                getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new Item(
+                getBasicProperties(toolHolder.name).sword(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new PickaxeItem(
-                getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new Item(
+                getBasicProperties(toolHolder.name).pickaxe(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new AxeItem(
-                getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new Item(
+                getBasicProperties(toolHolder.name).axe(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerShovel(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new ShovelItem(
-                getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new Item(
+                getBasicProperties(toolHolder.name).shovel(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerHoe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new HoeItem(
-                getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new Item(
+                getBasicProperties(toolHolder.name).hoe(
+                    getToolMaterial(toolHolder),
+                    toolHolder.attackDamage,
+                    toolHolder.attackSpeed
+                )
         )));
     }
 
@@ -160,10 +165,11 @@ public class ItemRegistry {
                 Registry.register(
                         Registries.ITEM,
                         Identifier.of(modId, name),
-                        new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                EquipmentType.HELMET,
-                                getBasicProperties(name)
+                        new Item(
+                                getBasicProperties(name).armor(
+                                    getArmorMaterial(armorHolder),
+                                    EquipmentType.HELMET
+                                )
                         )
                 )
         );
@@ -174,10 +180,11 @@ public class ItemRegistry {
                 Registry.register(
                         Registries.ITEM,
                         Identifier.of(modId, name),
-                        new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                EquipmentType.CHESTPLATE,
-                                getBasicProperties(name)
+                        new Item(
+                                getBasicProperties(name).armor(
+                                    getArmorMaterial(armorHolder),
+                                    EquipmentType.CHESTPLATE
+                                )
                         )
                 )
         );
@@ -188,10 +195,11 @@ public class ItemRegistry {
                 Registry.register(
                         Registries.ITEM,
                         Identifier.of(modId, name),
-                        new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                EquipmentType.LEGGINGS,
-                                getBasicProperties(name)
+                        new Item(
+                                getBasicProperties(name).armor(
+                                    getArmorMaterial(armorHolder),
+                                    EquipmentType.LEGGINGS
+                                )
                         )
                 )
         );
@@ -202,10 +210,11 @@ public class ItemRegistry {
                 Registry.register(
                         Registries.ITEM,
                         Identifier.of(modId, name),
-                        new ArmorItem(
-                                getArmorMaterial(armorHolder),
-                                EquipmentType.BOOTS,
-                                getBasicProperties(name)
+                        new Item(
+                                getBasicProperties(name).armor(
+                                    getArmorMaterial(armorHolder),
+                                    EquipmentType.BOOTS
+                                )
                         )
                 )
         );
