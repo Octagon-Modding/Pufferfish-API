@@ -21,7 +21,7 @@ public class ArmorHolder {
     public final Identifier repairIngredient;
     public final ResourceKey<EquipmentAsset> assetId;
 
-    public ArmorHolder(int durability,
+    public ArmorHolder(int baseDurability,
                        int helmetArmorPoints,
                        int chestplateArmorPoints,
                        int leggingsArmorPoints,
@@ -33,7 +33,7 @@ public class ArmorHolder {
                        float knockbackResistance,
                        Identifier repairIngredient,
                        Identifier assetId) {
-        this.durability = durability;
+        this.durability = baseDurability;
         this.defense = Util.make(new EnumMap<>(ArmorType.class), map -> {
             map.put(ArmorType.HELMET, helmetArmorPoints);
             map.put(ArmorType.CHESTPLATE, chestplateArmorPoints);

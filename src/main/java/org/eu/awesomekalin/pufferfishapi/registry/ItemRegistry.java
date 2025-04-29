@@ -170,7 +170,7 @@ public class ItemRegistry {
                                 getBasicProperties(name).humanoidArmor(
                                     getArmorMaterial(armorHolder),
                                     ArmorType.HELMET
-                                )
+                                ).durability(ArmorType.HELMET.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -184,7 +184,7 @@ public class ItemRegistry {
                                 getBasicProperties(name).humanoidArmor(
                                     getArmorMaterial(armorHolder),
                                     ArmorType.CHESTPLATE
-                                )
+                                ).durability(ArmorType.CHESTPLATE.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -198,7 +198,7 @@ public class ItemRegistry {
                                 getBasicProperties(name).humanoidArmor(
                                     getArmorMaterial(armorHolder),
                                     ArmorType.LEGGINGS
-                                )
+                                ).durability(ArmorType.LEGGINGS.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -212,7 +212,7 @@ public class ItemRegistry {
                                 getBasicProperties(name).humanoidArmor(
                                     getArmorMaterial(armorHolder),
                                     ArmorType.BOOTS
-                                )
+                                ).durability(ArmorType.BOOTS.getDurability(armorHolder.durability))
                         )
                 )
         );
