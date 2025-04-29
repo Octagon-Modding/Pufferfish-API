@@ -171,7 +171,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 RegistryEntry.of(getArmorMaterial(armorHolder)),
                                 ArmorItem.Type.HELMET,
-                                new Item.Settings()
+                                new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -185,7 +185,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 RegistryEntry.of(getArmorMaterial(armorHolder)),
                                 ArmorItem.Type.CHESTPLATE,
-                                new Item.Settings()
+                                new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -199,7 +199,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 RegistryEntry.of(getArmorMaterial(armorHolder)),
                                 ArmorItem.Type.LEGGINGS,
-                                new Item.Settings()
+                                new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -213,7 +213,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 RegistryEntry.of(getArmorMaterial(armorHolder)),
                                 ArmorItem.Type.BOOTS,
-                                new Item.Settings()
+                                new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
