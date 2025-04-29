@@ -156,7 +156,7 @@ public class ItemRegistry {
             effectsComponent.consumeEffect(effect.getEffectFromEnum());
         });
 
-        Item.Settings itemProperties = new Item.Settings().food(new FoodComponent(nutrition, saturation, alwaysEat), effectsComponent.build());
+        Item.Settings itemProperties = getBasicProperties(name).food(new FoodComponent(nutrition, saturation, alwaysEat), effectsComponent.build());
         return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new Item(itemProperties)));
     }
 
