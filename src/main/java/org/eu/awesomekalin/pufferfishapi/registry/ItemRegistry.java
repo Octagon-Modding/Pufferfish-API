@@ -164,7 +164,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorType.HELMET,
-                                getBasicProperties(name)
+                                getBasicProperties(name).durability(ArmorType.HELMET.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -177,7 +177,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorType.CHESTPLATE,
-                                getBasicProperties(name)
+                                getBasicProperties(name).durability(ArmorType.CHESTPLATE.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -190,7 +190,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorType.LEGGINGS,
-                                getBasicProperties(name)
+                                getBasicProperties(name).durability(ArmorType.LEGGINGS.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -203,7 +203,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorType.BOOTS,
-                                getBasicProperties(name)
+                                getBasicProperties(name).durability(ArmorType.BOOTS.getDurability(armorHolder.durability))
                         )
                 )
         );
