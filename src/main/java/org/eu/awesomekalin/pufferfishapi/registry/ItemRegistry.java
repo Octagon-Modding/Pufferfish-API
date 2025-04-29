@@ -154,10 +154,11 @@ public class ItemRegistry {
             builder.onConsume(effect.getEffectFromEnum());
         });
 
-        Item.Properties itemProperties = new Item.Properties().food(new FoodProperties(nutrition, saturation, alwaysEat)).component(
+        Item.Properties itemProperties = getBasicProperties(name).food(new FoodProperties(nutrition, saturation, alwaysEat)).component(
                 DataComponents.CONSUMABLE,
                 builder.build()
         );
+
         return new ItemRegistryHolder(register.register(name, () -> new Item(itemProperties)));
     }
 
