@@ -151,7 +151,8 @@ public class ItemRegistry {
         Item.Properties itemProperties = new Item.Properties().food(new FoodProperties(nutrition, saturation, alwaysEat)).component(
                 DataComponents.CONSUMABLE,
                 builder.build()
-        );
+        ).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(modId, name)));
+
         return new ItemRegistryHolder(register.registerSimpleItem(name, itemProperties));
     }
 
