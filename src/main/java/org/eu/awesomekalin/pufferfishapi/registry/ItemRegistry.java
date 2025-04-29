@@ -191,7 +191,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.HELMET,
-                                new Item.Properties()
+                                new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -204,7 +204,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.CHESTPLATE,
-                                new Item.Properties()
+                                new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -217,7 +217,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.LEGGINGS,
-                                new Item.Properties()
+                                new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -230,7 +230,7 @@ public class ItemRegistry {
                         () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.BOOTS,
-                                new Item.Properties()
+                                new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(armorHolder.durability))
                         )
                 )
         );
