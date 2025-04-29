@@ -18,7 +18,7 @@ public class ArmorHolder {
     public final Identifier repairIngredient;
     public final RegistryKey<EquipmentAsset> assetId;
 
-    public ArmorHolder(int durability,
+    public ArmorHolder(int baseDurability,
                        int helmetArmorPoints,
                        int chestplateArmorPoints,
                        int leggingsArmorPoints,
@@ -30,7 +30,7 @@ public class ArmorHolder {
                        float knockbackResistance,
                        Identifier repairIngredient,
                        Identifier assetId) {
-        this.durability = durability;
+        this.durability = baseDurability;
         this.defense = Map.of(
             EquipmentType.HELMET, helmetArmorPoints,
             EquipmentType.CHESTPLATE, chestplateArmorPoints,

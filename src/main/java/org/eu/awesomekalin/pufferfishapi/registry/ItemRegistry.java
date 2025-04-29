@@ -163,7 +163,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.HELMET,
-                                getBasicProperties(name)
+                                getBasicProperties(name).maxDamage(EquipmentType.HELMET.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -177,7 +177,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.CHESTPLATE,
-                                getBasicProperties(name)
+                                getBasicProperties(name).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -191,7 +191,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.LEGGINGS,
-                                getBasicProperties(name)
+                                getBasicProperties(name).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
@@ -205,7 +205,7 @@ public class ItemRegistry {
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 EquipmentType.BOOTS,
-                                getBasicProperties(name)
+                                getBasicProperties(name).maxDamage(EquipmentType.BOOTS.getMaxDamage(armorHolder.durability))
                         )
                 )
         );
