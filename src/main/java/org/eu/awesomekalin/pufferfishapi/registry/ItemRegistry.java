@@ -185,12 +185,12 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerHelmet(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
+                        () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.HELMET,
-                                props
+                                new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -198,12 +198,12 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerChestplate(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
+                        () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.CHESTPLATE,
-                                props
+                                new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -211,12 +211,12 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerLeggings(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
+                        () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.LEGGINGS,
-                                props
+                                new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -224,12 +224,12 @@ public class ItemRegistry {
 
     public ItemRegistryHolder registerBoots(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
-                register.registerItem(
+                register.register(
                         name,
-                        props -> new ArmorItem(
+                        () -> new ArmorItem(
                                 getArmorMaterial(armorHolder),
                                 ArmorItem.Type.BOOTS,
-                                props
+                                new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(armorHolder.durability))
                         )
                 )
         );
