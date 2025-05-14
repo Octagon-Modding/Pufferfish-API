@@ -4,6 +4,7 @@ import com.mojang.datafixers.util.Either;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderOwner;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -64,24 +65,7 @@ public class ItemRegistry {
                 armorHolder.durability,
                 armorHolder.defense,
                 armorHolder.enchantmentValue,
-                new Holder<SoundEvent>() {
-                    @Override
-                    public SoundEvent value() {
-                        return SoundEventsHolder.getSoundEvent(armorHolder.equipSound);
-                    }
-
-                    @Override public boolean isBound() {return false;}
-                    @Override public boolean is(ResourceLocation resourceLocation) {return false;}
-                    @Override public boolean is(ResourceKey<SoundEvent> resourceKey) {return false;}
-                    @Override public boolean is(Predicate<ResourceKey<SoundEvent>> predicate) {return false;}
-                    @Override public boolean is(TagKey<SoundEvent> tagKey) {return false;}
-                    @Override public boolean is(Holder<SoundEvent> holder) {return false;}
-                    @Override public Stream<TagKey<SoundEvent>> tags() {return Stream.empty();}
-                    @Override public Either<ResourceKey<SoundEvent>, SoundEvent> unwrap() {return null;}
-                    @Override public Optional<ResourceKey<SoundEvent>> unwrapKey() {return Optional.empty();}
-                    @Override public Kind kind() {return null;}
-                    @Override public boolean canSerializeIn(HolderOwner<SoundEvent> holderOwner) {return false;}
-                },
+                BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)),
                 armorHolder.toughness,
                 armorHolder.knockbackResistance,
                 ItemTags.create(
