@@ -1,6 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -58,7 +59,7 @@ public class ItemRegistry {
                 armorHolder.durability,
                 armorHolder.defense,
                 armorHolder.enchantmentValue,
-                ForgeRegistries.SOUND_EVENTS.getHolder(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)).get(),
+                BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)),
                 armorHolder.toughness,
                 armorHolder.knockbackResistance,
                 ItemTags.create(
