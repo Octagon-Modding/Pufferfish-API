@@ -1,25 +1,18 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
-import com.mojang.datafixers.util.Either;
 import net.minecraft.block.Block;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.registry.entry.RegistryEntryOwner;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import org.eu.awesomekalin.pufferfishapi.holders.*;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class ItemRegistry {
     private final String modId;
@@ -80,24 +73,7 @@ public class ItemRegistry {
         return new ArmorMaterial(
                 armorHolder.defense,
                 armorHolder.enchantmentValue,
-                new RegistryEntry<SoundEvent>() {
-                    @Override
-                    public SoundEvent value() {
-                        return SoundEventsHolder.getSoundEvent(armorHolder.equipSound);
-                    }
-
-                    @Override public boolean hasKeyAndValue() {return false;}
-                    @Override public boolean matchesId(Identifier id) {return false;}
-                    @Override public boolean matchesKey(RegistryKey<SoundEvent> key) {return false;}
-                    @Override public boolean matches(Predicate<RegistryKey<SoundEvent>> predicate) {return false;}
-                    @Override public boolean isIn(TagKey<SoundEvent> tag) {return false;}
-                    @Override public boolean matches(RegistryEntry<SoundEvent> entry) {return false;}
-                    @Override public Stream<TagKey<SoundEvent>> streamTags() {return Stream.empty();}
-                    @Override public Either<RegistryKey<SoundEvent>, SoundEvent> getKeyOrValue() {return null;}
-                    @Override public Optional<RegistryKey<SoundEvent>> getKey() {return Optional.empty();}
-                    @Override public Type getType() {return null;}
-                    @Override public boolean ownerEquals(RegistryEntryOwner<SoundEvent> owner) {return false;}
-                },
+                Registries.SOUND_EVENT.getEntry(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)),
                 () -> Ingredient.fromTag(TagKey.of(
                         RegistryKeys.ITEM,
                         Identifier.of(
