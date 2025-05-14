@@ -187,7 +187,7 @@ public class ItemRegistry {
                         () -> new Item(
                                 addIdToProperties(name, new Item.Properties().humanoidArmor(
                                         getArmorMaterial(armorHolder),
-                                        ArmorType.LEGGINGS
+                                        ArmorType.BOOTS
                                 ))
                         )
                 )
