@@ -4116,10 +4116,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.LAVA_POP;
             }
             case LEASH_KNOT_BREAK -> {
-                return SoundEvents.LEASH_KNOT_BREAK;
+                return SoundEvents.LEAD_BREAK;
             }
             case LEASH_KNOT_PLACE -> {
-                return SoundEvents.LEASH_KNOT_PLACE;
+                return SoundEvents.LEAD_TIED;
             }
             case LEVER_CLICK -> {
                 return SoundEvents.LEVER_CLICK;
@@ -5200,9 +5200,6 @@ public enum SoundEventsHolder {
             }
             case POWDER_SNOW_STEP -> {
                 return SoundEvents.POWDER_SNOW_STEP;
-            }
-            case PUFFER_FISH_AMBIENT -> {
-                return SoundEvents.PUFFER_FISH_AMBIENT;
             }
             case PUFFER_FISH_BLOW_OUT -> {
                 return SoundEvents.PUFFER_FISH_BLOW_OUT;
@@ -6788,9 +6785,6 @@ public enum SoundEventsHolder {
             case SAND_IDLE -> {
                 return SoundEvents.SAND_IDLE;
             }
-            case SAND_WIND -> {
-                return SoundEvents.SAND_WIND;
-            }
             case IRON_BREAK -> {
                 return SoundEvents.IRON_BREAK;
             }
@@ -6806,7 +6800,7 @@ public enum SoundEventsHolder {
             case IRON_FALL -> {
                 return SoundEvents.IRON_FALL;
             }
-            case WOLF_HOWL -> {
+            case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
