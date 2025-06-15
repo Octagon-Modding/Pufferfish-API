@@ -1,22 +1,22 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.item.equipment.EquipmentAsset;
-import net.minecraft.item.equipment.EquipmentAssetKeys;
-import net.minecraft.item.equipment.EquipmentType;
-import net.minecraft.registry.RegistryKey;
 import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 
 import java.util.Map;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.EquipmentAsset;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 
 public class ArmorHolder {
     public final int durability;
-    public final Map<EquipmentType, Integer> defense;
+    public final Map<ArmorType, Integer> defense;
     public final int enchantmentValue;
     public final SoundEventsHolder equipSound;
     public final float toughness;
     public final float knockbackResistance;
     public final Identifier repairIngredient;
-    public final RegistryKey<EquipmentAsset> assetId;
+    public final ResourceKey<EquipmentAsset> assetId;
 
     public ArmorHolder(int baseDurability,
                        int helmetArmorPoints,
@@ -32,17 +32,17 @@ public class ArmorHolder {
                        Identifier assetId) {
         this.durability = baseDurability;
         this.defense = Map.of(
-            EquipmentType.HELMET, helmetArmorPoints,
-            EquipmentType.CHESTPLATE, chestplateArmorPoints,
-            EquipmentType.LEGGINGS, leggingsArmorPoints,
-            EquipmentType.BOOTS, bootsArmorPoints,
-            EquipmentType.BODY, animalArmorPoints
+            ArmorType.HELMET, helmetArmorPoints,
+            ArmorType.CHESTPLATE, chestplateArmorPoints,
+            ArmorType.LEGGINGS, leggingsArmorPoints,
+            ArmorType.BOOTS, bootsArmorPoints,
+            ArmorType.BODY, animalArmorPoints
         );
         this.enchantmentValue = enchantmentValue;
         this.equipSound = equipSound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
         this.repairIngredient = repairIngredient;
-        this.assetId = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, net.minecraft.util.Identifier.of(assetId.namespace, assetId.path));
+        this.assetId = ResourceKey.create(EquipmentAssets.ROOT_ID, net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(assetId.namespace, assetId.path));
     }
 }
