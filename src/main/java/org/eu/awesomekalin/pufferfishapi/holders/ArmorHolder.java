@@ -1,13 +1,13 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.util.Util;
 import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
+import net.minecraft.Util;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
 
 public class ArmorHolder {
     public final int durability;
@@ -46,7 +46,7 @@ public class ArmorHolder {
         this.repairIngredient = repairIngredient;
         this.assetId = List.of(
                 new ArmorMaterial.Layer(
-                        net.minecraft.util.Identifier.of(assetId.namespace, assetId.path)
+                        net.minecraft.resources.ResourceLocation.tryBuild(assetId.namespace, assetId.path)
                 )
         );
     }

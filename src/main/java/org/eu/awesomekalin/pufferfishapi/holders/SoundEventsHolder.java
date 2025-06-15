@@ -1,7 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
 public enum SoundEventsHolder {
@@ -1709,25 +1709,25 @@ public enum SoundEventsHolder {
     public static SoundEvent getSoundEvent(SoundEventsHolder sound) {
         switch (sound) {
             case ALLAY_AMBIENT_WITH_ITEM -> {
-                return SoundEvents.ENTITY_ALLAY_AMBIENT_WITH_ITEM;
+                return SoundEvents.ALLAY_AMBIENT_WITH_ITEM;
             }
             case ALLAY_AMBIENT_WITHOUT_ITEM -> {
-                return SoundEvents.ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM;
+                return SoundEvents.ALLAY_AMBIENT_WITHOUT_ITEM;
             }
             case ALLAY_DEATH -> {
-                return SoundEvents.ENTITY_ALLAY_DEATH;
+                return SoundEvents.ALLAY_DEATH;
             }
             case ALLAY_HURT -> {
-                return SoundEvents.ENTITY_ALLAY_HURT;
+                return SoundEvents.ALLAY_HURT;
             }
             case ALLAY_ITEM_GIVEN -> {
-                return SoundEvents.ENTITY_ALLAY_ITEM_GIVEN;
+                return SoundEvents.ALLAY_ITEM_GIVEN;
             }
             case ALLAY_ITEM_TAKEN -> {
-                return SoundEvents.ENTITY_ALLAY_ITEM_TAKEN;
+                return SoundEvents.ALLAY_ITEM_TAKEN;
             }
             case ALLAY_THROW -> {
-                return SoundEvents.ENTITY_ALLAY_ITEM_THROWN;
+                return SoundEvents.ALLAY_THROW;
             }
             case AMBIENT_CAVE -> {
                 return SoundEvents.AMBIENT_CAVE.value();
@@ -1796,2509 +1796,2509 @@ public enum SoundEventsHolder {
                 return SoundEvents.AMBIENT_UNDERWATER_LOOP_ADDITIONS_ULTRA_RARE;
             }
             case AMETHYST_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK;
+                return SoundEvents.AMETHYST_BLOCK_BREAK;
             }
             case AMETHYST_BLOCK_CHIME -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME;
+                return SoundEvents.AMETHYST_BLOCK_CHIME;
             }
             case AMETHYST_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_FALL;
+                return SoundEvents.AMETHYST_BLOCK_FALL;
             }
             case AMETHYST_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_HIT;
+                return SoundEvents.AMETHYST_BLOCK_HIT;
             }
             case AMETHYST_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE;
+                return SoundEvents.AMETHYST_BLOCK_PLACE;
             }
             case AMETHYST_BLOCK_RESONATE -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE;
+                return SoundEvents.AMETHYST_BLOCK_RESONATE;
             }
             case AMETHYST_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_AMETHYST_BLOCK_STEP;
+                return SoundEvents.AMETHYST_BLOCK_STEP;
             }
             case AMETHYST_CLUSTER_BREAK -> {
-                return SoundEvents.BLOCK_AMETHYST_CLUSTER_BREAK;
+                return SoundEvents.AMETHYST_CLUSTER_BREAK;
             }
             case AMETHYST_CLUSTER_FALL -> {
-                return SoundEvents.BLOCK_AMETHYST_CLUSTER_FALL;
+                return SoundEvents.AMETHYST_CLUSTER_FALL;
             }
             case AMETHYST_CLUSTER_HIT -> {
-                return SoundEvents.BLOCK_AMETHYST_CLUSTER_HIT;
+                return SoundEvents.AMETHYST_CLUSTER_HIT;
             }
             case AMETHYST_CLUSTER_PLACE -> {
-                return SoundEvents.BLOCK_AMETHYST_CLUSTER_PLACE;
+                return SoundEvents.AMETHYST_CLUSTER_PLACE;
             }
             case AMETHYST_CLUSTER_STEP -> {
-                return SoundEvents.BLOCK_AMETHYST_CLUSTER_STEP;
+                return SoundEvents.AMETHYST_CLUSTER_STEP;
             }
             case ANCIENT_DEBRIS_BREAK -> {
-                return SoundEvents.BLOCK_ANCIENT_DEBRIS_BREAK;
+                return SoundEvents.ANCIENT_DEBRIS_BREAK;
             }
             case ANCIENT_DEBRIS_STEP -> {
-                return SoundEvents.BLOCK_ANCIENT_DEBRIS_STEP;
+                return SoundEvents.ANCIENT_DEBRIS_STEP;
             }
             case ANCIENT_DEBRIS_PLACE -> {
-                return SoundEvents.BLOCK_ANCIENT_DEBRIS_PLACE;
+                return SoundEvents.ANCIENT_DEBRIS_PLACE;
             }
             case ANCIENT_DEBRIS_HIT -> {
-                return SoundEvents.BLOCK_ANCIENT_DEBRIS_HIT;
+                return SoundEvents.ANCIENT_DEBRIS_HIT;
             }
             case ANCIENT_DEBRIS_FALL -> {
-                return SoundEvents.BLOCK_ANCIENT_DEBRIS_FALL;
+                return SoundEvents.ANCIENT_DEBRIS_FALL;
             }
             case ANVIL_BREAK -> {
-                return SoundEvents.BLOCK_ANVIL_BREAK;
+                return SoundEvents.ANVIL_BREAK;
             }
             case ANVIL_DESTROY -> {
-                return SoundEvents.BLOCK_ANVIL_DESTROY;
+                return SoundEvents.ANVIL_DESTROY;
             }
             case ANVIL_FALL -> {
-                return SoundEvents.BLOCK_ANVIL_FALL;
+                return SoundEvents.ANVIL_FALL;
             }
             case ANVIL_HIT -> {
-                return SoundEvents.BLOCK_ANVIL_HIT;
+                return SoundEvents.ANVIL_HIT;
             }
             case ANVIL_LAND -> {
-                return SoundEvents.BLOCK_ANVIL_LAND;
+                return SoundEvents.ANVIL_LAND;
             }
             case ANVIL_PLACE -> {
-                return SoundEvents.BLOCK_ANVIL_PLACE;
+                return SoundEvents.ANVIL_PLACE;
             }
             case ANVIL_STEP -> {
-                return SoundEvents.BLOCK_ANVIL_STEP;
+                return SoundEvents.ANVIL_STEP;
             }
             case ANVIL_USE -> {
-                return SoundEvents.BLOCK_ANVIL_USE;
+                return SoundEvents.ANVIL_USE;
             }
             case ARMADILLO_EAT -> {
-                return SoundEvents.ENTITY_ARMADILLO_EAT;
+                return SoundEvents.ARMADILLO_EAT;
             }
             case ARMADILLO_HURT -> {
-                return SoundEvents.ENTITY_ARMADILLO_HURT;
+                return SoundEvents.ARMADILLO_HURT;
             }
             case ARMADILLO_HURT_REDUCED -> {
-                return SoundEvents.ENTITY_ARMADILLO_HURT_REDUCED;
+                return SoundEvents.ARMADILLO_HURT_REDUCED;
             }
             case ARMADILLO_AMBIENT -> {
-                return SoundEvents.ENTITY_ARMADILLO_AMBIENT;
+                return SoundEvents.ARMADILLO_AMBIENT;
             }
             case ARMADILLO_STEP -> {
-                return SoundEvents.ENTITY_ARMADILLO_STEP;
+                return SoundEvents.ARMADILLO_STEP;
             }
             case ARMADILLO_DEATH -> {
-                return SoundEvents.ENTITY_ARMADILLO_DEATH;
+                return SoundEvents.ARMADILLO_DEATH;
             }
             case ARMADILLO_ROLL -> {
-                return SoundEvents.ENTITY_ARMADILLO_ROLL;
+                return SoundEvents.ARMADILLO_ROLL;
             }
             case ARMADILLO_LAND -> {
-                return SoundEvents.ENTITY_ARMADILLO_LAND;
+                return SoundEvents.ARMADILLO_LAND;
             }
             case ARMADILLO_SCUTE_DROP -> {
-                return SoundEvents.ENTITY_ARMADILLO_SCUTE_DROP;
+                return SoundEvents.ARMADILLO_SCUTE_DROP;
             }
             case ARMADILLO_UNROLL_FINISH -> {
-                return SoundEvents.ENTITY_ARMADILLO_UNROLL_FINISH;
+                return SoundEvents.ARMADILLO_UNROLL_FINISH;
             }
             case ARMADILLO_PEEK -> {
-                return SoundEvents.ENTITY_ARMADILLO_PEEK;
+                return SoundEvents.ARMADILLO_PEEK;
             }
             case ARMADILLO_UNROLL_START -> {
-                return SoundEvents.ENTITY_ARMADILLO_UNROLL_START;
+                return SoundEvents.ARMADILLO_UNROLL_START;
             }
             case ARMADILLO_BRUSH -> {
-                return SoundEvents.ENTITY_ARMADILLO_BRUSH;
+                return SoundEvents.ARMADILLO_BRUSH;
             }
             case ARMOR_EQUIP_CHAIN -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_CHAIN.value();
+                return SoundEvents.ARMOR_EQUIP_CHAIN.value();
             }
             case ARMOR_EQUIP_DIAMOND -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND.value();
+                return SoundEvents.ARMOR_EQUIP_DIAMOND.value();
             }
             case ARMOR_EQUIP_ELYTRA -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA.value();
+                return SoundEvents.ARMOR_EQUIP_ELYTRA.value();
             }
             case ARMOR_EQUIP_GENERIC -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_GENERIC.value();
+                return SoundEvents.ARMOR_EQUIP_GENERIC.value();
             }
             case ARMOR_EQUIP_GOLD -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_GOLD.value();
+                return SoundEvents.ARMOR_EQUIP_GOLD.value();
             }
             case ARMOR_EQUIP_IRON -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_IRON.value();
+                return SoundEvents.ARMOR_EQUIP_IRON.value();
             }
             case ARMOR_EQUIP_LEATHER -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_LEATHER.value();
+                return SoundEvents.ARMOR_EQUIP_LEATHER.value();
             }
             case ARMOR_EQUIP_NETHERITE -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE.value();
+                return SoundEvents.ARMOR_EQUIP_NETHERITE.value();
             }
             case ARMOR_EQUIP_TURTLE -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_TURTLE.value();
+                return SoundEvents.ARMOR_EQUIP_TURTLE.value();
             }
             case ARMOR_EQUIP_WOLF -> {
-                return SoundEvents.ITEM_ARMOR_EQUIP_WOLF.value();
+                return SoundEvents.ARMOR_EQUIP_WOLF.value();
             }
             case ARMOR_UNEQUIP_WOLF -> {
-                return SoundEvents.ITEM_ARMOR_UNEQUIP_WOLF;
+                return SoundEvents.ARMOR_UNEQUIP_WOLF;
             }
             case ARMOR_STAND_BREAK -> {
-                return SoundEvents.ENTITY_ARMOR_STAND_BREAK;
+                return SoundEvents.ARMOR_STAND_BREAK;
             }
             case ARMOR_STAND_FALL -> {
-                return SoundEvents.ENTITY_ARMOR_STAND_FALL;
+                return SoundEvents.ARMOR_STAND_FALL;
             }
             case ARMOR_STAND_HIT -> {
-                return SoundEvents.ENTITY_ARMOR_STAND_HIT;
+                return SoundEvents.ARMOR_STAND_HIT;
             }
             case ARMOR_STAND_PLACE -> {
-                return SoundEvents.ENTITY_ARMOR_STAND_PLACE;
+                return SoundEvents.ARMOR_STAND_PLACE;
             }
             case ARROW_HIT -> {
-                return SoundEvents.ENTITY_ARROW_HIT;
+                return SoundEvents.ARROW_HIT;
             }
             case ARROW_HIT_PLAYER -> {
-                return SoundEvents.ENTITY_ARROW_HIT_PLAYER;
+                return SoundEvents.ARROW_HIT_PLAYER;
             }
             case ARROW_SHOOT -> {
-                return SoundEvents.ENTITY_ARROW_SHOOT;
+                return SoundEvents.ARROW_SHOOT;
             }
             case AXE_STRIP -> {
-                return SoundEvents.ITEM_AXE_STRIP;
+                return SoundEvents.AXE_STRIP;
             }
             case AXE_SCRAPE -> {
-                return SoundEvents.ITEM_AXE_SCRAPE;
+                return SoundEvents.AXE_SCRAPE;
             }
             case AXE_WAX_OFF -> {
-                return SoundEvents.ITEM_AXE_WAX_OFF;
+                return SoundEvents.AXE_WAX_OFF;
             }
             case AXOLOTL_ATTACK -> {
-                return SoundEvents.ENTITY_AXOLOTL_ATTACK;
+                return SoundEvents.AXOLOTL_ATTACK;
             }
             case AXOLOTL_DEATH -> {
-                return SoundEvents.ENTITY_AXOLOTL_DEATH;
+                return SoundEvents.AXOLOTL_DEATH;
             }
             case AXOLOTL_HURT -> {
-                return SoundEvents.ENTITY_AXOLOTL_HURT;
+                return SoundEvents.AXOLOTL_HURT;
             }
             case AXOLOTL_IDLE_AIR -> {
-                return SoundEvents.ENTITY_AXOLOTL_IDLE_AIR;
+                return SoundEvents.AXOLOTL_IDLE_AIR;
             }
             case AXOLOTL_IDLE_WATER -> {
-                return SoundEvents.ENTITY_AXOLOTL_IDLE_WATER;
+                return SoundEvents.AXOLOTL_IDLE_WATER;
             }
             case AXOLOTL_SPLASH -> {
-                return SoundEvents.ENTITY_AXOLOTL_SPLASH;
+                return SoundEvents.AXOLOTL_SPLASH;
             }
             case AXOLOTL_SWIM -> {
-                return SoundEvents.ENTITY_AXOLOTL_SWIM;
+                return SoundEvents.AXOLOTL_SWIM;
             }
             case AZALEA_BREAK -> {
-                return SoundEvents.BLOCK_AZALEA_BREAK;
+                return SoundEvents.AZALEA_BREAK;
             }
             case AZALEA_FALL -> {
-                return SoundEvents.BLOCK_AZALEA_FALL;
+                return SoundEvents.AZALEA_FALL;
             }
             case AZALEA_HIT -> {
-                return SoundEvents.BLOCK_AZALEA_HIT;
+                return SoundEvents.AZALEA_HIT;
             }
             case AZALEA_PLACE -> {
-                return SoundEvents.BLOCK_AZALEA_PLACE;
+                return SoundEvents.AZALEA_PLACE;
             }
             case AZALEA_STEP -> {
-                return SoundEvents.BLOCK_AZALEA_STEP;
+                return SoundEvents.AZALEA_STEP;
             }
             case AZALEA_LEAVES_BREAK -> {
-                return SoundEvents.BLOCK_AZALEA_LEAVES_BREAK;
+                return SoundEvents.AZALEA_LEAVES_BREAK;
             }
             case AZALEA_LEAVES_FALL -> {
-                return SoundEvents.BLOCK_AZALEA_LEAVES_FALL;
+                return SoundEvents.AZALEA_LEAVES_FALL;
             }
             case AZALEA_LEAVES_HIT -> {
-                return SoundEvents.BLOCK_AZALEA_LEAVES_HIT;
+                return SoundEvents.AZALEA_LEAVES_HIT;
             }
             case AZALEA_LEAVES_PLACE -> {
-                return SoundEvents.BLOCK_AZALEA_LEAVES_PLACE;
+                return SoundEvents.AZALEA_LEAVES_PLACE;
             }
             case AZALEA_LEAVES_STEP -> {
-                return SoundEvents.BLOCK_AZALEA_LEAVES_STEP;
+                return SoundEvents.AZALEA_LEAVES_STEP;
             }
             case BAMBOO_BREAK -> {
-                return SoundEvents.BLOCK_BAMBOO_BREAK;
+                return SoundEvents.BAMBOO_BREAK;
             }
             case BAMBOO_FALL -> {
-                return SoundEvents.BLOCK_BAMBOO_FALL;
+                return SoundEvents.BAMBOO_FALL;
             }
             case BAMBOO_HIT -> {
-                return SoundEvents.BLOCK_BAMBOO_HIT;
+                return SoundEvents.BAMBOO_HIT;
             }
             case BAMBOO_PLACE -> {
-                return SoundEvents.BLOCK_BAMBOO_PLACE;
+                return SoundEvents.BAMBOO_PLACE;
             }
             case BAMBOO_STEP -> {
-                return SoundEvents.BLOCK_BAMBOO_STEP;
+                return SoundEvents.BAMBOO_STEP;
             }
             case BAMBOO_SAPLING_BREAK -> {
-                return SoundEvents.BLOCK_BAMBOO_SAPLING_BREAK;
+                return SoundEvents.BAMBOO_SAPLING_BREAK;
             }
             case BAMBOO_SAPLING_HIT -> {
-                return SoundEvents.BLOCK_BAMBOO_SAPLING_HIT;
+                return SoundEvents.BAMBOO_SAPLING_HIT;
             }
             case BAMBOO_SAPLING_PLACE -> {
-                return SoundEvents.BLOCK_BAMBOO_SAPLING_PLACE;
+                return SoundEvents.BAMBOO_SAPLING_PLACE;
             }
             case BAMBOO_WOOD_BREAK -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_BREAK;
+                return SoundEvents.BAMBOO_WOOD_BREAK;
             }
             case BAMBOO_WOOD_FALL -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_FALL;
+                return SoundEvents.BAMBOO_WOOD_FALL;
             }
             case BAMBOO_WOOD_HIT -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HIT;
+                return SoundEvents.BAMBOO_WOOD_HIT;
             }
             case BAMBOO_WOOD_PLACE -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_PLACE;
+                return SoundEvents.BAMBOO_WOOD_PLACE;
             }
             case BAMBOO_WOOD_STEP -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_STEP;
+                return SoundEvents.BAMBOO_WOOD_STEP;
             }
             case BAMBOO_WOOD_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_DOOR_CLOSE;
+                return SoundEvents.BAMBOO_WOOD_DOOR_CLOSE;
             }
             case BAMBOO_WOOD_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_DOOR_OPEN;
+                return SoundEvents.BAMBOO_WOOD_DOOR_OPEN;
             }
             case BAMBOO_WOOD_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_TRAPDOOR_CLOSE;
+                return SoundEvents.BAMBOO_WOOD_TRAPDOOR_CLOSE;
             }
             case BAMBOO_WOOD_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_TRAPDOOR_OPEN;
+                return SoundEvents.BAMBOO_WOOD_TRAPDOOR_OPEN;
             }
             case BAMBOO_WOOD_BUTTON_CLICK_OFF -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_BUTTON_CLICK_OFF;
+                return SoundEvents.BAMBOO_WOOD_BUTTON_CLICK_OFF;
             }
             case BAMBOO_WOOD_BUTTON_CLICK_ON -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_BUTTON_CLICK_ON;
+                return SoundEvents.BAMBOO_WOOD_BUTTON_CLICK_ON;
             }
             case BAMBOO_WOOD_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.BAMBOO_WOOD_PRESSURE_PLATE_CLICK_OFF;
             }
             case BAMBOO_WOOD_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.BAMBOO_WOOD_PRESSURE_PLATE_CLICK_ON;
             }
             case BAMBOO_WOOD_FENCE_GATE_CLOSE -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_FENCE_GATE_CLOSE;
+                return SoundEvents.BAMBOO_WOOD_FENCE_GATE_CLOSE;
             }
             case BAMBOO_WOOD_FENCE_GATE_OPEN -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_FENCE_GATE_OPEN;
+                return SoundEvents.BAMBOO_WOOD_FENCE_GATE_OPEN;
             }
             case BARREL_CLOSE -> {
-                return SoundEvents.BLOCK_BARREL_CLOSE;
+                return SoundEvents.BARREL_CLOSE;
             }
             case BARREL_OPEN -> {
-                return SoundEvents.BLOCK_BARREL_OPEN;
+                return SoundEvents.BARREL_OPEN;
             }
             case BASALT_BREAK -> {
-                return SoundEvents.BLOCK_BASALT_BREAK;
+                return SoundEvents.BASALT_BREAK;
             }
             case BASALT_STEP -> {
-                return SoundEvents.BLOCK_BASALT_STEP;
+                return SoundEvents.BASALT_STEP;
             }
             case BASALT_PLACE -> {
-                return SoundEvents.BLOCK_BASALT_PLACE;
+                return SoundEvents.BASALT_PLACE;
             }
             case BASALT_HIT -> {
-                return SoundEvents.BLOCK_BASALT_HIT;
+                return SoundEvents.BASALT_HIT;
             }
             case BASALT_FALL -> {
-                return SoundEvents.BLOCK_BASALT_FALL;
+                return SoundEvents.BASALT_FALL;
             }
             case BAT_AMBIENT -> {
-                return SoundEvents.ENTITY_BAT_AMBIENT;
+                return SoundEvents.BAT_AMBIENT;
             }
             case BAT_DEATH -> {
-                return SoundEvents.ENTITY_BAT_DEATH;
+                return SoundEvents.BAT_DEATH;
             }
             case BAT_HURT -> {
-                return SoundEvents.ENTITY_BAT_HURT;
+                return SoundEvents.BAT_HURT;
             }
             case BAT_LOOP -> {
-                return SoundEvents.ENTITY_BAT_LOOP;
+                return SoundEvents.BAT_LOOP;
             }
             case BAT_TAKEOFF -> {
-                return SoundEvents.ENTITY_BAT_TAKEOFF;
+                return SoundEvents.BAT_TAKEOFF;
             }
             case BEACON_ACTIVATE -> {
-                return SoundEvents.BLOCK_BEACON_ACTIVATE;
+                return SoundEvents.BEACON_ACTIVATE;
             }
             case BEACON_AMBIENT -> {
-                return SoundEvents.BLOCK_BEACON_AMBIENT;
+                return SoundEvents.BEACON_AMBIENT;
             }
             case BEACON_DEACTIVATE -> {
-                return SoundEvents.BLOCK_BEACON_DEACTIVATE;
+                return SoundEvents.BEACON_DEACTIVATE;
             }
             case BEACON_POWER_SELECT -> {
-                return SoundEvents.BLOCK_BEACON_POWER_SELECT;
+                return SoundEvents.BEACON_POWER_SELECT;
             }
             case BEE_DEATH -> {
-                return SoundEvents.ENTITY_BEE_DEATH;
+                return SoundEvents.BEE_DEATH;
             }
             case BEE_HURT -> {
-                return SoundEvents.ENTITY_BEE_HURT;
+                return SoundEvents.BEE_HURT;
             }
             case BEE_LOOP_AGGRESSIVE -> {
-                return SoundEvents.ENTITY_BEE_LOOP_AGGRESSIVE;
+                return SoundEvents.BEE_LOOP_AGGRESSIVE;
             }
             case BEE_LOOP -> {
-                return SoundEvents.ENTITY_BEE_LOOP;
+                return SoundEvents.BEE_LOOP;
             }
             case BEE_STING -> {
-                return SoundEvents.ENTITY_BEE_STING;
+                return SoundEvents.BEE_STING;
             }
             case BEE_POLLINATE -> {
-                return SoundEvents.ENTITY_BEE_POLLINATE;
+                return SoundEvents.BEE_POLLINATE;
             }
             case BEEHIVE_DRIP -> {
-                return SoundEvents.BLOCK_BEEHIVE_DRIP;
+                return SoundEvents.BEEHIVE_DRIP;
             }
             case BEEHIVE_ENTER -> {
-                return SoundEvents.BLOCK_BEEHIVE_ENTER;
+                return SoundEvents.BEEHIVE_ENTER;
             }
             case BEEHIVE_EXIT -> {
-                return SoundEvents.BLOCK_BEEHIVE_EXIT;
+                return SoundEvents.BEEHIVE_EXIT;
             }
             case BEEHIVE_SHEAR -> {
-                return SoundEvents.BLOCK_BEEHIVE_SHEAR;
+                return SoundEvents.BEEHIVE_SHEAR;
             }
             case BEEHIVE_WORK -> {
-                return SoundEvents.BLOCK_BEEHIVE_WORK;
+                return SoundEvents.BEEHIVE_WORK;
             }
             case BELL_BLOCK -> {
-                return SoundEvents.BLOCK_BELL_USE;
+                return SoundEvents.BELL_BLOCK;
             }
             case BELL_RESONATE -> {
-                return SoundEvents.BLOCK_BELL_RESONATE;
+                return SoundEvents.BELL_RESONATE;
             }
             case BIG_DRIPLEAF_BREAK -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_BREAK;
+                return SoundEvents.BIG_DRIPLEAF_BREAK;
             }
             case BIG_DRIPLEAF_FALL -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_FALL;
+                return SoundEvents.BIG_DRIPLEAF_FALL;
             }
             case BIG_DRIPLEAF_HIT -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_HIT;
+                return SoundEvents.BIG_DRIPLEAF_HIT;
             }
             case BIG_DRIPLEAF_PLACE -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_PLACE;
+                return SoundEvents.BIG_DRIPLEAF_PLACE;
             }
             case BIG_DRIPLEAF_STEP -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_STEP;
+                return SoundEvents.BIG_DRIPLEAF_STEP;
             }
             case BLAZE_AMBIENT -> {
-                return SoundEvents.ENTITY_BLAZE_AMBIENT;
+                return SoundEvents.BLAZE_AMBIENT;
             }
             case BLAZE_BURN -> {
-                return SoundEvents.ENTITY_BLAZE_BURN;
+                return SoundEvents.BLAZE_BURN;
             }
             case BLAZE_DEATH -> {
-                return SoundEvents.ENTITY_BLAZE_DEATH;
+                return SoundEvents.BLAZE_DEATH;
             }
             case BLAZE_HURT -> {
-                return SoundEvents.ENTITY_BLAZE_HURT;
+                return SoundEvents.BLAZE_HURT;
             }
             case BLAZE_SHOOT -> {
-                return SoundEvents.ENTITY_BLAZE_SHOOT;
+                return SoundEvents.BLAZE_SHOOT;
             }
             case BOAT_PADDLE_LAND -> {
-                return SoundEvents.ENTITY_BOAT_PADDLE_LAND;
+                return SoundEvents.BOAT_PADDLE_LAND;
             }
             case BOAT_PADDLE_WATER -> {
-                return SoundEvents.ENTITY_BOAT_PADDLE_WATER;
+                return SoundEvents.BOAT_PADDLE_WATER;
             }
             case BOGGED_AMBIENT -> {
-                return SoundEvents.ENTITY_BOGGED_AMBIENT;
+                return SoundEvents.BOGGED_AMBIENT;
             }
             case BOGGED_DEATH -> {
-                return SoundEvents.ENTITY_BOGGED_DEATH;
+                return SoundEvents.BOGGED_DEATH;
             }
             case BOGGED_HURT -> {
-                return SoundEvents.ENTITY_BOGGED_HURT;
+                return SoundEvents.BOGGED_HURT;
             }
             case BOGGED_SHEAR -> {
-                return SoundEvents.ENTITY_BOGGED_SHEAR;
+                return SoundEvents.BOGGED_SHEAR;
             }
             case BOGGED_STEP -> {
-                return SoundEvents.ENTITY_BOGGED_STEP;
+                return SoundEvents.BOGGED_STEP;
             }
             case BONE_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_BONE_BLOCK_BREAK;
+                return SoundEvents.BONE_BLOCK_BREAK;
             }
             case BONE_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_BONE_BLOCK_FALL;
+                return SoundEvents.BONE_BLOCK_FALL;
             }
             case BONE_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_BONE_BLOCK_HIT;
+                return SoundEvents.BONE_BLOCK_HIT;
             }
             case BONE_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_BONE_BLOCK_PLACE;
+                return SoundEvents.BONE_BLOCK_PLACE;
             }
             case BONE_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_BONE_BLOCK_STEP;
+                return SoundEvents.BONE_BLOCK_STEP;
             }
             case BONE_MEAL_USE -> {
-                return SoundEvents.ITEM_BONE_MEAL_USE;
+                return SoundEvents.BONE_MEAL_USE;
             }
             case BOOK_PAGE_TURN -> {
-                return SoundEvents.ITEM_BOOK_PAGE_TURN;
+                return SoundEvents.BOOK_PAGE_TURN;
             }
             case BOOK_PUT -> {
-                return SoundEvents.ITEM_BOOK_PUT;
+                return SoundEvents.BOOK_PUT;
             }
             case BLASTFURNACE_FIRE_CRACKLE -> {
-                return SoundEvents.BLOCK_BLASTFURNACE_FIRE_CRACKLE;
+                return SoundEvents.BLASTFURNACE_FIRE_CRACKLE;
             }
             case BOTTLE_EMPTY -> {
-                return SoundEvents.ITEM_BOTTLE_EMPTY;
+                return SoundEvents.BOTTLE_EMPTY;
             }
             case BOTTLE_FILL -> {
-                return SoundEvents.ITEM_BOTTLE_FILL;
+                return SoundEvents.BOTTLE_FILL;
             }
             case BOTTLE_FILL_DRAGONBREATH -> {
-                return SoundEvents.ITEM_BOTTLE_FILL_DRAGONBREATH;
+                return SoundEvents.BOTTLE_FILL_DRAGONBREATH;
             }
             case BREEZE_CHARGE -> {
-                return SoundEvents.ENTITY_BREEZE_CHARGE;
+                return SoundEvents.BREEZE_CHARGE;
             }
             case BREEZE_DEFLECT -> {
-                return SoundEvents.ENTITY_BREEZE_DEFLECT;
+                return SoundEvents.BREEZE_DEFLECT;
             }
             case BREEZE_INHALE -> {
-                return SoundEvents.ENTITY_BREEZE_INHALE;
+                return SoundEvents.BREEZE_INHALE;
             }
             case BREEZE_IDLE_GROUND -> {
-                return SoundEvents.ENTITY_BREEZE_IDLE_GROUND;
+                return SoundEvents.BREEZE_IDLE_GROUND;
             }
             case BREEZE_IDLE_AIR -> {
-                return SoundEvents.ENTITY_BREEZE_IDLE_AIR;
+                return SoundEvents.BREEZE_IDLE_AIR;
             }
             case BREEZE_SHOOT -> {
-                return SoundEvents.ENTITY_BREEZE_SHOOT;
+                return SoundEvents.BREEZE_SHOOT;
             }
             case BREEZE_JUMP -> {
-                return SoundEvents.ENTITY_BREEZE_JUMP;
+                return SoundEvents.BREEZE_JUMP;
             }
             case BREEZE_LAND -> {
-                return SoundEvents.ENTITY_BREEZE_LAND;
+                return SoundEvents.BREEZE_LAND;
             }
             case BREEZE_SLIDE -> {
-                return SoundEvents.ENTITY_BREEZE_SLIDE;
+                return SoundEvents.BREEZE_SLIDE;
             }
             case BREEZE_DEATH -> {
-                return SoundEvents.ENTITY_BREEZE_DEATH;
+                return SoundEvents.BREEZE_DEATH;
             }
             case BREEZE_HURT -> {
-                return SoundEvents.ENTITY_BREEZE_HURT;
+                return SoundEvents.BREEZE_HURT;
             }
             case BREEZE_WHIRL -> {
-                return SoundEvents.ENTITY_BREEZE_WHIRL;
+                return SoundEvents.BREEZE_WHIRL;
             }
             case BREEZE_WIND_CHARGE_BURST -> {
-                return SoundEvents.ENTITY_BREEZE_WIND_BURST.value();
+                return SoundEvents.BREEZE_WIND_CHARGE_BURST.value();
             }
             case BREWING_STAND_BREW -> {
-                return SoundEvents.BLOCK_BREWING_STAND_BREW;
+                return SoundEvents.BREWING_STAND_BREW;
             }
             case BRUSH_GENERIC -> {
-                return SoundEvents.ITEM_BRUSH_BRUSHING_GENERIC;
+                return SoundEvents.BRUSH_GENERIC;
             }
             case BRUSH_SAND -> {
-                return SoundEvents.ITEM_BRUSH_BRUSHING_SAND;
+                return SoundEvents.BRUSH_SAND;
             }
             case BRUSH_GRAVEL -> {
-                return SoundEvents.ITEM_BRUSH_BRUSHING_GRAVEL;
+                return SoundEvents.BRUSH_GRAVEL;
             }
             case BRUSH_SAND_COMPLETED -> {
-                return SoundEvents.ITEM_BRUSH_BRUSHING_SAND_COMPLETE;
+                return SoundEvents.BRUSH_SAND_COMPLETED;
             }
             case BRUSH_GRAVEL_COMPLETED -> {
-                return SoundEvents.ITEM_BRUSH_BRUSHING_GRAVEL_COMPLETE;
+                return SoundEvents.BRUSH_GRAVEL_COMPLETED;
             }
             case BUBBLE_COLUMN_BUBBLE_POP -> {
-                return SoundEvents.BLOCK_BUBBLE_COLUMN_BUBBLE_POP;
+                return SoundEvents.BUBBLE_COLUMN_BUBBLE_POP;
             }
             case BUBBLE_COLUMN_UPWARDS_AMBIENT -> {
-                return SoundEvents.BLOCK_BUBBLE_COLUMN_UPWARDS_AMBIENT;
+                return SoundEvents.BUBBLE_COLUMN_UPWARDS_AMBIENT;
             }
             case BUBBLE_COLUMN_UPWARDS_INSIDE -> {
-                return SoundEvents.BLOCK_BUBBLE_COLUMN_UPWARDS_INSIDE;
+                return SoundEvents.BUBBLE_COLUMN_UPWARDS_INSIDE;
             }
             case BUBBLE_COLUMN_WHIRLPOOL_AMBIENT -> {
-                return SoundEvents.BLOCK_BUBBLE_COLUMN_WHIRLPOOL_AMBIENT;
+                return SoundEvents.BUBBLE_COLUMN_WHIRLPOOL_AMBIENT;
             }
             case BUBBLE_COLUMN_WHIRLPOOL_INSIDE -> {
-                return SoundEvents.BLOCK_BUBBLE_COLUMN_WHIRLPOOL_INSIDE;
+                return SoundEvents.BUBBLE_COLUMN_WHIRLPOOL_INSIDE;
             }
             case BUCKET_EMPTY -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY;
+                return SoundEvents.BUCKET_EMPTY;
             }
             case BUCKET_EMPTY_AXOLOTL -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL;
+                return SoundEvents.BUCKET_EMPTY_AXOLOTL;
             }
             case BUCKET_EMPTY_FISH -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY_FISH;
+                return SoundEvents.BUCKET_EMPTY_FISH;
             }
             case BUCKET_EMPTY_LAVA -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY_LAVA;
+                return SoundEvents.BUCKET_EMPTY_LAVA;
             }
             case BUCKET_EMPTY_POWDER_SNOW -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY_POWDER_SNOW;
+                return SoundEvents.BUCKET_EMPTY_POWDER_SNOW;
             }
             case BUCKET_EMPTY_TADPOLE -> {
-                return SoundEvents.ITEM_BUCKET_EMPTY_TADPOLE;
+                return SoundEvents.BUCKET_EMPTY_TADPOLE;
             }
             case BUCKET_FILL -> {
-                return SoundEvents.ITEM_BUCKET_FILL;
+                return SoundEvents.BUCKET_FILL;
             }
             case BUCKET_FILL_AXOLOTL -> {
-                return SoundEvents.ITEM_BUCKET_FILL_AXOLOTL;
+                return SoundEvents.BUCKET_FILL_AXOLOTL;
             }
             case BUCKET_FILL_FISH -> {
-                return SoundEvents.ITEM_BUCKET_FILL_FISH;
+                return SoundEvents.BUCKET_FILL_FISH;
             }
             case BUCKET_FILL_LAVA -> {
-                return SoundEvents.ITEM_BUCKET_FILL_LAVA;
+                return SoundEvents.BUCKET_FILL_LAVA;
             }
             case BUCKET_FILL_POWDER_SNOW -> {
-                return SoundEvents.ITEM_BUCKET_FILL_POWDER_SNOW;
+                return SoundEvents.BUCKET_FILL_POWDER_SNOW;
             }
             case BUCKET_FILL_TADPOLE -> {
-                return SoundEvents.ITEM_BUCKET_FILL_TADPOLE;
+                return SoundEvents.BUCKET_FILL_TADPOLE;
             }
             case BUNDLE_DROP_CONTENTS -> {
-                return SoundEvents.ITEM_BUNDLE_DROP_CONTENTS;
+                return SoundEvents.BUNDLE_DROP_CONTENTS;
             }
             case BUNDLE_INSERT -> {
-                return SoundEvents.ITEM_BUNDLE_INSERT;
+                return SoundEvents.BUNDLE_INSERT;
             }
             case BUNDLE_REMOVE_ONE -> {
-                return SoundEvents.ITEM_BUNDLE_REMOVE_ONE;
+                return SoundEvents.BUNDLE_REMOVE_ONE;
             }
             case CAKE_ADD_CANDLE -> {
-                return SoundEvents.BLOCK_CAKE_ADD_CANDLE;
+                return SoundEvents.CAKE_ADD_CANDLE;
             }
             case CALCITE_BREAK -> {
-                return SoundEvents.BLOCK_CALCITE_BREAK;
+                return SoundEvents.CALCITE_BREAK;
             }
             case CALCITE_STEP -> {
-                return SoundEvents.BLOCK_CALCITE_STEP;
+                return SoundEvents.CALCITE_STEP;
             }
             case CALCITE_PLACE -> {
-                return SoundEvents.BLOCK_CALCITE_PLACE;
+                return SoundEvents.CALCITE_PLACE;
             }
             case CALCITE_HIT -> {
-                return SoundEvents.BLOCK_CALCITE_HIT;
+                return SoundEvents.CALCITE_HIT;
             }
             case CALCITE_FALL -> {
-                return SoundEvents.BLOCK_CALCITE_FALL;
+                return SoundEvents.CALCITE_FALL;
             }
             case CAMEL_AMBIENT -> {
-                return SoundEvents.ENTITY_CAMEL_AMBIENT;
+                return SoundEvents.CAMEL_AMBIENT;
             }
             case CAMEL_DASH -> {
-                return SoundEvents.ENTITY_CAMEL_DASH;
+                return SoundEvents.CAMEL_DASH;
             }
             case CAMEL_DASH_READY -> {
-                return SoundEvents.ENTITY_CAMEL_DASH_READY;
+                return SoundEvents.CAMEL_DASH_READY;
             }
             case CAMEL_DEATH -> {
-                return SoundEvents.ENTITY_CAMEL_DEATH;
+                return SoundEvents.CAMEL_DEATH;
             }
             case CAMEL_EAT -> {
-                return SoundEvents.ENTITY_CAMEL_EAT;
+                return SoundEvents.CAMEL_EAT;
             }
             case CAMEL_HURT -> {
-                return SoundEvents.ENTITY_CAMEL_HURT;
+                return SoundEvents.CAMEL_HURT;
             }
             case CAMEL_SADDLE -> {
-                return SoundEvents.ENTITY_CAMEL_SADDLE;
+                return SoundEvents.CAMEL_SADDLE;
             }
             case CAMEL_SIT -> {
-                return SoundEvents.ENTITY_CAMEL_SIT;
+                return SoundEvents.CAMEL_SIT;
             }
             case CAMEL_STAND -> {
-                return SoundEvents.ENTITY_CAMEL_STAND;
+                return SoundEvents.CAMEL_STAND;
             }
             case CAMEL_STEP -> {
-                return SoundEvents.ENTITY_CAMEL_STEP;
+                return SoundEvents.CAMEL_STEP;
             }
             case CAMEL_STEP_SAND -> {
-                return SoundEvents.ENTITY_CAMEL_STEP_SAND;
+                return SoundEvents.CAMEL_STEP_SAND;
             }
             case CAMPFIRE_CRACKLE -> {
-                return SoundEvents.BLOCK_CAMPFIRE_CRACKLE;
+                return SoundEvents.CAMPFIRE_CRACKLE;
             }
             case CANDLE_AMBIENT -> {
-                return SoundEvents.BLOCK_CANDLE_AMBIENT;
+                return SoundEvents.CANDLE_AMBIENT;
             }
             case CANDLE_BREAK -> {
-                return SoundEvents.BLOCK_CANDLE_BREAK;
+                return SoundEvents.CANDLE_BREAK;
             }
             case CANDLE_EXTINGUISH -> {
-                return SoundEvents.BLOCK_CANDLE_EXTINGUISH;
+                return SoundEvents.CANDLE_EXTINGUISH;
             }
             case CANDLE_FALL -> {
-                return SoundEvents.BLOCK_CANDLE_FALL;
+                return SoundEvents.CANDLE_FALL;
             }
             case CANDLE_HIT -> {
-                return SoundEvents.BLOCK_CANDLE_HIT;
+                return SoundEvents.CANDLE_HIT;
             }
             case CANDLE_PLACE -> {
-                return SoundEvents.BLOCK_CANDLE_PLACE;
+                return SoundEvents.CANDLE_PLACE;
             }
             case CANDLE_STEP -> {
-                return SoundEvents.BLOCK_CANDLE_STEP;
+                return SoundEvents.CANDLE_STEP;
             }
             case CAT_AMBIENT -> {
-                return SoundEvents.ENTITY_CAT_AMBIENT;
+                return SoundEvents.CAT_AMBIENT;
             }
             case CAT_STRAY_AMBIENT -> {
-                return SoundEvents.ENTITY_CAT_STRAY_AMBIENT;
+                return SoundEvents.CAT_STRAY_AMBIENT;
             }
             case CAT_DEATH -> {
-                return SoundEvents.ENTITY_CAT_DEATH;
+                return SoundEvents.CAT_DEATH;
             }
             case CAT_EAT -> {
-                return SoundEvents.ENTITY_CAT_EAT;
+                return SoundEvents.CAT_EAT;
             }
             case CAT_HISS -> {
-                return SoundEvents.ENTITY_CAT_HISS;
+                return SoundEvents.CAT_HISS;
             }
             case CAT_BEG_FOR_FOOD -> {
-                return SoundEvents.ENTITY_CAT_BEG_FOR_FOOD;
+                return SoundEvents.CAT_BEG_FOR_FOOD;
             }
             case CAT_HURT -> {
-                return SoundEvents.ENTITY_CAT_HURT;
+                return SoundEvents.CAT_HURT;
             }
             case CAT_PURR -> {
-                return SoundEvents.ENTITY_CAT_PURR;
+                return SoundEvents.CAT_PURR;
             }
             case CAT_PURREOW -> {
-                return SoundEvents.ENTITY_CAT_PURREOW;
+                return SoundEvents.CAT_PURREOW;
             }
             case CAVE_VINES_BREAK -> {
-                return SoundEvents.BLOCK_CAVE_VINES_BREAK;
+                return SoundEvents.CAVE_VINES_BREAK;
             }
             case CAVE_VINES_FALL -> {
-                return SoundEvents.BLOCK_CAVE_VINES_FALL;
+                return SoundEvents.CAVE_VINES_FALL;
             }
             case CAVE_VINES_HIT -> {
-                return SoundEvents.BLOCK_CAVE_VINES_HIT;
+                return SoundEvents.CAVE_VINES_HIT;
             }
             case CAVE_VINES_PLACE -> {
-                return SoundEvents.BLOCK_CAVE_VINES_PLACE;
+                return SoundEvents.CAVE_VINES_PLACE;
             }
             case CAVE_VINES_STEP -> {
-                return SoundEvents.BLOCK_CAVE_VINES_STEP;
+                return SoundEvents.CAVE_VINES_STEP;
             }
             case CAVE_VINES_PICK_BERRIES -> {
-                return SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES;
+                return SoundEvents.CAVE_VINES_PICK_BERRIES;
             }
             case CHAIN_BREAK -> {
-                return SoundEvents.BLOCK_CHAIN_BREAK;
+                return SoundEvents.CHAIN_BREAK;
             }
             case CHAIN_FALL -> {
-                return SoundEvents.BLOCK_CHAIN_FALL;
+                return SoundEvents.CHAIN_FALL;
             }
             case CHAIN_HIT -> {
-                return SoundEvents.BLOCK_CHAIN_HIT;
+                return SoundEvents.CHAIN_HIT;
             }
             case CHAIN_PLACE -> {
-                return SoundEvents.BLOCK_CHAIN_PLACE;
+                return SoundEvents.CHAIN_PLACE;
             }
             case CHAIN_STEP -> {
-                return SoundEvents.BLOCK_CHAIN_STEP;
+                return SoundEvents.CHAIN_STEP;
             }
             case CHERRY_WOOD_BREAK -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_BREAK;
+                return SoundEvents.CHERRY_WOOD_BREAK;
             }
             case CHERRY_WOOD_FALL -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_FALL;
+                return SoundEvents.CHERRY_WOOD_FALL;
             }
             case CHERRY_WOOD_HIT -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HIT;
+                return SoundEvents.CHERRY_WOOD_HIT;
             }
             case CHERRY_WOOD_PLACE -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_PLACE;
+                return SoundEvents.CHERRY_WOOD_PLACE;
             }
             case CHERRY_WOOD_STEP -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_STEP;
+                return SoundEvents.CHERRY_WOOD_STEP;
             }
             case CHERRY_SAPLING_BREAK -> {
-                return SoundEvents.BLOCK_CHERRY_SAPLING_BREAK;
+                return SoundEvents.CHERRY_SAPLING_BREAK;
             }
             case CHERRY_SAPLING_FALL -> {
-                return SoundEvents.BLOCK_CHERRY_SAPLING_FALL;
+                return SoundEvents.CHERRY_SAPLING_FALL;
             }
             case CHERRY_SAPLING_HIT -> {
-                return SoundEvents.BLOCK_CHERRY_SAPLING_HIT;
+                return SoundEvents.CHERRY_SAPLING_HIT;
             }
             case CHERRY_SAPLING_PLACE -> {
-                return SoundEvents.BLOCK_CHERRY_SAPLING_PLACE;
+                return SoundEvents.CHERRY_SAPLING_PLACE;
             }
             case CHERRY_SAPLING_STEP -> {
-                return SoundEvents.BLOCK_CHERRY_SAPLING_STEP;
+                return SoundEvents.CHERRY_SAPLING_STEP;
             }
             case CHERRY_LEAVES_BREAK -> {
-                return SoundEvents.BLOCK_CHERRY_LEAVES_BREAK;
+                return SoundEvents.CHERRY_LEAVES_BREAK;
             }
             case CHERRY_LEAVES_FALL -> {
-                return SoundEvents.BLOCK_CHERRY_LEAVES_FALL;
+                return SoundEvents.CHERRY_LEAVES_FALL;
             }
             case CHERRY_LEAVES_HIT -> {
-                return SoundEvents.BLOCK_CHERRY_LEAVES_HIT;
+                return SoundEvents.CHERRY_LEAVES_HIT;
             }
             case CHERRY_LEAVES_PLACE -> {
-                return SoundEvents.BLOCK_CHERRY_LEAVES_PLACE;
+                return SoundEvents.CHERRY_LEAVES_PLACE;
             }
             case CHERRY_LEAVES_STEP -> {
-                return SoundEvents.BLOCK_CHERRY_LEAVES_STEP;
+                return SoundEvents.CHERRY_LEAVES_STEP;
             }
             case CHERRY_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_STEP;
             }
             case CHERRY_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_BREAK;
             }
             case CHERRY_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_FALL;
             }
             case CHERRY_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_HIT;
             }
             case CHERRY_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_PLACE;
             }
             case CHERRY_WOOD_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_DOOR_CLOSE;
+                return SoundEvents.CHERRY_WOOD_DOOR_CLOSE;
             }
             case CHERRY_WOOD_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_DOOR_OPEN;
+                return SoundEvents.CHERRY_WOOD_DOOR_OPEN;
             }
             case CHERRY_WOOD_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_TRAPDOOR_CLOSE;
+                return SoundEvents.CHERRY_WOOD_TRAPDOOR_CLOSE;
             }
             case CHERRY_WOOD_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_TRAPDOOR_OPEN;
+                return SoundEvents.CHERRY_WOOD_TRAPDOOR_OPEN;
             }
             case CHERRY_WOOD_BUTTON_CLICK_OFF -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_BUTTON_CLICK_OFF;
+                return SoundEvents.CHERRY_WOOD_BUTTON_CLICK_OFF;
             }
             case CHERRY_WOOD_BUTTON_CLICK_ON -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_BUTTON_CLICK_ON;
+                return SoundEvents.CHERRY_WOOD_BUTTON_CLICK_ON;
             }
             case CHERRY_WOOD_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.CHERRY_WOOD_PRESSURE_PLATE_CLICK_OFF;
             }
             case CHERRY_WOOD_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.CHERRY_WOOD_PRESSURE_PLATE_CLICK_ON;
             }
             case CHERRY_WOOD_FENCE_GATE_CLOSE -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_FENCE_GATE_CLOSE;
+                return SoundEvents.CHERRY_WOOD_FENCE_GATE_CLOSE;
             }
             case CHERRY_WOOD_FENCE_GATE_OPEN -> {
-                return SoundEvents.BLOCK_CHERRY_WOOD_FENCE_GATE_OPEN;
+                return SoundEvents.CHERRY_WOOD_FENCE_GATE_OPEN;
             }
             case CHEST_CLOSE -> {
-                return SoundEvents.BLOCK_CHEST_CLOSE;
+                return SoundEvents.CHEST_CLOSE;
             }
             case CHEST_LOCKED -> {
-                return SoundEvents.BLOCK_CHEST_LOCKED;
+                return SoundEvents.CHEST_LOCKED;
             }
             case CHEST_OPEN -> {
-                return SoundEvents.BLOCK_CHEST_OPEN;
+                return SoundEvents.CHEST_OPEN;
             }
             case CHICKEN_AMBIENT -> {
-                return SoundEvents.ENTITY_CHICKEN_AMBIENT;
+                return SoundEvents.CHICKEN_AMBIENT;
             }
             case CHICKEN_DEATH -> {
-                return SoundEvents.ENTITY_CHICKEN_DEATH;
+                return SoundEvents.CHICKEN_DEATH;
             }
             case CHICKEN_EGG -> {
-                return SoundEvents.ENTITY_CHICKEN_EGG;
+                return SoundEvents.CHICKEN_EGG;
             }
             case CHICKEN_HURT -> {
-                return SoundEvents.ENTITY_CHICKEN_HURT;
+                return SoundEvents.CHICKEN_HURT;
             }
             case CHICKEN_STEP -> {
-                return SoundEvents.ENTITY_CHICKEN_STEP;
+                return SoundEvents.CHICKEN_STEP;
             }
             case CHISELED_BOOKSHELF_BREAK -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_BREAK;
+                return SoundEvents.CHISELED_BOOKSHELF_BREAK;
             }
             case CHISELED_BOOKSHELF_FALL -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_FALL;
+                return SoundEvents.CHISELED_BOOKSHELF_FALL;
             }
             case CHISELED_BOOKSHELF_HIT -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_HIT;
+                return SoundEvents.CHISELED_BOOKSHELF_HIT;
             }
             case CHISELED_BOOKSHELF_INSERT -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_INSERT;
+                return SoundEvents.CHISELED_BOOKSHELF_INSERT;
             }
             case CHISELED_BOOKSHELF_INSERT_ENCHANTED -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_INSERT_ENCHANTED;
+                return SoundEvents.CHISELED_BOOKSHELF_INSERT_ENCHANTED;
             }
             case CHISELED_BOOKSHELF_STEP -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_STEP;
+                return SoundEvents.CHISELED_BOOKSHELF_STEP;
             }
             case CHISELED_BOOKSHELF_PICKUP -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_PICKUP;
+                return SoundEvents.CHISELED_BOOKSHELF_PICKUP;
             }
             case CHISELED_BOOKSHELF_PICKUP_ENCHANTED -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_PICKUP_ENCHANTED;
+                return SoundEvents.CHISELED_BOOKSHELF_PICKUP_ENCHANTED;
             }
             case CHISELED_BOOKSHELF_PLACE -> {
-                return SoundEvents.BLOCK_CHISELED_BOOKSHELF_PLACE;
+                return SoundEvents.CHISELED_BOOKSHELF_PLACE;
             }
             case CHORUS_FLOWER_DEATH -> {
-                return SoundEvents.BLOCK_CHORUS_FLOWER_DEATH;
+                return SoundEvents.CHORUS_FLOWER_DEATH;
             }
             case CHORUS_FLOWER_GROW -> {
-                return SoundEvents.BLOCK_CHORUS_FLOWER_GROW;
+                return SoundEvents.CHORUS_FLOWER_GROW;
             }
             case CHORUS_FRUIT_TELEPORT -> {
-                return SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT;
+                return SoundEvents.CHORUS_FRUIT_TELEPORT;
             }
             case COBWEB_BREAK -> {
-                return SoundEvents.BLOCK_COBWEB_BREAK;
+                return SoundEvents.COBWEB_BREAK;
             }
             case COBWEB_STEP -> {
-                return SoundEvents.BLOCK_COBWEB_STEP;
+                return SoundEvents.COBWEB_STEP;
             }
             case COBWEB_PLACE -> {
-                return SoundEvents.BLOCK_COBWEB_PLACE;
+                return SoundEvents.COBWEB_PLACE;
             }
             case COBWEB_HIT -> {
-                return SoundEvents.BLOCK_COBWEB_HIT;
+                return SoundEvents.COBWEB_HIT;
             }
             case COBWEB_FALL -> {
-                return SoundEvents.BLOCK_COBWEB_FALL;
+                return SoundEvents.COBWEB_FALL;
             }
             case COD_AMBIENT -> {
-                return SoundEvents.ENTITY_COD_AMBIENT;
+                return SoundEvents.COD_AMBIENT;
             }
             case COD_DEATH -> {
-                return SoundEvents.ENTITY_COD_DEATH;
+                return SoundEvents.COD_DEATH;
             }
             case COD_FLOP -> {
-                return SoundEvents.ENTITY_COD_FLOP;
+                return SoundEvents.COD_FLOP;
             }
             case COD_HURT -> {
-                return SoundEvents.ENTITY_COD_HURT;
+                return SoundEvents.COD_HURT;
             }
             case COMPARATOR_CLICK -> {
-                return SoundEvents.BLOCK_COMPARATOR_CLICK;
+                return SoundEvents.COMPARATOR_CLICK;
             }
             case COMPOSTER_EMPTY -> {
-                return SoundEvents.BLOCK_COMPOSTER_EMPTY;
+                return SoundEvents.COMPOSTER_EMPTY;
             }
             case COMPOSTER_FILL -> {
-                return SoundEvents.BLOCK_COMPOSTER_FILL;
+                return SoundEvents.COMPOSTER_FILL;
             }
             case COMPOSTER_FILL_SUCCESS -> {
-                return SoundEvents.BLOCK_COMPOSTER_FILL_SUCCESS;
+                return SoundEvents.COMPOSTER_FILL_SUCCESS;
             }
             case COMPOSTER_READY -> {
-                return SoundEvents.BLOCK_COMPOSTER_READY;
+                return SoundEvents.COMPOSTER_READY;
             }
             case CONDUIT_ACTIVATE -> {
-                return SoundEvents.BLOCK_CONDUIT_ACTIVATE;
+                return SoundEvents.CONDUIT_ACTIVATE;
             }
             case CONDUIT_AMBIENT -> {
-                return SoundEvents.BLOCK_CONDUIT_AMBIENT;
+                return SoundEvents.CONDUIT_AMBIENT;
             }
             case CONDUIT_AMBIENT_SHORT -> {
-                return SoundEvents.BLOCK_CONDUIT_AMBIENT_SHORT;
+                return SoundEvents.CONDUIT_AMBIENT_SHORT;
             }
             case CONDUIT_ATTACK_TARGET -> {
-                return SoundEvents.BLOCK_CONDUIT_ATTACK_TARGET;
+                return SoundEvents.CONDUIT_ATTACK_TARGET;
             }
             case CONDUIT_DEACTIVATE -> {
-                return SoundEvents.BLOCK_CONDUIT_DEACTIVATE;
+                return SoundEvents.CONDUIT_DEACTIVATE;
             }
             case COPPER_BULB_BREAK -> {
-                return SoundEvents.BLOCK_COPPER_BULB_BREAK;
+                return SoundEvents.COPPER_BULB_BREAK;
             }
             case COPPER_BULB_STEP -> {
-                return SoundEvents.BLOCK_COPPER_BULB_STEP;
+                return SoundEvents.COPPER_BULB_STEP;
             }
             case COPPER_BULB_PLACE -> {
-                return SoundEvents.BLOCK_COPPER_BULB_PLACE;
+                return SoundEvents.COPPER_BULB_PLACE;
             }
             case COPPER_BULB_HIT -> {
-                return SoundEvents.BLOCK_COPPER_BULB_HIT;
+                return SoundEvents.COPPER_BULB_HIT;
             }
             case COPPER_BULB_FALL -> {
-                return SoundEvents.BLOCK_COPPER_BULB_FALL;
+                return SoundEvents.COPPER_BULB_FALL;
             }
             case COPPER_BULB_TURN_ON -> {
-                return SoundEvents.BLOCK_COPPER_BULB_TURN_ON;
+                return SoundEvents.COPPER_BULB_TURN_ON;
             }
             case COPPER_BULB_TURN_OFF -> {
-                return SoundEvents.BLOCK_COPPER_BULB_TURN_OFF;
+                return SoundEvents.COPPER_BULB_TURN_OFF;
             }
             case COPPER_BREAK -> {
-                return SoundEvents.BLOCK_COPPER_BREAK;
+                return SoundEvents.COPPER_BREAK;
             }
             case COPPER_STEP -> {
-                return SoundEvents.BLOCK_COPPER_STEP;
+                return SoundEvents.COPPER_STEP;
             }
             case COPPER_PLACE -> {
-                return SoundEvents.BLOCK_COPPER_PLACE;
+                return SoundEvents.COPPER_PLACE;
             }
             case COPPER_HIT -> {
-                return SoundEvents.BLOCK_COPPER_HIT;
+                return SoundEvents.COPPER_HIT;
             }
             case COPPER_FALL -> {
-                return SoundEvents.BLOCK_COPPER_FALL;
+                return SoundEvents.COPPER_FALL;
             }
             case COPPER_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_COPPER_DOOR_CLOSE;
+                return SoundEvents.COPPER_DOOR_CLOSE;
             }
             case COPPER_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_COPPER_DOOR_OPEN;
+                return SoundEvents.COPPER_DOOR_OPEN;
             }
             case COPPER_GRATE_BREAK -> {
-                return SoundEvents.BLOCK_COPPER_GRATE_BREAK;
+                return SoundEvents.COPPER_GRATE_BREAK;
             }
             case COPPER_GRATE_STEP -> {
-                return SoundEvents.BLOCK_COPPER_GRATE_STEP;
+                return SoundEvents.COPPER_GRATE_STEP;
             }
             case COPPER_GRATE_PLACE -> {
-                return SoundEvents.BLOCK_COPPER_GRATE_PLACE;
+                return SoundEvents.COPPER_GRATE_PLACE;
             }
             case COPPER_GRATE_HIT -> {
-                return SoundEvents.BLOCK_COPPER_GRATE_HIT;
+                return SoundEvents.COPPER_GRATE_HIT;
             }
             case COPPER_GRATE_FALL -> {
-                return SoundEvents.BLOCK_COPPER_GRATE_FALL;
+                return SoundEvents.COPPER_GRATE_FALL;
             }
             case COPPER_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_COPPER_TRAPDOOR_CLOSE;
+                return SoundEvents.COPPER_TRAPDOOR_CLOSE;
             }
             case COPPER_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_COPPER_TRAPDOOR_OPEN;
+                return SoundEvents.COPPER_TRAPDOOR_OPEN;
             }
             case CORAL_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_CORAL_BLOCK_BREAK;
+                return SoundEvents.CORAL_BLOCK_BREAK;
             }
             case CORAL_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_CORAL_BLOCK_FALL;
+                return SoundEvents.CORAL_BLOCK_FALL;
             }
             case CORAL_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_CORAL_BLOCK_HIT;
+                return SoundEvents.CORAL_BLOCK_HIT;
             }
             case CORAL_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_CORAL_BLOCK_PLACE;
+                return SoundEvents.CORAL_BLOCK_PLACE;
             }
             case CORAL_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_CORAL_BLOCK_STEP;
+                return SoundEvents.CORAL_BLOCK_STEP;
             }
             case COW_AMBIENT -> {
-                return SoundEvents.ENTITY_COW_AMBIENT;
+                return SoundEvents.COW_AMBIENT;
             }
             case COW_DEATH -> {
-                return SoundEvents.ENTITY_COW_DEATH;
+                return SoundEvents.COW_DEATH;
             }
             case COW_HURT -> {
-                return SoundEvents.ENTITY_COW_HURT;
+                return SoundEvents.COW_HURT;
             }
             case COW_MILK -> {
-                return SoundEvents.ENTITY_COW_MILK;
+                return SoundEvents.COW_MILK;
             }
             case COW_STEP -> {
-                return SoundEvents.ENTITY_COW_STEP;
+                return SoundEvents.COW_STEP;
             }
             case CRAFTER_CRAFT -> {
-                return SoundEvents.BLOCK_CRAFTER_CRAFT;
+                return SoundEvents.CRAFTER_CRAFT;
             }
             case CRAFTER_FAIL -> {
-                return SoundEvents.BLOCK_CRAFTER_FAIL;
+                return SoundEvents.CRAFTER_FAIL;
             }
             case CREEPER_DEATH -> {
-                return SoundEvents.ENTITY_CREEPER_DEATH;
+                return SoundEvents.CREEPER_DEATH;
             }
             case CREEPER_HURT -> {
-                return SoundEvents.ENTITY_CREEPER_HURT;
+                return SoundEvents.CREEPER_HURT;
             }
             case CREEPER_PRIMED -> {
-                return SoundEvents.ENTITY_CREEPER_PRIMED;
+                return SoundEvents.CREEPER_PRIMED;
             }
             case CROP_BREAK -> {
-                return SoundEvents.BLOCK_CROP_BREAK;
+                return SoundEvents.CROP_BREAK;
             }
             case CROP_PLANTED -> {
-                return SoundEvents.ITEM_CROP_PLANT;
+                return SoundEvents.CROP_PLANTED;
             }
             case CROSSBOW_HIT -> {
-                return SoundEvents.ITEM_CROSSBOW_HIT;
+                return SoundEvents.CROSSBOW_HIT;
             }
             case CROSSBOW_LOADING_END -> {
-                return SoundEvents.ITEM_CROSSBOW_LOADING_END;
+                return SoundEvents.CROSSBOW_LOADING_END;
             }
             case CROSSBOW_LOADING_MIDDLE -> {
-                return SoundEvents.ITEM_CROSSBOW_LOADING_MIDDLE;
+                return SoundEvents.CROSSBOW_LOADING_MIDDLE;
             }
             case CROSSBOW_LOADING_START -> {
-                return SoundEvents.ITEM_CROSSBOW_LOADING_START;
+                return SoundEvents.CROSSBOW_LOADING_START;
             }
             case CROSSBOW_QUICK_CHARGE_1 -> {
-                return SoundEvents.ITEM_CROSSBOW_QUICK_CHARGE_1;
+                return SoundEvents.CROSSBOW_QUICK_CHARGE_1;
             }
             case CROSSBOW_QUICK_CHARGE_2 -> {
-                return SoundEvents.ITEM_CROSSBOW_QUICK_CHARGE_2;
+                return SoundEvents.CROSSBOW_QUICK_CHARGE_2;
             }
             case CROSSBOW_QUICK_CHARGE_3 -> {
-                return SoundEvents.ITEM_CROSSBOW_QUICK_CHARGE_3;
+                return SoundEvents.CROSSBOW_QUICK_CHARGE_3;
             }
             case CROSSBOW_SHOOT -> {
-                return SoundEvents.ITEM_CROSSBOW_SHOOT;
+                return SoundEvents.CROSSBOW_SHOOT;
             }
             case DECORATED_POT_BREAK -> {
-                return SoundEvents.BLOCK_DECORATED_POT_BREAK;
+                return SoundEvents.DECORATED_POT_BREAK;
             }
             case DECORATED_POT_FALL -> {
-                return SoundEvents.BLOCK_DECORATED_POT_FALL;
+                return SoundEvents.DECORATED_POT_FALL;
             }
             case DECORATED_POT_HIT -> {
-                return SoundEvents.BLOCK_DECORATED_POT_HIT;
+                return SoundEvents.DECORATED_POT_HIT;
             }
             case DECORATED_POT_INSERT -> {
-                return SoundEvents.BLOCK_DECORATED_POT_INSERT;
+                return SoundEvents.DECORATED_POT_INSERT;
             }
             case DECORATED_POT_INSERT_FAIL -> {
-                return SoundEvents.BLOCK_DECORATED_POT_INSERT_FAIL;
+                return SoundEvents.DECORATED_POT_INSERT_FAIL;
             }
             case DECORATED_POT_STEP -> {
-                return SoundEvents.BLOCK_DECORATED_POT_STEP;
+                return SoundEvents.DECORATED_POT_STEP;
             }
             case DECORATED_POT_PLACE -> {
-                return SoundEvents.BLOCK_DECORATED_POT_PLACE;
+                return SoundEvents.DECORATED_POT_PLACE;
             }
             case DECORATED_POT_SHATTER -> {
-                return SoundEvents.BLOCK_DECORATED_POT_SHATTER;
+                return SoundEvents.DECORATED_POT_SHATTER;
             }
             case DEEPSLATE_BRICKS_BREAK -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BRICKS_BREAK;
+                return SoundEvents.DEEPSLATE_BRICKS_BREAK;
             }
             case DEEPSLATE_BRICKS_FALL -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BRICKS_FALL;
+                return SoundEvents.DEEPSLATE_BRICKS_FALL;
             }
             case DEEPSLATE_BRICKS_HIT -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BRICKS_HIT;
+                return SoundEvents.DEEPSLATE_BRICKS_HIT;
             }
             case DEEPSLATE_BRICKS_PLACE -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BRICKS_PLACE;
+                return SoundEvents.DEEPSLATE_BRICKS_PLACE;
             }
             case DEEPSLATE_BRICKS_STEP -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BRICKS_STEP;
+                return SoundEvents.DEEPSLATE_BRICKS_STEP;
             }
             case DEEPSLATE_BREAK -> {
-                return SoundEvents.BLOCK_DEEPSLATE_BREAK;
+                return SoundEvents.DEEPSLATE_BREAK;
             }
             case DEEPSLATE_FALL -> {
-                return SoundEvents.BLOCK_DEEPSLATE_FALL;
+                return SoundEvents.DEEPSLATE_FALL;
             }
             case DEEPSLATE_HIT -> {
-                return SoundEvents.BLOCK_DEEPSLATE_HIT;
+                return SoundEvents.DEEPSLATE_HIT;
             }
             case DEEPSLATE_PLACE -> {
-                return SoundEvents.BLOCK_DEEPSLATE_PLACE;
+                return SoundEvents.DEEPSLATE_PLACE;
             }
             case DEEPSLATE_STEP -> {
-                return SoundEvents.BLOCK_DEEPSLATE_STEP;
+                return SoundEvents.DEEPSLATE_STEP;
             }
             case DEEPSLATE_TILES_BREAK -> {
-                return SoundEvents.BLOCK_DEEPSLATE_TILES_BREAK;
+                return SoundEvents.DEEPSLATE_TILES_BREAK;
             }
             case DEEPSLATE_TILES_FALL -> {
-                return SoundEvents.BLOCK_DEEPSLATE_TILES_FALL;
+                return SoundEvents.DEEPSLATE_TILES_FALL;
             }
             case DEEPSLATE_TILES_HIT -> {
-                return SoundEvents.BLOCK_DEEPSLATE_TILES_HIT;
+                return SoundEvents.DEEPSLATE_TILES_HIT;
             }
             case DEEPSLATE_TILES_PLACE -> {
-                return SoundEvents.BLOCK_DEEPSLATE_TILES_PLACE;
+                return SoundEvents.DEEPSLATE_TILES_PLACE;
             }
             case DEEPSLATE_TILES_STEP -> {
-                return SoundEvents.BLOCK_DEEPSLATE_TILES_STEP;
+                return SoundEvents.DEEPSLATE_TILES_STEP;
             }
             case DISPENSER_DISPENSE -> {
-                return SoundEvents.BLOCK_DISPENSER_DISPENSE;
+                return SoundEvents.DISPENSER_DISPENSE;
             }
             case DISPENSER_FAIL -> {
-                return SoundEvents.BLOCK_DISPENSER_FAIL;
+                return SoundEvents.DISPENSER_FAIL;
             }
             case DISPENSER_LAUNCH -> {
-                return SoundEvents.BLOCK_DISPENSER_LAUNCH;
+                return SoundEvents.DISPENSER_LAUNCH;
             }
             case DOLPHIN_AMBIENT -> {
-                return SoundEvents.ENTITY_DOLPHIN_AMBIENT;
+                return SoundEvents.DOLPHIN_AMBIENT;
             }
             case DOLPHIN_AMBIENT_WATER -> {
-                return SoundEvents.ENTITY_DOLPHIN_AMBIENT_WATER;
+                return SoundEvents.DOLPHIN_AMBIENT_WATER;
             }
             case DOLPHIN_ATTACK -> {
-                return SoundEvents.ENTITY_DOLPHIN_ATTACK;
+                return SoundEvents.DOLPHIN_ATTACK;
             }
             case DOLPHIN_DEATH -> {
-                return SoundEvents.ENTITY_DOLPHIN_DEATH;
+                return SoundEvents.DOLPHIN_DEATH;
             }
             case DOLPHIN_EAT -> {
-                return SoundEvents.ENTITY_DOLPHIN_EAT;
+                return SoundEvents.DOLPHIN_EAT;
             }
             case DOLPHIN_HURT -> {
-                return SoundEvents.ENTITY_DOLPHIN_HURT;
+                return SoundEvents.DOLPHIN_HURT;
             }
             case DOLPHIN_JUMP -> {
-                return SoundEvents.ENTITY_DOLPHIN_JUMP;
+                return SoundEvents.DOLPHIN_JUMP;
             }
             case DOLPHIN_PLAY -> {
-                return SoundEvents.ENTITY_DOLPHIN_PLAY;
+                return SoundEvents.DOLPHIN_PLAY;
             }
             case DOLPHIN_SPLASH -> {
-                return SoundEvents.ENTITY_DOLPHIN_SPLASH;
+                return SoundEvents.DOLPHIN_SPLASH;
             }
             case DOLPHIN_SWIM -> {
-                return SoundEvents.ENTITY_DOLPHIN_SWIM;
+                return SoundEvents.DOLPHIN_SWIM;
             }
             case DONKEY_AMBIENT -> {
-                return SoundEvents.ENTITY_DONKEY_AMBIENT;
+                return SoundEvents.DONKEY_AMBIENT;
             }
             case DONKEY_ANGRY -> {
-                return SoundEvents.ENTITY_DONKEY_ANGRY;
+                return SoundEvents.DONKEY_ANGRY;
             }
             case DONKEY_CHEST -> {
-                return SoundEvents.ENTITY_DONKEY_CHEST;
+                return SoundEvents.DONKEY_CHEST;
             }
             case DONKEY_DEATH -> {
-                return SoundEvents.ENTITY_DONKEY_DEATH;
+                return SoundEvents.DONKEY_DEATH;
             }
             case DONKEY_EAT -> {
-                return SoundEvents.ENTITY_DONKEY_EAT;
+                return SoundEvents.DONKEY_EAT;
             }
             case DONKEY_HURT -> {
-                return SoundEvents.ENTITY_DONKEY_HURT;
+                return SoundEvents.DONKEY_HURT;
             }
             case DONKEY_JUMP -> {
-                return SoundEvents.ENTITY_DONKEY_JUMP;
+                return SoundEvents.DONKEY_JUMP;
             }
             case DRIPSTONE_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_DRIPSTONE_BLOCK_BREAK;
+                return SoundEvents.DRIPSTONE_BLOCK_BREAK;
             }
             case DRIPSTONE_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_DRIPSTONE_BLOCK_STEP;
+                return SoundEvents.DRIPSTONE_BLOCK_STEP;
             }
             case DRIPSTONE_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_DRIPSTONE_BLOCK_PLACE;
+                return SoundEvents.DRIPSTONE_BLOCK_PLACE;
             }
             case DRIPSTONE_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_DRIPSTONE_BLOCK_HIT;
+                return SoundEvents.DRIPSTONE_BLOCK_HIT;
             }
             case DRIPSTONE_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_DRIPSTONE_BLOCK_FALL;
+                return SoundEvents.DRIPSTONE_BLOCK_FALL;
             }
             case POINTED_DRIPSTONE_BREAK -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_BREAK;
+                return SoundEvents.POINTED_DRIPSTONE_BREAK;
             }
             case POINTED_DRIPSTONE_STEP -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_STEP;
+                return SoundEvents.POINTED_DRIPSTONE_STEP;
             }
             case POINTED_DRIPSTONE_PLACE -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_PLACE;
+                return SoundEvents.POINTED_DRIPSTONE_PLACE;
             }
             case POINTED_DRIPSTONE_HIT -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_HIT;
+                return SoundEvents.POINTED_DRIPSTONE_HIT;
             }
             case POINTED_DRIPSTONE_FALL -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_FALL;
+                return SoundEvents.POINTED_DRIPSTONE_FALL;
             }
             case POINTED_DRIPSTONE_LAND -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_LAND;
+                return SoundEvents.POINTED_DRIPSTONE_LAND;
             }
             case POINTED_DRIPSTONE_DRIP_LAVA -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_DRIP_LAVA;
+                return SoundEvents.POINTED_DRIPSTONE_DRIP_LAVA;
             }
             case POINTED_DRIPSTONE_DRIP_WATER -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_DRIP_WATER;
+                return SoundEvents.POINTED_DRIPSTONE_DRIP_WATER;
             }
             case POINTED_DRIPSTONE_DRIP_LAVA_INTO_CAULDRON -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_DRIP_LAVA_INTO_CAULDRON;
+                return SoundEvents.POINTED_DRIPSTONE_DRIP_LAVA_INTO_CAULDRON;
             }
             case POINTED_DRIPSTONE_DRIP_WATER_INTO_CAULDRON -> {
-                return SoundEvents.BLOCK_POINTED_DRIPSTONE_DRIP_WATER_INTO_CAULDRON;
+                return SoundEvents.POINTED_DRIPSTONE_DRIP_WATER_INTO_CAULDRON;
             }
             case BIG_DRIPLEAF_TILT_DOWN -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_TILT_DOWN;
+                return SoundEvents.BIG_DRIPLEAF_TILT_DOWN;
             }
             case BIG_DRIPLEAF_TILT_UP -> {
-                return SoundEvents.BLOCK_BIG_DRIPLEAF_TILT_UP;
+                return SoundEvents.BIG_DRIPLEAF_TILT_UP;
             }
             case DROWNED_AMBIENT -> {
-                return SoundEvents.ENTITY_DROWNED_AMBIENT;
+                return SoundEvents.DROWNED_AMBIENT;
             }
             case DROWNED_AMBIENT_WATER -> {
-                return SoundEvents.ENTITY_DROWNED_AMBIENT_WATER;
+                return SoundEvents.DROWNED_AMBIENT_WATER;
             }
             case DROWNED_DEATH -> {
-                return SoundEvents.ENTITY_DROWNED_DEATH;
+                return SoundEvents.DROWNED_DEATH;
             }
             case DROWNED_DEATH_WATER -> {
-                return SoundEvents.ENTITY_DROWNED_DEATH_WATER;
+                return SoundEvents.DROWNED_DEATH_WATER;
             }
             case DROWNED_HURT -> {
-                return SoundEvents.ENTITY_DROWNED_HURT;
+                return SoundEvents.DROWNED_HURT;
             }
             case DROWNED_HURT_WATER -> {
-                return SoundEvents.ENTITY_DROWNED_HURT_WATER;
+                return SoundEvents.DROWNED_HURT_WATER;
             }
             case DROWNED_SHOOT -> {
-                return SoundEvents.ENTITY_DROWNED_SHOOT;
+                return SoundEvents.DROWNED_SHOOT;
             }
             case DROWNED_STEP -> {
-                return SoundEvents.ENTITY_DROWNED_STEP;
+                return SoundEvents.DROWNED_STEP;
             }
             case DROWNED_SWIM -> {
-                return SoundEvents.ENTITY_DROWNED_SWIM;
+                return SoundEvents.DROWNED_SWIM;
             }
             case DYE_USE -> {
-                return SoundEvents.ITEM_DYE_USE;
+                return SoundEvents.DYE_USE;
             }
             case EGG_THROW -> {
-                return SoundEvents.ENTITY_EGG_THROW;
+                return SoundEvents.EGG_THROW;
             }
             case ELDER_GUARDIAN_AMBIENT -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_AMBIENT;
+                return SoundEvents.ELDER_GUARDIAN_AMBIENT;
             }
             case ELDER_GUARDIAN_AMBIENT_LAND -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_AMBIENT_LAND;
+                return SoundEvents.ELDER_GUARDIAN_AMBIENT_LAND;
             }
             case ELDER_GUARDIAN_CURSE -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_CURSE;
+                return SoundEvents.ELDER_GUARDIAN_CURSE;
             }
             case ELDER_GUARDIAN_DEATH -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_DEATH;
+                return SoundEvents.ELDER_GUARDIAN_DEATH;
             }
             case ELDER_GUARDIAN_DEATH_LAND -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_DEATH_LAND;
+                return SoundEvents.ELDER_GUARDIAN_DEATH_LAND;
             }
             case ELDER_GUARDIAN_FLOP -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_FLOP;
+                return SoundEvents.ELDER_GUARDIAN_FLOP;
             }
             case ELDER_GUARDIAN_HURT -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_HURT;
+                return SoundEvents.ELDER_GUARDIAN_HURT;
             }
             case ELDER_GUARDIAN_HURT_LAND -> {
-                return SoundEvents.ENTITY_ELDER_GUARDIAN_HURT_LAND;
+                return SoundEvents.ELDER_GUARDIAN_HURT_LAND;
             }
             case ELYTRA_FLYING -> {
-                return SoundEvents.ITEM_ELYTRA_FLYING;
+                return SoundEvents.ELYTRA_FLYING;
             }
             case ENCHANTMENT_TABLE_USE -> {
-                return SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE;
+                return SoundEvents.ENCHANTMENT_TABLE_USE;
             }
             case ENDER_CHEST_CLOSE -> {
-                return SoundEvents.BLOCK_ENDER_CHEST_CLOSE;
+                return SoundEvents.ENDER_CHEST_CLOSE;
             }
             case ENDER_CHEST_OPEN -> {
-                return SoundEvents.BLOCK_ENDER_CHEST_OPEN;
+                return SoundEvents.ENDER_CHEST_OPEN;
             }
             case ENDER_DRAGON_AMBIENT -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_AMBIENT;
+                return SoundEvents.ENDER_DRAGON_AMBIENT;
             }
             case ENDER_DRAGON_DEATH -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_DEATH;
+                return SoundEvents.ENDER_DRAGON_DEATH;
             }
             case DRAGON_FIREBALL_EXPLODE -> {
-                return SoundEvents.ENTITY_DRAGON_FIREBALL_EXPLODE;
+                return SoundEvents.DRAGON_FIREBALL_EXPLODE;
             }
             case ENDER_DRAGON_FLAP -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_FLAP;
+                return SoundEvents.ENDER_DRAGON_FLAP;
             }
             case ENDER_DRAGON_GROWL -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_GROWL;
+                return SoundEvents.ENDER_DRAGON_GROWL;
             }
             case ENDER_DRAGON_HURT -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_HURT;
+                return SoundEvents.ENDER_DRAGON_HURT;
             }
             case ENDER_DRAGON_SHOOT -> {
-                return SoundEvents.ENTITY_ENDER_DRAGON_SHOOT;
+                return SoundEvents.ENDER_DRAGON_SHOOT;
             }
             case ENDER_EYE_DEATH -> {
-                return SoundEvents.ENTITY_ENDER_EYE_DEATH;
+                return SoundEvents.ENDER_EYE_DEATH;
             }
             case ENDER_EYE_LAUNCH -> {
-                return SoundEvents.ENTITY_ENDER_EYE_LAUNCH;
+                return SoundEvents.ENDER_EYE_LAUNCH;
             }
             case ENDERMAN_AMBIENT -> {
-                return SoundEvents.ENTITY_ENDERMAN_AMBIENT;
+                return SoundEvents.ENDERMAN_AMBIENT;
             }
             case ENDERMAN_DEATH -> {
-                return SoundEvents.ENTITY_ENDERMAN_DEATH;
+                return SoundEvents.ENDERMAN_DEATH;
             }
             case ENDERMAN_HURT -> {
-                return SoundEvents.ENTITY_ENDERMAN_HURT;
+                return SoundEvents.ENDERMAN_HURT;
             }
             case ENDERMAN_SCREAM -> {
-                return SoundEvents.ENTITY_ENDERMAN_SCREAM;
+                return SoundEvents.ENDERMAN_SCREAM;
             }
             case ENDERMAN_STARE -> {
-                return SoundEvents.ENTITY_ENDERMAN_STARE;
+                return SoundEvents.ENDERMAN_STARE;
             }
             case ENDERMAN_TELEPORT -> {
-                return SoundEvents.ENTITY_ENDERMAN_TELEPORT;
+                return SoundEvents.ENDERMAN_TELEPORT;
             }
             case ENDERMITE_AMBIENT -> {
-                return SoundEvents.ENTITY_ENDERMITE_AMBIENT;
+                return SoundEvents.ENDERMITE_AMBIENT;
             }
             case ENDERMITE_DEATH -> {
-                return SoundEvents.ENTITY_ENDERMITE_DEATH;
+                return SoundEvents.ENDERMITE_DEATH;
             }
             case ENDERMITE_HURT -> {
-                return SoundEvents.ENTITY_ENDERMITE_HURT;
+                return SoundEvents.ENDERMITE_HURT;
             }
             case ENDERMITE_STEP -> {
-                return SoundEvents.ENTITY_ENDERMITE_STEP;
+                return SoundEvents.ENDERMITE_STEP;
             }
             case ENDER_PEARL_THROW -> {
-                return SoundEvents.ENTITY_ENDER_PEARL_THROW;
+                return SoundEvents.ENDER_PEARL_THROW;
             }
             case END_GATEWAY_SPAWN -> {
-                return SoundEvents.BLOCK_END_GATEWAY_SPAWN;
+                return SoundEvents.END_GATEWAY_SPAWN;
             }
             case END_PORTAL_FRAME_FILL -> {
-                return SoundEvents.BLOCK_END_PORTAL_FRAME_FILL;
+                return SoundEvents.END_PORTAL_FRAME_FILL;
             }
             case END_PORTAL_SPAWN -> {
-                return SoundEvents.BLOCK_END_PORTAL_SPAWN;
+                return SoundEvents.END_PORTAL_SPAWN;
             }
             case EVOKER_AMBIENT -> {
-                return SoundEvents.ENTITY_EVOKER_AMBIENT;
+                return SoundEvents.EVOKER_AMBIENT;
             }
             case EVOKER_CAST_SPELL -> {
-                return SoundEvents.ENTITY_EVOKER_CAST_SPELL;
+                return SoundEvents.EVOKER_CAST_SPELL;
             }
             case EVOKER_CELEBRATE -> {
-                return SoundEvents.ENTITY_EVOKER_CELEBRATE;
+                return SoundEvents.EVOKER_CELEBRATE;
             }
             case EVOKER_DEATH -> {
-                return SoundEvents.ENTITY_EVOKER_DEATH;
+                return SoundEvents.EVOKER_DEATH;
             }
             case EVOKER_FANGS_ATTACK -> {
-                return SoundEvents.ENTITY_EVOKER_FANGS_ATTACK;
+                return SoundEvents.EVOKER_FANGS_ATTACK;
             }
             case EVOKER_HURT -> {
-                return SoundEvents.ENTITY_EVOKER_HURT;
+                return SoundEvents.EVOKER_HURT;
             }
             case EVOKER_PREPARE_ATTACK -> {
-                return SoundEvents.ENTITY_EVOKER_PREPARE_ATTACK;
+                return SoundEvents.EVOKER_PREPARE_ATTACK;
             }
             case EVOKER_PREPARE_SUMMON -> {
-                return SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON;
+                return SoundEvents.EVOKER_PREPARE_SUMMON;
             }
             case EVOKER_PREPARE_WOLOLO -> {
-                return SoundEvents.ENTITY_EVOKER_PREPARE_WOLOLO;
+                return SoundEvents.EVOKER_PREPARE_WOLOLO;
             }
             case EXPERIENCE_BOTTLE_THROW -> {
-                return SoundEvents.ENTITY_EXPERIENCE_BOTTLE_THROW;
+                return SoundEvents.EXPERIENCE_BOTTLE_THROW;
             }
             case EXPERIENCE_ORB_PICKUP -> {
-                return SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP;
+                return SoundEvents.EXPERIENCE_ORB_PICKUP;
             }
             case FENCE_GATE_CLOSE -> {
-                return SoundEvents.BLOCK_FENCE_GATE_CLOSE;
+                return SoundEvents.FENCE_GATE_CLOSE;
             }
             case FENCE_GATE_OPEN -> {
-                return SoundEvents.BLOCK_FENCE_GATE_OPEN;
+                return SoundEvents.FENCE_GATE_OPEN;
             }
             case FIRECHARGE_USE -> {
-                return SoundEvents.ITEM_FIRECHARGE_USE;
+                return SoundEvents.FIRECHARGE_USE;
             }
             case FIREWORK_ROCKET_BLAST -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST;
+                return SoundEvents.FIREWORK_ROCKET_BLAST;
             }
             case FIREWORK_ROCKET_BLAST_FAR -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST_FAR;
+                return SoundEvents.FIREWORK_ROCKET_BLAST_FAR;
             }
             case FIREWORK_ROCKET_LARGE_BLAST -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_LARGE_BLAST;
+                return SoundEvents.FIREWORK_ROCKET_LARGE_BLAST;
             }
             case FIREWORK_ROCKET_LARGE_BLAST_FAR -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_LARGE_BLAST_FAR;
+                return SoundEvents.FIREWORK_ROCKET_LARGE_BLAST_FAR;
             }
             case FIREWORK_ROCKET_LAUNCH -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_LAUNCH;
+                return SoundEvents.FIREWORK_ROCKET_LAUNCH;
             }
             case FIREWORK_ROCKET_SHOOT -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_SHOOT;
+                return SoundEvents.FIREWORK_ROCKET_SHOOT;
             }
             case FIREWORK_ROCKET_TWINKLE -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_TWINKLE;
+                return SoundEvents.FIREWORK_ROCKET_TWINKLE;
             }
             case FIREWORK_ROCKET_TWINKLE_FAR -> {
-                return SoundEvents.ENTITY_FIREWORK_ROCKET_TWINKLE_FAR;
+                return SoundEvents.FIREWORK_ROCKET_TWINKLE_FAR;
             }
             case FIRE_AMBIENT -> {
-                return SoundEvents.BLOCK_FIRE_AMBIENT;
+                return SoundEvents.FIRE_AMBIENT;
             }
             case FIRE_EXTINGUISH -> {
-                return SoundEvents.BLOCK_FIRE_EXTINGUISH;
+                return SoundEvents.FIRE_EXTINGUISH;
             }
             case FISH_SWIM -> {
-                return SoundEvents.ENTITY_FISH_SWIM;
+                return SoundEvents.FISH_SWIM;
             }
             case FISHING_BOBBER_RETRIEVE -> {
-                return SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE;
+                return SoundEvents.FISHING_BOBBER_RETRIEVE;
             }
             case FISHING_BOBBER_SPLASH -> {
-                return SoundEvents.ENTITY_FISHING_BOBBER_SPLASH;
+                return SoundEvents.FISHING_BOBBER_SPLASH;
             }
             case FISHING_BOBBER_THROW -> {
-                return SoundEvents.ENTITY_FISHING_BOBBER_THROW;
+                return SoundEvents.FISHING_BOBBER_THROW;
             }
             case FLINTANDSTEEL_USE -> {
-                return SoundEvents.ITEM_FLINTANDSTEEL_USE;
+                return SoundEvents.FLINTANDSTEEL_USE;
             }
             case FLOWERING_AZALEA_BREAK -> {
-                return SoundEvents.BLOCK_FLOWERING_AZALEA_BREAK;
+                return SoundEvents.FLOWERING_AZALEA_BREAK;
             }
             case FLOWERING_AZALEA_FALL -> {
-                return SoundEvents.BLOCK_FLOWERING_AZALEA_FALL;
+                return SoundEvents.FLOWERING_AZALEA_FALL;
             }
             case FLOWERING_AZALEA_HIT -> {
-                return SoundEvents.BLOCK_FLOWERING_AZALEA_HIT;
+                return SoundEvents.FLOWERING_AZALEA_HIT;
             }
             case FLOWERING_AZALEA_PLACE -> {
-                return SoundEvents.BLOCK_FLOWERING_AZALEA_PLACE;
+                return SoundEvents.FLOWERING_AZALEA_PLACE;
             }
             case FLOWERING_AZALEA_STEP -> {
-                return SoundEvents.BLOCK_FLOWERING_AZALEA_STEP;
+                return SoundEvents.FLOWERING_AZALEA_STEP;
             }
             case FOX_AGGRO -> {
-                return SoundEvents.ENTITY_FOX_AGGRO;
+                return SoundEvents.FOX_AGGRO;
             }
             case FOX_AMBIENT -> {
-                return SoundEvents.ENTITY_FOX_AMBIENT;
+                return SoundEvents.FOX_AMBIENT;
             }
             case FOX_BITE -> {
-                return SoundEvents.ENTITY_FOX_BITE;
+                return SoundEvents.FOX_BITE;
             }
             case FOX_DEATH -> {
-                return SoundEvents.ENTITY_FOX_DEATH;
+                return SoundEvents.FOX_DEATH;
             }
             case FOX_EAT -> {
-                return SoundEvents.ENTITY_FOX_EAT;
+                return SoundEvents.FOX_EAT;
             }
             case FOX_HURT -> {
-                return SoundEvents.ENTITY_FOX_HURT;
+                return SoundEvents.FOX_HURT;
             }
             case FOX_SCREECH -> {
-                return SoundEvents.ENTITY_FOX_SCREECH;
+                return SoundEvents.FOX_SCREECH;
             }
             case FOX_SLEEP -> {
-                return SoundEvents.ENTITY_FOX_SLEEP;
+                return SoundEvents.FOX_SLEEP;
             }
             case FOX_SNIFF -> {
-                return SoundEvents.ENTITY_FOX_SNIFF;
+                return SoundEvents.FOX_SNIFF;
             }
             case FOX_SPIT -> {
-                return SoundEvents.ENTITY_FOX_SPIT;
+                return SoundEvents.FOX_SPIT;
             }
             case FOX_TELEPORT -> {
-                return SoundEvents.ENTITY_FOX_TELEPORT;
+                return SoundEvents.FOX_TELEPORT;
             }
             case SUSPICIOUS_SAND_BREAK -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_SAND_BREAK;
+                return SoundEvents.SUSPICIOUS_SAND_BREAK;
             }
             case SUSPICIOUS_SAND_STEP -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_SAND_STEP;
+                return SoundEvents.SUSPICIOUS_SAND_STEP;
             }
             case SUSPICIOUS_SAND_PLACE -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_SAND_PLACE;
+                return SoundEvents.SUSPICIOUS_SAND_PLACE;
             }
             case SUSPICIOUS_SAND_HIT -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_SAND_HIT;
+                return SoundEvents.SUSPICIOUS_SAND_HIT;
             }
             case SUSPICIOUS_SAND_FALL -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_SAND_FALL;
+                return SoundEvents.SUSPICIOUS_SAND_FALL;
             }
             case SUSPICIOUS_GRAVEL_BREAK -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_GRAVEL_BREAK;
+                return SoundEvents.SUSPICIOUS_GRAVEL_BREAK;
             }
             case SUSPICIOUS_GRAVEL_STEP -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_GRAVEL_STEP;
+                return SoundEvents.SUSPICIOUS_GRAVEL_STEP;
             }
             case SUSPICIOUS_GRAVEL_PLACE -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_GRAVEL_PLACE;
+                return SoundEvents.SUSPICIOUS_GRAVEL_PLACE;
             }
             case SUSPICIOUS_GRAVEL_HIT -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_GRAVEL_HIT;
+                return SoundEvents.SUSPICIOUS_GRAVEL_HIT;
             }
             case SUSPICIOUS_GRAVEL_FALL -> {
-                return SoundEvents.BLOCK_SUSPICIOUS_GRAVEL_FALL;
+                return SoundEvents.SUSPICIOUS_GRAVEL_FALL;
             }
             case FROGLIGHT_BREAK -> {
-                return SoundEvents.BLOCK_FROGLIGHT_BREAK;
+                return SoundEvents.FROGLIGHT_BREAK;
             }
             case FROGLIGHT_FALL -> {
-                return SoundEvents.BLOCK_FROGLIGHT_FALL;
+                return SoundEvents.FROGLIGHT_FALL;
             }
             case FROGLIGHT_HIT -> {
-                return SoundEvents.BLOCK_FROGLIGHT_HIT;
+                return SoundEvents.FROGLIGHT_HIT;
             }
             case FROGLIGHT_PLACE -> {
-                return SoundEvents.BLOCK_FROGLIGHT_PLACE;
+                return SoundEvents.FROGLIGHT_PLACE;
             }
             case FROGLIGHT_STEP -> {
-                return SoundEvents.BLOCK_FROGLIGHT_STEP;
+                return SoundEvents.FROGLIGHT_STEP;
             }
             case FROGSPAWNSTEP -> {
-                return SoundEvents.BLOCK_FROGSPAWN_STEP;
+                return SoundEvents.FROGSPAWNSTEP;
             }
             case FROGSPAWN_BREAK -> {
-                return SoundEvents.BLOCK_FROGSPAWN_BREAK;
+                return SoundEvents.FROGSPAWN_BREAK;
             }
             case FROGSPAWN_FALL -> {
-                return SoundEvents.BLOCK_FROGSPAWN_FALL;
+                return SoundEvents.FROGSPAWN_FALL;
             }
             case FROGSPAWN_HATCH -> {
-                return SoundEvents.BLOCK_FROGSPAWN_HATCH;
+                return SoundEvents.FROGSPAWN_HATCH;
             }
             case FROGSPAWN_HIT -> {
-                return SoundEvents.BLOCK_FROGSPAWN_HIT;
+                return SoundEvents.FROGSPAWN_HIT;
             }
             case FROGSPAWN_PLACE -> {
-                return SoundEvents.BLOCK_FROGSPAWN_PLACE;
+                return SoundEvents.FROGSPAWN_PLACE;
             }
             case FROG_AMBIENT -> {
-                return SoundEvents.ENTITY_FROG_AMBIENT;
+                return SoundEvents.FROG_AMBIENT;
             }
             case FROG_DEATH -> {
-                return SoundEvents.ENTITY_FROG_DEATH;
+                return SoundEvents.FROG_DEATH;
             }
             case FROG_EAT -> {
-                return SoundEvents.ENTITY_FROG_EAT;
+                return SoundEvents.FROG_EAT;
             }
             case FROG_HURT -> {
-                return SoundEvents.ENTITY_FROG_HURT;
+                return SoundEvents.FROG_HURT;
             }
             case FROG_LAY_SPAWN -> {
-                return SoundEvents.ENTITY_FROG_LAY_SPAWN;
+                return SoundEvents.FROG_LAY_SPAWN;
             }
             case FROG_LONG_JUMP -> {
-                return SoundEvents.ENTITY_FROG_LONG_JUMP;
+                return SoundEvents.FROG_LONG_JUMP;
             }
             case FROG_STEP -> {
-                return SoundEvents.ENTITY_FROG_STEP;
+                return SoundEvents.FROG_STEP;
             }
             case FROG_TONGUE -> {
-                return SoundEvents.ENTITY_FROG_TONGUE;
+                return SoundEvents.FROG_TONGUE;
             }
             case ROOTS_BREAK -> {
-                return SoundEvents.BLOCK_ROOTS_BREAK;
+                return SoundEvents.ROOTS_BREAK;
             }
             case ROOTS_STEP -> {
-                return SoundEvents.BLOCK_ROOTS_STEP;
+                return SoundEvents.ROOTS_STEP;
             }
             case ROOTS_PLACE -> {
-                return SoundEvents.BLOCK_ROOTS_PLACE;
+                return SoundEvents.ROOTS_PLACE;
             }
             case ROOTS_HIT -> {
-                return SoundEvents.BLOCK_ROOTS_HIT;
+                return SoundEvents.ROOTS_HIT;
             }
             case ROOTS_FALL -> {
-                return SoundEvents.BLOCK_ROOTS_FALL;
+                return SoundEvents.ROOTS_FALL;
             }
             case FURNACE_FIRE_CRACKLE -> {
-                return SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE;
+                return SoundEvents.FURNACE_FIRE_CRACKLE;
             }
             case GENERIC_BIG_FALL -> {
-                return SoundEvents.ENTITY_GENERIC_BIG_FALL;
+                return SoundEvents.GENERIC_BIG_FALL;
             }
             case GENERIC_BURN -> {
-                return SoundEvents.ENTITY_GENERIC_BURN;
+                return SoundEvents.GENERIC_BURN;
             }
             case GENERIC_DEATH -> {
-                return SoundEvents.ENTITY_GENERIC_DEATH;
+                return SoundEvents.GENERIC_DEATH;
             }
             case GENERIC_DRINK -> {
-                return SoundEvents.ENTITY_GENERIC_DRINK;
+                return SoundEvents.GENERIC_DRINK;
             }
             case GENERIC_EAT -> {
-                return SoundEvents.ENTITY_GENERIC_EAT;
+                return SoundEvents.GENERIC_EAT;
             }
             case GENERIC_EXPLODE -> {
-                return SoundEvents.ENTITY_GENERIC_EXPLODE.value();
+                return SoundEvents.GENERIC_EXPLODE.value();
             }
             case GENERIC_EXTINGUISH_FIRE -> {
-                return SoundEvents.ENTITY_GENERIC_EXTINGUISH_FIRE;
+                return SoundEvents.GENERIC_EXTINGUISH_FIRE;
             }
             case GENERIC_HURT -> {
-                return SoundEvents.ENTITY_GENERIC_HURT;
+                return SoundEvents.GENERIC_HURT;
             }
             case GENERIC_SMALL_FALL -> {
-                return SoundEvents.ENTITY_GENERIC_SMALL_FALL;
+                return SoundEvents.GENERIC_SMALL_FALL;
             }
             case GENERIC_SPLASH -> {
-                return SoundEvents.ENTITY_GENERIC_SPLASH;
+                return SoundEvents.GENERIC_SPLASH;
             }
             case GENERIC_SWIM -> {
-                return SoundEvents.ENTITY_GENERIC_SWIM;
+                return SoundEvents.GENERIC_SWIM;
             }
             case GHAST_AMBIENT -> {
-                return SoundEvents.ENTITY_GHAST_AMBIENT;
+                return SoundEvents.GHAST_AMBIENT;
             }
             case GHAST_DEATH -> {
-                return SoundEvents.ENTITY_GHAST_DEATH;
+                return SoundEvents.GHAST_DEATH;
             }
             case GHAST_HURT -> {
-                return SoundEvents.ENTITY_GHAST_HURT;
+                return SoundEvents.GHAST_HURT;
             }
             case GHAST_SCREAM -> {
-                return SoundEvents.ENTITY_GHAST_SCREAM;
+                return SoundEvents.GHAST_SCREAM;
             }
             case GHAST_SHOOT -> {
-                return SoundEvents.ENTITY_GHAST_SHOOT;
+                return SoundEvents.GHAST_SHOOT;
             }
             case GHAST_WARN -> {
-                return SoundEvents.ENTITY_GHAST_WARN;
+                return SoundEvents.GHAST_WARN;
             }
             case GILDED_BLACKSTONE_BREAK -> {
-                return SoundEvents.BLOCK_GILDED_BLACKSTONE_BREAK;
+                return SoundEvents.GILDED_BLACKSTONE_BREAK;
             }
             case GILDED_BLACKSTONE_FALL -> {
-                return SoundEvents.BLOCK_GILDED_BLACKSTONE_FALL;
+                return SoundEvents.GILDED_BLACKSTONE_FALL;
             }
             case GILDED_BLACKSTONE_HIT -> {
-                return SoundEvents.BLOCK_GILDED_BLACKSTONE_HIT;
+                return SoundEvents.GILDED_BLACKSTONE_HIT;
             }
             case GILDED_BLACKSTONE_PLACE -> {
-                return SoundEvents.BLOCK_GILDED_BLACKSTONE_PLACE;
+                return SoundEvents.GILDED_BLACKSTONE_PLACE;
             }
             case GILDED_BLACKSTONE_STEP -> {
-                return SoundEvents.BLOCK_GILDED_BLACKSTONE_STEP;
+                return SoundEvents.GILDED_BLACKSTONE_STEP;
             }
             case GLASS_BREAK -> {
-                return SoundEvents.BLOCK_GLASS_BREAK;
+                return SoundEvents.GLASS_BREAK;
             }
             case GLASS_FALL -> {
-                return SoundEvents.BLOCK_GLASS_FALL;
+                return SoundEvents.GLASS_FALL;
             }
             case GLASS_HIT -> {
-                return SoundEvents.BLOCK_GLASS_HIT;
+                return SoundEvents.GLASS_HIT;
             }
             case GLASS_PLACE -> {
-                return SoundEvents.BLOCK_GLASS_PLACE;
+                return SoundEvents.GLASS_PLACE;
             }
             case GLASS_STEP -> {
-                return SoundEvents.BLOCK_GLASS_STEP;
+                return SoundEvents.GLASS_STEP;
             }
             case GLOW_INK_SAC_USE -> {
-                return SoundEvents.ITEM_GLOW_INK_SAC_USE;
+                return SoundEvents.GLOW_INK_SAC_USE;
             }
             case GLOW_ITEM_FRAME_ADD_ITEM -> {
-                return SoundEvents.ENTITY_GLOW_ITEM_FRAME_ADD_ITEM;
+                return SoundEvents.GLOW_ITEM_FRAME_ADD_ITEM;
             }
             case GLOW_ITEM_FRAME_BREAK -> {
-                return SoundEvents.ENTITY_GLOW_ITEM_FRAME_BREAK;
+                return SoundEvents.GLOW_ITEM_FRAME_BREAK;
             }
             case GLOW_ITEM_FRAME_PLACE -> {
-                return SoundEvents.ENTITY_GLOW_ITEM_FRAME_PLACE;
+                return SoundEvents.GLOW_ITEM_FRAME_PLACE;
             }
             case GLOW_ITEM_FRAME_REMOVE_ITEM -> {
-                return SoundEvents.ENTITY_GLOW_ITEM_FRAME_REMOVE_ITEM;
+                return SoundEvents.GLOW_ITEM_FRAME_REMOVE_ITEM;
             }
             case GLOW_ITEM_FRAME_ROTATE_ITEM -> {
-                return SoundEvents.ENTITY_GLOW_ITEM_FRAME_ROTATE_ITEM;
+                return SoundEvents.GLOW_ITEM_FRAME_ROTATE_ITEM;
             }
             case GLOW_SQUID_AMBIENT -> {
-                return SoundEvents.ENTITY_GLOW_SQUID_AMBIENT;
+                return SoundEvents.GLOW_SQUID_AMBIENT;
             }
             case GLOW_SQUID_DEATH -> {
-                return SoundEvents.ENTITY_GLOW_SQUID_DEATH;
+                return SoundEvents.GLOW_SQUID_DEATH;
             }
             case GLOW_SQUID_HURT -> {
-                return SoundEvents.ENTITY_GLOW_SQUID_HURT;
+                return SoundEvents.GLOW_SQUID_HURT;
             }
             case GLOW_SQUID_SQUIRT -> {
-                return SoundEvents.ENTITY_GLOW_SQUID_SQUIRT;
+                return SoundEvents.GLOW_SQUID_SQUIRT;
             }
             case GOAT_AMBIENT -> {
-                return SoundEvents.ENTITY_GOAT_AMBIENT;
+                return SoundEvents.GOAT_AMBIENT;
             }
             case GOAT_DEATH -> {
-                return SoundEvents.ENTITY_GOAT_DEATH;
+                return SoundEvents.GOAT_DEATH;
             }
             case GOAT_EAT -> {
-                return SoundEvents.ENTITY_GOAT_EAT;
+                return SoundEvents.GOAT_EAT;
             }
             case GOAT_HURT -> {
-                return SoundEvents.ENTITY_GOAT_HURT;
+                return SoundEvents.GOAT_HURT;
             }
             case GOAT_LONG_JUMP -> {
-                return SoundEvents.ENTITY_GOAT_LONG_JUMP;
+                return SoundEvents.GOAT_LONG_JUMP;
             }
             case GOAT_MILK -> {
-                return SoundEvents.ENTITY_GOAT_MILK;
+                return SoundEvents.GOAT_MILK;
             }
             case GOAT_PREPARE_RAM -> {
-                return SoundEvents.ENTITY_GOAT_PREPARE_RAM;
+                return SoundEvents.GOAT_PREPARE_RAM;
             }
             case GOAT_RAM_IMPACT -> {
-                return SoundEvents.ENTITY_GOAT_RAM_IMPACT;
+                return SoundEvents.GOAT_RAM_IMPACT;
             }
             case GOAT_HORN_BREAK -> {
-                return SoundEvents.ENTITY_GOAT_HORN_BREAK;
+                return SoundEvents.GOAT_HORN_BREAK;
             }
             case GOAT_SCREAMING_AMBIENT -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_AMBIENT;
+                return SoundEvents.GOAT_SCREAMING_AMBIENT;
             }
             case GOAT_SCREAMING_DEATH -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_DEATH;
+                return SoundEvents.GOAT_SCREAMING_DEATH;
             }
             case GOAT_SCREAMING_EAT -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_EAT;
+                return SoundEvents.GOAT_SCREAMING_EAT;
             }
             case GOAT_SCREAMING_HURT -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_HURT;
+                return SoundEvents.GOAT_SCREAMING_HURT;
             }
             case GOAT_SCREAMING_LONG_JUMP -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_LONG_JUMP;
+                return SoundEvents.GOAT_SCREAMING_LONG_JUMP;
             }
             case GOAT_SCREAMING_MILK -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_MILK;
+                return SoundEvents.GOAT_SCREAMING_MILK;
             }
             case GOAT_SCREAMING_PREPARE_RAM -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_PREPARE_RAM;
+                return SoundEvents.GOAT_SCREAMING_PREPARE_RAM;
             }
             case GOAT_SCREAMING_RAM_IMPACT -> {
-                return SoundEvents.ENTITY_GOAT_SCREAMING_RAM_IMPACT;
+                return SoundEvents.GOAT_SCREAMING_RAM_IMPACT;
             }
             case GOAT_STEP -> {
-                return SoundEvents.ENTITY_GOAT_STEP;
+                return SoundEvents.GOAT_STEP;
             }
             case GRASS_BREAK -> {
-                return SoundEvents.BLOCK_GRASS_BREAK;
+                return SoundEvents.GRASS_BREAK;
             }
             case GRASS_FALL -> {
-                return SoundEvents.BLOCK_GRASS_FALL;
+                return SoundEvents.GRASS_FALL;
             }
             case GRASS_HIT -> {
-                return SoundEvents.BLOCK_GRASS_HIT;
+                return SoundEvents.GRASS_HIT;
             }
             case GRASS_PLACE -> {
-                return SoundEvents.BLOCK_GRASS_PLACE;
+                return SoundEvents.GRASS_PLACE;
             }
             case GRASS_STEP -> {
-                return SoundEvents.BLOCK_GRASS_STEP;
+                return SoundEvents.GRASS_STEP;
             }
             case GRAVEL_BREAK -> {
-                return SoundEvents.BLOCK_GRAVEL_BREAK;
+                return SoundEvents.GRAVEL_BREAK;
             }
             case GRAVEL_FALL -> {
-                return SoundEvents.BLOCK_GRAVEL_FALL;
+                return SoundEvents.GRAVEL_FALL;
             }
             case GRAVEL_HIT -> {
-                return SoundEvents.BLOCK_GRAVEL_HIT;
+                return SoundEvents.GRAVEL_HIT;
             }
             case GRAVEL_PLACE -> {
-                return SoundEvents.BLOCK_GRAVEL_PLACE;
+                return SoundEvents.GRAVEL_PLACE;
             }
             case GRAVEL_STEP -> {
-                return SoundEvents.BLOCK_GRAVEL_STEP;
+                return SoundEvents.GRAVEL_STEP;
             }
             case GRINDSTONE_USE -> {
-                return SoundEvents.BLOCK_GRINDSTONE_USE;
+                return SoundEvents.GRINDSTONE_USE;
             }
             case GROWING_PLANT_CROP -> {
-                return SoundEvents.BLOCK_GROWING_PLANT_CROP;
+                return SoundEvents.GROWING_PLANT_CROP;
             }
             case GUARDIAN_AMBIENT -> {
-                return SoundEvents.ENTITY_GUARDIAN_AMBIENT;
+                return SoundEvents.GUARDIAN_AMBIENT;
             }
             case GUARDIAN_AMBIENT_LAND -> {
-                return SoundEvents.ENTITY_GUARDIAN_AMBIENT_LAND;
+                return SoundEvents.GUARDIAN_AMBIENT_LAND;
             }
             case GUARDIAN_ATTACK -> {
-                return SoundEvents.ENTITY_GUARDIAN_ATTACK;
+                return SoundEvents.GUARDIAN_ATTACK;
             }
             case GUARDIAN_DEATH -> {
-                return SoundEvents.ENTITY_GUARDIAN_DEATH;
+                return SoundEvents.GUARDIAN_DEATH;
             }
             case GUARDIAN_DEATH_LAND -> {
-                return SoundEvents.ENTITY_GUARDIAN_DEATH_LAND;
+                return SoundEvents.GUARDIAN_DEATH_LAND;
             }
             case GUARDIAN_FLOP -> {
-                return SoundEvents.ENTITY_GUARDIAN_FLOP;
+                return SoundEvents.GUARDIAN_FLOP;
             }
             case GUARDIAN_HURT -> {
-                return SoundEvents.ENTITY_GUARDIAN_HURT;
+                return SoundEvents.GUARDIAN_HURT;
             }
             case GUARDIAN_HURT_LAND -> {
-                return SoundEvents.ENTITY_GUARDIAN_HURT_LAND;
+                return SoundEvents.GUARDIAN_HURT_LAND;
             }
             case HANGING_ROOTS_BREAK -> {
-                return SoundEvents.BLOCK_HANGING_ROOTS_BREAK;
+                return SoundEvents.HANGING_ROOTS_BREAK;
             }
             case HANGING_ROOTS_FALL -> {
-                return SoundEvents.BLOCK_HANGING_ROOTS_FALL;
+                return SoundEvents.HANGING_ROOTS_FALL;
             }
             case HANGING_ROOTS_HIT -> {
-                return SoundEvents.BLOCK_HANGING_ROOTS_HIT;
+                return SoundEvents.HANGING_ROOTS_HIT;
             }
             case HANGING_ROOTS_PLACE -> {
-                return SoundEvents.BLOCK_HANGING_ROOTS_PLACE;
+                return SoundEvents.HANGING_ROOTS_PLACE;
             }
             case HANGING_ROOTS_STEP -> {
-                return SoundEvents.BLOCK_HANGING_ROOTS_STEP;
+                return SoundEvents.HANGING_ROOTS_STEP;
             }
             case HANGING_SIGN_STEP -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_STEP;
+                return SoundEvents.HANGING_SIGN_STEP;
             }
             case HANGING_SIGN_BREAK -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_BREAK;
+                return SoundEvents.HANGING_SIGN_BREAK;
             }
             case HANGING_SIGN_FALL -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_FALL;
+                return SoundEvents.HANGING_SIGN_FALL;
             }
             case HANGING_SIGN_HIT -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_HIT;
+                return SoundEvents.HANGING_SIGN_HIT;
             }
             case HANGING_SIGN_PLACE -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_PLACE;
+                return SoundEvents.HANGING_SIGN_PLACE;
             }
             case HEAVY_CORE_BREAK -> {
-                return SoundEvents.BLOCK_HEAVY_CORE_BREAK;
+                return SoundEvents.HEAVY_CORE_BREAK;
             }
             case HEAVY_CORE_FALL -> {
-                return SoundEvents.BLOCK_HEAVY_CORE_FALL;
+                return SoundEvents.HEAVY_CORE_FALL;
             }
             case HEAVY_CORE_HIT -> {
-                return SoundEvents.BLOCK_HEAVY_CORE_HIT;
+                return SoundEvents.HEAVY_CORE_HIT;
             }
             case HEAVY_CORE_PLACE -> {
-                return SoundEvents.BLOCK_HEAVY_CORE_PLACE;
+                return SoundEvents.HEAVY_CORE_PLACE;
             }
             case HEAVY_CORE_STEP -> {
-                return SoundEvents.BLOCK_HEAVY_CORE_STEP;
+                return SoundEvents.HEAVY_CORE_STEP;
             }
             case NETHER_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN_STEP;
             }
             case NETHER_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN_BREAK;
             }
             case NETHER_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN_FALL;
             }
             case NETHER_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN_HIT;
             }
             case NETHER_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN_PLACE;
             }
             case BAMBOO_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_STEP;
             }
             case BAMBOO_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_BREAK;
             }
             case BAMBOO_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_FALL;
             }
             case BAMBOO_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_HIT;
             }
             case BAMBOO_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.BLOCK_BAMBOO_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_PLACE;
             }
             case TRIAL_SPAWNER_BREAK -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_BREAK;
+                return SoundEvents.TRIAL_SPAWNER_BREAK;
             }
             case TRIAL_SPAWNER_STEP -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_STEP;
+                return SoundEvents.TRIAL_SPAWNER_STEP;
             }
             case TRIAL_SPAWNER_PLACE -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_PLACE;
+                return SoundEvents.TRIAL_SPAWNER_PLACE;
             }
             case TRIAL_SPAWNER_HIT -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_HIT;
+                return SoundEvents.TRIAL_SPAWNER_HIT;
             }
             case TRIAL_SPAWNER_FALL -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_FALL;
+                return SoundEvents.TRIAL_SPAWNER_FALL;
             }
             case TRIAL_SPAWNER_SPAWN_MOB -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_SPAWN_MOB;
+                return SoundEvents.TRIAL_SPAWNER_SPAWN_MOB;
             }
             case TRIAL_SPAWNER_ABOUT_TO_SPAWN_ITEM -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_ABOUT_TO_SPAWN_ITEM;
+                return SoundEvents.TRIAL_SPAWNER_ABOUT_TO_SPAWN_ITEM;
             }
             case TRIAL_SPAWNER_SPAWN_ITEM -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_SPAWN_ITEM;
+                return SoundEvents.TRIAL_SPAWNER_SPAWN_ITEM;
             }
             case TRIAL_SPAWNER_SPAWN_ITEM_BEGIN -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_SPAWN_ITEM_BEGIN;
+                return SoundEvents.TRIAL_SPAWNER_SPAWN_ITEM_BEGIN;
             }
             case TRIAL_SPAWNER_DETECT_PLAYER -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_DETECT_PLAYER;
+                return SoundEvents.TRIAL_SPAWNER_DETECT_PLAYER;
             }
             case TRIAL_SPAWNER_AMBIENT -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_AMBIENT;
+                return SoundEvents.TRIAL_SPAWNER_AMBIENT;
             }
             case TRIAL_SPAWNER_OPEN_SHUTTER -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_OPEN_SHUTTER;
+                return SoundEvents.TRIAL_SPAWNER_OPEN_SHUTTER;
             }
             case TRIAL_SPAWNER_CLOSE_SHUTTER -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_CLOSE_SHUTTER;
+                return SoundEvents.TRIAL_SPAWNER_CLOSE_SHUTTER;
             }
             case TRIAL_SPAWNER_EJECT_ITEM -> {
-                return SoundEvents.BLOCK_TRIAL_SPAWNER_EJECT_ITEM;
+                return SoundEvents.TRIAL_SPAWNER_EJECT_ITEM;
             }
             case HOE_TILL -> {
-                return SoundEvents.ITEM_HOE_TILL;
+                return SoundEvents.HOE_TILL;
             }
             case HOGLIN_AMBIENT -> {
-                return SoundEvents.ENTITY_HOGLIN_AMBIENT;
+                return SoundEvents.HOGLIN_AMBIENT;
             }
             case HOGLIN_ANGRY -> {
-                return SoundEvents.ENTITY_HOGLIN_ANGRY;
+                return SoundEvents.HOGLIN_ANGRY;
             }
             case HOGLIN_ATTACK -> {
-                return SoundEvents.ENTITY_HOGLIN_ATTACK;
+                return SoundEvents.HOGLIN_ATTACK;
             }
             case HOGLIN_CONVERTED_TO_ZOMBIFIED -> {
-                return SoundEvents.ENTITY_HOGLIN_CONVERTED_TO_ZOMBIFIED;
+                return SoundEvents.HOGLIN_CONVERTED_TO_ZOMBIFIED;
             }
             case HOGLIN_DEATH -> {
-                return SoundEvents.ENTITY_HOGLIN_DEATH;
+                return SoundEvents.HOGLIN_DEATH;
             }
             case HOGLIN_HURT -> {
-                return SoundEvents.ENTITY_HOGLIN_HURT;
+                return SoundEvents.HOGLIN_HURT;
             }
             case HOGLIN_RETREAT -> {
-                return SoundEvents.ENTITY_HOGLIN_RETREAT;
+                return SoundEvents.HOGLIN_RETREAT;
             }
             case HOGLIN_STEP -> {
-                return SoundEvents.ENTITY_HOGLIN_STEP;
+                return SoundEvents.HOGLIN_STEP;
             }
             case HONEY_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_BREAK;
+                return SoundEvents.HONEY_BLOCK_BREAK;
             }
             case HONEY_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_FALL;
+                return SoundEvents.HONEY_BLOCK_FALL;
             }
             case HONEY_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_HIT;
+                return SoundEvents.HONEY_BLOCK_HIT;
             }
             case HONEY_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_PLACE;
+                return SoundEvents.HONEY_BLOCK_PLACE;
             }
             case HONEY_BLOCK_SLIDE -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_SLIDE;
+                return SoundEvents.HONEY_BLOCK_SLIDE;
             }
             case HONEY_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_HONEY_BLOCK_STEP;
+                return SoundEvents.HONEY_BLOCK_STEP;
             }
             case HONEYCOMB_WAX_ON -> {
-                return SoundEvents.ITEM_HONEYCOMB_WAX_ON;
+                return SoundEvents.HONEYCOMB_WAX_ON;
             }
             case HONEY_DRINK -> {
-                return SoundEvents.ITEM_HONEY_BOTTLE_DRINK;
+                return SoundEvents.HONEY_DRINK;
             }
             case GOAT_HORN_SOUND_0 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.getFirst().value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.getFirst().value();
             }
             case GOAT_HORN_SOUND_1 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(1).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(1).value();
             }
             case GOAT_HORN_SOUND_2 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(2).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(2).value();
             }
             case GOAT_HORN_SOUND_3 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(3).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(3).value();
             }
             case GOAT_HORN_SOUND_4 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(4).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(4).value();
             }
             case GOAT_HORN_SOUND_5 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(5).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(5).value();
             }
             case GOAT_HORN_SOUND_6 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(6).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(6).value();
             }
             case GOAT_HORN_SOUND_7 -> {
-                return SoundEvents.GOAT_HORN_SOUNDS.get(7).value();
+                return SoundEvents.GOAT_HORN_SOUND_VARIANTS.get(7).value();
             }
             case HORSE_AMBIENT -> {
-                return SoundEvents.ENTITY_HORSE_AMBIENT;
+                return SoundEvents.HORSE_AMBIENT;
             }
             case HORSE_ANGRY -> {
-                return SoundEvents.ENTITY_HORSE_ANGRY;
+                return SoundEvents.HORSE_ANGRY;
             }
             case HORSE_ARMOR -> {
-                return SoundEvents.ENTITY_HORSE_ARMOR;
+                return SoundEvents.HORSE_ARMOR;
             }
             case HORSE_BREATHE -> {
-                return SoundEvents.ENTITY_HORSE_BREATHE;
+                return SoundEvents.HORSE_BREATHE;
             }
             case HORSE_DEATH -> {
-                return SoundEvents.ENTITY_HORSE_DEATH;
+                return SoundEvents.HORSE_DEATH;
             }
             case HORSE_EAT -> {
-                return SoundEvents.ENTITY_HORSE_EAT;
+                return SoundEvents.HORSE_EAT;
             }
             case HORSE_GALLOP -> {
-                return SoundEvents.ENTITY_HORSE_GALLOP;
+                return SoundEvents.HORSE_GALLOP;
             }
             case HORSE_HURT -> {
-                return SoundEvents.ENTITY_HORSE_HURT;
+                return SoundEvents.HORSE_HURT;
             }
             case HORSE_JUMP -> {
-                return SoundEvents.ENTITY_HORSE_JUMP;
+                return SoundEvents.HORSE_JUMP;
             }
             case HORSE_LAND -> {
-                return SoundEvents.ENTITY_HORSE_LAND;
+                return SoundEvents.HORSE_LAND;
             }
             case HORSE_SADDLE -> {
-                return SoundEvents.ENTITY_HORSE_SADDLE;
+                return SoundEvents.HORSE_SADDLE;
             }
             case HORSE_STEP -> {
-                return SoundEvents.ENTITY_HORSE_STEP;
+                return SoundEvents.HORSE_STEP;
             }
             case HORSE_STEP_WOOD -> {
-                return SoundEvents.ENTITY_HORSE_STEP_WOOD;
+                return SoundEvents.HORSE_STEP_WOOD;
             }
             case HOSTILE_BIG_FALL -> {
-                return SoundEvents.ENTITY_HOSTILE_BIG_FALL;
+                return SoundEvents.HOSTILE_BIG_FALL;
             }
             case HOSTILE_DEATH -> {
-                return SoundEvents.ENTITY_HOSTILE_DEATH;
+                return SoundEvents.HOSTILE_DEATH;
             }
             case HOSTILE_HURT -> {
-                return SoundEvents.ENTITY_HOSTILE_HURT;
+                return SoundEvents.HOSTILE_HURT;
             }
             case HOSTILE_SMALL_FALL -> {
-                return SoundEvents.ENTITY_HOSTILE_SMALL_FALL;
+                return SoundEvents.HOSTILE_SMALL_FALL;
             }
             case HOSTILE_SPLASH -> {
-                return SoundEvents.ENTITY_HOSTILE_SPLASH;
+                return SoundEvents.HOSTILE_SPLASH;
             }
             case HOSTILE_SWIM -> {
-                return SoundEvents.ENTITY_HOSTILE_SWIM;
+                return SoundEvents.HOSTILE_SWIM;
             }
             case HUSK_AMBIENT -> {
-                return SoundEvents.ENTITY_HUSK_AMBIENT;
+                return SoundEvents.HUSK_AMBIENT;
             }
             case HUSK_CONVERTED_TO_ZOMBIE -> {
-                return SoundEvents.ENTITY_HUSK_CONVERTED_TO_ZOMBIE;
+                return SoundEvents.HUSK_CONVERTED_TO_ZOMBIE;
             }
             case HUSK_DEATH -> {
-                return SoundEvents.ENTITY_HUSK_DEATH;
+                return SoundEvents.HUSK_DEATH;
             }
             case HUSK_HURT -> {
-                return SoundEvents.ENTITY_HUSK_HURT;
+                return SoundEvents.HUSK_HURT;
             }
             case HUSK_STEP -> {
-                return SoundEvents.ENTITY_HUSK_STEP;
+                return SoundEvents.HUSK_STEP;
             }
             case ILLUSIONER_AMBIENT -> {
-                return SoundEvents.ENTITY_ILLUSIONER_AMBIENT;
+                return SoundEvents.ILLUSIONER_AMBIENT;
             }
             case ILLUSIONER_CAST_SPELL -> {
-                return SoundEvents.ENTITY_ILLUSIONER_CAST_SPELL;
+                return SoundEvents.ILLUSIONER_CAST_SPELL;
             }
             case ILLUSIONER_DEATH -> {
-                return SoundEvents.ENTITY_ILLUSIONER_DEATH;
+                return SoundEvents.ILLUSIONER_DEATH;
             }
             case ILLUSIONER_HURT -> {
-                return SoundEvents.ENTITY_ILLUSIONER_HURT;
+                return SoundEvents.ILLUSIONER_HURT;
             }
             case ILLUSIONER_MIRROR_MOVE -> {
-                return SoundEvents.ENTITY_ILLUSIONER_MIRROR_MOVE;
+                return SoundEvents.ILLUSIONER_MIRROR_MOVE;
             }
             case ILLUSIONER_PREPARE_BLINDNESS -> {
-                return SoundEvents.ENTITY_ILLUSIONER_PREPARE_BLINDNESS;
+                return SoundEvents.ILLUSIONER_PREPARE_BLINDNESS;
             }
             case ILLUSIONER_PREPARE_MIRROR -> {
-                return SoundEvents.ENTITY_ILLUSIONER_PREPARE_MIRROR;
+                return SoundEvents.ILLUSIONER_PREPARE_MIRROR;
             }
             case INK_SAC_USE -> {
-                return SoundEvents.ITEM_INK_SAC_USE;
+                return SoundEvents.INK_SAC_USE;
             }
             case IRON_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_IRON_DOOR_CLOSE;
+                return SoundEvents.IRON_DOOR_CLOSE;
             }
             case IRON_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_IRON_DOOR_OPEN;
+                return SoundEvents.IRON_DOOR_OPEN;
             }
             case IRON_GOLEM_ATTACK -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_ATTACK;
+                return SoundEvents.IRON_GOLEM_ATTACK;
             }
             case IRON_GOLEM_DAMAGE -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_DAMAGE;
+                return SoundEvents.IRON_GOLEM_DAMAGE;
             }
             case IRON_GOLEM_DEATH -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_DEATH;
+                return SoundEvents.IRON_GOLEM_DEATH;
             }
             case IRON_GOLEM_HURT -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_HURT;
+                return SoundEvents.IRON_GOLEM_HURT;
             }
             case IRON_GOLEM_REPAIR -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_REPAIR;
+                return SoundEvents.IRON_GOLEM_REPAIR;
             }
             case IRON_GOLEM_STEP -> {
-                return SoundEvents.ENTITY_IRON_GOLEM_STEP;
+                return SoundEvents.IRON_GOLEM_STEP;
             }
             case IRON_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE;
+                return SoundEvents.IRON_TRAPDOOR_CLOSE;
             }
             case IRON_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN;
+                return SoundEvents.IRON_TRAPDOOR_OPEN;
             }
             case ITEM_FRAME_ADD_ITEM -> {
-                return SoundEvents.ENTITY_ITEM_FRAME_ADD_ITEM;
+                return SoundEvents.ITEM_FRAME_ADD_ITEM;
             }
             case ITEM_FRAME_BREAK -> {
-                return SoundEvents.ENTITY_ITEM_FRAME_BREAK;
+                return SoundEvents.ITEM_FRAME_BREAK;
             }
             case ITEM_FRAME_PLACE -> {
-                return SoundEvents.ENTITY_ITEM_FRAME_PLACE;
+                return SoundEvents.ITEM_FRAME_PLACE;
             }
             case ITEM_FRAME_REMOVE_ITEM -> {
-                return SoundEvents.ENTITY_ITEM_FRAME_REMOVE_ITEM;
+                return SoundEvents.ITEM_FRAME_REMOVE_ITEM;
             }
             case ITEM_FRAME_ROTATE_ITEM -> {
-                return SoundEvents.ENTITY_ITEM_FRAME_ROTATE_ITEM;
+                return SoundEvents.ITEM_FRAME_ROTATE_ITEM;
             }
             case ITEM_BREAK -> {
-                return SoundEvents.ENTITY_ITEM_BREAK;
+                return SoundEvents.ITEM_BREAK;
             }
             case ITEM_PICKUP -> {
-                return SoundEvents.ENTITY_ITEM_PICKUP;
+                return SoundEvents.ITEM_PICKUP;
             }
             case LADDER_BREAK -> {
-                return SoundEvents.BLOCK_LADDER_BREAK;
+                return SoundEvents.LADDER_BREAK;
             }
             case LADDER_FALL -> {
-                return SoundEvents.BLOCK_LADDER_FALL;
+                return SoundEvents.LADDER_FALL;
             }
             case LADDER_HIT -> {
-                return SoundEvents.BLOCK_LADDER_HIT;
+                return SoundEvents.LADDER_HIT;
             }
             case LADDER_PLACE -> {
-                return SoundEvents.BLOCK_LADDER_PLACE;
+                return SoundEvents.LADDER_PLACE;
             }
             case LADDER_STEP -> {
-                return SoundEvents.BLOCK_LADDER_STEP;
+                return SoundEvents.LADDER_STEP;
             }
             case LANTERN_BREAK -> {
-                return SoundEvents.BLOCK_LANTERN_BREAK;
+                return SoundEvents.LANTERN_BREAK;
             }
             case LANTERN_FALL -> {
-                return SoundEvents.BLOCK_LANTERN_FALL;
+                return SoundEvents.LANTERN_FALL;
             }
             case LANTERN_HIT -> {
-                return SoundEvents.BLOCK_LANTERN_HIT;
+                return SoundEvents.LANTERN_HIT;
             }
             case LANTERN_PLACE -> {
-                return SoundEvents.BLOCK_LANTERN_PLACE;
+                return SoundEvents.LANTERN_PLACE;
             }
             case LANTERN_STEP -> {
-                return SoundEvents.BLOCK_LANTERN_STEP;
+                return SoundEvents.LANTERN_STEP;
             }
             case LARGE_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.BLOCK_LARGE_AMETHYST_BUD_BREAK;
+                return SoundEvents.LARGE_AMETHYST_BUD_BREAK;
             }
             case LARGE_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.BLOCK_LARGE_AMETHYST_BUD_PLACE;
+                return SoundEvents.LARGE_AMETHYST_BUD_PLACE;
             }
             case LAVA_AMBIENT -> {
-                return SoundEvents.BLOCK_LAVA_AMBIENT;
+                return SoundEvents.LAVA_AMBIENT;
             }
             case LAVA_EXTINGUISH -> {
-                return SoundEvents.BLOCK_LAVA_EXTINGUISH;
+                return SoundEvents.LAVA_EXTINGUISH;
             }
             case LAVA_POP -> {
-                return SoundEvents.BLOCK_LAVA_POP;
+                return SoundEvents.LAVA_POP;
             }
             case LEASH_KNOT_BREAK -> {
-                return SoundEvents.ENTITY_LEASH_KNOT_BREAK;
+                return SoundEvents.LEASH_KNOT_BREAK;
             }
             case LEASH_KNOT_PLACE -> {
-                return SoundEvents.ENTITY_LEASH_KNOT_PLACE;
+                return SoundEvents.LEASH_KNOT_PLACE;
             }
             case LEVER_CLICK -> {
-                return SoundEvents.BLOCK_LEVER_CLICK;
+                return SoundEvents.LEVER_CLICK;
             }
             case LIGHTNING_BOLT_IMPACT -> {
-                return SoundEvents.ENTITY_LIGHTNING_BOLT_IMPACT;
+                return SoundEvents.LIGHTNING_BOLT_IMPACT;
             }
             case LIGHTNING_BOLT_THUNDER -> {
-                return SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER;
+                return SoundEvents.LIGHTNING_BOLT_THUNDER;
             }
             case LINGERING_POTION_THROW -> {
-                return SoundEvents.ENTITY_LINGERING_POTION_THROW;
+                return SoundEvents.LINGERING_POTION_THROW;
             }
             case LLAMA_AMBIENT -> {
-                return SoundEvents.ENTITY_LLAMA_AMBIENT;
+                return SoundEvents.LLAMA_AMBIENT;
             }
             case LLAMA_ANGRY -> {
-                return SoundEvents.ENTITY_LLAMA_ANGRY;
+                return SoundEvents.LLAMA_ANGRY;
             }
             case LLAMA_CHEST -> {
-                return SoundEvents.ENTITY_LLAMA_CHEST;
+                return SoundEvents.LLAMA_CHEST;
             }
             case LLAMA_DEATH -> {
-                return SoundEvents.ENTITY_LLAMA_DEATH;
+                return SoundEvents.LLAMA_DEATH;
             }
             case LLAMA_EAT -> {
-                return SoundEvents.ENTITY_LLAMA_EAT;
+                return SoundEvents.LLAMA_EAT;
             }
             case LLAMA_HURT -> {
-                return SoundEvents.ENTITY_LLAMA_HURT;
+                return SoundEvents.LLAMA_HURT;
             }
             case LLAMA_SPIT -> {
-                return SoundEvents.ENTITY_LLAMA_SPIT;
+                return SoundEvents.LLAMA_SPIT;
             }
             case LLAMA_STEP -> {
-                return SoundEvents.ENTITY_LLAMA_STEP;
+                return SoundEvents.LLAMA_STEP;
             }
             case LLAMA_SWAG -> {
-                return SoundEvents.ENTITY_LLAMA_SWAG.value();
+                return SoundEvents.LLAMA_SWAG.value();
             }
             case MAGMA_CUBE_DEATH_SMALL -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_DEATH_SMALL;
+                return SoundEvents.MAGMA_CUBE_DEATH_SMALL;
             }
             case LODESTONE_BREAK -> {
-                return SoundEvents.BLOCK_LODESTONE_BREAK;
+                return SoundEvents.LODESTONE_BREAK;
             }
             case LODESTONE_STEP -> {
-                return SoundEvents.BLOCK_LODESTONE_STEP;
+                return SoundEvents.LODESTONE_STEP;
             }
             case LODESTONE_PLACE -> {
-                return SoundEvents.BLOCK_LODESTONE_PLACE;
+                return SoundEvents.LODESTONE_PLACE;
             }
             case LODESTONE_HIT -> {
-                return SoundEvents.BLOCK_LODESTONE_HIT;
+                return SoundEvents.LODESTONE_HIT;
             }
             case LODESTONE_FALL -> {
-                return SoundEvents.BLOCK_LODESTONE_FALL;
+                return SoundEvents.LODESTONE_FALL;
             }
             case LODESTONE_COMPASS_LOCK -> {
-                return SoundEvents.ITEM_LODESTONE_COMPASS_LOCK;
+                return SoundEvents.LODESTONE_COMPASS_LOCK;
             }
             case MACE_SMASH_AIR -> {
-                return SoundEvents.ITEM_MACE_SMASH_AIR;
+                return SoundEvents.MACE_SMASH_AIR;
             }
             case MACE_SMASH_GROUND -> {
-                return SoundEvents.ITEM_MACE_SMASH_GROUND;
+                return SoundEvents.MACE_SMASH_GROUND;
             }
             case MACE_SMASH_GROUND_HEAVY -> {
-                return SoundEvents.ITEM_MACE_SMASH_GROUND_HEAVY;
+                return SoundEvents.MACE_SMASH_GROUND_HEAVY;
             }
             case MAGMA_CUBE_DEATH -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_DEATH;
+                return SoundEvents.MAGMA_CUBE_DEATH;
             }
             case MAGMA_CUBE_HURT -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_HURT;
+                return SoundEvents.MAGMA_CUBE_HURT;
             }
             case MAGMA_CUBE_HURT_SMALL -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_HURT_SMALL;
+                return SoundEvents.MAGMA_CUBE_HURT_SMALL;
             }
             case MAGMA_CUBE_JUMP -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_JUMP;
+                return SoundEvents.MAGMA_CUBE_JUMP;
             }
             case MAGMA_CUBE_SQUISH -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_SQUISH;
+                return SoundEvents.MAGMA_CUBE_SQUISH;
             }
             case MAGMA_CUBE_SQUISH_SMALL -> {
-                return SoundEvents.ENTITY_MAGMA_CUBE_SQUISH_SMALL;
+                return SoundEvents.MAGMA_CUBE_SQUISH_SMALL;
             }
             case MANGROVE_ROOTS_BREAK -> {
-                return SoundEvents.BLOCK_MANGROVE_ROOTS_BREAK;
+                return SoundEvents.MANGROVE_ROOTS_BREAK;
             }
             case MANGROVE_ROOTS_FALL -> {
-                return SoundEvents.BLOCK_MANGROVE_ROOTS_FALL;
+                return SoundEvents.MANGROVE_ROOTS_FALL;
             }
             case MANGROVE_ROOTS_HIT -> {
-                return SoundEvents.BLOCK_MANGROVE_ROOTS_HIT;
+                return SoundEvents.MANGROVE_ROOTS_HIT;
             }
             case MANGROVE_ROOTS_PLACE -> {
-                return SoundEvents.BLOCK_MANGROVE_ROOTS_PLACE;
+                return SoundEvents.MANGROVE_ROOTS_PLACE;
             }
             case MANGROVE_ROOTS_STEP -> {
-                return SoundEvents.BLOCK_MANGROVE_ROOTS_STEP;
+                return SoundEvents.MANGROVE_ROOTS_STEP;
             }
             case MEDIUM_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.BLOCK_MEDIUM_AMETHYST_BUD_BREAK;
+                return SoundEvents.MEDIUM_AMETHYST_BUD_BREAK;
             }
             case MEDIUM_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.BLOCK_MEDIUM_AMETHYST_BUD_PLACE;
+                return SoundEvents.MEDIUM_AMETHYST_BUD_PLACE;
             }
             case METAL_BREAK -> {
-                return SoundEvents.BLOCK_METAL_BREAK;
+                return SoundEvents.METAL_BREAK;
             }
             case METAL_FALL -> {
-                return SoundEvents.BLOCK_METAL_FALL;
+                return SoundEvents.METAL_FALL;
             }
             case METAL_HIT -> {
-                return SoundEvents.BLOCK_METAL_HIT;
+                return SoundEvents.METAL_HIT;
             }
             case METAL_PLACE -> {
-                return SoundEvents.BLOCK_METAL_PLACE;
+                return SoundEvents.METAL_PLACE;
             }
             case METAL_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF;
             }
             case METAL_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_METAL_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON;
             }
             case METAL_STEP -> {
-                return SoundEvents.BLOCK_METAL_STEP;
+                return SoundEvents.METAL_STEP;
             }
             case MINECART_INSIDE_UNDERWATER -> {
-                return SoundEvents.ENTITY_MINECART_INSIDE_UNDERWATER;
+                return SoundEvents.MINECART_INSIDE_UNDERWATER;
             }
             case MINECART_INSIDE -> {
-                return SoundEvents.ENTITY_MINECART_INSIDE;
+                return SoundEvents.MINECART_INSIDE;
             }
             case MINECART_RIDING -> {
-                return SoundEvents.ENTITY_MINECART_RIDING;
+                return SoundEvents.MINECART_RIDING;
             }
             case MOOSHROOM_CONVERT -> {
-                return SoundEvents.ENTITY_MOOSHROOM_CONVERT;
+                return SoundEvents.MOOSHROOM_CONVERT;
             }
             case MOOSHROOM_EAT -> {
-                return SoundEvents.ENTITY_MOOSHROOM_EAT;
+                return SoundEvents.MOOSHROOM_EAT;
             }
             case MOOSHROOM_MILK -> {
-                return SoundEvents.ENTITY_MOOSHROOM_MILK;
+                return SoundEvents.MOOSHROOM_MILK;
             }
             case MOOSHROOM_MILK_SUSPICIOUSLY -> {
-                return SoundEvents.ENTITY_MOOSHROOM_SUSPICIOUS_MILK;
+                return SoundEvents.MOOSHROOM_MILK_SUSPICIOUSLY;
             }
             case MOOSHROOM_SHEAR -> {
-                return SoundEvents.ENTITY_MOOSHROOM_SHEAR;
+                return SoundEvents.MOOSHROOM_SHEAR;
             }
             case MOSS_CARPET_BREAK -> {
-                return SoundEvents.BLOCK_MOSS_CARPET_BREAK;
+                return SoundEvents.MOSS_CARPET_BREAK;
             }
             case MOSS_CARPET_FALL -> {
-                return SoundEvents.BLOCK_MOSS_CARPET_FALL;
+                return SoundEvents.MOSS_CARPET_FALL;
             }
             case MOSS_CARPET_HIT -> {
-                return SoundEvents.BLOCK_MOSS_CARPET_HIT;
+                return SoundEvents.MOSS_CARPET_HIT;
             }
             case MOSS_CARPET_PLACE -> {
-                return SoundEvents.BLOCK_MOSS_CARPET_PLACE;
+                return SoundEvents.MOSS_CARPET_PLACE;
             }
             case MOSS_CARPET_STEP -> {
-                return SoundEvents.BLOCK_MOSS_CARPET_STEP;
+                return SoundEvents.MOSS_CARPET_STEP;
             }
             case PINK_PETALS_BREAK -> {
-                return SoundEvents.BLOCK_PINK_PETALS_BREAK;
+                return SoundEvents.PINK_PETALS_BREAK;
             }
             case PINK_PETALS_FALL -> {
-                return SoundEvents.BLOCK_PINK_PETALS_FALL;
+                return SoundEvents.PINK_PETALS_FALL;
             }
             case PINK_PETALS_HIT -> {
-                return SoundEvents.BLOCK_PINK_PETALS_HIT;
+                return SoundEvents.PINK_PETALS_HIT;
             }
             case PINK_PETALS_PLACE -> {
-                return SoundEvents.BLOCK_PINK_PETALS_PLACE;
+                return SoundEvents.PINK_PETALS_PLACE;
             }
             case PINK_PETALS_STEP -> {
-                return SoundEvents.BLOCK_PINK_PETALS_STEP;
+                return SoundEvents.PINK_PETALS_STEP;
             }
             case MOSS_BREAK -> {
-                return SoundEvents.BLOCK_MOSS_BREAK;
+                return SoundEvents.MOSS_BREAK;
             }
             case MOSS_FALL -> {
-                return SoundEvents.BLOCK_MOSS_FALL;
+                return SoundEvents.MOSS_FALL;
             }
             case MOSS_HIT -> {
-                return SoundEvents.BLOCK_MOSS_HIT;
+                return SoundEvents.MOSS_HIT;
             }
             case MOSS_PLACE -> {
-                return SoundEvents.BLOCK_MOSS_PLACE;
+                return SoundEvents.MOSS_PLACE;
             }
             case MOSS_STEP -> {
-                return SoundEvents.BLOCK_MOSS_STEP;
+                return SoundEvents.MOSS_STEP;
             }
             case MUD_BREAK -> {
-                return SoundEvents.BLOCK_MUD_BREAK;
+                return SoundEvents.MUD_BREAK;
             }
             case MUD_FALL -> {
-                return SoundEvents.BLOCK_MUD_FALL;
+                return SoundEvents.MUD_FALL;
             }
             case MUD_HIT -> {
-                return SoundEvents.BLOCK_MUD_HIT;
+                return SoundEvents.MUD_HIT;
             }
             case MUD_PLACE -> {
-                return SoundEvents.BLOCK_MUD_PLACE;
+                return SoundEvents.MUD_PLACE;
             }
             case MUD_STEP -> {
-                return SoundEvents.BLOCK_MUD_STEP;
+                return SoundEvents.MUD_STEP;
             }
             case MUD_BRICKS_BREAK -> {
-                return SoundEvents.BLOCK_MUD_BRICKS_BREAK;
+                return SoundEvents.MUD_BRICKS_BREAK;
             }
             case MUD_BRICKS_FALL -> {
-                return SoundEvents.BLOCK_MUD_BRICKS_FALL;
+                return SoundEvents.MUD_BRICKS_FALL;
             }
             case MUD_BRICKS_HIT -> {
-                return SoundEvents.BLOCK_MUD_BRICKS_HIT;
+                return SoundEvents.MUD_BRICKS_HIT;
             }
             case MUD_BRICKS_PLACE -> {
-                return SoundEvents.BLOCK_MUD_BRICKS_PLACE;
+                return SoundEvents.MUD_BRICKS_PLACE;
             }
             case MUD_BRICKS_STEP -> {
-                return SoundEvents.BLOCK_MUD_BRICKS_STEP;
+                return SoundEvents.MUD_BRICKS_STEP;
             }
             case MUDDY_MANGROVE_ROOTS_BREAK -> {
-                return SoundEvents.BLOCK_MUDDY_MANGROVE_ROOTS_BREAK;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS_BREAK;
             }
             case MUDDY_MANGROVE_ROOTS_FALL -> {
-                return SoundEvents.BLOCK_MUDDY_MANGROVE_ROOTS_FALL;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS_FALL;
             }
             case MUDDY_MANGROVE_ROOTS_HIT -> {
-                return SoundEvents.BLOCK_MUDDY_MANGROVE_ROOTS_HIT;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS_HIT;
             }
             case MUDDY_MANGROVE_ROOTS_PLACE -> {
-                return SoundEvents.BLOCK_MUDDY_MANGROVE_ROOTS_PLACE;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS_PLACE;
             }
             case MUDDY_MANGROVE_ROOTS_STEP -> {
-                return SoundEvents.BLOCK_MUDDY_MANGROVE_ROOTS_STEP;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS_STEP;
             }
             case MULE_AMBIENT -> {
-                return SoundEvents.ENTITY_MULE_AMBIENT;
+                return SoundEvents.MULE_AMBIENT;
             }
             case MULE_ANGRY -> {
-                return SoundEvents.ENTITY_MULE_ANGRY;
+                return SoundEvents.MULE_ANGRY;
             }
             case MULE_CHEST -> {
-                return SoundEvents.ENTITY_MULE_CHEST;
+                return SoundEvents.MULE_CHEST;
             }
             case MULE_DEATH -> {
-                return SoundEvents.ENTITY_MULE_DEATH;
+                return SoundEvents.MULE_DEATH;
             }
             case MULE_EAT -> {
-                return SoundEvents.ENTITY_MULE_EAT;
+                return SoundEvents.MULE_EAT;
             }
             case MULE_HURT -> {
-                return SoundEvents.ENTITY_MULE_HURT;
+                return SoundEvents.MULE_HURT;
             }
             case MULE_JUMP -> {
-                return SoundEvents.ENTITY_MULE_JUMP;
+                return SoundEvents.MULE_JUMP;
             }
             case MUSIC_CREATIVE -> {
                 return SoundEvents.MUSIC_CREATIVE.value();
@@ -4367,1603 +4367,1603 @@ public enum SoundEventsHolder {
                 return SoundEvents.MUSIC_MENU.value();
             }
             case MUSIC_BIOME_BASALT_DELTAS -> {
-                return SoundEvents.MUSIC_NETHER_BASALT_DELTAS.value();
+                return SoundEvents.MUSIC_BIOME_BASALT_DELTAS.value();
             }
             case MUSIC_BIOME_CRIMSON_FOREST -> {
-                return SoundEvents.MUSIC_NETHER_CRIMSON_FOREST.value();
+                return SoundEvents.MUSIC_BIOME_CRIMSON_FOREST.value();
             }
             case MUSIC_BIOME_DEEP_DARK -> {
-                return SoundEvents.MUSIC_OVERWORLD_DEEP_DARK.value();
+                return SoundEvents.MUSIC_BIOME_DEEP_DARK.value();
             }
             case MUSIC_BIOME_DRIPSTONE_CAVES -> {
-                return SoundEvents.MUSIC_OVERWORLD_DRIPSTONE_CAVES.value();
+                return SoundEvents.MUSIC_BIOME_DRIPSTONE_CAVES.value();
             }
             case MUSIC_BIOME_GROVE -> {
-                return SoundEvents.MUSIC_OVERWORLD_GROVE.value();
+                return SoundEvents.MUSIC_BIOME_GROVE.value();
             }
             case MUSIC_BIOME_JAGGED_PEAKS -> {
-                return SoundEvents.MUSIC_OVERWORLD_JAGGED_PEAKS.value();
+                return SoundEvents.MUSIC_BIOME_JAGGED_PEAKS.value();
             }
             case MUSIC_BIOME_LUSH_CAVES -> {
-                return SoundEvents.MUSIC_OVERWORLD_LUSH_CAVES.value();
+                return SoundEvents.MUSIC_BIOME_LUSH_CAVES.value();
             }
             case MUSIC_BIOME_SWAMP -> {
-                return SoundEvents.MUSIC_OVERWORLD_SWAMP.value();
+                return SoundEvents.MUSIC_BIOME_SWAMP.value();
             }
             case MUSIC_BIOME_FOREST -> {
-                return SoundEvents.MUSIC_OVERWORLD_FOREST.value();
+                return SoundEvents.MUSIC_BIOME_FOREST.value();
             }
             case MUSIC_BIOME_OLD_GROWTH_TAIGA -> {
-                return SoundEvents.MUSIC_OVERWORLD_OLD_GROWTH_TAIGA.value();
+                return SoundEvents.MUSIC_BIOME_OLD_GROWTH_TAIGA.value();
             }
             case MUSIC_BIOME_MEADOW -> {
-                return SoundEvents.MUSIC_OVERWORLD_MEADOW.value();
+                return SoundEvents.MUSIC_BIOME_MEADOW.value();
             }
             case MUSIC_BIOME_CHERRY_GROVE -> {
-                return SoundEvents.MUSIC_OVERWORLD_CHERRY_GROVE.value();
+                return SoundEvents.MUSIC_BIOME_CHERRY_GROVE.value();
             }
             case MUSIC_BIOME_NETHER_WASTES -> {
-                return SoundEvents.MUSIC_NETHER_NETHER_WASTES.value();
+                return SoundEvents.MUSIC_BIOME_NETHER_WASTES.value();
             }
             case MUSIC_BIOME_FROZEN_PEAKS -> {
-                return SoundEvents.MUSIC_OVERWORLD_FROZEN_PEAKS.value();
+                return SoundEvents.MUSIC_BIOME_FROZEN_PEAKS.value();
             }
             case MUSIC_BIOME_SNOWY_SLOPES -> {
-                return SoundEvents.MUSIC_OVERWORLD_SNOWY_SLOPES.value();
+                return SoundEvents.MUSIC_BIOME_SNOWY_SLOPES.value();
             }
             case MUSIC_BIOME_SOUL_SAND_VALLEY -> {
-                return SoundEvents.MUSIC_NETHER_SOUL_SAND_VALLEY.value();
+                return SoundEvents.MUSIC_BIOME_SOUL_SAND_VALLEY.value();
             }
             case MUSIC_BIOME_STONY_PEAKS -> {
-                return SoundEvents.MUSIC_OVERWORLD_STONY_PEAKS.value();
+                return SoundEvents.MUSIC_BIOME_STONY_PEAKS.value();
             }
             case MUSIC_BIOME_WARPED_FOREST -> {
-                return SoundEvents.MUSIC_NETHER_WARPED_FOREST.value();
+                return SoundEvents.MUSIC_BIOME_WARPED_FOREST.value();
             }
             case MUSIC_BIOME_FLOWER_FOREST -> {
-                return SoundEvents.MUSIC_OVERWORLD_FLOWER_FOREST.value();
+                return SoundEvents.MUSIC_BIOME_FLOWER_FOREST.value();
             }
             case MUSIC_BIOME_DESERT -> {
-                return SoundEvents.MUSIC_OVERWORLD_DESERT.value();
+                return SoundEvents.MUSIC_BIOME_DESERT.value();
             }
             case MUSIC_BIOME_BADLANDS -> {
-                return SoundEvents.MUSIC_OVERWORLD_BADLANDS.value();
+                return SoundEvents.MUSIC_BIOME_BADLANDS.value();
             }
             case MUSIC_BIOME_JUNGLE -> {
-                return SoundEvents.MUSIC_OVERWORLD_JUNGLE.value();
+                return SoundEvents.MUSIC_BIOME_JUNGLE.value();
             }
             case MUSIC_BIOME_SPARSE_JUNGLE -> {
-                return SoundEvents.MUSIC_OVERWORLD_SPARSE_JUNGLE.value();
+                return SoundEvents.MUSIC_BIOME_SPARSE_JUNGLE.value();
             }
             case MUSIC_BIOME_BAMBOO_JUNGLE -> {
-                return SoundEvents.MUSIC_OVERWORLD_BAMBOO_JUNGLE.value();
+                return SoundEvents.MUSIC_BIOME_BAMBOO_JUNGLE.value();
             }
             case MUSIC_UNDER_WATER -> {
                 return SoundEvents.MUSIC_UNDER_WATER.value();
             }
             case NETHER_BRICKS_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_BRICKS_BREAK;
+                return SoundEvents.NETHER_BRICKS_BREAK;
             }
             case NETHER_BRICKS_STEP -> {
-                return SoundEvents.BLOCK_NETHER_BRICKS_STEP;
+                return SoundEvents.NETHER_BRICKS_STEP;
             }
             case NETHER_BRICKS_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_BRICKS_PLACE;
+                return SoundEvents.NETHER_BRICKS_PLACE;
             }
             case NETHER_BRICKS_HIT -> {
-                return SoundEvents.BLOCK_NETHER_BRICKS_HIT;
+                return SoundEvents.NETHER_BRICKS_HIT;
             }
             case NETHER_BRICKS_FALL -> {
-                return SoundEvents.BLOCK_NETHER_BRICKS_FALL;
+                return SoundEvents.NETHER_BRICKS_FALL;
             }
             case NETHER_WART_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_WART_BREAK;
+                return SoundEvents.NETHER_WART_BREAK;
             }
             case NETHER_WART_PLANTED -> {
-                return SoundEvents.ITEM_NETHER_WART_PLANT;
+                return SoundEvents.NETHER_WART_PLANTED;
             }
             case NETHER_WOOD_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_BREAK;
+                return SoundEvents.NETHER_WOOD_BREAK;
             }
             case NETHER_WOOD_FALL -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_FALL;
+                return SoundEvents.NETHER_WOOD_FALL;
             }
             case NETHER_WOOD_HIT -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_HIT;
+                return SoundEvents.NETHER_WOOD_HIT;
             }
             case NETHER_WOOD_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_PLACE;
+                return SoundEvents.NETHER_WOOD_PLACE;
             }
             case NETHER_WOOD_STEP -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_STEP;
+                return SoundEvents.NETHER_WOOD_STEP;
             }
             case NETHER_WOOD_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_DOOR_CLOSE;
+                return SoundEvents.NETHER_WOOD_DOOR_CLOSE;
             }
             case NETHER_WOOD_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_DOOR_OPEN;
+                return SoundEvents.NETHER_WOOD_DOOR_OPEN;
             }
             case NETHER_WOOD_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_TRAPDOOR_CLOSE;
+                return SoundEvents.NETHER_WOOD_TRAPDOOR_CLOSE;
             }
             case NETHER_WOOD_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_TRAPDOOR_OPEN;
+                return SoundEvents.NETHER_WOOD_TRAPDOOR_OPEN;
             }
             case NETHER_WOOD_BUTTON_CLICK_OFF -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_BUTTON_CLICK_OFF;
+                return SoundEvents.NETHER_WOOD_BUTTON_CLICK_OFF;
             }
             case NETHER_WOOD_BUTTON_CLICK_ON -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_BUTTON_CLICK_ON;
+                return SoundEvents.NETHER_WOOD_BUTTON_CLICK_ON;
             }
             case NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF;
             }
             case NETHER_WOOD_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.NETHER_WOOD_PRESSURE_PLATE_CLICK_ON;
             }
             case NETHER_WOOD_FENCE_GATE_CLOSE -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_FENCE_GATE_CLOSE;
+                return SoundEvents.NETHER_WOOD_FENCE_GATE_CLOSE;
             }
             case NETHER_WOOD_FENCE_GATE_OPEN -> {
-                return SoundEvents.BLOCK_NETHER_WOOD_FENCE_GATE_OPEN;
+                return SoundEvents.NETHER_WOOD_FENCE_GATE_OPEN;
             }
             case PACKED_MUD_BREAK -> {
-                return SoundEvents.BLOCK_PACKED_MUD_BREAK;
+                return SoundEvents.PACKED_MUD_BREAK;
             }
             case PACKED_MUD_FALL -> {
-                return SoundEvents.BLOCK_PACKED_MUD_FALL;
+                return SoundEvents.PACKED_MUD_FALL;
             }
             case PACKED_MUD_HIT -> {
-                return SoundEvents.BLOCK_PACKED_MUD_HIT;
+                return SoundEvents.PACKED_MUD_HIT;
             }
             case PACKED_MUD_PLACE -> {
-                return SoundEvents.BLOCK_PACKED_MUD_PLACE;
+                return SoundEvents.PACKED_MUD_PLACE;
             }
             case PACKED_MUD_STEP -> {
-                return SoundEvents.BLOCK_PACKED_MUD_STEP;
+                return SoundEvents.PACKED_MUD_STEP;
             }
             case STEM_BREAK -> {
-                return SoundEvents.BLOCK_STEM_BREAK;
+                return SoundEvents.STEM_BREAK;
             }
             case STEM_STEP -> {
-                return SoundEvents.BLOCK_STEM_STEP;
+                return SoundEvents.STEM_STEP;
             }
             case STEM_PLACE -> {
-                return SoundEvents.BLOCK_STEM_PLACE;
+                return SoundEvents.STEM_PLACE;
             }
             case STEM_HIT -> {
-                return SoundEvents.BLOCK_STEM_HIT;
+                return SoundEvents.STEM_HIT;
             }
             case STEM_FALL -> {
-                return SoundEvents.BLOCK_STEM_FALL;
+                return SoundEvents.STEM_FALL;
             }
             case NYLIUM_BREAK -> {
-                return SoundEvents.BLOCK_NYLIUM_BREAK;
+                return SoundEvents.NYLIUM_BREAK;
             }
             case NYLIUM_STEP -> {
-                return SoundEvents.BLOCK_NYLIUM_STEP;
+                return SoundEvents.NYLIUM_STEP;
             }
             case NYLIUM_PLACE -> {
-                return SoundEvents.BLOCK_NYLIUM_PLACE;
+                return SoundEvents.NYLIUM_PLACE;
             }
             case NYLIUM_HIT -> {
-                return SoundEvents.BLOCK_NYLIUM_HIT;
+                return SoundEvents.NYLIUM_HIT;
             }
             case NYLIUM_FALL -> {
-                return SoundEvents.BLOCK_NYLIUM_FALL;
+                return SoundEvents.NYLIUM_FALL;
             }
             case NETHER_SPROUTS_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_SPROUTS_BREAK;
+                return SoundEvents.NETHER_SPROUTS_BREAK;
             }
             case NETHER_SPROUTS_STEP -> {
-                return SoundEvents.BLOCK_NETHER_SPROUTS_STEP;
+                return SoundEvents.NETHER_SPROUTS_STEP;
             }
             case NETHER_SPROUTS_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_SPROUTS_PLACE;
+                return SoundEvents.NETHER_SPROUTS_PLACE;
             }
             case NETHER_SPROUTS_HIT -> {
-                return SoundEvents.BLOCK_NETHER_SPROUTS_HIT;
+                return SoundEvents.NETHER_SPROUTS_HIT;
             }
             case NETHER_SPROUTS_FALL -> {
-                return SoundEvents.BLOCK_NETHER_SPROUTS_FALL;
+                return SoundEvents.NETHER_SPROUTS_FALL;
             }
             case FUNGUS_BREAK -> {
-                return SoundEvents.BLOCK_FUNGUS_BREAK;
+                return SoundEvents.FUNGUS_BREAK;
             }
             case FUNGUS_STEP -> {
-                return SoundEvents.BLOCK_FUNGUS_STEP;
+                return SoundEvents.FUNGUS_STEP;
             }
             case FUNGUS_PLACE -> {
-                return SoundEvents.BLOCK_FUNGUS_PLACE;
+                return SoundEvents.FUNGUS_PLACE;
             }
             case FUNGUS_HIT -> {
-                return SoundEvents.BLOCK_FUNGUS_HIT;
+                return SoundEvents.FUNGUS_HIT;
             }
             case FUNGUS_FALL -> {
-                return SoundEvents.BLOCK_FUNGUS_FALL;
+                return SoundEvents.FUNGUS_FALL;
             }
             case WEEPING_VINES_BREAK -> {
-                return SoundEvents.BLOCK_WEEPING_VINES_BREAK;
+                return SoundEvents.WEEPING_VINES_BREAK;
             }
             case WEEPING_VINES_STEP -> {
-                return SoundEvents.BLOCK_WEEPING_VINES_STEP;
+                return SoundEvents.WEEPING_VINES_STEP;
             }
             case WEEPING_VINES_PLACE -> {
-                return SoundEvents.BLOCK_WEEPING_VINES_PLACE;
+                return SoundEvents.WEEPING_VINES_PLACE;
             }
             case WEEPING_VINES_HIT -> {
-                return SoundEvents.BLOCK_WEEPING_VINES_HIT;
+                return SoundEvents.WEEPING_VINES_HIT;
             }
             case WEEPING_VINES_FALL -> {
-                return SoundEvents.BLOCK_WEEPING_VINES_FALL;
+                return SoundEvents.WEEPING_VINES_FALL;
             }
             case WART_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_WART_BLOCK_BREAK;
+                return SoundEvents.WART_BLOCK_BREAK;
             }
             case WART_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_WART_BLOCK_STEP;
+                return SoundEvents.WART_BLOCK_STEP;
             }
             case WART_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_WART_BLOCK_PLACE;
+                return SoundEvents.WART_BLOCK_PLACE;
             }
             case WART_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_WART_BLOCK_HIT;
+                return SoundEvents.WART_BLOCK_HIT;
             }
             case WART_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_WART_BLOCK_FALL;
+                return SoundEvents.WART_BLOCK_FALL;
             }
             case NETHERITE_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK;
+                return SoundEvents.NETHERITE_BLOCK_BREAK;
             }
             case NETHERITE_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_NETHERITE_BLOCK_STEP;
+                return SoundEvents.NETHERITE_BLOCK_STEP;
             }
             case NETHERITE_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE;
+                return SoundEvents.NETHERITE_BLOCK_PLACE;
             }
             case NETHERITE_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_NETHERITE_BLOCK_HIT;
+                return SoundEvents.NETHERITE_BLOCK_HIT;
             }
             case NETHERITE_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_NETHERITE_BLOCK_FALL;
+                return SoundEvents.NETHERITE_BLOCK_FALL;
             }
             case NETHERRACK_BREAK -> {
-                return SoundEvents.BLOCK_NETHERRACK_BREAK;
+                return SoundEvents.NETHERRACK_BREAK;
             }
             case NETHERRACK_STEP -> {
-                return SoundEvents.BLOCK_NETHERRACK_STEP;
+                return SoundEvents.NETHERRACK_STEP;
             }
             case NETHERRACK_PLACE -> {
-                return SoundEvents.BLOCK_NETHERRACK_PLACE;
+                return SoundEvents.NETHERRACK_PLACE;
             }
             case NETHERRACK_HIT -> {
-                return SoundEvents.BLOCK_NETHERRACK_HIT;
+                return SoundEvents.NETHERRACK_HIT;
             }
             case NETHERRACK_FALL -> {
-                return SoundEvents.BLOCK_NETHERRACK_FALL;
+                return SoundEvents.NETHERRACK_FALL;
             }
             case NOTE_BLOCK_BASEDRUM -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_BASEDRUM.value();
+                return SoundEvents.NOTE_BLOCK_BASEDRUM.value();
             }
             case NOTE_BLOCK_BASS -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_BASS.value();
+                return SoundEvents.NOTE_BLOCK_BASS.value();
             }
             case NOTE_BLOCK_BELL -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_BELL.value();
+                return SoundEvents.NOTE_BLOCK_BELL.value();
             }
             case NOTE_BLOCK_CHIME -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_CHIME.value();
+                return SoundEvents.NOTE_BLOCK_CHIME.value();
             }
             case NOTE_BLOCK_FLUTE -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_FLUTE.value();
+                return SoundEvents.NOTE_BLOCK_FLUTE.value();
             }
             case NOTE_BLOCK_GUITAR -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_GUITAR.value();
+                return SoundEvents.NOTE_BLOCK_GUITAR.value();
             }
             case NOTE_BLOCK_HARP -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_HARP.value();
+                return SoundEvents.NOTE_BLOCK_HARP.value();
             }
             case NOTE_BLOCK_HAT -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_HAT.value();
+                return SoundEvents.NOTE_BLOCK_HAT.value();
             }
             case NOTE_BLOCK_PLING -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_PLING.value();
+                return SoundEvents.NOTE_BLOCK_PLING.value();
             }
             case NOTE_BLOCK_SNARE -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_SNARE.value();
+                return SoundEvents.NOTE_BLOCK_SNARE.value();
             }
             case NOTE_BLOCK_XYLOPHONE -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_XYLOPHONE.value();
+                return SoundEvents.NOTE_BLOCK_XYLOPHONE.value();
             }
             case NOTE_BLOCK_IRON_XYLOPHONE -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IRON_XYLOPHONE.value();
+                return SoundEvents.NOTE_BLOCK_IRON_XYLOPHONE.value();
             }
             case NOTE_BLOCK_COW_BELL -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_COW_BELL.value();
+                return SoundEvents.NOTE_BLOCK_COW_BELL.value();
             }
             case NOTE_BLOCK_DIDGERIDOO -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_DIDGERIDOO.value();
+                return SoundEvents.NOTE_BLOCK_DIDGERIDOO.value();
             }
             case NOTE_BLOCK_BIT -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_BIT.value();
+                return SoundEvents.NOTE_BLOCK_BIT.value();
             }
             case NOTE_BLOCK_BANJO -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_BANJO.value();
+                return SoundEvents.NOTE_BLOCK_BANJO.value();
             }
             case NOTE_BLOCK_IMITATE_ZOMBIE -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_ZOMBIE.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_ZOMBIE.value();
             }
             case NOTE_BLOCK_IMITATE_SKELETON -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_SKELETON.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_SKELETON.value();
             }
             case NOTE_BLOCK_IMITATE_CREEPER -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_CREEPER.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_CREEPER.value();
             }
             case NOTE_BLOCK_IMITATE_ENDER_DRAGON -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_ENDER_DRAGON.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_ENDER_DRAGON.value();
             }
             case NOTE_BLOCK_IMITATE_WITHER_SKELETON -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_WITHER_SKELETON.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_WITHER_SKELETON.value();
             }
             case NOTE_BLOCK_IMITATE_PIGLIN -> {
-                return SoundEvents.BLOCK_NOTE_BLOCK_IMITATE_PIGLIN.value();
+                return SoundEvents.NOTE_BLOCK_IMITATE_PIGLIN.value();
             }
             case OCELOT_HURT -> {
-                return SoundEvents.ENTITY_OCELOT_HURT;
+                return SoundEvents.OCELOT_HURT;
             }
             case OCELOT_AMBIENT -> {
-                return SoundEvents.ENTITY_OCELOT_AMBIENT;
+                return SoundEvents.OCELOT_AMBIENT;
             }
             case OCELOT_DEATH -> {
-                return SoundEvents.ENTITY_OCELOT_DEATH;
+                return SoundEvents.OCELOT_DEATH;
             }
             case OMINOUS_BOTTLE_DISPOSE -> {
-                return SoundEvents.ITEM_OMINOUS_BOTTLE_DISPOSE;
+                return SoundEvents.OMINOUS_BOTTLE_DISPOSE;
             }
             case PAINTING_BREAK -> {
-                return SoundEvents.ENTITY_PAINTING_BREAK;
+                return SoundEvents.PAINTING_BREAK;
             }
             case PAINTING_PLACE -> {
-                return SoundEvents.ENTITY_PAINTING_PLACE;
+                return SoundEvents.PAINTING_PLACE;
             }
             case PANDA_PRE_SNEEZE -> {
-                return SoundEvents.ENTITY_PANDA_PRE_SNEEZE;
+                return SoundEvents.PANDA_PRE_SNEEZE;
             }
             case PANDA_SNEEZE -> {
-                return SoundEvents.ENTITY_PANDA_SNEEZE;
+                return SoundEvents.PANDA_SNEEZE;
             }
             case PANDA_AMBIENT -> {
-                return SoundEvents.ENTITY_PANDA_AMBIENT;
+                return SoundEvents.PANDA_AMBIENT;
             }
             case PANDA_DEATH -> {
-                return SoundEvents.ENTITY_PANDA_DEATH;
+                return SoundEvents.PANDA_DEATH;
             }
             case PANDA_EAT -> {
-                return SoundEvents.ENTITY_PANDA_EAT;
+                return SoundEvents.PANDA_EAT;
             }
             case PANDA_STEP -> {
-                return SoundEvents.ENTITY_PANDA_STEP;
+                return SoundEvents.PANDA_STEP;
             }
             case PANDA_CANT_BREED -> {
-                return SoundEvents.ENTITY_PANDA_CANT_BREED;
+                return SoundEvents.PANDA_CANT_BREED;
             }
             case PANDA_AGGRESSIVE_AMBIENT -> {
-                return SoundEvents.ENTITY_PANDA_AGGRESSIVE_AMBIENT;
+                return SoundEvents.PANDA_AGGRESSIVE_AMBIENT;
             }
             case PANDA_WORRIED_AMBIENT -> {
-                return SoundEvents.ENTITY_PANDA_WORRIED_AMBIENT;
+                return SoundEvents.PANDA_WORRIED_AMBIENT;
             }
             case PANDA_HURT -> {
-                return SoundEvents.ENTITY_PANDA_HURT;
+                return SoundEvents.PANDA_HURT;
             }
             case PANDA_BITE -> {
-                return SoundEvents.ENTITY_PANDA_BITE;
+                return SoundEvents.PANDA_BITE;
             }
             case PARROT_AMBIENT -> {
-                return SoundEvents.ENTITY_PARROT_AMBIENT;
+                return SoundEvents.PARROT_AMBIENT;
             }
             case PARROT_DEATH -> {
-                return SoundEvents.ENTITY_PARROT_DEATH;
+                return SoundEvents.PARROT_DEATH;
             }
             case PARROT_EAT -> {
-                return SoundEvents.ENTITY_PARROT_EAT;
+                return SoundEvents.PARROT_EAT;
             }
             case PARROT_FLY -> {
-                return SoundEvents.ENTITY_PARROT_FLY;
+                return SoundEvents.PARROT_FLY;
             }
             case PARROT_HURT -> {
-                return SoundEvents.ENTITY_PARROT_HURT;
+                return SoundEvents.PARROT_HURT;
             }
             case PARROT_IMITATE_BLAZE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_BLAZE;
+                return SoundEvents.PARROT_IMITATE_BLAZE;
             }
             case PARROT_IMITATE_BOGGED -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_BOGGED;
+                return SoundEvents.PARROT_IMITATE_BOGGED;
             }
             case PARROT_IMITATE_BREEZE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_BREEZE;
+                return SoundEvents.PARROT_IMITATE_BREEZE;
             }
             case PARROT_IMITATE_CREEPER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_CREEPER;
+                return SoundEvents.PARROT_IMITATE_CREEPER;
             }
             case PARROT_IMITATE_DROWNED -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_DROWNED;
+                return SoundEvents.PARROT_IMITATE_DROWNED;
             }
             case PARROT_IMITATE_ELDER_GUARDIAN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ELDER_GUARDIAN;
+                return SoundEvents.PARROT_IMITATE_ELDER_GUARDIAN;
             }
             case PARROT_IMITATE_ENDER_DRAGON -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ENDER_DRAGON;
+                return SoundEvents.PARROT_IMITATE_ENDER_DRAGON;
             }
             case PARROT_IMITATE_ENDERMITE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ENDERMITE;
+                return SoundEvents.PARROT_IMITATE_ENDERMITE;
             }
             case PARROT_IMITATE_EVOKER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_EVOKER;
+                return SoundEvents.PARROT_IMITATE_EVOKER;
             }
             case PARROT_IMITATE_GHAST -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_GHAST;
+                return SoundEvents.PARROT_IMITATE_GHAST;
             }
             case PARROT_IMITATE_GUARDIAN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_GUARDIAN;
+                return SoundEvents.PARROT_IMITATE_GUARDIAN;
             }
             case PARROT_IMITATE_HOGLIN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_HOGLIN;
+                return SoundEvents.PARROT_IMITATE_HOGLIN;
             }
             case PARROT_IMITATE_HUSK -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_HUSK;
+                return SoundEvents.PARROT_IMITATE_HUSK;
             }
             case PARROT_IMITATE_ILLUSIONER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ILLUSIONER;
+                return SoundEvents.PARROT_IMITATE_ILLUSIONER;
             }
             case PARROT_IMITATE_MAGMA_CUBE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_MAGMA_CUBE;
+                return SoundEvents.PARROT_IMITATE_MAGMA_CUBE;
             }
             case PARROT_IMITATE_PHANTOM -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_PHANTOM;
+                return SoundEvents.PARROT_IMITATE_PHANTOM;
             }
             case PARROT_IMITATE_PIGLIN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_PIGLIN;
+                return SoundEvents.PARROT_IMITATE_PIGLIN;
             }
             case PARROT_IMITATE_PIGLIN_BRUTE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_PIGLIN_BRUTE;
+                return SoundEvents.PARROT_IMITATE_PIGLIN_BRUTE;
             }
             case PARROT_IMITATE_PILLAGER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_PILLAGER;
+                return SoundEvents.PARROT_IMITATE_PILLAGER;
             }
             case PARROT_IMITATE_RAVAGER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_RAVAGER;
+                return SoundEvents.PARROT_IMITATE_RAVAGER;
             }
             case PARROT_IMITATE_SHULKER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_SHULKER;
+                return SoundEvents.PARROT_IMITATE_SHULKER;
             }
             case PARROT_IMITATE_SILVERFISH -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_SILVERFISH;
+                return SoundEvents.PARROT_IMITATE_SILVERFISH;
             }
             case PARROT_IMITATE_SKELETON -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_SKELETON;
+                return SoundEvents.PARROT_IMITATE_SKELETON;
             }
             case PARROT_IMITATE_SLIME -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_SLIME;
+                return SoundEvents.PARROT_IMITATE_SLIME;
             }
             case PARROT_IMITATE_SPIDER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_SPIDER;
+                return SoundEvents.PARROT_IMITATE_SPIDER;
             }
             case PARROT_IMITATE_STRAY -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_STRAY;
+                return SoundEvents.PARROT_IMITATE_STRAY;
             }
             case PARROT_IMITATE_VEX -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_VEX;
+                return SoundEvents.PARROT_IMITATE_VEX;
             }
             case PARROT_IMITATE_VINDICATOR -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_VINDICATOR;
+                return SoundEvents.PARROT_IMITATE_VINDICATOR;
             }
             case PARROT_IMITATE_WARDEN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_WARDEN;
+                return SoundEvents.PARROT_IMITATE_WARDEN;
             }
             case PARROT_IMITATE_WITCH -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_WITCH;
+                return SoundEvents.PARROT_IMITATE_WITCH;
             }
             case PARROT_IMITATE_WITHER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_WITHER;
+                return SoundEvents.PARROT_IMITATE_WITHER;
             }
             case PARROT_IMITATE_WITHER_SKELETON -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_WITHER_SKELETON;
+                return SoundEvents.PARROT_IMITATE_WITHER_SKELETON;
             }
             case PARROT_IMITATE_ZOGLIN -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ZOGLIN;
+                return SoundEvents.PARROT_IMITATE_ZOGLIN;
             }
             case PARROT_IMITATE_ZOMBIE -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ZOMBIE;
+                return SoundEvents.PARROT_IMITATE_ZOMBIE;
             }
             case PARROT_IMITATE_ZOMBIE_VILLAGER -> {
-                return SoundEvents.ENTITY_PARROT_IMITATE_ZOMBIE_VILLAGER;
+                return SoundEvents.PARROT_IMITATE_ZOMBIE_VILLAGER;
             }
             case PARROT_STEP -> {
-                return SoundEvents.ENTITY_PARROT_STEP;
+                return SoundEvents.PARROT_STEP;
             }
             case PHANTOM_AMBIENT -> {
-                return SoundEvents.ENTITY_PHANTOM_AMBIENT;
+                return SoundEvents.PHANTOM_AMBIENT;
             }
             case PHANTOM_BITE -> {
-                return SoundEvents.ENTITY_PHANTOM_BITE;
+                return SoundEvents.PHANTOM_BITE;
             }
             case PHANTOM_DEATH -> {
-                return SoundEvents.ENTITY_PHANTOM_DEATH;
+                return SoundEvents.PHANTOM_DEATH;
             }
             case PHANTOM_FLAP -> {
-                return SoundEvents.ENTITY_PHANTOM_FLAP;
+                return SoundEvents.PHANTOM_FLAP;
             }
             case PHANTOM_HURT -> {
-                return SoundEvents.ENTITY_PHANTOM_HURT;
+                return SoundEvents.PHANTOM_HURT;
             }
             case PHANTOM_SWOOP -> {
-                return SoundEvents.ENTITY_PHANTOM_SWOOP;
+                return SoundEvents.PHANTOM_SWOOP;
             }
             case PIG_AMBIENT -> {
-                return SoundEvents.ENTITY_PIG_AMBIENT;
+                return SoundEvents.PIG_AMBIENT;
             }
             case PIG_DEATH -> {
-                return SoundEvents.ENTITY_PIG_DEATH;
+                return SoundEvents.PIG_DEATH;
             }
             case PIG_HURT -> {
-                return SoundEvents.ENTITY_PIG_HURT;
+                return SoundEvents.PIG_HURT;
             }
             case PIG_SADDLE -> {
-                return SoundEvents.ENTITY_PIG_SADDLE;
+                return SoundEvents.PIG_SADDLE;
             }
             case PIG_STEP -> {
-                return SoundEvents.ENTITY_PIG_STEP;
+                return SoundEvents.PIG_STEP;
             }
             case PIGLIN_ADMIRING_ITEM -> {
-                return SoundEvents.ENTITY_PIGLIN_ADMIRING_ITEM;
+                return SoundEvents.PIGLIN_ADMIRING_ITEM;
             }
             case PIGLIN_AMBIENT -> {
-                return SoundEvents.ENTITY_PIGLIN_AMBIENT;
+                return SoundEvents.PIGLIN_AMBIENT;
             }
             case PIGLIN_ANGRY -> {
-                return SoundEvents.ENTITY_PIGLIN_ANGRY;
+                return SoundEvents.PIGLIN_ANGRY;
             }
             case PIGLIN_CELEBRATE -> {
-                return SoundEvents.ENTITY_PIGLIN_CELEBRATE;
+                return SoundEvents.PIGLIN_CELEBRATE;
             }
             case PIGLIN_DEATH -> {
-                return SoundEvents.ENTITY_PIGLIN_DEATH;
+                return SoundEvents.PIGLIN_DEATH;
             }
             case PIGLIN_JEALOUS -> {
-                return SoundEvents.ENTITY_PIGLIN_JEALOUS;
+                return SoundEvents.PIGLIN_JEALOUS;
             }
             case PIGLIN_HURT -> {
-                return SoundEvents.ENTITY_PIGLIN_HURT;
+                return SoundEvents.PIGLIN_HURT;
             }
             case PIGLIN_RETREAT -> {
-                return SoundEvents.ENTITY_PIGLIN_RETREAT;
+                return SoundEvents.PIGLIN_RETREAT;
             }
             case PIGLIN_STEP -> {
-                return SoundEvents.ENTITY_PIGLIN_STEP;
+                return SoundEvents.PIGLIN_STEP;
             }
             case PIGLIN_CONVERTED_TO_ZOMBIFIED -> {
-                return SoundEvents.ENTITY_PIGLIN_CONVERTED_TO_ZOMBIFIED;
+                return SoundEvents.PIGLIN_CONVERTED_TO_ZOMBIFIED;
             }
             case PIGLIN_BRUTE_AMBIENT -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_AMBIENT;
+                return SoundEvents.PIGLIN_BRUTE_AMBIENT;
             }
             case PIGLIN_BRUTE_ANGRY -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_ANGRY;
+                return SoundEvents.PIGLIN_BRUTE_ANGRY;
             }
             case PIGLIN_BRUTE_DEATH -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_DEATH;
+                return SoundEvents.PIGLIN_BRUTE_DEATH;
             }
             case PIGLIN_BRUTE_HURT -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_HURT;
+                return SoundEvents.PIGLIN_BRUTE_HURT;
             }
             case PIGLIN_BRUTE_STEP -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_STEP;
+                return SoundEvents.PIGLIN_BRUTE_STEP;
             }
             case PIGLIN_BRUTE_CONVERTED_TO_ZOMBIFIED -> {
-                return SoundEvents.ENTITY_PIGLIN_BRUTE_CONVERTED_TO_ZOMBIFIED;
+                return SoundEvents.PIGLIN_BRUTE_CONVERTED_TO_ZOMBIFIED;
             }
             case PILLAGER_AMBIENT -> {
-                return SoundEvents.ENTITY_PILLAGER_AMBIENT;
+                return SoundEvents.PILLAGER_AMBIENT;
             }
             case PILLAGER_CELEBRATE -> {
-                return SoundEvents.ENTITY_PILLAGER_CELEBRATE;
+                return SoundEvents.PILLAGER_CELEBRATE;
             }
             case PILLAGER_DEATH -> {
-                return SoundEvents.ENTITY_PILLAGER_DEATH;
+                return SoundEvents.PILLAGER_DEATH;
             }
             case PILLAGER_HURT -> {
-                return SoundEvents.ENTITY_PILLAGER_HURT;
+                return SoundEvents.PILLAGER_HURT;
             }
             case PISTON_CONTRACT -> {
-                return SoundEvents.BLOCK_PISTON_CONTRACT;
+                return SoundEvents.PISTON_CONTRACT;
             }
             case PISTON_EXTEND -> {
-                return SoundEvents.BLOCK_PISTON_EXTEND;
+                return SoundEvents.PISTON_EXTEND;
             }
             case PLAYER_ATTACK_CRIT -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_CRIT;
+                return SoundEvents.PLAYER_ATTACK_CRIT;
             }
             case PLAYER_ATTACK_KNOCKBACK -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_KNOCKBACK;
+                return SoundEvents.PLAYER_ATTACK_KNOCKBACK;
             }
             case PLAYER_ATTACK_NODAMAGE -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_NODAMAGE;
+                return SoundEvents.PLAYER_ATTACK_NODAMAGE;
             }
             case PLAYER_ATTACK_STRONG -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_STRONG;
+                return SoundEvents.PLAYER_ATTACK_STRONG;
             }
             case PLAYER_ATTACK_SWEEP -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_SWEEP;
+                return SoundEvents.PLAYER_ATTACK_SWEEP;
             }
             case PLAYER_ATTACK_WEAK -> {
-                return SoundEvents.ENTITY_PLAYER_ATTACK_WEAK;
+                return SoundEvents.PLAYER_ATTACK_WEAK;
             }
             case PLAYER_BIG_FALL -> {
-                return SoundEvents.ENTITY_PLAYER_BIG_FALL;
+                return SoundEvents.PLAYER_BIG_FALL;
             }
             case PLAYER_BREATH -> {
-                return SoundEvents.ENTITY_PLAYER_BREATH;
+                return SoundEvents.PLAYER_BREATH;
             }
             case PLAYER_BURP -> {
-                return SoundEvents.ENTITY_PLAYER_BURP;
+                return SoundEvents.PLAYER_BURP;
             }
             case PLAYER_DEATH -> {
-                return SoundEvents.ENTITY_PLAYER_DEATH;
+                return SoundEvents.PLAYER_DEATH;
             }
             case PLAYER_HURT -> {
-                return SoundEvents.ENTITY_PLAYER_HURT;
+                return SoundEvents.PLAYER_HURT;
             }
             case PLAYER_HURT_DROWN -> {
-                return SoundEvents.ENTITY_PLAYER_HURT_DROWN;
+                return SoundEvents.PLAYER_HURT_DROWN;
             }
             case PLAYER_HURT_FREEZE -> {
-                return SoundEvents.ENTITY_PLAYER_HURT_FREEZE;
+                return SoundEvents.PLAYER_HURT_FREEZE;
             }
             case PLAYER_HURT_ON_FIRE -> {
-                return SoundEvents.ENTITY_PLAYER_HURT_ON_FIRE;
+                return SoundEvents.PLAYER_HURT_ON_FIRE;
             }
             case PLAYER_HURT_SWEET_BERRY_BUSH -> {
-                return SoundEvents.ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH;
+                return SoundEvents.PLAYER_HURT_SWEET_BERRY_BUSH;
             }
             case PLAYER_LEVELUP -> {
-                return SoundEvents.ENTITY_PLAYER_LEVELUP;
+                return SoundEvents.PLAYER_LEVELUP;
             }
             case PLAYER_SMALL_FALL -> {
-                return SoundEvents.ENTITY_PLAYER_SMALL_FALL;
+                return SoundEvents.PLAYER_SMALL_FALL;
             }
             case PLAYER_SPLASH -> {
-                return SoundEvents.ENTITY_PLAYER_SPLASH;
+                return SoundEvents.PLAYER_SPLASH;
             }
             case PLAYER_SPLASH_HIGH_SPEED -> {
-                return SoundEvents.ENTITY_PLAYER_SPLASH_HIGH_SPEED;
+                return SoundEvents.PLAYER_SPLASH_HIGH_SPEED;
             }
             case PLAYER_SWIM -> {
-                return SoundEvents.ENTITY_PLAYER_SWIM;
+                return SoundEvents.PLAYER_SWIM;
             }
             case PLAYER_TELEPORT -> {
-                return SoundEvents.ENTITY_PLAYER_TELEPORT;
+                return SoundEvents.PLAYER_TELEPORT;
             }
             case POLAR_BEAR_AMBIENT -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_AMBIENT;
+                return SoundEvents.POLAR_BEAR_AMBIENT;
             }
             case POLAR_BEAR_AMBIENT_BABY -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_AMBIENT_BABY;
+                return SoundEvents.POLAR_BEAR_AMBIENT_BABY;
             }
             case POLAR_BEAR_DEATH -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_DEATH;
+                return SoundEvents.POLAR_BEAR_DEATH;
             }
             case POLAR_BEAR_HURT -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_HURT;
+                return SoundEvents.POLAR_BEAR_HURT;
             }
             case POLAR_BEAR_STEP -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_STEP;
+                return SoundEvents.POLAR_BEAR_STEP;
             }
             case POLAR_BEAR_WARNING -> {
-                return SoundEvents.ENTITY_POLAR_BEAR_WARNING;
+                return SoundEvents.POLAR_BEAR_WARNING;
             }
             case POLISHED_DEEPSLATE_BREAK -> {
-                return SoundEvents.BLOCK_POLISHED_DEEPSLATE_BREAK;
+                return SoundEvents.POLISHED_DEEPSLATE_BREAK;
             }
             case POLISHED_DEEPSLATE_FALL -> {
-                return SoundEvents.BLOCK_POLISHED_DEEPSLATE_FALL;
+                return SoundEvents.POLISHED_DEEPSLATE_FALL;
             }
             case POLISHED_DEEPSLATE_HIT -> {
-                return SoundEvents.BLOCK_POLISHED_DEEPSLATE_HIT;
+                return SoundEvents.POLISHED_DEEPSLATE_HIT;
             }
             case POLISHED_DEEPSLATE_PLACE -> {
-                return SoundEvents.BLOCK_POLISHED_DEEPSLATE_PLACE;
+                return SoundEvents.POLISHED_DEEPSLATE_PLACE;
             }
             case POLISHED_DEEPSLATE_STEP -> {
-                return SoundEvents.BLOCK_POLISHED_DEEPSLATE_STEP;
+                return SoundEvents.POLISHED_DEEPSLATE_STEP;
             }
             case PORTAL_AMBIENT -> {
-                return SoundEvents.BLOCK_PORTAL_AMBIENT;
+                return SoundEvents.PORTAL_AMBIENT;
             }
             case PORTAL_TRAVEL -> {
-                return SoundEvents.BLOCK_PORTAL_TRAVEL;
+                return SoundEvents.PORTAL_TRAVEL;
             }
             case PORTAL_TRIGGER -> {
-                return SoundEvents.BLOCK_PORTAL_TRIGGER;
+                return SoundEvents.PORTAL_TRIGGER;
             }
             case POWDER_SNOW_BREAK -> {
-                return SoundEvents.BLOCK_POWDER_SNOW_BREAK;
+                return SoundEvents.POWDER_SNOW_BREAK;
             }
             case POWDER_SNOW_FALL -> {
-                return SoundEvents.BLOCK_POWDER_SNOW_FALL;
+                return SoundEvents.POWDER_SNOW_FALL;
             }
             case POWDER_SNOW_HIT -> {
-                return SoundEvents.BLOCK_POWDER_SNOW_HIT;
+                return SoundEvents.POWDER_SNOW_HIT;
             }
             case POWDER_SNOW_PLACE -> {
-                return SoundEvents.BLOCK_POWDER_SNOW_PLACE;
+                return SoundEvents.POWDER_SNOW_PLACE;
             }
             case POWDER_SNOW_STEP -> {
-                return SoundEvents.BLOCK_POWDER_SNOW_STEP;
+                return SoundEvents.POWDER_SNOW_STEP;
             }
             case PUFFER_FISH_AMBIENT -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_AMBIENT;
+                return SoundEvents.PUFFER_FISH_AMBIENT;
             }
             case PUFFER_FISH_BLOW_OUT -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_BLOW_OUT;
+                return SoundEvents.PUFFER_FISH_BLOW_OUT;
             }
             case PUFFER_FISH_BLOW_UP -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_BLOW_UP;
+                return SoundEvents.PUFFER_FISH_BLOW_UP;
             }
             case PUFFER_FISH_DEATH -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_DEATH;
+                return SoundEvents.PUFFER_FISH_DEATH;
             }
             case PUFFER_FISH_FLOP -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_FLOP;
+                return SoundEvents.PUFFER_FISH_FLOP;
             }
             case PUFFER_FISH_HURT -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_HURT;
+                return SoundEvents.PUFFER_FISH_HURT;
             }
             case PUFFER_FISH_STING -> {
-                return SoundEvents.ENTITY_PUFFER_FISH_STING;
+                return SoundEvents.PUFFER_FISH_STING;
             }
             case PUMPKIN_CARVE -> {
-                return SoundEvents.BLOCK_PUMPKIN_CARVE;
+                return SoundEvents.PUMPKIN_CARVE;
             }
             case RABBIT_AMBIENT -> {
-                return SoundEvents.ENTITY_RABBIT_AMBIENT;
+                return SoundEvents.RABBIT_AMBIENT;
             }
             case RABBIT_ATTACK -> {
-                return SoundEvents.ENTITY_RABBIT_ATTACK;
+                return SoundEvents.RABBIT_ATTACK;
             }
             case RABBIT_DEATH -> {
-                return SoundEvents.ENTITY_RABBIT_DEATH;
+                return SoundEvents.RABBIT_DEATH;
             }
             case RABBIT_HURT -> {
-                return SoundEvents.ENTITY_RABBIT_HURT;
+                return SoundEvents.RABBIT_HURT;
             }
             case RABBIT_JUMP -> {
-                return SoundEvents.ENTITY_RABBIT_JUMP;
+                return SoundEvents.RABBIT_JUMP;
             }
             case RAID_HORN -> {
-                return SoundEvents.EVENT_RAID_HORN.value();
+                return SoundEvents.RAID_HORN.value();
             }
             case RAVAGER_AMBIENT -> {
-                return SoundEvents.ENTITY_RAVAGER_AMBIENT;
+                return SoundEvents.RAVAGER_AMBIENT;
             }
             case RAVAGER_ATTACK -> {
-                return SoundEvents.ENTITY_RAVAGER_ATTACK;
+                return SoundEvents.RAVAGER_ATTACK;
             }
             case RAVAGER_CELEBRATE -> {
-                return SoundEvents.ENTITY_RAVAGER_CELEBRATE;
+                return SoundEvents.RAVAGER_CELEBRATE;
             }
             case RAVAGER_DEATH -> {
-                return SoundEvents.ENTITY_RAVAGER_DEATH;
+                return SoundEvents.RAVAGER_DEATH;
             }
             case RAVAGER_HURT -> {
-                return SoundEvents.ENTITY_RAVAGER_HURT;
+                return SoundEvents.RAVAGER_HURT;
             }
             case RAVAGER_STEP -> {
-                return SoundEvents.ENTITY_RAVAGER_STEP;
+                return SoundEvents.RAVAGER_STEP;
             }
             case RAVAGER_STUNNED -> {
-                return SoundEvents.ENTITY_RAVAGER_STUNNED;
+                return SoundEvents.RAVAGER_STUNNED;
             }
             case RAVAGER_ROAR -> {
-                return SoundEvents.ENTITY_RAVAGER_ROAR;
+                return SoundEvents.RAVAGER_ROAR;
             }
             case NETHER_GOLD_ORE_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_GOLD_ORE_BREAK;
+                return SoundEvents.NETHER_GOLD_ORE_BREAK;
             }
             case NETHER_GOLD_ORE_FALL -> {
-                return SoundEvents.BLOCK_NETHER_GOLD_ORE_FALL;
+                return SoundEvents.NETHER_GOLD_ORE_FALL;
             }
             case NETHER_GOLD_ORE_HIT -> {
-                return SoundEvents.BLOCK_NETHER_GOLD_ORE_HIT;
+                return SoundEvents.NETHER_GOLD_ORE_HIT;
             }
             case NETHER_GOLD_ORE_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_GOLD_ORE_PLACE;
+                return SoundEvents.NETHER_GOLD_ORE_PLACE;
             }
             case NETHER_GOLD_ORE_STEP -> {
-                return SoundEvents.BLOCK_NETHER_GOLD_ORE_STEP;
+                return SoundEvents.NETHER_GOLD_ORE_STEP;
             }
             case NETHER_ORE_BREAK -> {
-                return SoundEvents.BLOCK_NETHER_ORE_BREAK;
+                return SoundEvents.NETHER_ORE_BREAK;
             }
             case NETHER_ORE_FALL -> {
-                return SoundEvents.BLOCK_NETHER_ORE_FALL;
+                return SoundEvents.NETHER_ORE_FALL;
             }
             case NETHER_ORE_HIT -> {
-                return SoundEvents.BLOCK_NETHER_ORE_HIT;
+                return SoundEvents.NETHER_ORE_HIT;
             }
             case NETHER_ORE_PLACE -> {
-                return SoundEvents.BLOCK_NETHER_ORE_PLACE;
+                return SoundEvents.NETHER_ORE_PLACE;
             }
             case NETHER_ORE_STEP -> {
-                return SoundEvents.BLOCK_NETHER_ORE_STEP;
+                return SoundEvents.NETHER_ORE_STEP;
             }
             case REDSTONE_TORCH_BURNOUT -> {
-                return SoundEvents.BLOCK_REDSTONE_TORCH_BURNOUT;
+                return SoundEvents.REDSTONE_TORCH_BURNOUT;
             }
             case RESPAWN_ANCHOR_AMBIENT -> {
-                return SoundEvents.BLOCK_RESPAWN_ANCHOR_AMBIENT;
+                return SoundEvents.RESPAWN_ANCHOR_AMBIENT;
             }
             case RESPAWN_ANCHOR_CHARGE -> {
-                return SoundEvents.BLOCK_RESPAWN_ANCHOR_CHARGE;
+                return SoundEvents.RESPAWN_ANCHOR_CHARGE;
             }
             case RESPAWN_ANCHOR_DEPLETE -> {
-                return SoundEvents.BLOCK_RESPAWN_ANCHOR_DEPLETE.value();
+                return SoundEvents.RESPAWN_ANCHOR_DEPLETE.value();
             }
             case RESPAWN_ANCHOR_SET_SPAWN -> {
-                return SoundEvents.BLOCK_RESPAWN_ANCHOR_SET_SPAWN;
+                return SoundEvents.RESPAWN_ANCHOR_SET_SPAWN;
             }
             case ROOTED_DIRT_BREAK -> {
-                return SoundEvents.BLOCK_ROOTED_DIRT_BREAK;
+                return SoundEvents.ROOTED_DIRT_BREAK;
             }
             case ROOTED_DIRT_FALL -> {
-                return SoundEvents.BLOCK_ROOTED_DIRT_FALL;
+                return SoundEvents.ROOTED_DIRT_FALL;
             }
             case ROOTED_DIRT_HIT -> {
-                return SoundEvents.BLOCK_ROOTED_DIRT_HIT;
+                return SoundEvents.ROOTED_DIRT_HIT;
             }
             case ROOTED_DIRT_PLACE -> {
-                return SoundEvents.BLOCK_ROOTED_DIRT_PLACE;
+                return SoundEvents.ROOTED_DIRT_PLACE;
             }
             case ROOTED_DIRT_STEP -> {
-                return SoundEvents.BLOCK_ROOTED_DIRT_STEP;
+                return SoundEvents.ROOTED_DIRT_STEP;
             }
             case SALMON_AMBIENT -> {
-                return SoundEvents.ENTITY_SALMON_AMBIENT;
+                return SoundEvents.SALMON_AMBIENT;
             }
             case SALMON_DEATH -> {
-                return SoundEvents.ENTITY_SALMON_DEATH;
+                return SoundEvents.SALMON_DEATH;
             }
             case SALMON_FLOP -> {
-                return SoundEvents.ENTITY_SALMON_FLOP;
+                return SoundEvents.SALMON_FLOP;
             }
             case SALMON_HURT -> {
-                return SoundEvents.ENTITY_SALMON_HURT;
+                return SoundEvents.SALMON_HURT;
             }
             case SAND_BREAK -> {
-                return SoundEvents.BLOCK_SAND_BREAK;
+                return SoundEvents.SAND_BREAK;
             }
             case SAND_FALL -> {
-                return SoundEvents.BLOCK_SAND_FALL;
+                return SoundEvents.SAND_FALL;
             }
             case SAND_HIT -> {
-                return SoundEvents.BLOCK_SAND_HIT;
+                return SoundEvents.SAND_HIT;
             }
             case SAND_PLACE -> {
-                return SoundEvents.BLOCK_SAND_PLACE;
+                return SoundEvents.SAND_PLACE;
             }
             case SAND_STEP -> {
-                return SoundEvents.BLOCK_SAND_STEP;
+                return SoundEvents.SAND_STEP;
             }
             case SCAFFOLDING_BREAK -> {
-                return SoundEvents.BLOCK_SCAFFOLDING_BREAK;
+                return SoundEvents.SCAFFOLDING_BREAK;
             }
             case SCAFFOLDING_FALL -> {
-                return SoundEvents.BLOCK_SCAFFOLDING_FALL;
+                return SoundEvents.SCAFFOLDING_FALL;
             }
             case SCAFFOLDING_HIT -> {
-                return SoundEvents.BLOCK_SCAFFOLDING_HIT;
+                return SoundEvents.SCAFFOLDING_HIT;
             }
             case SCAFFOLDING_PLACE -> {
-                return SoundEvents.BLOCK_SCAFFOLDING_PLACE;
+                return SoundEvents.SCAFFOLDING_PLACE;
             }
             case SCAFFOLDING_STEP -> {
-                return SoundEvents.BLOCK_SCAFFOLDING_STEP;
+                return SoundEvents.SCAFFOLDING_STEP;
             }
             case SCULK_BLOCK_SPREAD -> {
-                return SoundEvents.BLOCK_SCULK_SPREAD;
+                return SoundEvents.SCULK_BLOCK_SPREAD;
             }
             case SCULK_BLOCK_CHARGE -> {
-                return SoundEvents.BLOCK_SCULK_CHARGE;
+                return SoundEvents.SCULK_BLOCK_CHARGE;
             }
             case SCULK_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_SCULK_BREAK;
+                return SoundEvents.SCULK_BLOCK_BREAK;
             }
             case SCULK_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_SCULK_FALL;
+                return SoundEvents.SCULK_BLOCK_FALL;
             }
             case SCULK_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_SCULK_HIT;
+                return SoundEvents.SCULK_BLOCK_HIT;
             }
             case SCULK_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_SCULK_PLACE;
+                return SoundEvents.SCULK_BLOCK_PLACE;
             }
             case SCULK_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_SCULK_STEP;
+                return SoundEvents.SCULK_BLOCK_STEP;
             }
             case SCULK_CATALYST_BLOOM -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_BLOOM;
+                return SoundEvents.SCULK_CATALYST_BLOOM;
             }
             case SCULK_CATALYST_BREAK -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_BREAK;
+                return SoundEvents.SCULK_CATALYST_BREAK;
             }
             case SCULK_CATALYST_FALL -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_FALL;
+                return SoundEvents.SCULK_CATALYST_FALL;
             }
             case SCULK_CATALYST_HIT -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_HIT;
+                return SoundEvents.SCULK_CATALYST_HIT;
             }
             case SCULK_CATALYST_PLACE -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_PLACE;
+                return SoundEvents.SCULK_CATALYST_PLACE;
             }
             case SCULK_CATALYST_STEP -> {
-                return SoundEvents.BLOCK_SCULK_CATALYST_STEP;
+                return SoundEvents.SCULK_CATALYST_STEP;
             }
             case SCULK_CLICKING -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_CLICKING;
+                return SoundEvents.SCULK_CLICKING;
             }
             case SCULK_CLICKING_STOP -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_CLICKING_STOP;
+                return SoundEvents.SCULK_CLICKING_STOP;
             }
             case SCULK_SENSOR_BREAK -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_BREAK;
+                return SoundEvents.SCULK_SENSOR_BREAK;
             }
             case SCULK_SENSOR_FALL -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_FALL;
+                return SoundEvents.SCULK_SENSOR_FALL;
             }
             case SCULK_SENSOR_HIT -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_HIT;
+                return SoundEvents.SCULK_SENSOR_HIT;
             }
             case SCULK_SENSOR_PLACE -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_PLACE;
+                return SoundEvents.SCULK_SENSOR_PLACE;
             }
             case SCULK_SENSOR_STEP -> {
-                return SoundEvents.BLOCK_SCULK_SENSOR_STEP;
+                return SoundEvents.SCULK_SENSOR_STEP;
             }
             case SCULK_SHRIEKER_BREAK -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_BREAK;
+                return SoundEvents.SCULK_SHRIEKER_BREAK;
             }
             case SCULK_SHRIEKER_FALL -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_FALL;
+                return SoundEvents.SCULK_SHRIEKER_FALL;
             }
             case SCULK_SHRIEKER_HIT -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_HIT;
+                return SoundEvents.SCULK_SHRIEKER_HIT;
             }
             case SCULK_SHRIEKER_PLACE -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_PLACE;
+                return SoundEvents.SCULK_SHRIEKER_PLACE;
             }
             case SCULK_SHRIEKER_SHRIEK -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_SHRIEK;
+                return SoundEvents.SCULK_SHRIEKER_SHRIEK;
             }
             case SCULK_SHRIEKER_STEP -> {
-                return SoundEvents.BLOCK_SCULK_SHRIEKER_STEP;
+                return SoundEvents.SCULK_SHRIEKER_STEP;
             }
             case SCULK_VEIN_BREAK -> {
-                return SoundEvents.BLOCK_SCULK_VEIN_BREAK;
+                return SoundEvents.SCULK_VEIN_BREAK;
             }
             case SCULK_VEIN_FALL -> {
-                return SoundEvents.BLOCK_SCULK_VEIN_FALL;
+                return SoundEvents.SCULK_VEIN_FALL;
             }
             case SCULK_VEIN_HIT -> {
-                return SoundEvents.BLOCK_SCULK_VEIN_HIT;
+                return SoundEvents.SCULK_VEIN_HIT;
             }
             case SCULK_VEIN_PLACE -> {
-                return SoundEvents.BLOCK_SCULK_VEIN_PLACE;
+                return SoundEvents.SCULK_VEIN_PLACE;
             }
             case SCULK_VEIN_STEP -> {
-                return SoundEvents.BLOCK_SCULK_VEIN_STEP;
+                return SoundEvents.SCULK_VEIN_STEP;
             }
             case SHEEP_AMBIENT -> {
-                return SoundEvents.ENTITY_SHEEP_AMBIENT;
+                return SoundEvents.SHEEP_AMBIENT;
             }
             case SHEEP_DEATH -> {
-                return SoundEvents.ENTITY_SHEEP_DEATH;
+                return SoundEvents.SHEEP_DEATH;
             }
             case SHEEP_HURT -> {
-                return SoundEvents.ENTITY_SHEEP_HURT;
+                return SoundEvents.SHEEP_HURT;
             }
             case SHEEP_SHEAR -> {
-                return SoundEvents.ENTITY_SHEEP_SHEAR;
+                return SoundEvents.SHEEP_SHEAR;
             }
             case SHEEP_STEP -> {
-                return SoundEvents.ENTITY_SHEEP_STEP;
+                return SoundEvents.SHEEP_STEP;
             }
             case SHIELD_BLOCK -> {
-                return SoundEvents.ITEM_SHIELD_BLOCK;
+                return SoundEvents.SHIELD_BLOCK;
             }
             case SHIELD_BREAK -> {
-                return SoundEvents.ITEM_SHIELD_BREAK;
+                return SoundEvents.SHIELD_BREAK;
             }
             case SHROOMLIGHT_BREAK -> {
-                return SoundEvents.BLOCK_SHROOMLIGHT_BREAK;
+                return SoundEvents.SHROOMLIGHT_BREAK;
             }
             case SHROOMLIGHT_STEP -> {
-                return SoundEvents.BLOCK_SHROOMLIGHT_STEP;
+                return SoundEvents.SHROOMLIGHT_STEP;
             }
             case SHROOMLIGHT_PLACE -> {
-                return SoundEvents.BLOCK_SHROOMLIGHT_PLACE;
+                return SoundEvents.SHROOMLIGHT_PLACE;
             }
             case SHROOMLIGHT_HIT -> {
-                return SoundEvents.BLOCK_SHROOMLIGHT_HIT;
+                return SoundEvents.SHROOMLIGHT_HIT;
             }
             case SHROOMLIGHT_FALL -> {
-                return SoundEvents.BLOCK_SHROOMLIGHT_FALL;
+                return SoundEvents.SHROOMLIGHT_FALL;
             }
             case SHOVEL_FLATTEN -> {
-                return SoundEvents.ITEM_SHOVEL_FLATTEN;
+                return SoundEvents.SHOVEL_FLATTEN;
             }
             case SHULKER_AMBIENT -> {
-                return SoundEvents.ENTITY_SHULKER_AMBIENT;
+                return SoundEvents.SHULKER_AMBIENT;
             }
             case SHULKER_BOX_CLOSE -> {
-                return SoundEvents.BLOCK_SHULKER_BOX_CLOSE;
+                return SoundEvents.SHULKER_BOX_CLOSE;
             }
             case SHULKER_BOX_OPEN -> {
-                return SoundEvents.BLOCK_SHULKER_BOX_OPEN;
+                return SoundEvents.SHULKER_BOX_OPEN;
             }
             case SHULKER_BULLET_HIT -> {
-                return SoundEvents.ENTITY_SHULKER_BULLET_HIT;
+                return SoundEvents.SHULKER_BULLET_HIT;
             }
             case SHULKER_BULLET_HURT -> {
-                return SoundEvents.ENTITY_SHULKER_BULLET_HURT;
+                return SoundEvents.SHULKER_BULLET_HURT;
             }
             case SHULKER_CLOSE -> {
-                return SoundEvents.ENTITY_SHULKER_CLOSE;
+                return SoundEvents.SHULKER_CLOSE;
             }
             case SHULKER_DEATH -> {
-                return SoundEvents.ENTITY_SHULKER_DEATH;
+                return SoundEvents.SHULKER_DEATH;
             }
             case SHULKER_HURT -> {
-                return SoundEvents.ENTITY_SHULKER_HURT;
+                return SoundEvents.SHULKER_HURT;
             }
             case SHULKER_HURT_CLOSED -> {
-                return SoundEvents.ENTITY_SHULKER_HURT_CLOSED;
+                return SoundEvents.SHULKER_HURT_CLOSED;
             }
             case SHULKER_OPEN -> {
-                return SoundEvents.ENTITY_SHULKER_OPEN;
+                return SoundEvents.SHULKER_OPEN;
             }
             case SHULKER_SHOOT -> {
-                return SoundEvents.ENTITY_SHULKER_SHOOT;
+                return SoundEvents.SHULKER_SHOOT;
             }
             case SHULKER_TELEPORT -> {
-                return SoundEvents.ENTITY_SHULKER_TELEPORT;
+                return SoundEvents.SHULKER_TELEPORT;
             }
             case SILVERFISH_AMBIENT -> {
-                return SoundEvents.ENTITY_SILVERFISH_AMBIENT;
+                return SoundEvents.SILVERFISH_AMBIENT;
             }
             case SILVERFISH_DEATH -> {
-                return SoundEvents.ENTITY_SILVERFISH_DEATH;
+                return SoundEvents.SILVERFISH_DEATH;
             }
             case SILVERFISH_HURT -> {
-                return SoundEvents.ENTITY_SILVERFISH_HURT;
+                return SoundEvents.SILVERFISH_HURT;
             }
             case SILVERFISH_STEP -> {
-                return SoundEvents.ENTITY_SILVERFISH_STEP;
+                return SoundEvents.SILVERFISH_STEP;
             }
             case SKELETON_AMBIENT -> {
-                return SoundEvents.ENTITY_SKELETON_AMBIENT;
+                return SoundEvents.SKELETON_AMBIENT;
             }
             case SKELETON_CONVERTED_TO_STRAY -> {
-                return SoundEvents.ENTITY_SKELETON_CONVERTED_TO_STRAY;
+                return SoundEvents.SKELETON_CONVERTED_TO_STRAY;
             }
             case SKELETON_DEATH -> {
-                return SoundEvents.ENTITY_SKELETON_DEATH;
+                return SoundEvents.SKELETON_DEATH;
             }
             case SKELETON_HORSE_AMBIENT -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_AMBIENT;
+                return SoundEvents.SKELETON_HORSE_AMBIENT;
             }
             case SKELETON_HORSE_DEATH -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_DEATH;
+                return SoundEvents.SKELETON_HORSE_DEATH;
             }
             case SKELETON_HORSE_HURT -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_HURT;
+                return SoundEvents.SKELETON_HORSE_HURT;
             }
             case SKELETON_HORSE_SWIM -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_SWIM;
+                return SoundEvents.SKELETON_HORSE_SWIM;
             }
             case SKELETON_HORSE_AMBIENT_WATER -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_AMBIENT_WATER;
+                return SoundEvents.SKELETON_HORSE_AMBIENT_WATER;
             }
             case SKELETON_HORSE_GALLOP_WATER -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_GALLOP_WATER;
+                return SoundEvents.SKELETON_HORSE_GALLOP_WATER;
             }
             case SKELETON_HORSE_JUMP_WATER -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_JUMP_WATER;
+                return SoundEvents.SKELETON_HORSE_JUMP_WATER;
             }
             case SKELETON_HORSE_STEP_WATER -> {
-                return SoundEvents.ENTITY_SKELETON_HORSE_STEP_WATER;
+                return SoundEvents.SKELETON_HORSE_STEP_WATER;
             }
             case SKELETON_HURT -> {
-                return SoundEvents.ENTITY_SKELETON_HURT;
+                return SoundEvents.SKELETON_HURT;
             }
             case SKELETON_SHOOT -> {
-                return SoundEvents.ENTITY_SKELETON_SHOOT;
+                return SoundEvents.SKELETON_SHOOT;
             }
             case SKELETON_STEP -> {
-                return SoundEvents.ENTITY_SKELETON_STEP;
+                return SoundEvents.SKELETON_STEP;
             }
             case SLIME_ATTACK -> {
-                return SoundEvents.ENTITY_SLIME_ATTACK;
+                return SoundEvents.SLIME_ATTACK;
             }
             case SLIME_DEATH -> {
-                return SoundEvents.ENTITY_SLIME_DEATH;
+                return SoundEvents.SLIME_DEATH;
             }
             case SLIME_HURT -> {
-                return SoundEvents.ENTITY_SLIME_HURT;
+                return SoundEvents.SLIME_HURT;
             }
             case SLIME_JUMP -> {
-                return SoundEvents.ENTITY_SLIME_JUMP;
+                return SoundEvents.SLIME_JUMP;
             }
             case SLIME_SQUISH -> {
-                return SoundEvents.ENTITY_SLIME_SQUISH;
+                return SoundEvents.SLIME_SQUISH;
             }
             case SLIME_BLOCK_BREAK -> {
-                return SoundEvents.BLOCK_SLIME_BLOCK_BREAK;
+                return SoundEvents.SLIME_BLOCK_BREAK;
             }
             case SLIME_BLOCK_FALL -> {
-                return SoundEvents.BLOCK_SLIME_BLOCK_FALL;
+                return SoundEvents.SLIME_BLOCK_FALL;
             }
             case SLIME_BLOCK_HIT -> {
-                return SoundEvents.BLOCK_SLIME_BLOCK_HIT;
+                return SoundEvents.SLIME_BLOCK_HIT;
             }
             case SLIME_BLOCK_PLACE -> {
-                return SoundEvents.BLOCK_SLIME_BLOCK_PLACE;
+                return SoundEvents.SLIME_BLOCK_PLACE;
             }
             case SLIME_BLOCK_STEP -> {
-                return SoundEvents.BLOCK_SLIME_BLOCK_STEP;
+                return SoundEvents.SLIME_BLOCK_STEP;
             }
             case SMALL_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.BLOCK_SMALL_AMETHYST_BUD_BREAK;
+                return SoundEvents.SMALL_AMETHYST_BUD_BREAK;
             }
             case SMALL_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.BLOCK_SMALL_AMETHYST_BUD_PLACE;
+                return SoundEvents.SMALL_AMETHYST_BUD_PLACE;
             }
             case SMALL_DRIPLEAF_BREAK -> {
-                return SoundEvents.BLOCK_SMALL_DRIPLEAF_BREAK;
+                return SoundEvents.SMALL_DRIPLEAF_BREAK;
             }
             case SMALL_DRIPLEAF_FALL -> {
-                return SoundEvents.BLOCK_SMALL_DRIPLEAF_FALL;
+                return SoundEvents.SMALL_DRIPLEAF_FALL;
             }
             case SMALL_DRIPLEAF_HIT -> {
-                return SoundEvents.BLOCK_SMALL_DRIPLEAF_HIT;
+                return SoundEvents.SMALL_DRIPLEAF_HIT;
             }
             case SMALL_DRIPLEAF_PLACE -> {
-                return SoundEvents.BLOCK_SMALL_DRIPLEAF_PLACE;
+                return SoundEvents.SMALL_DRIPLEAF_PLACE;
             }
             case SMALL_DRIPLEAF_STEP -> {
-                return SoundEvents.BLOCK_SMALL_DRIPLEAF_STEP;
+                return SoundEvents.SMALL_DRIPLEAF_STEP;
             }
             case SOUL_SAND_BREAK -> {
-                return SoundEvents.BLOCK_SOUL_SAND_BREAK;
+                return SoundEvents.SOUL_SAND_BREAK;
             }
             case SOUL_SAND_STEP -> {
-                return SoundEvents.BLOCK_SOUL_SAND_STEP;
+                return SoundEvents.SOUL_SAND_STEP;
             }
             case SOUL_SAND_PLACE -> {
-                return SoundEvents.BLOCK_SOUL_SAND_PLACE;
+                return SoundEvents.SOUL_SAND_PLACE;
             }
             case SOUL_SAND_HIT -> {
-                return SoundEvents.BLOCK_SOUL_SAND_HIT;
+                return SoundEvents.SOUL_SAND_HIT;
             }
             case SOUL_SAND_FALL -> {
-                return SoundEvents.BLOCK_SOUL_SAND_FALL;
+                return SoundEvents.SOUL_SAND_FALL;
             }
             case SOUL_SOIL_BREAK -> {
-                return SoundEvents.BLOCK_SOUL_SOIL_BREAK;
+                return SoundEvents.SOUL_SOIL_BREAK;
             }
             case SOUL_SOIL_STEP -> {
-                return SoundEvents.BLOCK_SOUL_SOIL_STEP;
+                return SoundEvents.SOUL_SOIL_STEP;
             }
             case SOUL_SOIL_PLACE -> {
-                return SoundEvents.BLOCK_SOUL_SOIL_PLACE;
+                return SoundEvents.SOUL_SOIL_PLACE;
             }
             case SOUL_SOIL_HIT -> {
-                return SoundEvents.BLOCK_SOUL_SOIL_HIT;
+                return SoundEvents.SOUL_SOIL_HIT;
             }
             case SOUL_SOIL_FALL -> {
-                return SoundEvents.BLOCK_SOUL_SOIL_FALL;
+                return SoundEvents.SOUL_SOIL_FALL;
             }
             case SOUL_ESCAPE -> {
-                return SoundEvents.PARTICLE_SOUL_ESCAPE;
+                return SoundEvents.SOUL_ESCAPE;
             }
             case SPORE_BLOSSOM_BREAK -> {
-                return SoundEvents.BLOCK_SPORE_BLOSSOM_BREAK;
+                return SoundEvents.SPORE_BLOSSOM_BREAK;
             }
             case SPORE_BLOSSOM_FALL -> {
-                return SoundEvents.BLOCK_SPORE_BLOSSOM_FALL;
+                return SoundEvents.SPORE_BLOSSOM_FALL;
             }
             case SPORE_BLOSSOM_HIT -> {
-                return SoundEvents.BLOCK_SPORE_BLOSSOM_HIT;
+                return SoundEvents.SPORE_BLOSSOM_HIT;
             }
             case SPORE_BLOSSOM_PLACE -> {
-                return SoundEvents.BLOCK_SPORE_BLOSSOM_PLACE;
+                return SoundEvents.SPORE_BLOSSOM_PLACE;
             }
             case SPORE_BLOSSOM_STEP -> {
-                return SoundEvents.BLOCK_SPORE_BLOSSOM_STEP;
+                return SoundEvents.SPORE_BLOSSOM_STEP;
             }
             case STRIDER_AMBIENT -> {
-                return SoundEvents.ENTITY_STRIDER_AMBIENT;
+                return SoundEvents.STRIDER_AMBIENT;
             }
             case STRIDER_HAPPY -> {
-                return SoundEvents.ENTITY_STRIDER_HAPPY;
+                return SoundEvents.STRIDER_HAPPY;
             }
             case STRIDER_RETREAT -> {
-                return SoundEvents.ENTITY_STRIDER_RETREAT;
+                return SoundEvents.STRIDER_RETREAT;
             }
             case STRIDER_DEATH -> {
-                return SoundEvents.ENTITY_STRIDER_DEATH;
+                return SoundEvents.STRIDER_DEATH;
             }
             case STRIDER_HURT -> {
-                return SoundEvents.ENTITY_STRIDER_HURT;
+                return SoundEvents.STRIDER_HURT;
             }
             case STRIDER_STEP -> {
-                return SoundEvents.ENTITY_STRIDER_STEP;
+                return SoundEvents.STRIDER_STEP;
             }
             case STRIDER_STEP_LAVA -> {
-                return SoundEvents.ENTITY_STRIDER_STEP_LAVA;
+                return SoundEvents.STRIDER_STEP_LAVA;
             }
             case STRIDER_EAT -> {
-                return SoundEvents.ENTITY_STRIDER_EAT;
+                return SoundEvents.STRIDER_EAT;
             }
             case STRIDER_SADDLE -> {
-                return SoundEvents.ENTITY_STRIDER_SADDLE;
+                return SoundEvents.STRIDER_SADDLE;
             }
             case SLIME_DEATH_SMALL -> {
-                return SoundEvents.ENTITY_SLIME_DEATH_SMALL;
+                return SoundEvents.SLIME_DEATH_SMALL;
             }
             case SLIME_HURT_SMALL -> {
-                return SoundEvents.ENTITY_SLIME_HURT_SMALL;
+                return SoundEvents.SLIME_HURT_SMALL;
             }
             case SLIME_JUMP_SMALL -> {
-                return SoundEvents.ENTITY_SLIME_JUMP_SMALL;
+                return SoundEvents.SLIME_JUMP_SMALL;
             }
             case SLIME_SQUISH_SMALL -> {
-                return SoundEvents.ENTITY_SLIME_SQUISH_SMALL;
+                return SoundEvents.SLIME_SQUISH_SMALL;
             }
             case SMITHING_TABLE_USE -> {
-                return SoundEvents.BLOCK_SMITHING_TABLE_USE;
+                return SoundEvents.SMITHING_TABLE_USE;
             }
             case SMOKER_SMOKE -> {
-                return SoundEvents.BLOCK_SMOKER_SMOKE;
+                return SoundEvents.SMOKER_SMOKE;
             }
             case SNIFFER_STEP -> {
-                return SoundEvents.ENTITY_SNIFFER_STEP;
+                return SoundEvents.SNIFFER_STEP;
             }
             case SNIFFER_EAT -> {
-                return SoundEvents.ENTITY_SNIFFER_EAT;
+                return SoundEvents.SNIFFER_EAT;
             }
             case SNIFFER_IDLE -> {
-                return SoundEvents.ENTITY_SNIFFER_IDLE;
+                return SoundEvents.SNIFFER_IDLE;
             }
             case SNIFFER_HURT -> {
-                return SoundEvents.ENTITY_SNIFFER_HURT;
+                return SoundEvents.SNIFFER_HURT;
             }
             case SNIFFER_DEATH -> {
-                return SoundEvents.ENTITY_SNIFFER_DEATH;
+                return SoundEvents.SNIFFER_DEATH;
             }
             case SNIFFER_DROP_SEED -> {
-                return SoundEvents.ENTITY_SNIFFER_DROP_SEED;
+                return SoundEvents.SNIFFER_DROP_SEED;
             }
             case SNIFFER_SCENTING -> {
-                return SoundEvents.ENTITY_SNIFFER_SCENTING;
+                return SoundEvents.SNIFFER_SCENTING;
             }
             case SNIFFER_SNIFFING -> {
-                return SoundEvents.ENTITY_SNIFFER_SNIFFING;
+                return SoundEvents.SNIFFER_SNIFFING;
             }
             case SNIFFER_SEARCHING -> {
-                return SoundEvents.ENTITY_SNIFFER_SEARCHING;
+                return SoundEvents.SNIFFER_SEARCHING;
             }
             case SNIFFER_DIGGING -> {
-                return SoundEvents.ENTITY_SNIFFER_DIGGING;
+                return SoundEvents.SNIFFER_DIGGING;
             }
             case SNIFFER_DIGGING_STOP -> {
-                return SoundEvents.ENTITY_SNIFFER_DIGGING_STOP;
+                return SoundEvents.SNIFFER_DIGGING_STOP;
             }
             case SNIFFER_HAPPY -> {
-                return SoundEvents.ENTITY_SNIFFER_HAPPY;
+                return SoundEvents.SNIFFER_HAPPY;
             }
             case SNIFFER_EGG_PLOP -> {
-                return SoundEvents.BLOCK_SNIFFER_EGG_PLOP;
+                return SoundEvents.SNIFFER_EGG_PLOP;
             }
             case SNIFFER_EGG_CRACK -> {
-                return SoundEvents.BLOCK_SNIFFER_EGG_CRACK;
+                return SoundEvents.SNIFFER_EGG_CRACK;
             }
             case SNIFFER_EGG_HATCH -> {
-                return SoundEvents.BLOCK_SNIFFER_EGG_HATCH;
+                return SoundEvents.SNIFFER_EGG_HATCH;
             }
             case SNOWBALL_THROW -> {
-                return SoundEvents.ENTITY_SNOWBALL_THROW;
+                return SoundEvents.SNOWBALL_THROW;
             }
             case SNOW_BREAK -> {
-                return SoundEvents.BLOCK_SNOW_BREAK;
+                return SoundEvents.SNOW_BREAK;
             }
             case SNOW_FALL -> {
-                return SoundEvents.BLOCK_SNOW_FALL;
+                return SoundEvents.SNOW_FALL;
             }
             case SNOW_GOLEM_AMBIENT -> {
-                return SoundEvents.ENTITY_SNOW_GOLEM_AMBIENT;
+                return SoundEvents.SNOW_GOLEM_AMBIENT;
             }
             case SNOW_GOLEM_DEATH -> {
-                return SoundEvents.ENTITY_SNOW_GOLEM_DEATH;
+                return SoundEvents.SNOW_GOLEM_DEATH;
             }
             case SNOW_GOLEM_HURT -> {
-                return SoundEvents.ENTITY_SNOW_GOLEM_HURT;
+                return SoundEvents.SNOW_GOLEM_HURT;
             }
             case SNOW_GOLEM_SHOOT -> {
-                return SoundEvents.ENTITY_SNOW_GOLEM_SHOOT;
+                return SoundEvents.SNOW_GOLEM_SHOOT;
             }
             case SNOW_GOLEM_SHEAR -> {
-                return SoundEvents.ENTITY_SNOW_GOLEM_SHEAR;
+                return SoundEvents.SNOW_GOLEM_SHEAR;
             }
             case SNOW_HIT -> {
-                return SoundEvents.BLOCK_SNOW_HIT;
+                return SoundEvents.SNOW_HIT;
             }
             case SNOW_PLACE -> {
-                return SoundEvents.BLOCK_SNOW_PLACE;
+                return SoundEvents.SNOW_PLACE;
             }
             case SNOW_STEP -> {
-                return SoundEvents.BLOCK_SNOW_STEP;
+                return SoundEvents.SNOW_STEP;
             }
             case SPIDER_AMBIENT -> {
-                return SoundEvents.ENTITY_SPIDER_AMBIENT;
+                return SoundEvents.SPIDER_AMBIENT;
             }
             case SPIDER_DEATH -> {
-                return SoundEvents.ENTITY_SPIDER_DEATH;
+                return SoundEvents.SPIDER_DEATH;
             }
             case SPIDER_HURT -> {
-                return SoundEvents.ENTITY_SPIDER_HURT;
+                return SoundEvents.SPIDER_HURT;
             }
             case SPIDER_STEP -> {
-                return SoundEvents.ENTITY_SPIDER_STEP;
+                return SoundEvents.SPIDER_STEP;
             }
             case SPLASH_POTION_BREAK -> {
-                return SoundEvents.ENTITY_SPLASH_POTION_BREAK;
+                return SoundEvents.SPLASH_POTION_BREAK;
             }
             case SPLASH_POTION_THROW -> {
-                return SoundEvents.ENTITY_SPLASH_POTION_THROW;
+                return SoundEvents.SPLASH_POTION_THROW;
             }
             case SPONGE_BREAK -> {
-                return SoundEvents.BLOCK_SPONGE_BREAK;
+                return SoundEvents.SPONGE_BREAK;
             }
             case SPONGE_FALL -> {
-                return SoundEvents.BLOCK_SPONGE_FALL;
+                return SoundEvents.SPONGE_FALL;
             }
             case SPONGE_HIT -> {
-                return SoundEvents.BLOCK_SPONGE_HIT;
+                return SoundEvents.SPONGE_HIT;
             }
             case SPONGE_PLACE -> {
-                return SoundEvents.BLOCK_SPONGE_PLACE;
+                return SoundEvents.SPONGE_PLACE;
             }
             case SPONGE_STEP -> {
-                return SoundEvents.BLOCK_SPONGE_STEP;
+                return SoundEvents.SPONGE_STEP;
             }
             case SPONGE_ABSORB -> {
-                return SoundEvents.BLOCK_SPONGE_ABSORB;
+                return SoundEvents.SPONGE_ABSORB;
             }
             case SPYGLASS_USE -> {
-                return SoundEvents.ITEM_SPYGLASS_USE;
+                return SoundEvents.SPYGLASS_USE;
             }
             case SPYGLASS_STOP_USING -> {
-                return SoundEvents.ITEM_SPYGLASS_STOP_USING;
+                return SoundEvents.SPYGLASS_STOP_USING;
             }
             case SQUID_AMBIENT -> {
-                return SoundEvents.ENTITY_SQUID_AMBIENT;
+                return SoundEvents.SQUID_AMBIENT;
             }
             case SQUID_DEATH -> {
-                return SoundEvents.ENTITY_SQUID_DEATH;
+                return SoundEvents.SQUID_DEATH;
             }
             case SQUID_HURT -> {
-                return SoundEvents.ENTITY_SQUID_HURT;
+                return SoundEvents.SQUID_HURT;
             }
             case SQUID_SQUIRT -> {
-                return SoundEvents.ENTITY_SQUID_SQUIRT;
+                return SoundEvents.SQUID_SQUIRT;
             }
             case STONE_BREAK -> {
-                return SoundEvents.BLOCK_STONE_BREAK;
+                return SoundEvents.STONE_BREAK;
             }
             case STONE_BUTTON_CLICK_OFF -> {
-                return SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF;
+                return SoundEvents.STONE_BUTTON_CLICK_OFF;
             }
             case STONE_BUTTON_CLICK_ON -> {
-                return SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON;
+                return SoundEvents.STONE_BUTTON_CLICK_ON;
             }
             case STONE_FALL -> {
-                return SoundEvents.BLOCK_STONE_FALL;
+                return SoundEvents.STONE_FALL;
             }
             case STONE_HIT -> {
-                return SoundEvents.BLOCK_STONE_HIT;
+                return SoundEvents.STONE_HIT;
             }
             case STONE_PLACE -> {
-                return SoundEvents.BLOCK_STONE_PLACE;
+                return SoundEvents.STONE_PLACE;
             }
             case STONE_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_STONE_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF;
             }
             case STONE_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_STONE_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON;
             }
             case STONE_STEP -> {
-                return SoundEvents.BLOCK_STONE_STEP;
+                return SoundEvents.STONE_STEP;
             }
             case STRAY_AMBIENT -> {
-                return SoundEvents.ENTITY_STRAY_AMBIENT;
+                return SoundEvents.STRAY_AMBIENT;
             }
             case STRAY_DEATH -> {
-                return SoundEvents.ENTITY_STRAY_DEATH;
+                return SoundEvents.STRAY_DEATH;
             }
             case STRAY_HURT -> {
-                return SoundEvents.ENTITY_STRAY_HURT;
+                return SoundEvents.STRAY_HURT;
             }
             case STRAY_STEP -> {
-                return SoundEvents.ENTITY_STRAY_STEP;
+                return SoundEvents.STRAY_STEP;
             }
             case SWEET_BERRY_BUSH_BREAK -> {
-                return SoundEvents.BLOCK_SWEET_BERRY_BUSH_BREAK;
+                return SoundEvents.SWEET_BERRY_BUSH_BREAK;
             }
             case SWEET_BERRY_BUSH_PLACE -> {
-                return SoundEvents.BLOCK_SWEET_BERRY_BUSH_PLACE;
+                return SoundEvents.SWEET_BERRY_BUSH_PLACE;
             }
             case SWEET_BERRY_BUSH_PICK_BERRIES -> {
-                return SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES;
+                return SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES;
             }
             case TADPOLE_DEATH -> {
-                return SoundEvents.ENTITY_TADPOLE_DEATH;
+                return SoundEvents.TADPOLE_DEATH;
             }
             case TADPOLE_FLOP -> {
-                return SoundEvents.ENTITY_TADPOLE_FLOP;
+                return SoundEvents.TADPOLE_FLOP;
             }
             case TADPOLE_GROW_UP -> {
-                return SoundEvents.ENTITY_TADPOLE_GROW_UP;
+                return SoundEvents.TADPOLE_GROW_UP;
             }
             case TADPOLE_HURT -> {
-                return SoundEvents.ENTITY_TADPOLE_HURT;
+                return SoundEvents.TADPOLE_HURT;
             }
             case THORNS_HIT -> {
-                return SoundEvents.ENCHANT_THORNS_HIT;
+                return SoundEvents.THORNS_HIT;
             }
             case TNT_PRIMED -> {
-                return SoundEvents.ENTITY_TNT_PRIMED;
+                return SoundEvents.TNT_PRIMED;
             }
             case TOTEM_USE -> {
-                return SoundEvents.ITEM_TOTEM_USE;
+                return SoundEvents.TOTEM_USE;
             }
             case TRIDENT_HIT -> {
-                return SoundEvents.ITEM_TRIDENT_HIT;
+                return SoundEvents.TRIDENT_HIT;
             }
             case TRIDENT_HIT_GROUND -> {
-                return SoundEvents.ITEM_TRIDENT_HIT_GROUND;
+                return SoundEvents.TRIDENT_HIT_GROUND;
             }
             case TRIDENT_RETURN -> {
-                return SoundEvents.ITEM_TRIDENT_RETURN;
+                return SoundEvents.TRIDENT_RETURN;
             }
             case TRIDENT_RIPTIDE_1 -> {
-                return SoundEvents.ITEM_TRIDENT_RIPTIDE_1;
+                return SoundEvents.TRIDENT_RIPTIDE_1;
             }
             case TRIDENT_RIPTIDE_2 -> {
-                return SoundEvents.ITEM_TRIDENT_RIPTIDE_2;
+                return SoundEvents.TRIDENT_RIPTIDE_2;
             }
             case TRIDENT_RIPTIDE_3 -> {
-                return SoundEvents.ITEM_TRIDENT_RIPTIDE_3;
+                return SoundEvents.TRIDENT_RIPTIDE_3;
             }
             case TRIDENT_THROW -> {
-                return SoundEvents.ITEM_TRIDENT_THROW;
+                return SoundEvents.TRIDENT_THROW;
             }
             case TRIDENT_THUNDER -> {
-                return SoundEvents.ITEM_TRIDENT_THUNDER;
+                return SoundEvents.TRIDENT_THUNDER;
             }
             case TRIPWIRE_ATTACH -> {
-                return SoundEvents.BLOCK_TRIPWIRE_ATTACH;
+                return SoundEvents.TRIPWIRE_ATTACH;
             }
             case TRIPWIRE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_TRIPWIRE_CLICK_OFF;
+                return SoundEvents.TRIPWIRE_CLICK_OFF;
             }
             case TRIPWIRE_CLICK_ON -> {
-                return SoundEvents.BLOCK_TRIPWIRE_CLICK_ON;
+                return SoundEvents.TRIPWIRE_CLICK_ON;
             }
             case TRIPWIRE_DETACH -> {
-                return SoundEvents.BLOCK_TRIPWIRE_DETACH;
+                return SoundEvents.TRIPWIRE_DETACH;
             }
             case TROPICAL_FISH_AMBIENT -> {
-                return SoundEvents.ENTITY_TROPICAL_FISH_AMBIENT;
+                return SoundEvents.TROPICAL_FISH_AMBIENT;
             }
             case TROPICAL_FISH_DEATH -> {
-                return SoundEvents.ENTITY_TROPICAL_FISH_DEATH;
+                return SoundEvents.TROPICAL_FISH_DEATH;
             }
             case TROPICAL_FISH_FLOP -> {
-                return SoundEvents.ENTITY_TROPICAL_FISH_FLOP;
+                return SoundEvents.TROPICAL_FISH_FLOP;
             }
             case TROPICAL_FISH_HURT -> {
-                return SoundEvents.ENTITY_TROPICAL_FISH_HURT;
+                return SoundEvents.TROPICAL_FISH_HURT;
             }
             case TUFF_BREAK -> {
-                return SoundEvents.BLOCK_TUFF_BREAK;
+                return SoundEvents.TUFF_BREAK;
             }
             case TUFF_STEP -> {
-                return SoundEvents.BLOCK_TUFF_STEP;
+                return SoundEvents.TUFF_STEP;
             }
             case TUFF_PLACE -> {
-                return SoundEvents.BLOCK_TUFF_PLACE;
+                return SoundEvents.TUFF_PLACE;
             }
             case TUFF_HIT -> {
-                return SoundEvents.BLOCK_TUFF_HIT;
+                return SoundEvents.TUFF_HIT;
             }
             case TUFF_FALL -> {
-                return SoundEvents.BLOCK_TUFF_FALL;
+                return SoundEvents.TUFF_FALL;
             }
             case TUFF_BRICKS_BREAK -> {
-                return SoundEvents.BLOCK_TUFF_BRICKS_BREAK;
+                return SoundEvents.TUFF_BRICKS_BREAK;
             }
             case TUFF_BRICKS_FALL -> {
-                return SoundEvents.BLOCK_TUFF_BRICKS_FALL;
+                return SoundEvents.TUFF_BRICKS_FALL;
             }
             case TUFF_BRICKS_HIT -> {
-                return SoundEvents.BLOCK_TUFF_BRICKS_HIT;
+                return SoundEvents.TUFF_BRICKS_HIT;
             }
             case TUFF_BRICKS_PLACE -> {
-                return SoundEvents.BLOCK_TUFF_BRICKS_PLACE;
+                return SoundEvents.TUFF_BRICKS_PLACE;
             }
             case TUFF_BRICKS_STEP -> {
-                return SoundEvents.BLOCK_TUFF_BRICKS_STEP;
+                return SoundEvents.TUFF_BRICKS_STEP;
             }
             case POLISHED_TUFF_BREAK -> {
-                return SoundEvents.BLOCK_POLISHED_TUFF_BREAK;
+                return SoundEvents.POLISHED_TUFF_BREAK;
             }
             case POLISHED_TUFF_FALL -> {
-                return SoundEvents.BLOCK_POLISHED_TUFF_FALL;
+                return SoundEvents.POLISHED_TUFF_FALL;
             }
             case POLISHED_TUFF_HIT -> {
-                return SoundEvents.BLOCK_POLISHED_TUFF_HIT;
+                return SoundEvents.POLISHED_TUFF_HIT;
             }
             case POLISHED_TUFF_PLACE -> {
-                return SoundEvents.BLOCK_POLISHED_TUFF_PLACE;
+                return SoundEvents.POLISHED_TUFF_PLACE;
             }
             case POLISHED_TUFF_STEP -> {
-                return SoundEvents.BLOCK_POLISHED_TUFF_STEP;
+                return SoundEvents.POLISHED_TUFF_STEP;
             }
             case TURTLE_AMBIENT_LAND -> {
-                return SoundEvents.ENTITY_TURTLE_AMBIENT_LAND;
+                return SoundEvents.TURTLE_AMBIENT_LAND;
             }
             case TURTLE_DEATH -> {
-                return SoundEvents.ENTITY_TURTLE_DEATH;
+                return SoundEvents.TURTLE_DEATH;
             }
             case TURTLE_DEATH_BABY -> {
-                return SoundEvents.ENTITY_TURTLE_DEATH_BABY;
+                return SoundEvents.TURTLE_DEATH_BABY;
             }
             case TURTLE_EGG_BREAK -> {
-                return SoundEvents.ENTITY_TURTLE_EGG_BREAK;
+                return SoundEvents.TURTLE_EGG_BREAK;
             }
             case TURTLE_EGG_CRACK -> {
-                return SoundEvents.ENTITY_TURTLE_EGG_CRACK;
+                return SoundEvents.TURTLE_EGG_CRACK;
             }
             case TURTLE_EGG_HATCH -> {
-                return SoundEvents.ENTITY_TURTLE_EGG_HATCH;
+                return SoundEvents.TURTLE_EGG_HATCH;
             }
             case TURTLE_HURT -> {
-                return SoundEvents.ENTITY_TURTLE_HURT;
+                return SoundEvents.TURTLE_HURT;
             }
             case TURTLE_HURT_BABY -> {
-                return SoundEvents.ENTITY_TURTLE_HURT_BABY;
+                return SoundEvents.TURTLE_HURT_BABY;
             }
             case TURTLE_LAY_EGG -> {
-                return SoundEvents.ENTITY_TURTLE_LAY_EGG;
+                return SoundEvents.TURTLE_LAY_EGG;
             }
             case TURTLE_SHAMBLE -> {
-                return SoundEvents.ENTITY_TURTLE_SHAMBLE;
+                return SoundEvents.TURTLE_SHAMBLE;
             }
             case TURTLE_SHAMBLE_BABY -> {
-                return SoundEvents.ENTITY_TURTLE_SHAMBLE_BABY;
+                return SoundEvents.TURTLE_SHAMBLE_BABY;
             }
             case TURTLE_SWIM -> {
-                return SoundEvents.ENTITY_TURTLE_SWIM;
+                return SoundEvents.TURTLE_SWIM;
             }
             case UI_BUTTON_CLICK -> {
                 return SoundEvents.UI_BUTTON_CLICK.value();
@@ -5993,244 +5993,244 @@ public enum SoundEventsHolder {
                 return SoundEvents.UI_TOAST_OUT;
             }
             case VAULT_ACTIVATE -> {
-                return SoundEvents.BLOCK_VAULT_ACTIVATE;
+                return SoundEvents.VAULT_ACTIVATE;
             }
             case VAULT_AMBIENT -> {
-                return SoundEvents.BLOCK_VAULT_AMBIENT;
+                return SoundEvents.VAULT_AMBIENT;
             }
             case VAULT_BREAK -> {
-                return SoundEvents.BLOCK_VAULT_BREAK;
+                return SoundEvents.VAULT_BREAK;
             }
             case VAULT_CLOSE_SHUTTER -> {
-                return SoundEvents.BLOCK_VAULT_CLOSE_SHUTTER;
+                return SoundEvents.VAULT_CLOSE_SHUTTER;
             }
             case VAULT_DEACTIVATE -> {
-                return SoundEvents.BLOCK_VAULT_DEACTIVATE;
+                return SoundEvents.VAULT_DEACTIVATE;
             }
             case VAULT_EJECT_ITEM -> {
-                return SoundEvents.BLOCK_VAULT_EJECT_ITEM;
+                return SoundEvents.VAULT_EJECT_ITEM;
             }
             case VAULT_FALL -> {
-                return SoundEvents.BLOCK_VAULT_FALL;
+                return SoundEvents.VAULT_FALL;
             }
             case VAULT_HIT -> {
-                return SoundEvents.BLOCK_VAULT_HIT;
+                return SoundEvents.VAULT_HIT;
             }
             case VAULT_INSERT_ITEM -> {
-                return SoundEvents.BLOCK_VAULT_INSERT_ITEM;
+                return SoundEvents.VAULT_INSERT_ITEM;
             }
             case VAULT_INSERT_ITEM_FAIL -> {
-                return SoundEvents.BLOCK_VAULT_INSERT_ITEM_FAIL;
+                return SoundEvents.VAULT_INSERT_ITEM_FAIL;
             }
             case VAULT_OPEN_SHUTTER -> {
-                return SoundEvents.BLOCK_VAULT_OPEN_SHUTTER;
+                return SoundEvents.VAULT_OPEN_SHUTTER;
             }
             case VAULT_PLACE -> {
-                return SoundEvents.BLOCK_VAULT_PLACE;
+                return SoundEvents.VAULT_PLACE;
             }
             case VAULT_STEP -> {
-                return SoundEvents.BLOCK_VAULT_STEP;
+                return SoundEvents.VAULT_STEP;
             }
             case VEX_AMBIENT -> {
-                return SoundEvents.ENTITY_VEX_AMBIENT;
+                return SoundEvents.VEX_AMBIENT;
             }
             case VEX_CHARGE -> {
-                return SoundEvents.ENTITY_VEX_CHARGE;
+                return SoundEvents.VEX_CHARGE;
             }
             case VEX_DEATH -> {
-                return SoundEvents.ENTITY_VEX_DEATH;
+                return SoundEvents.VEX_DEATH;
             }
             case VEX_HURT -> {
-                return SoundEvents.ENTITY_VEX_HURT;
+                return SoundEvents.VEX_HURT;
             }
             case VILLAGER_AMBIENT -> {
-                return SoundEvents.ENTITY_VILLAGER_AMBIENT;
+                return SoundEvents.VILLAGER_AMBIENT;
             }
             case VILLAGER_CELEBRATE -> {
-                return SoundEvents.ENTITY_VILLAGER_CELEBRATE;
+                return SoundEvents.VILLAGER_CELEBRATE;
             }
             case VILLAGER_DEATH -> {
-                return SoundEvents.ENTITY_VILLAGER_DEATH;
+                return SoundEvents.VILLAGER_DEATH;
             }
             case VILLAGER_HURT -> {
-                return SoundEvents.ENTITY_VILLAGER_HURT;
+                return SoundEvents.VILLAGER_HURT;
             }
             case VILLAGER_NO -> {
-                return SoundEvents.ENTITY_VILLAGER_NO;
+                return SoundEvents.VILLAGER_NO;
             }
             case VILLAGER_TRADE -> {
-                return SoundEvents.ENTITY_VILLAGER_TRADE;
+                return SoundEvents.VILLAGER_TRADE;
             }
             case VILLAGER_YES -> {
-                return SoundEvents.ENTITY_VILLAGER_YES;
+                return SoundEvents.VILLAGER_YES;
             }
             case VILLAGER_WORK_ARMORER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_ARMORER;
+                return SoundEvents.VILLAGER_WORK_ARMORER;
             }
             case VILLAGER_WORK_BUTCHER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_BUTCHER;
+                return SoundEvents.VILLAGER_WORK_BUTCHER;
             }
             case VILLAGER_WORK_CARTOGRAPHER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_CARTOGRAPHER;
+                return SoundEvents.VILLAGER_WORK_CARTOGRAPHER;
             }
             case VILLAGER_WORK_CLERIC -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_CLERIC;
+                return SoundEvents.VILLAGER_WORK_CLERIC;
             }
             case VILLAGER_WORK_FARMER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_FARMER;
+                return SoundEvents.VILLAGER_WORK_FARMER;
             }
             case VILLAGER_WORK_FISHERMAN -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_FISHERMAN;
+                return SoundEvents.VILLAGER_WORK_FISHERMAN;
             }
             case VILLAGER_WORK_FLETCHER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_FLETCHER;
+                return SoundEvents.VILLAGER_WORK_FLETCHER;
             }
             case VILLAGER_WORK_LEATHERWORKER -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER;
+                return SoundEvents.VILLAGER_WORK_LEATHERWORKER;
             }
             case VILLAGER_WORK_LIBRARIAN -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_LIBRARIAN;
+                return SoundEvents.VILLAGER_WORK_LIBRARIAN;
             }
             case VILLAGER_WORK_MASON -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_MASON;
+                return SoundEvents.VILLAGER_WORK_MASON;
             }
             case VILLAGER_WORK_SHEPHERD -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_SHEPHERD;
+                return SoundEvents.VILLAGER_WORK_SHEPHERD;
             }
             case VILLAGER_WORK_TOOLSMITH -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_TOOLSMITH;
+                return SoundEvents.VILLAGER_WORK_TOOLSMITH;
             }
             case VILLAGER_WORK_WEAPONSMITH -> {
-                return SoundEvents.ENTITY_VILLAGER_WORK_WEAPONSMITH;
+                return SoundEvents.VILLAGER_WORK_WEAPONSMITH;
             }
             case VINDICATOR_AMBIENT -> {
-                return SoundEvents.ENTITY_VINDICATOR_AMBIENT;
+                return SoundEvents.VINDICATOR_AMBIENT;
             }
             case VINDICATOR_CELEBRATE -> {
-                return SoundEvents.ENTITY_VINDICATOR_CELEBRATE;
+                return SoundEvents.VINDICATOR_CELEBRATE;
             }
             case VINDICATOR_DEATH -> {
-                return SoundEvents.ENTITY_VINDICATOR_DEATH;
+                return SoundEvents.VINDICATOR_DEATH;
             }
             case VINDICATOR_HURT -> {
-                return SoundEvents.ENTITY_VINDICATOR_HURT;
+                return SoundEvents.VINDICATOR_HURT;
             }
             case VINE_BREAK -> {
-                return SoundEvents.BLOCK_VINE_BREAK;
+                return SoundEvents.VINE_BREAK;
             }
             case VINE_FALL -> {
-                return SoundEvents.BLOCK_VINE_FALL;
+                return SoundEvents.VINE_FALL;
             }
             case VINE_HIT -> {
-                return SoundEvents.BLOCK_VINE_HIT;
+                return SoundEvents.VINE_HIT;
             }
             case VINE_PLACE -> {
-                return SoundEvents.BLOCK_VINE_PLACE;
+                return SoundEvents.VINE_PLACE;
             }
             case VINE_STEP -> {
-                return SoundEvents.BLOCK_VINE_STEP;
+                return SoundEvents.VINE_STEP;
             }
             case LILY_PAD_PLACE -> {
-                return SoundEvents.BLOCK_LILY_PAD_PLACE;
+                return SoundEvents.LILY_PAD_PLACE;
             }
             case WANDERING_TRADER_AMBIENT -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_AMBIENT;
+                return SoundEvents.WANDERING_TRADER_AMBIENT;
             }
             case WANDERING_TRADER_DEATH -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_DEATH;
+                return SoundEvents.WANDERING_TRADER_DEATH;
             }
             case WANDERING_TRADER_DISAPPEARED -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_DISAPPEARED;
+                return SoundEvents.WANDERING_TRADER_DISAPPEARED;
             }
             case WANDERING_TRADER_DRINK_MILK -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_DRINK_MILK;
+                return SoundEvents.WANDERING_TRADER_DRINK_MILK;
             }
             case WANDERING_TRADER_DRINK_POTION -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_DRINK_POTION;
+                return SoundEvents.WANDERING_TRADER_DRINK_POTION;
             }
             case WANDERING_TRADER_HURT -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_HURT;
+                return SoundEvents.WANDERING_TRADER_HURT;
             }
             case WANDERING_TRADER_NO -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_NO;
+                return SoundEvents.WANDERING_TRADER_NO;
             }
             case WANDERING_TRADER_REAPPEARED -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_REAPPEARED;
+                return SoundEvents.WANDERING_TRADER_REAPPEARED;
             }
             case WANDERING_TRADER_TRADE -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_TRADE;
+                return SoundEvents.WANDERING_TRADER_TRADE;
             }
             case WANDERING_TRADER_YES -> {
-                return SoundEvents.ENTITY_WANDERING_TRADER_YES;
+                return SoundEvents.WANDERING_TRADER_YES;
             }
             case WARDEN_AGITATED -> {
-                return SoundEvents.ENTITY_WARDEN_AGITATED;
+                return SoundEvents.WARDEN_AGITATED;
             }
             case WARDEN_AMBIENT -> {
-                return SoundEvents.ENTITY_WARDEN_AMBIENT;
+                return SoundEvents.WARDEN_AMBIENT;
             }
             case WARDEN_ANGRY -> {
-                return SoundEvents.ENTITY_WARDEN_ANGRY;
+                return SoundEvents.WARDEN_ANGRY;
             }
             case WARDEN_ATTACK_IMPACT -> {
-                return SoundEvents.ENTITY_WARDEN_ATTACK_IMPACT;
+                return SoundEvents.WARDEN_ATTACK_IMPACT;
             }
             case WARDEN_DEATH -> {
-                return SoundEvents.ENTITY_WARDEN_DEATH;
+                return SoundEvents.WARDEN_DEATH;
             }
             case WARDEN_DIG -> {
-                return SoundEvents.ENTITY_WARDEN_DIG;
+                return SoundEvents.WARDEN_DIG;
             }
             case WARDEN_EMERGE -> {
-                return SoundEvents.ENTITY_WARDEN_EMERGE;
+                return SoundEvents.WARDEN_EMERGE;
             }
             case WARDEN_HEARTBEAT -> {
-                return SoundEvents.ENTITY_WARDEN_HEARTBEAT;
+                return SoundEvents.WARDEN_HEARTBEAT;
             }
             case WARDEN_HURT -> {
-                return SoundEvents.ENTITY_WARDEN_HURT;
+                return SoundEvents.WARDEN_HURT;
             }
             case WARDEN_LISTENING -> {
-                return SoundEvents.ENTITY_WARDEN_LISTENING;
+                return SoundEvents.WARDEN_LISTENING;
             }
             case WARDEN_LISTENING_ANGRY -> {
-                return SoundEvents.ENTITY_WARDEN_LISTENING_ANGRY;
+                return SoundEvents.WARDEN_LISTENING_ANGRY;
             }
             case WARDEN_NEARBY_CLOSE -> {
-                return SoundEvents.ENTITY_WARDEN_NEARBY_CLOSE;
+                return SoundEvents.WARDEN_NEARBY_CLOSE;
             }
             case WARDEN_NEARBY_CLOSER -> {
-                return SoundEvents.ENTITY_WARDEN_NEARBY_CLOSER;
+                return SoundEvents.WARDEN_NEARBY_CLOSER;
             }
             case WARDEN_NEARBY_CLOSEST -> {
-                return SoundEvents.ENTITY_WARDEN_NEARBY_CLOSEST;
+                return SoundEvents.WARDEN_NEARBY_CLOSEST;
             }
             case WARDEN_ROAR -> {
-                return SoundEvents.ENTITY_WARDEN_ROAR;
+                return SoundEvents.WARDEN_ROAR;
             }
             case WARDEN_SNIFF -> {
-                return SoundEvents.ENTITY_WARDEN_SNIFF;
+                return SoundEvents.WARDEN_SNIFF;
             }
             case WARDEN_SONIC_BOOM -> {
-                return SoundEvents.ENTITY_WARDEN_SONIC_BOOM;
+                return SoundEvents.WARDEN_SONIC_BOOM;
             }
             case WARDEN_SONIC_CHARGE -> {
-                return SoundEvents.ENTITY_WARDEN_SONIC_CHARGE;
+                return SoundEvents.WARDEN_SONIC_CHARGE;
             }
             case WARDEN_STEP -> {
-                return SoundEvents.ENTITY_WARDEN_STEP;
+                return SoundEvents.WARDEN_STEP;
             }
             case WARDEN_TENDRIL_CLICKS -> {
-                return SoundEvents.ENTITY_WARDEN_TENDRIL_CLICKS;
+                return SoundEvents.WARDEN_TENDRIL_CLICKS;
             }
             case WAXED_HANGING_SIGN_INTERACT_FAIL -> {
-                return SoundEvents.BLOCK_HANGING_SIGN_WAXED_INTERACT_FAIL;
+                return SoundEvents.WAXED_HANGING_SIGN_INTERACT_FAIL;
             }
             case WAXED_SIGN_INTERACT_FAIL -> {
-                return SoundEvents.BLOCK_SIGN_WAXED_INTERACT_FAIL;
+                return SoundEvents.WAXED_SIGN_INTERACT_FAIL;
             }
             case WATER_AMBIENT -> {
-                return SoundEvents.BLOCK_WATER_AMBIENT;
+                return SoundEvents.WATER_AMBIENT;
             }
             case WEATHER_RAIN -> {
                 return SoundEvents.WEATHER_RAIN;
@@ -6239,280 +6239,280 @@ public enum SoundEventsHolder {
                 return SoundEvents.WEATHER_RAIN_ABOVE;
             }
             case WET_GRASS_BREAK -> {
-                return SoundEvents.BLOCK_WET_GRASS_BREAK;
+                return SoundEvents.WET_GRASS_BREAK;
             }
             case WET_GRASS_FALL -> {
-                return SoundEvents.BLOCK_WET_GRASS_FALL;
+                return SoundEvents.WET_GRASS_FALL;
             }
             case WET_GRASS_HIT -> {
-                return SoundEvents.BLOCK_WET_GRASS_HIT;
+                return SoundEvents.WET_GRASS_HIT;
             }
             case WET_GRASS_PLACE -> {
-                return SoundEvents.BLOCK_WET_GRASS_PLACE;
+                return SoundEvents.WET_GRASS_PLACE;
             }
             case WET_GRASS_STEP -> {
-                return SoundEvents.BLOCK_WET_GRASS_STEP;
+                return SoundEvents.WET_GRASS_STEP;
             }
             case WET_SPONGE_BREAK -> {
-                return SoundEvents.BLOCK_WET_SPONGE_BREAK;
+                return SoundEvents.WET_SPONGE_BREAK;
             }
             case WET_SPONGE_DRIES -> {
-                return SoundEvents.BLOCK_WET_SPONGE_DRIES;
+                return SoundEvents.WET_SPONGE_DRIES;
             }
             case WET_SPONGE_FALL -> {
-                return SoundEvents.BLOCK_WET_SPONGE_FALL;
+                return SoundEvents.WET_SPONGE_FALL;
             }
             case WET_SPONGE_HIT -> {
-                return SoundEvents.BLOCK_WET_SPONGE_HIT;
+                return SoundEvents.WET_SPONGE_HIT;
             }
             case WET_SPONGE_PLACE -> {
-                return SoundEvents.BLOCK_WET_SPONGE_PLACE;
+                return SoundEvents.WET_SPONGE_PLACE;
             }
             case WET_SPONGE_STEP -> {
-                return SoundEvents.BLOCK_WET_SPONGE_STEP;
+                return SoundEvents.WET_SPONGE_STEP;
             }
             case WIND_CHARGE_BURST -> {
-                return SoundEvents.ENTITY_WIND_CHARGE_WIND_BURST.value();
+                return SoundEvents.WIND_CHARGE_BURST.value();
             }
             case WIND_CHARGE_THROW -> {
-                return SoundEvents.ENTITY_WIND_CHARGE_THROW;
+                return SoundEvents.WIND_CHARGE_THROW;
             }
             case WITCH_AMBIENT -> {
-                return SoundEvents.ENTITY_WITCH_AMBIENT;
+                return SoundEvents.WITCH_AMBIENT;
             }
             case WITCH_CELEBRATE -> {
-                return SoundEvents.ENTITY_WITCH_CELEBRATE;
+                return SoundEvents.WITCH_CELEBRATE;
             }
             case WITCH_DEATH -> {
-                return SoundEvents.ENTITY_WITCH_DEATH;
+                return SoundEvents.WITCH_DEATH;
             }
             case WITCH_DRINK -> {
-                return SoundEvents.ENTITY_WITCH_DRINK;
+                return SoundEvents.WITCH_DRINK;
             }
             case WITCH_HURT -> {
-                return SoundEvents.ENTITY_WITCH_HURT;
+                return SoundEvents.WITCH_HURT;
             }
             case WITCH_THROW -> {
-                return SoundEvents.ENTITY_WITCH_THROW;
+                return SoundEvents.WITCH_THROW;
             }
             case WITHER_AMBIENT -> {
-                return SoundEvents.ENTITY_WITHER_AMBIENT;
+                return SoundEvents.WITHER_AMBIENT;
             }
             case WITHER_BREAK_BLOCK -> {
-                return SoundEvents.ENTITY_WITHER_BREAK_BLOCK;
+                return SoundEvents.WITHER_BREAK_BLOCK;
             }
             case WITHER_DEATH -> {
-                return SoundEvents.ENTITY_WITHER_DEATH;
+                return SoundEvents.WITHER_DEATH;
             }
             case WITHER_HURT -> {
-                return SoundEvents.ENTITY_WITHER_HURT;
+                return SoundEvents.WITHER_HURT;
             }
             case WITHER_SHOOT -> {
-                return SoundEvents.ENTITY_WITHER_SHOOT;
+                return SoundEvents.WITHER_SHOOT;
             }
             case WITHER_SKELETON_AMBIENT -> {
-                return SoundEvents.ENTITY_WITHER_SKELETON_AMBIENT;
+                return SoundEvents.WITHER_SKELETON_AMBIENT;
             }
             case WITHER_SKELETON_DEATH -> {
-                return SoundEvents.ENTITY_WITHER_SKELETON_DEATH;
+                return SoundEvents.WITHER_SKELETON_DEATH;
             }
             case WITHER_SKELETON_HURT -> {
-                return SoundEvents.ENTITY_WITHER_SKELETON_HURT;
+                return SoundEvents.WITHER_SKELETON_HURT;
             }
             case WITHER_SKELETON_STEP -> {
-                return SoundEvents.ENTITY_WITHER_SKELETON_STEP;
+                return SoundEvents.WITHER_SKELETON_STEP;
             }
             case WITHER_SPAWN -> {
-                return SoundEvents.ENTITY_WITHER_SPAWN;
+                return SoundEvents.WITHER_SPAWN;
             }
             case WOLF_ARMOR_BREAK -> {
-                return SoundEvents.ITEM_WOLF_ARMOR_BREAK;
+                return SoundEvents.WOLF_ARMOR_BREAK;
             }
             case WOLF_ARMOR_CRACK -> {
-                return SoundEvents.ITEM_WOLF_ARMOR_CRACK;
+                return SoundEvents.WOLF_ARMOR_CRACK;
             }
             case WOLF_ARMOR_DAMAGE -> {
-                return SoundEvents.ITEM_WOLF_ARMOR_DAMAGE;
+                return SoundEvents.WOLF_ARMOR_DAMAGE;
             }
             case WOLF_ARMOR_REPAIR -> {
-                return SoundEvents.ITEM_WOLF_ARMOR_REPAIR;
+                return SoundEvents.WOLF_ARMOR_REPAIR;
             }
             case WOLF_AMBIENT -> {
-                return SoundEvents.ENTITY_WOLF_AMBIENT;
+                return SoundEvents.WOLF_AMBIENT;
             }
             case WOLF_DEATH -> {
-                return SoundEvents.ENTITY_WOLF_DEATH;
+                return SoundEvents.WOLF_DEATH;
             }
             case WOLF_GROWL -> {
-                return SoundEvents.ENTITY_WOLF_GROWL;
+                return SoundEvents.WOLF_GROWL;
             }
             case WOLF_HOWL -> {
-                return SoundEvents.ENTITY_WOLF_HOWL;
+                return SoundEvents.WOLF_HOWL;
             }
             case WOLF_HURT -> {
-                return SoundEvents.ENTITY_WOLF_HURT;
+                return SoundEvents.WOLF_HURT;
             }
             case WOLF_PANT -> {
-                return SoundEvents.ENTITY_WOLF_PANT;
+                return SoundEvents.WOLF_PANT;
             }
             case WOLF_SHAKE -> {
-                return SoundEvents.ENTITY_WOLF_SHAKE;
+                return SoundEvents.WOLF_SHAKE;
             }
             case WOLF_STEP -> {
-                return SoundEvents.ENTITY_WOLF_STEP;
+                return SoundEvents.WOLF_STEP;
             }
             case WOLF_WHINE -> {
-                return SoundEvents.ENTITY_WOLF_WHINE;
+                return SoundEvents.WOLF_WHINE;
             }
             case WOODEN_DOOR_CLOSE -> {
-                return SoundEvents.BLOCK_WOODEN_DOOR_CLOSE;
+                return SoundEvents.WOODEN_DOOR_CLOSE;
             }
             case WOODEN_DOOR_OPEN -> {
-                return SoundEvents.BLOCK_WOODEN_DOOR_OPEN;
+                return SoundEvents.WOODEN_DOOR_OPEN;
             }
             case WOODEN_TRAPDOOR_CLOSE -> {
-                return SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE;
+                return SoundEvents.WOODEN_TRAPDOOR_CLOSE;
             }
             case WOODEN_TRAPDOOR_OPEN -> {
-                return SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN;
+                return SoundEvents.WOODEN_TRAPDOOR_OPEN;
             }
             case WOODEN_BUTTON_CLICK_OFF -> {
-                return SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF;
+                return SoundEvents.WOODEN_BUTTON_CLICK_OFF;
             }
             case WOODEN_BUTTON_CLICK_ON -> {
-                return SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON;
+                return SoundEvents.WOODEN_BUTTON_CLICK_ON;
             }
             case WOODEN_PRESSURE_PLATE_CLICK_OFF -> {
-                return SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF;
+                return SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF;
             }
             case WOODEN_PRESSURE_PLATE_CLICK_ON -> {
-                return SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON;
+                return SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON;
             }
             case WOOD_BREAK -> {
-                return SoundEvents.BLOCK_WOOD_BREAK;
+                return SoundEvents.WOOD_BREAK;
             }
             case WOOD_FALL -> {
-                return SoundEvents.BLOCK_WOOD_FALL;
+                return SoundEvents.WOOD_FALL;
             }
             case WOOD_HIT -> {
-                return SoundEvents.BLOCK_WOOD_HIT;
+                return SoundEvents.WOOD_HIT;
             }
             case WOOD_PLACE -> {
-                return SoundEvents.BLOCK_WOOD_PLACE;
+                return SoundEvents.WOOD_PLACE;
             }
             case WOOD_STEP -> {
-                return SoundEvents.BLOCK_WOOD_STEP;
+                return SoundEvents.WOOD_STEP;
             }
             case WOOL_BREAK -> {
-                return SoundEvents.BLOCK_WOOL_BREAK;
+                return SoundEvents.WOOL_BREAK;
             }
             case WOOL_FALL -> {
-                return SoundEvents.BLOCK_WOOL_FALL;
+                return SoundEvents.WOOL_FALL;
             }
             case WOOL_HIT -> {
-                return SoundEvents.BLOCK_WOOL_HIT;
+                return SoundEvents.WOOL_HIT;
             }
             case WOOL_PLACE -> {
-                return SoundEvents.BLOCK_WOOL_PLACE;
+                return SoundEvents.WOOL_PLACE;
             }
             case WOOL_STEP -> {
-                return SoundEvents.BLOCK_WOOL_STEP;
+                return SoundEvents.WOOL_STEP;
             }
             case ZOGLIN_AMBIENT -> {
-                return SoundEvents.ENTITY_ZOGLIN_AMBIENT;
+                return SoundEvents.ZOGLIN_AMBIENT;
             }
             case ZOGLIN_ANGRY -> {
-                return SoundEvents.ENTITY_ZOGLIN_ANGRY;
+                return SoundEvents.ZOGLIN_ANGRY;
             }
             case ZOGLIN_ATTACK -> {
-                return SoundEvents.ENTITY_ZOGLIN_ATTACK;
+                return SoundEvents.ZOGLIN_ATTACK;
             }
             case ZOGLIN_DEATH -> {
-                return SoundEvents.ENTITY_ZOGLIN_DEATH;
+                return SoundEvents.ZOGLIN_DEATH;
             }
             case ZOGLIN_HURT -> {
-                return SoundEvents.ENTITY_ZOGLIN_HURT;
+                return SoundEvents.ZOGLIN_HURT;
             }
             case ZOGLIN_STEP -> {
-                return SoundEvents.ENTITY_ZOGLIN_STEP;
+                return SoundEvents.ZOGLIN_STEP;
             }
             case ZOMBIE_AMBIENT -> {
-                return SoundEvents.ENTITY_ZOMBIE_AMBIENT;
+                return SoundEvents.ZOMBIE_AMBIENT;
             }
             case ZOMBIE_ATTACK_WOODEN_DOOR -> {
-                return SoundEvents.ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR;
+                return SoundEvents.ZOMBIE_ATTACK_WOODEN_DOOR;
             }
             case ZOMBIE_ATTACK_IRON_DOOR -> {
-                return SoundEvents.ENTITY_ZOMBIE_ATTACK_IRON_DOOR;
+                return SoundEvents.ZOMBIE_ATTACK_IRON_DOOR;
             }
             case ZOMBIE_BREAK_WOODEN_DOOR -> {
-                return SoundEvents.ENTITY_ZOMBIE_BREAK_WOODEN_DOOR;
+                return SoundEvents.ZOMBIE_BREAK_WOODEN_DOOR;
             }
             case ZOMBIE_CONVERTED_TO_DROWNED -> {
-                return SoundEvents.ENTITY_ZOMBIE_CONVERTED_TO_DROWNED;
+                return SoundEvents.ZOMBIE_CONVERTED_TO_DROWNED;
             }
             case ZOMBIE_DEATH -> {
-                return SoundEvents.ENTITY_ZOMBIE_DEATH;
+                return SoundEvents.ZOMBIE_DEATH;
             }
             case ZOMBIE_DESTROY_EGG -> {
-                return SoundEvents.ENTITY_ZOMBIE_DESTROY_EGG;
+                return SoundEvents.ZOMBIE_DESTROY_EGG;
             }
             case ZOMBIE_HORSE_AMBIENT -> {
-                return SoundEvents.ENTITY_ZOMBIE_HORSE_AMBIENT;
+                return SoundEvents.ZOMBIE_HORSE_AMBIENT;
             }
             case ZOMBIE_HORSE_DEATH -> {
-                return SoundEvents.ENTITY_ZOMBIE_HORSE_DEATH;
+                return SoundEvents.ZOMBIE_HORSE_DEATH;
             }
             case ZOMBIE_HORSE_HURT -> {
-                return SoundEvents.ENTITY_ZOMBIE_HORSE_HURT;
+                return SoundEvents.ZOMBIE_HORSE_HURT;
             }
             case ZOMBIE_HURT -> {
-                return SoundEvents.ENTITY_ZOMBIE_HURT;
+                return SoundEvents.ZOMBIE_HURT;
             }
             case ZOMBIE_INFECT -> {
-                return SoundEvents.ENTITY_ZOMBIE_INFECT;
+                return SoundEvents.ZOMBIE_INFECT;
             }
             case ZOMBIFIED_PIGLIN_AMBIENT -> {
-                return SoundEvents.ENTITY_ZOMBIFIED_PIGLIN_AMBIENT;
+                return SoundEvents.ZOMBIFIED_PIGLIN_AMBIENT;
             }
             case ZOMBIFIED_PIGLIN_ANGRY -> {
-                return SoundEvents.ENTITY_ZOMBIFIED_PIGLIN_ANGRY;
+                return SoundEvents.ZOMBIFIED_PIGLIN_ANGRY;
             }
             case ZOMBIFIED_PIGLIN_DEATH -> {
-                return SoundEvents.ENTITY_ZOMBIFIED_PIGLIN_DEATH;
+                return SoundEvents.ZOMBIFIED_PIGLIN_DEATH;
             }
             case ZOMBIFIED_PIGLIN_HURT -> {
-                return SoundEvents.ENTITY_ZOMBIFIED_PIGLIN_HURT;
+                return SoundEvents.ZOMBIFIED_PIGLIN_HURT;
             }
             case ZOMBIE_STEP -> {
-                return SoundEvents.ENTITY_ZOMBIE_STEP;
+                return SoundEvents.ZOMBIE_STEP;
             }
             case ZOMBIE_VILLAGER_AMBIENT -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_AMBIENT;
+                return SoundEvents.ZOMBIE_VILLAGER_AMBIENT;
             }
             case ZOMBIE_VILLAGER_CONVERTED -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_CONVERTED;
+                return SoundEvents.ZOMBIE_VILLAGER_CONVERTED;
             }
             case ZOMBIE_VILLAGER_CURE -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_CURE;
+                return SoundEvents.ZOMBIE_VILLAGER_CURE;
             }
             case ZOMBIE_VILLAGER_DEATH -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_DEATH;
+                return SoundEvents.ZOMBIE_VILLAGER_DEATH;
             }
             case ZOMBIE_VILLAGER_HURT -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_HURT;
+                return SoundEvents.ZOMBIE_VILLAGER_HURT;
             }
             case ZOMBIE_VILLAGER_STEP -> {
-                return SoundEvents.ENTITY_ZOMBIE_VILLAGER_STEP;
+                return SoundEvents.ZOMBIE_VILLAGER_STEP;
             }
             case APPLY_EFFECT_BAD_OMEN -> {
-                return SoundEvents.EVENT_MOB_EFFECT_BAD_OMEN;
+                return SoundEvents.APPLY_EFFECT_BAD_OMEN;
             }
             case APPLY_EFFECT_TRIAL_OMEN -> {
-                return SoundEvents.EVENT_MOB_EFFECT_TRIAL_OMEN;
+                return SoundEvents.APPLY_EFFECT_TRIAL_OMEN;
             }
             case APPLY_EFFECT_RAID_OMEN -> {
-                return SoundEvents.EVENT_MOB_EFFECT_RAID_OMEN;
+                return SoundEvents.APPLY_EFFECT_RAID_OMEN;
             }
             case CREAKING_DEACTIVATE, CREAKING_ATTACK, CREAKING_DEATH, CREAKING_STEP, CREAKING_FREEZE,
                  CREAKING_UNFREEZE, CREAKING_SPAWN, CREAKING_SWAY, CREAKING_TWITCH, CREAKING_HEART_BREAK,

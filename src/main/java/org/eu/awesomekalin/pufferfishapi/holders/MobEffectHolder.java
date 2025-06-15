@@ -1,7 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
 public class MobEffectHolder {
@@ -58,158 +58,158 @@ public class MobEffectHolder {
         INFESTED;
     }
 
-    public StatusEffectInstance getEffectFromEnum() {
+    public MobEffectInstance getEffectFromEnum() {
         switch (effect) {
             case SWIFTNESS -> {
-                return new StatusEffectInstance(StatusEffects.SPEED, duration, amplifier);
+                return new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier);
             }
 
             case SLOWNESS -> {
-                return new StatusEffectInstance(StatusEffects.SLOWNESS, duration, amplifier);
+                return new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, amplifier);
             }
 
             case HASTE -> {
-                return new StatusEffectInstance(StatusEffects.HASTE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DIG_SPEED, duration, amplifier);
             }
 
             case MINING_FATIGUE -> {
-                return new StatusEffectInstance(StatusEffects.MINING_FATIGUE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, amplifier);
             }
 
             case STRENGTH -> {
-                return new StatusEffectInstance(StatusEffects.STRENGTH, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DAMAGE_BOOST, duration, amplifier);
             }
 
             case HEALING -> {
-                return new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, duration, amplifier);
+                return new MobEffectInstance(MobEffects.HEAL, duration, amplifier);
             }
 
             case INSTANT_DAMAGE -> {
-                return new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.HARM, duration, amplifier);
             }
 
             case JUMP_BOOST -> {
-                return new StatusEffectInstance(StatusEffects.JUMP_BOOST, duration, amplifier);
+                return new MobEffectInstance(MobEffects.JUMP, duration, amplifier);
             }
 
             case NAUSEA -> {
-                return new StatusEffectInstance(StatusEffects.NAUSEA, duration, amplifier);
+                return new MobEffectInstance(MobEffects.CONFUSION, duration, amplifier);
             }
 
             case REGENERATION -> {
-                return new StatusEffectInstance(StatusEffects.REGENERATION, duration, amplifier);
+                return new MobEffectInstance(MobEffects.REGENERATION, duration, amplifier);
             }
 
             case RESISTANCE -> {
-                return new StatusEffectInstance(StatusEffects.RESISTANCE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, duration, amplifier);
             }
 
             case FIRE_RESISTANCE -> {
-                return new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.FIRE_RESISTANCE, duration, amplifier);
             }
 
             case WATER_BREATHING -> {
-                return new StatusEffectInstance(StatusEffects.WATER_BREATHING, duration, amplifier);
+                return new MobEffectInstance(MobEffects.WATER_BREATHING, duration, amplifier);
             }
 
             case INVISIBILITY -> {
-                return new StatusEffectInstance(StatusEffects.INVISIBILITY, duration, amplifier);
+                return new MobEffectInstance(MobEffects.INVISIBILITY, duration, amplifier);
             }
 
             case BLINDNESS -> {
-                return new StatusEffectInstance(StatusEffects.BLINDNESS, duration, amplifier);
+                return new MobEffectInstance(MobEffects.BLINDNESS, duration, amplifier);
             }
 
             case NIGHT_VISION -> {
-                return new StatusEffectInstance(StatusEffects.NIGHT_VISION, duration, amplifier);
+                return new MobEffectInstance(MobEffects.NIGHT_VISION, duration, amplifier);
             }
 
             case HUNGER -> {
-                return new StatusEffectInstance(StatusEffects.HUNGER, duration, amplifier);
+                return new MobEffectInstance(MobEffects.HUNGER, duration, amplifier);
             }
 
             case WEAKNESS -> {
-                return new StatusEffectInstance(StatusEffects.WEAKNESS, duration, amplifier);
+                return new MobEffectInstance(MobEffects.WEAKNESS, duration, amplifier);
             }
 
             case POISON -> {
-                return new StatusEffectInstance(StatusEffects.POISON, duration, amplifier);
+                return new MobEffectInstance(MobEffects.POISON, duration, amplifier);
             }
 
             case WITHER -> {
-                return new StatusEffectInstance(StatusEffects.WITHER, duration, amplifier);
+                return new MobEffectInstance(MobEffects.WITHER, duration, amplifier);
             }
 
             case ABSORPTION -> {
-                return new StatusEffectInstance(StatusEffects.ABSORPTION, duration, amplifier);
+                return new MobEffectInstance(MobEffects.ABSORPTION, duration, amplifier);
             }
 
             case SATURATION -> {
-                return new StatusEffectInstance(StatusEffects.SATURATION, duration, amplifier);
+                return new MobEffectInstance(MobEffects.SATURATION, duration, amplifier);
             }
 
             case GLOWING -> {
-                return new StatusEffectInstance(StatusEffects.GLOWING, duration, amplifier);
+                return new MobEffectInstance(MobEffects.GLOWING, duration, amplifier);
             }
 
             case LEVITATION -> {
-                return new StatusEffectInstance(StatusEffects.LEVITATION, duration, amplifier);
+                return new MobEffectInstance(MobEffects.LEVITATION, duration, amplifier);
             }
 
             case LUCK -> {
-                return new StatusEffectInstance(StatusEffects.LUCK, duration, amplifier);
+                return new MobEffectInstance(MobEffects.LUCK, duration, amplifier);
             }
 
             case UNLUCK -> {
-                return new StatusEffectInstance(StatusEffects.UNLUCK, duration, amplifier);
+                return new MobEffectInstance(MobEffects.UNLUCK, duration, amplifier);
             }
 
             case SLOW_FALLING -> {
-                return new StatusEffectInstance(StatusEffects.SLOW_FALLING, duration, amplifier);
+                return new MobEffectInstance(MobEffects.SLOW_FALLING, duration, amplifier);
             }
 
             case CONDUIT -> {
-                return new StatusEffectInstance(StatusEffects.CONDUIT_POWER, duration, amplifier);
+                return new MobEffectInstance(MobEffects.CONDUIT_POWER, duration, amplifier);
             }
 
             case DOLPHINS_GRACE -> {
-                return new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DOLPHINS_GRACE, duration, amplifier);
             }
 
             case BAD_OMEN -> {
-                return new StatusEffectInstance(StatusEffects.BAD_OMEN, duration, amplifier);
+                return new MobEffectInstance(MobEffects.BAD_OMEN, duration, amplifier);
             }
 
             case HERO_OF_THE_VILLAGE -> {
-                return new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, duration, amplifier);
+                return new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, duration, amplifier);
             }
 
             case DARKNESS -> {
-                return new StatusEffectInstance(StatusEffects.DARKNESS, duration, amplifier);
+                return new MobEffectInstance(MobEffects.DARKNESS, duration, amplifier);
             }
 
             case TRIAL_OMEN -> {
-                return new StatusEffectInstance(StatusEffects.TRIAL_OMEN, duration, amplifier);
+                return new MobEffectInstance(MobEffects.TRIAL_OMEN, duration, amplifier);
             }
 
             case RAID_OMEN -> {
-                return new StatusEffectInstance(StatusEffects.RAID_OMEN, duration, amplifier);
+                return new MobEffectInstance(MobEffects.RAID_OMEN, duration, amplifier);
             }
 
             case WIND_CHARGED -> {
-                return new StatusEffectInstance(StatusEffects.WIND_CHARGED, duration, amplifier);
+                return new MobEffectInstance(MobEffects.WIND_CHARGED, duration, amplifier);
             }
 
             case WEAVING -> {
-                return new StatusEffectInstance(StatusEffects.WEAVING, duration, amplifier);
+                return new MobEffectInstance(MobEffects.WEAVING, duration, amplifier);
             }
 
             case OOZING -> {
-                return new StatusEffectInstance(StatusEffects.OOZING, duration, amplifier);
+                return new MobEffectInstance(MobEffects.OOZING, duration, amplifier);
             }
 
             case INFESTED -> {
-                return new StatusEffectInstance(StatusEffects.INFESTED, duration, amplifier);
+                return new MobEffectInstance(MobEffects.INFESTED, duration, amplifier);
             }
         }
 

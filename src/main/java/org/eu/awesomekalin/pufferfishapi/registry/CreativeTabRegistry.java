@@ -2,12 +2,12 @@ package org.eu.awesomekalin.pufferfishapi.registry;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 
 import java.util.List;
@@ -22,15 +22,15 @@ public class CreativeTabRegistry {
     public void register() {}
 
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
-        Registry.register(Registries.ITEM_GROUP, Identifier.of(modId, tabId), FabricItemGroup.builder()
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.tryBuild(modId, tabId), FabricItemGroup.builder()
                 .icon(() -> new ItemStack(icon.data))
-                .displayName(Text.translatable(titleIdentifier))
+                .title(Component.translatable(titleIdentifier))
                 .build()
         );
 
-        ItemGroupEvents.modifyEntriesEvent(RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(modId, tabId))).register(itemGroup -> {
+        ItemGroupEvents.modifyEntriesEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.tryBuild(modId, tabId))).register(itemGroup -> {
             tabContents.forEach(item -> {
-                itemGroup.add(new ItemStack(item.data));
+                itemGroup.accept(new ItemStack(item.data));
             });
         });
     }
