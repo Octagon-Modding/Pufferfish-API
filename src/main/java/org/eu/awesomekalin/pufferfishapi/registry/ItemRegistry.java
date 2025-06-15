@@ -1,19 +1,25 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
-import net.minecraft.component.type.ConsumableComponent;
-import net.minecraft.component.type.ConsumableComponents;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.item.*;
-import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.item.equipment.EquipmentType;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.Consumable;
+import net.minecraft.world.item.component.Consumables;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
 import org.eu.awesomekalin.pufferfishapi.holders.*;
-import net.minecraft.registry.tag.TagKey;
-
 import java.util.List;
 
 public class ItemRegistry {
@@ -26,9 +32,9 @@ public class ItemRegistry {
     public void register() {}
 
     private ToolMaterial getToolMaterial(ToolHolder toolHolder) {
-        return new ToolMaterial(TagKey.of(
-                RegistryKeys.BLOCK,
-                Identifier.of(
+        return new ToolMaterial(TagKey.create(
+                Registries.BLOCK,
+                ResourceLocation.fromNamespaceAndPath(
                         toolHolder.material.incorrectForBlocksTag.namespace,
                         toolHolder.material.incorrectForBlocksTag.path
                 )
@@ -37,9 +43,9 @@ public class ItemRegistry {
                 toolHolder.material.speed,
                 toolHolder.material.attackDamageBonus,
                 toolHolder.material.enchantValue,
-                TagKey.of(
-                        RegistryKeys.ITEM,
-                        Identifier.of(
+                TagKey.create(
+                        Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(
                                 toolHolder.material.repairTag.namespace,
                                 toolHolder.material.repairTag.path
                         )
@@ -52,22 +58,22 @@ public class ItemRegistry {
                 armorHolder.durability,
                 armorHolder.defense,
                 armorHolder.enchantmentValue,
-                Registries.SOUND_EVENT.getEntry(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)),
+                BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEventsHolder.getSoundEvent(armorHolder.equipSound)),
                 armorHolder.toughness,
                 armorHolder.knockbackResistance,
-                TagKey.of(
-                        RegistryKeys.ITEM,
-                        Identifier.of(
+                TagKey.create(
+                        Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(
                                 armorHolder.repairIngredient.namespace,
                                 armorHolder.repairIngredient.path)
                 ), armorHolder.assetId);
     }
 
-    private Item.Settings getBasicProperties(String name) {
-        return new Item.Settings().registryKey(
-                RegistryKey.of(
-                        RegistryKeys.ITEM,
-                        Identifier.of(
+    private Item.Properties getBasicProperties(String name) {
+        return new Item.Properties().setId(
+                ResourceKey.create(
+                        Registries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(
                                 modId, name
                         )
                 )
@@ -75,7 +81,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerSword(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new SwordItem(
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, toolHolder.name), new SwordItem(
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
@@ -84,7 +90,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerPickaxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new PickaxeItem(
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, toolHolder.name), new PickaxeItem(
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
@@ -93,7 +99,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new AxeItem(
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, toolHolder.name), new AxeItem(
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
@@ -102,7 +108,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerShovel(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new ShovelItem(
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, toolHolder.name), new ShovelItem(
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
@@ -111,7 +117,7 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerHoe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, toolHolder.name), new HoeItem(
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, toolHolder.name), new HoeItem(
                 getToolMaterial(toolHolder),
                 toolHolder.attackDamage,
                 toolHolder.attackSpeed,
@@ -120,25 +126,25 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerFoodWithEffects(String name, int nutrition, float saturation, boolean alwaysEat, List<MobEffectHolder> effects) {
-        ConsumableComponent.Builder effectsComponent = ConsumableComponents.food();
+        Consumable.Builder effectsComponent = Consumables.defaultFood();
 
         effects.forEach((effect) -> {
-            effectsComponent.consumeEffect(effect.getEffectFromEnum());
+            effectsComponent.onConsume(effect.getEffectFromEnum());
         });
 
-        Item.Settings itemProperties = getBasicProperties(name).food(new FoodComponent(nutrition, saturation, alwaysEat), effectsComponent.build());
-        return new ItemRegistryHolder(Registry.register(Registries.ITEM, Identifier.of(this.modId, name), new Item(itemProperties)));
+        Item.Properties itemProperties = getBasicProperties(name).food(new FoodProperties(nutrition, saturation, alwaysEat), effectsComponent.build());
+        return new ItemRegistryHolder(Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(this.modId, name), new Item(itemProperties)));
     }
 
     public ItemRegistryHolder registerHelmet(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
                 Registry.register(
-                        Registries.ITEM,
-                        Identifier.of(modId, name),
+                        BuiltInRegistries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(modId, name),
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
-                                EquipmentType.HELMET,
-                                getBasicProperties(name).maxDamage(EquipmentType.HELMET.getMaxDamage(armorHolder.durability))
+                                ArmorType.HELMET,
+                                getBasicProperties(name).durability(ArmorType.HELMET.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -147,12 +153,12 @@ public class ItemRegistry {
     public ItemRegistryHolder registerChestplate(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
                 Registry.register(
-                        Registries.ITEM,
-                        Identifier.of(modId, name),
+                        BuiltInRegistries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(modId, name),
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
-                                EquipmentType.CHESTPLATE,
-                                getBasicProperties(name).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(armorHolder.durability))
+                                ArmorType.CHESTPLATE,
+                                getBasicProperties(name).durability(ArmorType.CHESTPLATE.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -161,12 +167,12 @@ public class ItemRegistry {
     public ItemRegistryHolder registerLeggings(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
                 Registry.register(
-                        Registries.ITEM,
-                        Identifier.of(modId, name),
+                        BuiltInRegistries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(modId, name),
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
-                                EquipmentType.LEGGINGS,
-                                getBasicProperties(name).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(armorHolder.durability))
+                                ArmorType.LEGGINGS,
+                                getBasicProperties(name).durability(ArmorType.LEGGINGS.getDurability(armorHolder.durability))
                         )
                 )
         );
@@ -175,12 +181,12 @@ public class ItemRegistry {
     public ItemRegistryHolder registerBoots(String name, ArmorHolder armorHolder) {
         return new ItemRegistryHolder(
                 Registry.register(
-                        Registries.ITEM,
-                        Identifier.of(modId, name),
+                        BuiltInRegistries.ITEM,
+                        ResourceLocation.fromNamespaceAndPath(modId, name),
                         new ArmorItem(
                                 getArmorMaterial(armorHolder),
-                                EquipmentType.BOOTS,
-                                getBasicProperties(name).maxDamage(EquipmentType.BOOTS.getMaxDamage(armorHolder.durability))
+                                ArmorType.BOOTS,
+                                getBasicProperties(name).durability(ArmorType.BOOTS.getDurability(armorHolder.durability))
                         )
                 )
         );
