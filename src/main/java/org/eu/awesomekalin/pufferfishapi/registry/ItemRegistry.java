@@ -29,7 +29,7 @@ public class ItemRegistry {
     }
 
     public void register() {
-        register.register(PufferfishAPI.context.getModEventBus());
+        register.register(PufferfishAPI.context.getModBusGroup());
     }
 
     private ToolMaterial getToolMaterial(ToolHolder toolHolder) {

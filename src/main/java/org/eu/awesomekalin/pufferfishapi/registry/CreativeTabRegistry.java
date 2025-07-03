@@ -17,7 +17,7 @@ public class CreativeTabRegistry {
     }
 
     public void register() {
-        register.register(PufferfishAPI.context.getModEventBus());
+        register.register(PufferfishAPI.context.getModBusGroup());
     }
 
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
