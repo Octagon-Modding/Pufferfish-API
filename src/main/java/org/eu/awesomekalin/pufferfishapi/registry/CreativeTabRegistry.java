@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
+import org.eu.awesomekalin.pufferfishapi.holders.BlockRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 
 import java.util.List;
@@ -20,13 +21,25 @@ public class CreativeTabRegistry {
         register.register(PufferfishAPI.eventBus);
     }
 
-    public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
+    public void registerTab(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
         register.register(tabId, () -> CreativeModeTab.builder()
                 .title(Component.translatable(titleIdentifier))
-                .icon(() -> icon.data.get().getDefaultInstance())
+                .icon(() -> {
+                    if (icon instanceof ItemRegistryHolder itemIcon) {
+                        return itemIcon.data.get().getDefaultInstance();
+                    } else if (icon instanceof BlockRegistryHolder blockIcon) {
+                        return blockIcon.dataItem.get().getDefaultInstance();
+                    }
+                    PufferfishAPI.LOGGER.error("Invalid Creative Mode Tab Icon specified by mod. Crash will occur when opening the creative mode inventory.");
+                    return null;
+                })
                 .displayItems((params, output) -> {
                     tabContents.forEach((item) -> {
-                        output.accept(item.data.get().getDefaultInstance());
+                        if (item instanceof ItemRegistryHolder itemData) {
+                            output.accept(itemData.data.get().getDefaultInstance());
+                        } else if (item instanceof BlockRegistryHolder blockData) {
+                            output.accept(blockData.dataItem.get().getDefaultInstance());
+                        }
                     });
                 }).build()
         );
