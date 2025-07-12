@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 
 public class CustomChestBlock extends BaseEntityBlock {
     public static final MapCodec<CustomChestBlock> CODEC = simpleCodec(CustomChestBlock::new);
-    private BlockRegistry blockRegistry;
+    private Supplier<List<Supplier<BlockEntityType<?>>>> blockEntityRenderersSupplier;
     private int position;
     private ChestSettings chestSettings;
 
@@ -26,9 +26,9 @@ public class CustomChestBlock extends BaseEntityBlock {
         super(properties);
     }
 
-    public CustomChestBlock(BlockBehaviour.Properties properties, BlockRegistry blockRegistry, int position, ChestSettings chestSettings) {
+    public CustomChestBlock(BlockBehaviour.Properties properties, Supplier<List<Supplier<BlockEntityType<?>>>> blockEntityRenderersSupplier, int position, ChestSettings chestSettings) {
         super(properties);
-        this.blockRegistry = blockRegistry;
+        this.blockEntityRenderersSupplier = blockEntityRenderersSupplier;
         this.position = position;
         this.chestSettings = chestSettings;
     }
@@ -41,7 +41,7 @@ public class CustomChestBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new CustomChestBlockEntity(blockRegistry.getBlockEntityRenderers(), position, blockPos, blockState, chestSettings);
+        return new CustomChestBlockEntity(blockEntityRenderersSupplier.get(), position, blockPos, blockState, chestSettings);
     }
 
     public static class CustomChestBlockEntity extends BlockEntity {
