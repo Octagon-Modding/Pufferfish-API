@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
+import org.eu.awesomekalin.pufferfishapi.registry.BlockRegistry;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 import org.jetbrains.annotations.Nullable;
 
@@ -17,7 +18,7 @@ import java.util.function.Supplier;
 
 public class CustomChestBlock extends BaseEntityBlock {
     public static final MapCodec<CustomChestBlock> CODEC = simpleCodec(CustomChestBlock::new);
-    private List<Supplier<BlockEntityType<?>>> blockEntityRenderers;
+    private BlockRegistry blockRegistry;
     private int position;
     private ChestSettings chestSettings;
 
@@ -25,9 +26,9 @@ public class CustomChestBlock extends BaseEntityBlock {
         super(properties);
     }
 
-    public CustomChestBlock(BlockBehaviour.Properties properties, List<Supplier<BlockEntityType<?>>> blockEntityRenderers, int position, ChestSettings chestSettings) {
+    public CustomChestBlock(BlockBehaviour.Properties properties, BlockRegistry blockRegistry, int position, ChestSettings chestSettings) {
         super(properties);
-        this.blockEntityRenderers = blockEntityRenderers;
+        this.blockRegistry = blockRegistry;
         this.position = position;
         this.chestSettings = chestSettings;
     }
@@ -40,7 +41,7 @@ public class CustomChestBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new CustomChestBlockEntity(blockEntityRenderers, position, blockPos, blockState, chestSettings);
+        return new CustomChestBlockEntity(blockRegistry.getBlockEntityRenderers(), position, blockPos, blockState, chestSettings);
     }
 
     public static class CustomChestBlockEntity extends BlockEntity {
