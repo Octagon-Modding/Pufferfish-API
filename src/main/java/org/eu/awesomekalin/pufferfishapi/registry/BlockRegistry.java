@@ -36,7 +36,7 @@ public class BlockRegistry {
     }
 
     public BlockRegistryHolder registerChest(String name, BlockProperties blockProperties, ChestSettings chestSettings) {
-        final DeferredBlock<Block> chestBlock = register.register(name, registryName -> new CustomChestBlock(blockProperties.getProperties(registryName), this::getBlockEntityRenderers, blockEntityRenderers.size(), chestSettings));
+        final DeferredBlock<Block> chestBlock = register.register(name, registryName -> new CustomChestBlock(blockProperties.getProperties(registryName), this::getBlockEntityRenderers, blockEntityRenderers.size() -1, chestSettings));
         final DeferredItem<BlockItem> blockItem = itemRegister.registerSimpleBlockItem(chestBlock);
         final Supplier<BlockEntityType<?>> blockEntity = blockEntityRegister.register(name, () -> new BlockEntityType<>(
                 (pos, blockState) -> new CustomChestBlock.CustomChestBlockEntity(blockEntityRenderers, blockEntityRenderers.size() - 1, pos, blockState, chestSettings),
