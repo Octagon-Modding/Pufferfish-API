@@ -7,11 +7,13 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.blocks.CustomChestBlock;
 import org.eu.awesomekalin.pufferfishapi.holders.BlockRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.util.BlockProperties;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -19,12 +21,18 @@ public class BlockRegistry {
     private final DeferredRegister.Blocks register;
     private final DeferredRegister.Items itemRegister;
     private final DeferredRegister<BlockEntityType<?>> blockEntityRegister;
-    private List<Supplier<BlockEntityType<?>>> blockEntityRenderers;
+    private final List<Supplier<BlockEntityType<?>>> blockEntityRenderers = new ArrayList<>();
 
     public BlockRegistry(String modId) {
         register = DeferredRegister.createBlocks(modId);
         itemRegister = DeferredRegister.createItems(modId);
         blockEntityRegister = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, modId);
+    }
+
+    public void register() {
+        register.register(PufferfishAPI.eventBus);
+        itemRegister.register(PufferfishAPI.eventBus);
+        blockEntityRegister.register(PufferfishAPI.eventBus);
     }
 
     public BlockRegistryHolder registerChest(String name, BlockProperties blockProperties, ChestSettings chestSettings) {
