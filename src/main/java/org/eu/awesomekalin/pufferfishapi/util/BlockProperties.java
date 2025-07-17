@@ -1,4 +1,4 @@
-package org.eu.awesomekalin.pufferfishapi.util;
+/*package org.eu.awesomekalin.pufferfishapi.util;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -41,3 +41,4 @@ public class BlockProperties {
                 .friction(friction);
     }
 }
+*/
