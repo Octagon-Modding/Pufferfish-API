@@ -1,4 +1,4 @@
-/*package org.eu.awesomekalin.pufferfishapi.util;
+package org.eu.awesomekalin.pufferfishapi.util;
 
 public class ChestSettings {
     public final int inventorySize;
@@ -9,4 +9,3 @@ public class ChestSettings {
         this.maxStackSize = maxStackSize;
     }
 }
-*/

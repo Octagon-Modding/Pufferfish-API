@@ -1,4 +1,4 @@
-/*package org.eu.awesomekalin.pufferfishapi.registry;
+package org.eu.awesomekalin.pufferfishapi.registry;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
@@ -50,4 +50,3 @@ public class BlockRegistry {
         return blockEntityRenderers;
     }
 }
-*/

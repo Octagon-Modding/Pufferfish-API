@@ -2,7 +2,7 @@ package org.eu.awesomekalin.pufferfishapi.holders;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
-/*import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -20,4 +20,3 @@ public class BlockRegistryHolder {
         dataBlockEntity = blockEntity;
     }
 }
-*/

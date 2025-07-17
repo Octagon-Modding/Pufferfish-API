@@ -1,4 +1,4 @@
-/*package org.eu.awesomekalin.pufferfishapi.blocks;
+package org.eu.awesomekalin.pufferfishapi.blocks;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
@@ -108,4 +108,3 @@ public class CustomChestBlock extends BaseEntityBlock {
         }
     }
 }
-*/

@@ -1,4 +1,4 @@
-/*package org.eu.awesomekalin.pufferfishapi.holders;
+package org.eu.awesomekalin.pufferfishapi.holders;
 
 import net.minecraft.world.level.block.SoundType;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
@@ -498,4 +498,3 @@ public enum SoundTypeHolder {
         }
     }
 }
-*/
