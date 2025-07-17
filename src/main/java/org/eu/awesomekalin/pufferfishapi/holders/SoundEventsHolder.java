@@ -4116,10 +4116,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.LAVA_POP;
             }
             case LEASH_KNOT_BREAK -> {
-                return SoundEvents.f_399752_;
+                return SoundEvents.LEAD_BREAK;
             }
             case LEASH_KNOT_PLACE -> {
-                return SoundEvents.f_400521_;
+                return SoundEvents.LEAD_TIED;
             }
             case LEVER_CLICK -> {
                 return SoundEvents.LEVER_CLICK;
