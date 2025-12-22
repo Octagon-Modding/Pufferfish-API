@@ -43,6 +43,6 @@ public class ArmorHolder {
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
         this.repairIngredient = repairIngredient;
-        this.assetId = ResourceKey.create(EquipmentAssets.ROOT_ID, net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(assetId.namespace, assetId.path));
+        this.assetId = ResourceKey.create(EquipmentAssets.ROOT_ID, net.minecraft.resources.Identifier.fromNamespaceAndPath(assetId.namespace, assetId.path));
     }
 }
