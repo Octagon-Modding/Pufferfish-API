@@ -1,8 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
@@ -46,6 +45,6 @@ public class ArmorHolder {
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
         this.repairIngredient = repairIngredient;
-        this.assetId = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(assetId.namespace, assetId.path));
+        this.assetId = ResourceKey.create(EquipmentAssets.ROOT_ID, net.minecraft.resources.Identifier.fromNamespaceAndPath(assetId.namespace, assetId.path));
     }
 }
