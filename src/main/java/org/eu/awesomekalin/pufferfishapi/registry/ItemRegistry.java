@@ -3,8 +3,8 @@ package org.eu.awesomekalin.pufferfishapi.registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.food.FoodProperties;
@@ -36,7 +36,7 @@ public class ItemRegistry {
         return new ToolMaterial(
                 TagKey.create(
                         Registries.BLOCK,
-                        ResourceLocation.fromNamespaceAndPath(
+                        Identifier.fromNamespaceAndPath(
                                 toolHolder.material.incorrectForBlocksTag.namespace,
                                 toolHolder.material.incorrectForBlocksTag.path
                         )
@@ -46,7 +46,7 @@ public class ItemRegistry {
                 toolHolder.material.attackDamageBonus,
                 toolHolder.material.enchantValue,
                 ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
+                        Identifier.fromNamespaceAndPath(
                                 toolHolder.material.repairTag.namespace,
                                 toolHolder.material.repairTag.path
                         )
@@ -63,7 +63,7 @@ public class ItemRegistry {
                 armorHolder.toughness,
                 armorHolder.knockbackResistance,
                 ItemTags.create(
-                        ResourceLocation.fromNamespaceAndPath(
+                        Identifier.fromNamespaceAndPath(
                                 armorHolder.repairIngredient.namespace,
                                 armorHolder.repairIngredient.path)
                 ), armorHolder.assetId);
@@ -73,7 +73,7 @@ public class ItemRegistry {
         return new Item.Properties().setId(
                 ResourceKey.create(
                         Registries.ITEM,
-                        ResourceLocation.fromNamespaceAndPath(
+                        Identifier.fromNamespaceAndPath(
                                 modId, name
                         )
                 )
