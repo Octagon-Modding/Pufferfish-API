@@ -6,8 +6,9 @@ import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
+import org.jetbrains.annotations.NotNull;
 
-public class ChestScreen extends AbstractContainerScreen<ChestMenu> {
+public class ChestScreen extends AbstractContainerScreen<@NotNull ChestMenu> {
     private final ChestSettings chestSettings;
 
     public ChestScreen(ChestMenu menu, Inventory playerInventory, ChestSettings chestSettings) {
