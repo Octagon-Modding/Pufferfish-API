@@ -4,21 +4,31 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.world.Containers;
-import net.minecraft.world.SimpleContainer;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.MenuConstructor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import org.eu.awesomekalin.pufferfishapi.registry.BlockRegistry;
+import net.neoforged.neoforge.items.SlotItemHandler;
+import org.eu.awesomekalin.pufferfishapi.menus.ChestMenu;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 import org.jetbrains.annotations.Nullable;
 
@@ -53,15 +63,26 @@ public class CustomChestBlock extends BaseEntityBlock {
         return new CustomChestBlockEntity(blockEntityRenderersSupplier.get(), position, blockPos, blockState, chestSettings);
     }
 
-    public static class CustomChestBlockEntity extends BlockEntity {
-        private final ItemStackHandler inventory;
+    @Override
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        if (level.getBlockEntity(pos) instanceof CustomChestBlockEntity customChestBlockEntity && !level.isClientSide()) {
+            player.openMenu(new SimpleMenuProvider(customChestBlockEntity, Component.literal(this.chestSettings.guiTextTranslatable)), pos);
+        }
+
+        return InteractionResult.SUCCESS;
+    }
+
+    public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider {
+        public final ItemStackHandler inventory;
         private final int maxStackSize;
+        private final ChestSettings chestSettings;
 
         public CustomChestBlockEntity(List<Supplier<BlockEntityType<?>>> blockEntityRenderers, int position, BlockPos pos, BlockState blockState, ChestSettings chestSettings) {
             super(blockEntityRenderers.get(position).get(), pos, blockState);
             maxStackSize = chestSettings.maxStackSize;
+            this.chestSettings = chestSettings;
 
-            inventory = new ItemStackHandler(chestSettings.inventorySize) {
+            inventory = new ItemStackHandler(chestSettings.slotPositions.length) {
                 @Override
                 protected int getStackLimit(int slot, ItemStack stack) {
                     return maxStackSize;
@@ -105,6 +126,16 @@ public class CustomChestBlock extends BaseEntityBlock {
         @Override
         public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
             return saveWithoutMetadata(pRegistries);
+        }
+
+        @Override
+        public Component getDisplayName() {
+            return Component.literal(chestSettings.guiTextTranslatable);
+        }
+
+        @Override
+        public @org.jspecify.annotations.Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
+            return new ChestMenu(i, inventory, this, chestSettings);
         }
     }
 }

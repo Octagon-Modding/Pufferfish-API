@@ -21,6 +21,34 @@ public class CreativeTabRegistry {
         register.register(PufferfishAPI.eventBus);
     }
 
+    public void registerTabGlobal(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
+        register.register(tabId, () -> CreativeModeTab.builder()
+                .title(Component.translatable(titleIdentifier))
+                .icon(() -> {
+                    if (icon instanceof ItemRegistryHolder itemIcon) {
+                        return itemIcon.data.get().getDefaultInstance();
+                    } else if (icon instanceof BlockRegistryHolder blockIcon) {
+                        return blockIcon.dataItem.get().getDefaultInstance();
+                    }
+                    PufferfishAPI.LOGGER.error("Invalid Creative Mode Tab Icon specified by mod. Crash will occur when opening the creative mode inventory.");
+                    return null;
+                })
+                .displayItems((params, output) -> {
+                    tabContents.forEach((item) -> {
+                        if (item instanceof ItemRegistryHolder itemData) {
+                            output.accept(itemData.data.get().getDefaultInstance());
+                        } else if (item instanceof BlockRegistryHolder blockData) {
+                            output.accept(blockData.dataItem.get().getDefaultInstance());
+                        }
+                    });
+                }).build()
+        );
+    }
+
+    /**
+     * @deprecated As of v1.3.0, this function has been replaced by CreativeTabRegistry.registerTabGlobal
+     */
+    @Deprecated
     public void registerTab(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
         register.register(tabId, () -> CreativeModeTab.builder()
                 .title(Component.translatable(titleIdentifier))
