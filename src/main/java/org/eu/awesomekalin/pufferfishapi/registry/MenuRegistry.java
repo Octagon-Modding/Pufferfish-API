@@ -24,7 +24,7 @@ public class MenuRegistry {
         MENUS.register(PufferfishAPI.eventBus);
     }
 
-    public MenuRegistryHolder<ChestMenu> registerChestMenu(String name, ChestMenu chestMenu, ChestSettings chestSettings) {
+    public MenuRegistryHolder<ChestMenu> registerChestMenu(String name, ChestSettings chestSettings) {
         return new MenuRegistryHolder<ChestMenu>(registerMenuType(name, (containerId, inv, extraData) -> new ChestMenu(containerId, inv, extraData, chestSettings)));
     }
 
