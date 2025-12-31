@@ -11,10 +11,27 @@ public class ChestSettings {
     public BlockRegistryHolder chestBlock;
     public MenuRegistryHolder<ChestMenu> menu;
     public final int[][] slotPositions;
+    public final int[][] inventorySlotPositions;
+    public final int[][] hotbarSlotPositions;
     public final int screenWidth;
     public final int screenHeight;
+    public final int inventoryTextX;
+    public final int inventoryTextY;
 
-    public ChestSettings(int maxStackSize, String guiTextTranslatable, Identifier guiTexture, BlockRegistryHolder chestBlock, MenuRegistryHolder<ChestMenu> menu, int[][] slotPositions, int screenWidth, int screenHeight) {
+    public ChestSettings(
+            int maxStackSize,
+            String guiTextTranslatable,
+            Identifier guiTexture,
+            BlockRegistryHolder chestBlock,
+            MenuRegistryHolder<ChestMenu> menu,
+            int[][] slotPositions,
+            int[][] inventorySlotPositions,
+            int[][] hotbarSlotPositions,
+            int screenWidth,
+            int screenHeight,
+            int inventoryTextX,
+            int inventoryTextY
+    ) {
         this.maxStackSize = maxStackSize;
         this.guiTextTranslatable = guiTextTranslatable;
         this.guiTexture = guiTexture;
@@ -23,5 +40,9 @@ public class ChestSettings {
         this.slotPositions = slotPositions;
         this.screenWidth = screenWidth;
         this.screenHeight = screenHeight;
+        this.inventorySlotPositions = inventorySlotPositions;
+        this.hotbarSlotPositions = hotbarSlotPositions;
+        this.inventoryTextX = inventoryTextX;
+        this.inventoryTextY = inventoryTextY;
     }
 }

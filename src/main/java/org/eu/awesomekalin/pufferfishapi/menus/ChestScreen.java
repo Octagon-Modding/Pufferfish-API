@@ -14,6 +14,10 @@ public class ChestScreen extends AbstractContainerScreen<@NotNull ChestMenu> {
     public ChestScreen(ChestMenu menu, Inventory playerInventory, ChestSettings chestSettings) {
         super(menu, playerInventory, Component.translatable(chestSettings.guiTextTranslatable));
         this.chestSettings = chestSettings;
+        this.imageWidth = this.chestSettings.screenWidth;
+        this.imageHeight = this.chestSettings.screenHeight;
+        this.inventoryLabelX = this.chestSettings.inventoryTextX;
+        this.inventoryLabelY = this.chestSettings.inventoryTextY;
     }
 
     @Override
