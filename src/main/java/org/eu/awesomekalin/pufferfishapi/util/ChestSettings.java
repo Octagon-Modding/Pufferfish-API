@@ -11,13 +11,17 @@ public class ChestSettings {
     public BlockRegistryHolder chestBlock;
     public MenuRegistryHolder<ChestMenu> menu;
     public final int[][] slotPositions;
+    public final int screenWidth;
+    public final int screenHeight;
 
-    public ChestSettings(int maxStackSize, String guiTextTranslatable, Identifier guiTexture, BlockRegistryHolder chestBlock, MenuRegistryHolder<ChestMenu> menu, int[][] slotPositions) {
+    public ChestSettings(int maxStackSize, String guiTextTranslatable, Identifier guiTexture, BlockRegistryHolder chestBlock, MenuRegistryHolder<ChestMenu> menu, int[][] slotPositions, int screenWidth, int screenHeight) {
         this.maxStackSize = maxStackSize;
         this.guiTextTranslatable = guiTextTranslatable;
         this.guiTexture = guiTexture;
         this.chestBlock = chestBlock;
         this.menu = menu;
         this.slotPositions = slotPositions;
+        this.screenWidth = screenWidth;
+        this.screenHeight = screenHeight;
     }
 }

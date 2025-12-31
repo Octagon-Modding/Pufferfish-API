@@ -21,7 +21,7 @@ public class ChestScreen extends AbstractContainerScreen<@NotNull ChestMenu> {
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 
-        guiGraphics.blit(RenderPipelines.GUI_TEXTURED, chestSettings.guiTexture.convertToMinecraftIdentifier(), x, y, 0, 0, imageWidth, imageHeight, 256, 256);
+        guiGraphics.blit(RenderPipelines.GUI_TEXTURED, chestSettings.guiTexture.convertToMinecraftIdentifier(), x, y, 0, 0, imageWidth, imageHeight, this.chestSettings.screenWidth, this.chestSettings.screenHeight);
     }
 
     @Override

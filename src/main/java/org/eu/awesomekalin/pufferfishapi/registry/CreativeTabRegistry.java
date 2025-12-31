@@ -21,7 +21,7 @@ public class CreativeTabRegistry {
         register.register(PufferfishAPI.eventBus);
     }
 
-    public void registerTabGlobal(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
+    public void registerTab(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
         register.register(tabId, () -> CreativeModeTab.builder()
                 .title(Component.translatable(titleIdentifier))
                 .icon(() -> {
@@ -46,7 +46,7 @@ public class CreativeTabRegistry {
     }
 
     /**
-     * @deprecated As of v1.3.0, this function has been replaced by CreativeTabRegistry.registerTabGlobal
+     * @deprecated As of v1.3.0, you should be using a list with type object instead of ItemRegistryHolder
      */
     @Deprecated
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
