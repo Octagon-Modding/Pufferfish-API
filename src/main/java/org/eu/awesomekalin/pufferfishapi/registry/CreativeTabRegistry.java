@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.ItemStack;
+import org.eu.awesomekalin.pufferfishapi.holders.BlockRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.holders.ItemRegistryHolder;
 
 import java.util.List;
@@ -21,6 +22,10 @@ public class CreativeTabRegistry {
 
     public void register() {}
 
+    /**
+     * @deprecated As of v1.3.0, you should be using a list with type object instead of ItemRegistryHolder
+     */
+    @Deprecated
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
                 .icon(() -> new ItemStack(icon.data))
@@ -31,6 +36,32 @@ public class CreativeTabRegistry {
         ItemGroupEvents.modifyEntriesEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
             tabContents.forEach(item -> {
                 itemGroup.accept(new ItemStack(item.data));
+            });
+        });
+    }
+
+    public void registerTab(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
+        if (icon instanceof ItemRegistryHolder itemIcon) {
+            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(itemIcon.data))
+                    .title(Component.translatable(titleIdentifier))
+                    .build()
+            );
+        } else if (icon instanceof BlockRegistryHolder blockIcon) {
+            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(blockIcon.dataItem))
+                    .title(Component.translatable(titleIdentifier))
+                    .build()
+            );
+        }
+
+        ItemGroupEvents.modifyEntriesEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
+            tabContents.forEach(item -> {
+                if (item instanceof ItemRegistryHolder itemData) {
+                    itemGroup.accept(new ItemStack(itemData.data));
+                } else if (item instanceof BlockRegistryHolder blockData) {
+                    itemGroup.accept(new ItemStack(blockData.dataItem));
+                }
             });
         });
     }

@@ -8,4 +8,8 @@ public class Identifier {
         this.namespace = namespace;
         this.path = path;
     }
+
+    public net.minecraft.resources.Identifier convertToMinecraftIdentifier() {
+        return net.minecraft.resources.Identifier.fromNamespaceAndPath(namespace, path);
+    }
 }
