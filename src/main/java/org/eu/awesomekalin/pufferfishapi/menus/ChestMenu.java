@@ -2,6 +2,7 @@ package org.eu.awesomekalin.pufferfishapi.menus;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -21,7 +22,12 @@ public class ChestMenu extends AbstractContainerMenu {
 
     public ChestMenu(int containerId, Inventory playerInv, BlockEntity blockEntity, ChestSettings chestSettings) {
         super((MenuType<?>) chestSettings.menu.data, containerId);
-        this.inv = (Container) blockEntity;
+
+        if (!(blockEntity instanceof Container container)) {
+            throw new IllegalStateException("Block entity is not a container");
+        }
+
+        this.inv = container;
         this.chestSettings = chestSettings;
 
         addPlayerInventory(playerInv);

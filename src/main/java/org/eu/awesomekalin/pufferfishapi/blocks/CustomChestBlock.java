@@ -1,6 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.blocks;
 
 import com.mojang.serialization.MapCodec;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
@@ -9,6 +10,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -61,13 +63,13 @@ public class CustomChestBlock extends BaseEntityBlock {
     @Override
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (level.getBlockEntity(pos) instanceof CustomChestBlockEntity customChestBlockEntity && !level.isClientSide()) {
-            player.openMenu(new SimpleMenuProvider(customChestBlockEntity, Component.literal(this.chestSettings.guiTextTranslatable)));
+            player.openMenu(customChestBlockEntity);
         }
 
         return InteractionResult.SUCCESS;
     }
 
-    public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider {
+    public static class CustomChestBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, Container {
         public NonNullList<ItemStack> inventory;
         private final int maxStackSize;
         private final ChestSettings chestSettings;
@@ -96,6 +98,7 @@ public class CustomChestBlock extends BaseEntityBlock {
 
         @Override
         public void preRemoveSideEffects(BlockPos pos, BlockState state) {
+            assert level != null;
             Containers.dropContents(level, pos, (Container) this);
             super.preRemoveSideEffects(pos, state);
         }
@@ -119,6 +122,71 @@ public class CustomChestBlock extends BaseEntityBlock {
         @Override
         public @org.jspecify.annotations.Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
             return new ChestMenu(i, inventory, this, chestSettings);
+        }
+
+        @Override
+        public Object getScreenOpeningData(ServerPlayer player) {
+            return this.worldPosition;
+        }
+
+        @Override
+        public int getContainerSize() {
+            return this.chestSettings.slotPositions.length;
+        }
+
+        @Override
+        public boolean isEmpty() {
+            for (ItemStack stack : inventory) {
+                if (!stack.isEmpty()) return false;
+            }
+            return true;
+        }
+
+        @Override
+        public ItemStack getItem(int slot) {
+            return inventory.get(slot);
+        }
+
+        @Override
+        public ItemStack removeItem(int slot, int amount) {
+            ItemStack result = ContainerHelper.removeItem(inventory, slot, amount);
+            if (!result.isEmpty()) setChanged();
+            return result;
+        }
+
+        @Override
+        public ItemStack removeItemNoUpdate(int slot) {
+            return ContainerHelper.takeItem(inventory, slot);
+        }
+
+        @Override
+        public void setItem(int slot, ItemStack stack) {
+            inventory.set(slot, stack);
+            if (stack.getCount() > getMaxStackSize()) {
+                stack.setCount(getMaxStackSize());
+            }
+            setChanged();
+        }
+
+        @Override
+        public boolean stillValid(Player player) {
+            return level != null
+                    && level.getBlockEntity(worldPosition) == this
+                    && player.distanceToSqr(
+                    worldPosition.getX() + 0.5,
+                    worldPosition.getY() + 0.5,
+                    worldPosition.getZ() + 0.5
+            ) <= getMaxStackSize();
+        }
+
+        @Override
+        public void clearContent() {
+            inventory.clear();
+        }
+
+        @Override
+        public int getMaxStackSize() {
+            return this.chestSettings.maxStackSize;
         }
     }
 }
