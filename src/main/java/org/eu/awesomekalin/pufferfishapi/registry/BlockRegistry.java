@@ -32,7 +32,7 @@ public class BlockRegistry {
         final Block chestBlock = Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(this.modId, name), new CustomChestBlock(blockProperties.getProperties(Identifier.fromNamespaceAndPath(this.modId, name)), this::getBlockEntityRenderers, blockEntityRenderers.size() - 1, chestSettings));
         final BlockItem blockItem = Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(this.modId, name), new BlockItem(chestBlock, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(this.modId, name)))));
         final BlockEntityType<?> blockEntity = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(this.modId, name), FabricBlockEntityTypeBuilder.create(
-                (pos, blockState) -> new CustomChestBlock.CustomChestBlockEntity(blockEntityRenderers, blockEntityRenderers.size() - 1, pos, blockState, chestSettings),
+                (pos, blockState) -> new CustomChestBlock.CustomChestBlockEntity(blockEntityRenderers, blockEntityRenderers.size(), pos, blockState, chestSettings),
                 chestBlock
         ).build());
         blockEntityRenderers.add(blockEntity);
