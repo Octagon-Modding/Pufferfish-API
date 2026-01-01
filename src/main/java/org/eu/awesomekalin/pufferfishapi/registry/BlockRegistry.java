@@ -3,7 +3,9 @@ package org.eu.awesomekalin.pufferfishapi.registry;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -28,7 +30,7 @@ public class BlockRegistry {
 
     public BlockRegistryHolder registerChest(String name, BlockProperties blockProperties, ChestSettings chestSettings) {
         final Block chestBlock = Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(this.modId, name), new CustomChestBlock(blockProperties.getProperties(Identifier.fromNamespaceAndPath(this.modId, name)), this::getBlockEntityRenderers, blockEntityRenderers.size() - 1, chestSettings));
-        final BlockItem blockItem = Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(this.modId, name), new BlockItem(chestBlock, new Item.Properties()));
+        final BlockItem blockItem = Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(this.modId, name), new BlockItem(chestBlock, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(this.modId, name)))));
         final BlockEntityType<?> blockEntity = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(this.modId, name), FabricBlockEntityTypeBuilder.create(
                 (pos, blockState) -> new CustomChestBlock.CustomChestBlockEntity(blockEntityRenderers, blockEntityRenderers.size() - 1, pos, blockState, chestSettings),
                 chestBlock
