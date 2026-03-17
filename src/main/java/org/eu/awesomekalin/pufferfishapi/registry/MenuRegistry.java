@@ -25,7 +25,7 @@ public class MenuRegistry {
     }
 
     public MenuRegistryHolder<ChestMenu> registerChestMenu(String name, ChestSettings chestSettings) {
-        return new MenuRegistryHolder<ChestMenu>(registerMenuType(name, (containerId, inv, extraData) -> new ChestMenu(containerId, inv, extraData, chestSettings)));
+        return new MenuRegistryHolder<>(registerMenuType(name, (containerId, inv, extraData) -> new ChestMenu(containerId, inv, extraData, chestSettings)));
     }
 
     private <T extends AbstractContainerMenu> RegistryObject<@NotNull MenuType<@NotNull T>> registerMenuType(String name, IContainerFactory<@NotNull T> factory) {

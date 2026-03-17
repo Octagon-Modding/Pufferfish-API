@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraftforge.common.extensions.IForgeServerPlayer;
 import org.eu.awesomekalin.pufferfishapi.menus.ChestMenu;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 import org.jetbrains.annotations.NotNull;
@@ -62,7 +63,9 @@ public class CustomChestBlock extends BaseEntityBlock {
     @Override
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (level.getBlockEntity(pos) instanceof CustomChestBlockEntity customChestBlockEntity && !level.isClientSide()) {
-            player.openMenu(new SimpleMenuProvider(customChestBlockEntity, Component.literal(this.chestSettings.guiTextTranslatable)));
+            IForgeServerPlayer thePlayer = (IForgeServerPlayer) player;
+
+            thePlayer.openMenu(new SimpleMenuProvider(customChestBlockEntity, Component.literal(this.chestSettings.guiTextTranslatable)), pos);
         }
 
         return InteractionResult.SUCCESS;
@@ -70,15 +73,11 @@ public class CustomChestBlock extends BaseEntityBlock {
 
     public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider {
         public NonNullList<@NotNull ItemStack> inventory;
-        private final int maxStackSize;
         private final ChestSettings chestSettings;
-        private int slots;
 
         public CustomChestBlockEntity(List<Supplier<BlockEntityType<?>>> blockEntityRenderers, int position, BlockPos pos, BlockState blockState, ChestSettings chestSettings) {
             super(blockEntityRenderers.get(position).get(), pos, blockState);
-            maxStackSize = chestSettings.maxStackSize;
             this.chestSettings = chestSettings;
-            this.slots = chestSettings.slotPositions.length;
 
             inventory =  NonNullList.withSize(chestSettings.slotPositions.length, ItemStack.EMPTY);
         }
