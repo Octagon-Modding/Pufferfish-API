@@ -15,7 +15,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BarrelBlock;
 import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -71,7 +73,7 @@ public class CustomChestBlock extends BaseEntityBlock {
         return InteractionResult.SUCCESS;
     }
 
-    public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider {
+    public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider, Container {
         public NonNullList<@NotNull ItemStack> inventory;
         private final ChestSettings chestSettings;
 
@@ -105,23 +107,80 @@ public class CustomChestBlock extends BaseEntityBlock {
 
         @Nullable
         @Override
-        public Packet<ClientGamePacketListener> getUpdatePacket() {
+        public Packet<@NotNull ClientGamePacketListener> getUpdatePacket() {
             return ClientboundBlockEntityDataPacket.create(this);
         }
 
         @Override
-        public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
+        public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider pRegistries) {
             return saveWithoutMetadata(pRegistries);
         }
 
         @Override
-        public Component getDisplayName() {
+        public @NotNull Component getDisplayName() {
             return Component.literal(chestSettings.guiTextTranslatable);
         }
 
         @Override
         public @org.jspecify.annotations.Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
             return new ChestMenu(i, inventory, this, chestSettings);
+        }
+
+        @Override
+        public int getContainerSize() {
+            return this.chestSettings.slotPositions.length;
+        }
+
+        @Override
+        public boolean isEmpty() {
+            return this.inventory.stream().allMatch(ItemStack::isEmpty);
+        }
+
+        @Override
+        public @NotNull ItemStack getItem(int slot) {
+            return this.inventory.get(slot);
+        }
+
+        @Override
+        public @NotNull ItemStack removeItem(int slot, int amount) {
+            ItemStack stack = ContainerHelper.removeItem(this.inventory, slot, amount);
+            this.setChanged();
+            return stack;
+        }
+
+        @Override
+        public @NotNull ItemStack removeItemNoUpdate(int slot) {
+            ItemStack stack = ContainerHelper.takeItem(this.inventory, slot);
+            this.setChanged();
+            return stack;
+        }
+
+        @Override
+        public int getMaxStackSize(ItemStack stack) {
+            return Math.min(this.chestSettings.maxStackSize, stack.getMaxStackSize());
+        }
+
+        @Override
+        public void setItem(int slot, ItemStack stack) {
+            stack.limitSize(this.getMaxStackSize(stack));
+            this.inventory.set(slot, stack);
+            this.setChanged();
+        }
+
+        @Override
+        public boolean stillValid(Player player) {
+            return true;
+        }
+
+        @Override
+        public void clearContent() {
+            inventory.clear();
+            this.setChanged();
+        }
+
+        @Override
+        public void setChanged() {
+
         }
     }
 }

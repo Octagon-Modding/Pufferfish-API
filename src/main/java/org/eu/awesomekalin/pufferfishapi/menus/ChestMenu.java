@@ -1,6 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.menus;
 
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -9,6 +10,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.blocks.CustomChestBlock;
@@ -33,7 +35,7 @@ public class ChestMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         for (var i = 0; i < chestSettings.slotPositions.length; i++) {
-            this.addSlot(new Slot(inv, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1]));
+            this.addSlot(new Slot(this.blockEntity, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1]));
         }
     }
 
