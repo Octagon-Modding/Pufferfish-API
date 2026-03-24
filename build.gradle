@@ -187,3 +187,7 @@ idea {
         downloadJavadoc = true
     }
 }
+
+tasks.named("createMinecraftArtifacts") {
+    mustRunAfter tasks.named("generateModMetadata")
+}
