@@ -1,6 +1,6 @@
 package org.eu.awesomekalin.pufferfishapi.menus;
 
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
@@ -21,16 +21,10 @@ public class ChestScreen extends AbstractContainerScreen<@NotNull ChestMenu> {
     }
 
     @Override
-    protected void renderBg(GuiGraphics guiGraphics, float v, int i, int i1) {
+    public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float a) {
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 
         guiGraphics.blit(RenderPipelines.GUI_TEXTURED, chestSettings.guiTexture.convertToMinecraftIdentifier(), x, y, 0, 0, imageWidth, imageHeight, this.chestSettings.screenWidth, this.chestSettings.screenHeight);
-    }
-
-    @Override
-    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
-        super.render(guiGraphics, mouseX, mouseY, partialTick);
-        this.renderTooltip(guiGraphics, mouseX, mouseY);
     }
 }

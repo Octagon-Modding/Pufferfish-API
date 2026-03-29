@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '+'
+    id 'net.fabricmc.fabric-loom' version '1.15-SNAPSHOT'
     id 'maven-publish'
     id 'idea'
 }
@@ -20,7 +20,7 @@ base {
 }
 
 // Mojang ships Java 21 to end users starting in 1.20.5, so mods should target Java 21.
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 
 
@@ -38,16 +38,10 @@ configurations {
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-    mappings loom.layered() {
-        officialMojangMappings()
-        //parchment("org.parchmentmc.data:parchment-${project.minecraft_version}:${project.parchment_mappings}@zip")
-        parchment("org.parchmentmc.data:parchment-1.21.11:${project.parchment_mappings}@zip")
-    }
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -87,7 +81,7 @@ publishing {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 21
+    it.options.release = 25
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
@@ -96,4 +90,8 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/pufferfishapi.classtweaker")
 }

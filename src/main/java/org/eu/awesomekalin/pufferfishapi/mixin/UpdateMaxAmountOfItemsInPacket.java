@@ -7,7 +7,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.game.ServerboundContainerClickPacket;
-import net.minecraft.world.inventory.ClickType;
+import net.minecraft.world.inventory.ContainerInput;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -46,7 +46,7 @@ abstract class UpdateMaxAmountOfItemsInPacket {
                 ByteBufCodecs.VAR_INT, ServerboundContainerClickPacket::stateId,
                 ByteBufCodecs.SHORT, ServerboundContainerClickPacket::slotNum,
                 ByteBufCodecs.BYTE, ServerboundContainerClickPacket::buttonNum,
-                ClickType.STREAM_CODEC, ServerboundContainerClickPacket::clickType,
+                ContainerInput.STREAM_CODEC, ServerboundContainerClickPacket::containerInput,
                 SLOTS_STREAM_CODEC, ServerboundContainerClickPacket::changedSlots,
                 HashedStack.STREAM_CODEC, ServerboundContainerClickPacket::carriedItem,
                 ServerboundContainerClickPacket::new

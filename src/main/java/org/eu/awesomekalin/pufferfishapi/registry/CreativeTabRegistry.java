@@ -1,7 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -27,13 +27,13 @@ public class CreativeTabRegistry {
      */
     @Deprecated
     public void registerTab(String tabId, String titleIdentifier, ItemRegistryHolder icon, List<ItemRegistryHolder> tabContents) {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricCreativeModeTab.builder()
                 .icon(() -> new ItemStack(icon.data))
                 .title(Component.translatable(titleIdentifier))
                 .build()
         );
 
-        ItemGroupEvents.modifyEntriesEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
+        CreativeModeTabEvents.modifyOutputEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
             tabContents.forEach(item -> {
                 itemGroup.accept(new ItemStack(item.data));
             });
@@ -42,20 +42,20 @@ public class CreativeTabRegistry {
 
     public void registerTab(String tabId, String titleIdentifier, Object icon, List<Object> tabContents) {
         if (icon instanceof ItemRegistryHolder itemIcon) {
-            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
+            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricCreativeModeTab.builder()
                     .icon(() -> new ItemStack(itemIcon.data))
                     .title(Component.translatable(titleIdentifier))
                     .build()
             );
         } else if (icon instanceof BlockRegistryHolder blockIcon) {
-            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricItemGroup.builder()
+            Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(modId, tabId), FabricCreativeModeTab.builder()
                     .icon(() -> new ItemStack(blockIcon.dataItem))
                     .title(Component.translatable(titleIdentifier))
                     .build()
             );
         }
 
-        ItemGroupEvents.modifyEntriesEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
+        CreativeModeTabEvents.modifyOutputEvent(ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(modId, tabId))).register(itemGroup -> {
             tabContents.forEach(item -> {
                 if (item instanceof ItemRegistryHolder itemData) {
                     itemGroup.accept(new ItemStack(itemData.data));

@@ -1,7 +1,6 @@
 package org.eu.awesomekalin.pufferfishapi.blocks;
 
 import com.mojang.serialization.MapCodec;
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
@@ -63,13 +62,13 @@ public class CustomChestBlock extends BaseEntityBlock {
     @Override
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (level.getBlockEntity(pos) instanceof CustomChestBlockEntity customChestBlockEntity && !level.isClientSide()) {
-            player.openMenu(customChestBlockEntity);
+            player.openMenu(new SimpleMenuProvider(customChestBlockEntity, Component.literal(this.chestSettings.guiTextTranslatable)));
         }
 
         return InteractionResult.SUCCESS;
     }
 
-    public static class CustomChestBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, Container {
+    public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider, Container {
         public NonNullList<ItemStack> inventory;
         private final int maxStackSize;
         private final ChestSettings chestSettings;
@@ -122,11 +121,6 @@ public class CustomChestBlock extends BaseEntityBlock {
         @Override
         public @org.jspecify.annotations.Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
             return new ChestMenu(i, inventory, this, chestSettings);
-        }
-
-        @Override
-        public Object getScreenOpeningData(ServerPlayer player) {
-            return this.worldPosition;
         }
 
         @Override
