@@ -1,4 +1,4 @@
-name: Build Forge 1.21.1
+name: Build Forge 26.1
 
 on: [push, pull_request]
 
@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./build/libs/*
-          name: Pufferfish API for Forge 1.21.11
+          name: Pufferfish API for Forge 26.1
