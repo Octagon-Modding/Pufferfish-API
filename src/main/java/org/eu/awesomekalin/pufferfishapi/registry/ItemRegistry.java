@@ -135,7 +135,7 @@ public class ItemRegistry {
                 DataComponents.CONSUMABLE,
                 builder.build()
         ));
-        return new ItemRegistryHolder(register.registerSimpleItem(name, itemProperties));
+        return new ItemRegistryHolder(register.registerSimpleItem(name, props -> itemProperties));
     }
 
     public ItemRegistryHolder registerHelmet(String name, ArmorHolder armorHolder) {
