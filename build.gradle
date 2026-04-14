@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '+'
+    id 'fabric-loom' version '1.16-SNAPSHOT'
     id 'maven-publish'
     id 'idea'
 }
@@ -95,4 +95,8 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/pufferfishapi.classtweaker")
 }
