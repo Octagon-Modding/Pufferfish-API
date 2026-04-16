@@ -1,7 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
-import net.minecraft.util.Util;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.Util;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
