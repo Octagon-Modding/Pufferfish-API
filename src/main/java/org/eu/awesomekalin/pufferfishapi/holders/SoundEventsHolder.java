@@ -4,10 +4,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.animal.chicken.ChickenSoundVariants;
 import net.minecraft.world.entity.animal.cow.CowSoundVariants;
-import net.minecraft.world.entity.animal.feline.CatSoundVariant;
 import net.minecraft.world.entity.animal.feline.CatSoundVariants;
 import net.minecraft.world.entity.animal.pig.PigSoundVariants;
-import net.minecraft.world.entity.animal.wolf.WolfSoundVariant;
 import net.minecraft.world.entity.animal.wolf.WolfSoundVariants;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
