@@ -23,7 +23,6 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.menus.ChestMenu;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 import org.jetbrains.annotations.Nullable;
