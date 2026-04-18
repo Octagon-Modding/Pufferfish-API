@@ -2,7 +2,6 @@ package org.eu.awesomekalin.pufferfishapi.holders;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.animal.wolf.WolfSoundVariant;
 import net.minecraft.world.entity.animal.wolf.WolfSoundVariants;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
