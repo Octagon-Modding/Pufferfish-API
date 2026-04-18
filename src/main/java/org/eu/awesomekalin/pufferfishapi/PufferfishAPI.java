@@ -1,10 +1,9 @@
 package org.eu.awesomekalin.pufferfishapi;
 
+import com.mojang.logging.LogUtils;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(PufferfishAPI.MODID)
