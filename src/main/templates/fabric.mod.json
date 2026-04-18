@@ -23,6 +23,5 @@
         "java": ">=21",
         "fabric-api": "*"
     },
-    "icon": "icon.png",
-    "accessWidener": "pufferfishapi.classtweaker"
+    "icon": "icon.png"
 }

@@ -1,7 +1,5 @@
 package org.eu.awesomekalin.pufferfishapi.util;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -32,7 +30,7 @@ public class BlockProperties {
     }
 
     public BlockBehaviour.Properties getProperties(ResourceLocation registryName) {
-        return BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, registryName))
+        return BlockBehaviour.Properties.of()
                 .destroyTime(destroyTime)
                 .explosionResistance(explosionResistance)
                 .sound(sound)

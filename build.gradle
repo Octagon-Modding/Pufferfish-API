@@ -96,7 +96,3 @@ idea {
         downloadJavadoc = true
     }
 }
-
-loom {
-    accessWidenerPath = file("src/main/resources/pufferfishapi.classtweaker")
-}
