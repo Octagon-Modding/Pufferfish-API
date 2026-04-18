@@ -1,7 +1,5 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -15,11 +13,9 @@ import org.eu.awesomekalin.pufferfishapi.blocks.CustomChestBlock;
 import org.eu.awesomekalin.pufferfishapi.holders.BlockRegistryHolder;
 import org.eu.awesomekalin.pufferfishapi.util.BlockProperties;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Supplier;
 
 public class BlockRegistry {
