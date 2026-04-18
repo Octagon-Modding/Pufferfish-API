@@ -24,5 +24,8 @@
         "fabric-api": "*"
     },
     "icon": "icon.png",
+    "mixins": [
+        "pufferfishapi.mixins.json"
+    ],
     "accessWidener": "pufferfishapi.classtweaker"
 }

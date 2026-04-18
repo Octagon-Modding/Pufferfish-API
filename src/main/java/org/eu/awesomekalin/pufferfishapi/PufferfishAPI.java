@@ -1,9 +1,8 @@
 package org.eu.awesomekalin.pufferfishapi;
 
+import com.mojang.logging.LogUtils;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 public class PufferfishAPI implements ModInitializer {
     public static final String MODID = "pufferfishapi";
