@@ -1,13 +1,13 @@
 package org.eu.awesomekalin.pufferfishapi.holders;
 
+import net.minecraft.Util;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
 import org.eu.awesomekalin.pufferfishapi.util.Identifier;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
-import net.minecraft.Util;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
 
 public class ArmorHolder {
     public final int durability;
