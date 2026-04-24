@@ -181,7 +181,7 @@ public class CustomChestBlock extends BaseEntityBlock {
 
         @Override
         public void setChanged() {
-
+            super.setChanged();
         }
     }
 }
