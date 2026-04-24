@@ -79,7 +79,7 @@ public class CustomChestBlock extends BaseEntityBlock {
             super(blockEntityRenderers.get(position).get(), pos, blockState);
             this.chestSettings = chestSettings;
 
-            inventory =  NonNullList.withSize(chestSettings.slotPositions.length, ItemStack.EMPTY);
+            inventory = NonNullList.withSize(chestSettings.slotPositions.length, ItemStack.EMPTY);
         }
 
         @Override
@@ -178,7 +178,7 @@ public class CustomChestBlock extends BaseEntityBlock {
 
         @Override
         public void setChanged() {
-
+            super.setChanged();
         }
     }
 }
