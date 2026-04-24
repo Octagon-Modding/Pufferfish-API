@@ -493,16 +493,13 @@ public enum SoundTypeHolder {
             case DRIED_GHAST -> {
                 return SoundType.DRIED_GHAST;
             }
-            case COPPER_GOLEM_STATUE -> {
-                return SoundType.COPPER_GOLEM_STATUE;
-            }
-            case SHELF -> {
-                return SoundType.SHELF;
-            }
-            default -> {
+            case COPPER_GOLEM_STATUE, SHELF -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound type that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
         }
+
+        PufferfishAPI.LOGGER.warn("Mod tried to use a non-existent sound type. Issues may occur");
+        return null;
     }
 }
