@@ -1,30 +1,25 @@
 package org.eu.awesomekalin.pufferfishapi.menus;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 
 public class ChestMenu extends AbstractContainerMenu {
     private final Container inv;
     private final ChestSettings chestSettings;
 
-    public ChestMenu(int containerId, Inventory playerInv, BlockPos pos, ChestSettings chestSettings) {
-        this(containerId, playerInv, playerInv.player.level().getBlockEntity(pos), chestSettings);
+    public ChestMenu(int containerId, Inventory playerInv, ChestSettings chestSettings) {
+        this(containerId, playerInv, new SimpleContainer(chestSettings.slotPositions.length), chestSettings);
     }
 
-    public ChestMenu(int containerId, Inventory playerInv, BlockEntity blockEntity, ChestSettings chestSettings) {
+    public ChestMenu(int containerId, Inventory playerInv, final Container container, ChestSettings chestSettings) {
         super((MenuType<?>) chestSettings.menu.data, containerId);
-
-        if (!(blockEntity instanceof Container container)) {
-            throw new IllegalStateException("Block entity is not a container");
-        }
 
         this.inv = container;
         this.chestSettings = chestSettings;
