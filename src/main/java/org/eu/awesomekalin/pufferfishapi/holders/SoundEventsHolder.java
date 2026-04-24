@@ -7139,135 +7139,6 @@ public enum SoundEventsHolder {
             case SADDLE_UNEQUIP -> {
                 return SoundEvents.SADDLE_UNEQUIP.value();
             }
-            case ARMOR_EQUIP_COPPER -> {
-                return SoundEvents.ARMOR_EQUIP_COPPER.value();
-            }
-            case COPPER_CHEST_CLOSE -> {
-                return SoundEvents.COPPER_CHEST_CLOSE;
-            }
-            case COPPER_CHEST_OPEN -> {
-                return SoundEvents.COPPER_CHEST_OPEN;
-            }
-            case COPPER_CHEST_WEATHERED_CLOSE -> {
-                return SoundEvents.COPPER_CHEST_WEATHERED_CLOSE;
-            }
-            case COPPER_CHEST_WEATHERED_OPEN -> {
-                return SoundEvents.COPPER_CHEST_WEATHERED_OPEN;
-            }
-            case COPPER_CHEST_OXIDIZED_CLOSE -> {
-                return SoundEvents.COPPER_CHEST_OXIDIZED_CLOSE;
-            }
-            case COPPER_CHEST_OXIDIZED_OPEN -> {
-                return SoundEvents.COPPER_CHEST_OXIDIZED_OPEN;
-            }
-            case COPPER_GOLEM_STEP -> {
-                return SoundEvents.COPPER_GOLEM_STEP;
-            }
-            case COPPER_GOLEM_HURT -> {
-                return SoundEvents.COPPER_GOLEM_HURT;
-            }
-            case COPPER_GOLEM_DEATH -> {
-                return SoundEvents.COPPER_GOLEM_DEATH;
-            }
-            case COPPER_GOLEM_WEATHERED_STEP -> {
-                return SoundEvents.COPPER_GOLEM_WEATHERED_STEP;
-            }
-            case COPPER_GOLEM_WEATHERED_HURT -> {
-                return SoundEvents.COPPER_GOLEM_WEATHERED_HURT;
-            }
-            case COPPER_GOLEM_WEATHERED_DEATH -> {
-                return SoundEvents.COPPER_GOLEM_WEATHERED_DEATH;
-            }
-            case COPPER_GOLEM_OXIDIZED_STEP -> {
-                return SoundEvents.COPPER_GOLEM_OXIDIZED_STEP;
-            }
-            case COPPER_GOLEM_OXIDIZED_HURT -> {
-                return SoundEvents.COPPER_GOLEM_OXIDIZED_HURT;
-            }
-            case COPPER_GOLEM_OXIDIZED_DEATH -> {
-                return SoundEvents.COPPER_GOLEM_OXIDIZED_DEATH;
-            }
-            case COPPER_GOLEM_SPIN -> {
-                return SoundEvents.COPPER_GOLEM_SPIN;
-            }
-            case COPPER_GOLEM_WEATHERED_SPIN -> {
-                return SoundEvents.COPPER_GOLEM_WEATHERED_SPIN;
-            }
-            case COPPER_GOLEM_OXIDIZED_SPIN -> {
-                return SoundEvents.COPPER_GOLEM_OXIDIZED_SPIN;
-            }
-            case COPPER_GOLEM_ITEM_GET -> {
-                return SoundEvents.COPPER_GOLEM_ITEM_GET;
-            }
-            case COPPER_GOLEM_ITEM_NO_GET -> {
-                return SoundEvents.COPPER_GOLEM_ITEM_NO_GET;
-            }
-            case COPPER_GOLEM_ITEM_DROP -> {
-                return SoundEvents.COPPER_GOLEM_ITEM_DROP;
-            }
-            case COPPER_GOLEM_ITEM_NO_DROP -> {
-                return SoundEvents.COPPER_GOLEM_ITEM_NO_DROP;
-            }
-            case COPPER_GOLEM_BECOME_STATUE -> {
-                return SoundEvents.COPPER_GOLEM_BECOME_STATUE;
-            }
-            case COPPER_GOLEM_STATUE_BREAK -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_BREAK;
-            }
-            case COPPER_GOLEM_STATUE_PLACE -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_PLACE;
-            }
-            case COPPER_GOLEM_STATUE_HIT -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_HIT;
-            }
-            case COPPER_GOLEM_STATUE_STEP -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_STEP;
-            }
-            case COPPER_GOLEM_STATUE_FALL -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_FALL;
-            }
-            case COPPER_GOLEM_SPAWN -> {
-                return SoundEvents.COPPER_GOLEM_SPAWN;
-            }
-            case COPPER_GOLEM_SHEAR -> {
-                return SoundEvents.COPPER_GOLEM_SHEAR;
-            }
-            case SHELF_ACTIVATE -> {
-                return SoundEvents.SHELF_ACTIVATE;
-            }
-            case SHELF_BREAK -> {
-                return SoundEvents.SHELF_BREAK;
-            }
-            case SHELF_DEACTIVATE -> {
-                return SoundEvents.SHELF_DEACTIVATE;
-            }
-            case SHELF_FALL -> {
-                return SoundEvents.SHELF_FALL;
-            }
-            case SHELF_HIT -> {
-                return SoundEvents.SHELF_HIT;
-            }
-            case SHELF_MULTI_SWAP -> {
-                return SoundEvents.SHELF_MULTI_SWAP;
-            }
-            case SHELF_PLACE -> {
-                return SoundEvents.SHELF_PLACE;
-            }
-            case SHELF_PLACE_ITEM -> {
-                return SoundEvents.SHELF_PLACE_ITEM;
-            }
-            case SHELF_SINGLE_SWAP -> {
-                return SoundEvents.SHELF_SINGLE_SWAP;
-            }
-            case SHELF_STEP -> {
-                return SoundEvents.SHELF_STEP;
-            }
-            case SHELF_TAKE_ITEM -> {
-                return SoundEvents.SHELF_TAKE_ITEM;
-            }
-            case WEATHER_END_FLASH -> {
-                return SoundEvents.WEATHER_END_FLASH;
-            }
             case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND, CAT_AMBIENT_BABY, CAT_STRAY_AMBIENT_BABY, CAT_DEATH_BABY,
                  CAT_EAT_BABY, CAT_HISS_BABY, CAT_BEG_FOR_FOOD_BABY, CAT_HURT_BABY, CAT_PURR_BABY, CAT_PURREOW_BABY,
                  ROYAL_CAT_AMBIENT, ROYAL_CAT_STRAY_AMBIENT, ROYAL_CAT_DEATH, ROYAL_CAT_EAT, ROYAL_CAT_HISS,
@@ -7307,7 +7178,17 @@ public enum SoundEventsHolder {
                  ZOMBIE_NAUTILUS_AMBIENT_ON_LAND, ZOMBIE_NAUTILUS_DASH, ZOMBIE_NAUTILUS_DASH_ON_LAND,
                  ZOMBIE_NAUTILUS_DASH_READY, ZOMBIE_NAUTILUS_DASH_READY_ON_LAND, ZOMBIE_NAUTILUS_DEATH,
                  ZOMBIE_NAUTILUS_DEATH_ON_LAND, ZOMBIE_NAUTILUS_EAT, ZOMBIE_NAUTILUS_HURT, ZOMBIE_NAUTILUS_HURT_ON_LAND,
-                 ZOMBIE_NAUTILUS_SWIM, NAUTILUS_SADDLE_UNDERWATER_EQUIP, NAUTILUS_SADDLE_EQUIP -> {
+                 ZOMBIE_NAUTILUS_SWIM, NAUTILUS_SADDLE_UNDERWATER_EQUIP, NAUTILUS_SADDLE_EQUIP, ARMOR_EQUIP_COPPER,
+                 COPPER_CHEST_CLOSE, COPPER_CHEST_OPEN, COPPER_CHEST_WEATHERED_CLOSE, COPPER_CHEST_WEATHERED_OPEN,
+                 COPPER_CHEST_OXIDIZED_CLOSE, COPPER_CHEST_OXIDIZED_OPEN, COPPER_GOLEM_STEP, COPPER_GOLEM_HURT,
+                 COPPER_GOLEM_DEATH, COPPER_GOLEM_WEATHERED_STEP, COPPER_GOLEM_WEATHERED_HURT, COPPER_GOLEM_WEATHERED_DEATH,
+                 COPPER_GOLEM_OXIDIZED_STEP, COPPER_GOLEM_OXIDIZED_HURT, COPPER_GOLEM_OXIDIZED_DEATH, COPPER_GOLEM_SPIN,
+                 COPPER_GOLEM_WEATHERED_SPIN, COPPER_GOLEM_OXIDIZED_SPIN, COPPER_GOLEM_ITEM_GET, COPPER_GOLEM_ITEM_NO_GET,
+                 COPPER_GOLEM_ITEM_DROP, COPPER_GOLEM_ITEM_NO_DROP, COPPER_GOLEM_BECOME_STATUE, COPPER_GOLEM_STATUE_BREAK,
+                 COPPER_GOLEM_STATUE_PLACE, COPPER_GOLEM_STATUE_HIT, COPPER_GOLEM_STATUE_STEP, COPPER_GOLEM_STATUE_FALL,
+                 COPPER_GOLEM_SPAWN, COPPER_GOLEM_SHEAR, SHELF_ACTIVATE, SHELF_BREAK, SHELF_DEACTIVATE, SHELF_FALL, SHELF_HIT,
+                 SHELF_MULTI_SWAP, SHELF_PLACE, SHELF_PLACE_ITEM, SHELF_SINGLE_SWAP, SHELF_STEP, SHELF_TAKE_ITEM,
+                 WEATHER_END_FLASH -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
