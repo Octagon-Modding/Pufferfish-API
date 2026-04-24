@@ -2,10 +2,6 @@ package org.eu.awesomekalin.pufferfishapi.holders;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.animal.chicken.ChickenSoundVariants;
-import net.minecraft.world.entity.animal.cow.CowSoundVariants;
-import net.minecraft.world.entity.animal.feline.CatSoundVariants;
-import net.minecraft.world.entity.animal.pig.PigSoundVariants;
 import net.minecraft.world.entity.animal.wolf.WolfSoundVariants;
 import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 
@@ -2731,31 +2727,31 @@ public enum SoundEventsHolder {
                 return SoundEvents.CANDLE_STEP;
             }
             case CAT_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.CAT_AMBIENT;
             }
             case CAT_STRAY_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().strayAmbientSound().value();
+                return SoundEvents.CAT_STRAY_AMBIENT;
             }
             case CAT_DEATH -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.CAT_DEATH;
             }
             case CAT_EAT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().value();
+                return SoundEvents.CAT_EAT;
             }
             case CAT_HISS -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hissSound().value();
+                return SoundEvents.CAT_HISS;
             }
             case CAT_BEG_FOR_FOOD -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().begForFoodSound().value();
+                return SoundEvents.CAT_BEG_FOR_FOOD;
             }
             case CAT_HURT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.CAT_HURT;
             }
             case CAT_PURR -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purrSound().value();
+                return SoundEvents.CAT_PURR;
             }
             case CAT_PURREOW -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purreowSound().value();
+                return SoundEvents.CAT_PURREOW;
             }
             case CAVE_VINES_BREAK -> {
                 return SoundEvents.CAVE_VINES_BREAK;
@@ -2890,19 +2886,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.CHEST_OPEN;
             }
             case CHICKEN_AMBIENT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.CHICKEN_AMBIENT;
             }
             case CHICKEN_DEATH -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.CHICKEN_DEATH;
             }
             case CHICKEN_EGG -> {
                 return SoundEvents.CHICKEN_EGG;
             }
             case CHICKEN_HURT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.CHICKEN_HURT;
             }
             case CHICKEN_STEP -> {
-                return SoundEvents.CHICKEN_STEP.value();
+                return SoundEvents.CHICKEN_STEP;
             }
             case CHISELED_BOOKSHELF_BREAK -> {
                 return SoundEvents.CHISELED_BOOKSHELF_BREAK;
@@ -3076,19 +3072,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.CORAL_BLOCK_STEP;
             }
             case COW_AMBIENT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).ambientSound().value();
+                return SoundEvents.COW_AMBIENT;
             }
             case COW_DEATH -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).deathSound().value();
+                return SoundEvents.COW_DEATH;
             }
             case COW_HURT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).hurtSound().value();
+                return SoundEvents.COW_HURT;
             }
             case COW_MILK -> {
                 return SoundEvents.COW_MILK;
             }
             case COW_STEP -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).stepSound().value();
+                return SoundEvents.COW_STEP;
             }
             case CRAFTER_CRAFT -> {
                 return SoundEvents.CRAFTER_CRAFT;
@@ -5266,19 +5262,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.PHANTOM_SWOOP;
             }
             case PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.PIG_AMBIENT;
             }
             case PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.PIG_DEATH;
             }
             case PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.PIG_HURT;
             }
             case PIG_SADDLE -> {
                 return SoundEvents.PIG_SADDLE.value();
             }
             case PIG_STEP -> {
-                return SoundEvents.PIG_STEP.value();
+                return SoundEvents.PIG_STEP;
             }
             case PIGLIN_ADMIRING_ITEM -> {
                 return SoundEvents.PIGLIN_ADMIRING_ITEM;
@@ -6745,28 +6741,28 @@ public enum SoundEventsHolder {
                 return SoundEvents.WOLF_ARMOR_REPAIR;
             }
             case WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).ambientSound().value();
             }
             case WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).deathSound().value();
             }
             case WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).growlSound().value();
             }
             case WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).hurtSound().value();
             }
             case WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).pantSound().value();
             }
             case WOLF_SHAKE -> {
                 return SoundEvents.WOLF_SHAKE;
             }
             case WOLF_STEP -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().stepSound().value();
+                return SoundEvents.WOLF_STEP;
             }
             case WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).whineSound().value();
             }
             case WOODEN_DOOR_CLOSE -> {
                 return SoundEvents.WOODEN_DOOR_CLOSE;
@@ -6919,112 +6915,112 @@ public enum SoundEventsHolder {
                 return SoundEvents.APPLY_EFFECT_RAID_OMEN;
             }
             case PUGLIN_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).growlSound().value();
             }
             case PUGLIN_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).hurtSound().value();
             }
             case PUGLIN_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).whineSound().value();
             }
             case PUGLIN_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).pantSound().value();
             }
             case PUGLIN_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).deathSound().value();
             }
             case PUGLIN_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).ambientSound().value();
             }
             case SAD_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).growlSound().value();
             }
             case SAD_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).hurtSound().value();
             }
             case SAD_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).whineSound().value();
             }
             case SAD_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).pantSound().value();
             }
             case SAD_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).deathSound().value();
             }
             case SAD_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).ambientSound().value();
             }
             case ANGRY_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).growlSound().value();
             }
             case ANGRY_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).hurtSound().value();
             }
             case ANGRY_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).whineSound().value();
             }
             case ANGRY_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).pantSound().value();
             }
             case ANGRY_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).deathSound().value();
             }
             case ANGRY_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).ambientSound().value();
             }
             case GRUMPY_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).growlSound().value();
             }
             case GRUMPY_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).hurtSound().value();
             }
             case GRUMPY_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).whineSound().value();
             }
             case GRUMPY_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).pantSound().value();
             }
             case GRUMPY_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).deathSound().value();
             }
             case GRUMPY_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).ambientSound().value();
             }
             case BIG_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).growlSound().value();
             }
             case BIG_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).hurtSound().value();
             }
             case BIG_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).whineSound().value();
             }
             case BIG_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).pantSound().value();
             }
             case BIG_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).deathSound().value();
             }
             case BIG_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).ambientSound().value();
             }
             case CUTE_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).growlSound().value();
             }
             case CUTE_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).hurtSound().value();
             }
             case CUTE_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).whineSound().value();
             }
             case CUTE_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).pantSound().value();
             }
             case CUTE_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).deathSound().value();
             }
             case CUTE_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).ambientSound().value();
             }
             case FIREFLY_BUSH_IDLE -> {
                 return SoundEvents.FIREFLY_BUSH_IDLE;
@@ -7470,385 +7466,32 @@ public enum SoundEventsHolder {
             case NAUTILUS_SADDLE_EQUIP -> {
                 return SoundEvents.NAUTILUS_SADDLE_EQUIP.value();
             }
-            case CAT_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
-            }
-            case CAT_STRAY_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().strayAmbientSound().value();
-            }
-            case CAT_DEATH_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
-            }
-            case CAT_EAT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().value();
-            }
-            case CAT_HISS_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hissSound().value();
-            }
-            case CAT_BEG_FOR_FOOD_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().begForFoodSound().value();
-            }
-            case CAT_HURT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
-            }
-            case CAT_PURR_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purrSound().value();
-            }
-            case CAT_PURREOW_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purreowSound().value();
-            }
-            case ROYAL_CAT_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().ambientSound().value();
-            }
-            case ROYAL_CAT_STRAY_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().strayAmbientSound().value();
-            }
-            case ROYAL_CAT_DEATH -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().deathSound().value();
-            }
-            case ROYAL_CAT_EAT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().eatSound().value();
-            }
-            case ROYAL_CAT_HISS -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hissSound().value();
-            }
-            case ROYAL_CAT_BEG_FOR_FOOD -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().begForFoodSound().value();
-            }
-            case ROYAL_CAT_HURT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hurtSound().value();
-            }
-            case ROYAL_CAT_PURR -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purrSound().value();
-            }
-            case ROYAL_CAT_PURREOW -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purreowSound().value();
-            }
-            case ROYAL_CAT_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().ambientSound().value();
-            }
-            case ROYAL_CAT_STRAY_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().strayAmbientSound().value();
-            }
-            case ROYAL_CAT_DEATH_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().deathSound().value();
-            }
-            case ROYAL_CAT_EAT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().eatSound().value();
-            }
-            case ROYAL_CAT_HISS_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hissSound().value();
-            }
-            case ROYAL_CAT_BEG_FOR_FOOD_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().begForFoodSound().value();
-            }
-            case ROYAL_CAT_HURT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hurtSound().value();
-            }
-            case ROYAL_CAT_PURR_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purrSound().value();
-            }
-            case ROYAL_CAT_PURREOW_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purreowSound().value();
-            }
-            case CHICKEN_AMBIENT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
-            }
-            case CHICKEN_DEATH_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
-            }
-            case CHICKEN_HURT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
-            }
-            case CHICKEN_STEP_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
-            }
-            case MOODY_COW_AMBIENT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).ambientSound().value();
-            }
-            case MOODY_COW_DEATH -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).deathSound().value();
-            }
-            case MOODY_COW_HURT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).hurtSound().value();
-            }
-            case MOODY_COW_STEP -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).stepSound().value();
-            }
-            case GOLDEN_DANDELION_USE -> {
-                return SoundEvents.GOLDEN_DANDELION_USE;
-            }
-            case GOLDEN_DANDELION_UNUSE -> {
-                return SoundEvents.GOLDEN_DANDELION_UNUSE;
-            }
-            case HORSE_AMBIENT_BABY -> {
-                return SoundEvents.HORSE_AMBIENT_BABY;
-            }
-            case HORSE_ANGRY_BABY -> {
-                return SoundEvents.HORSE_ANGRY_BABY;
-            }
-            case HORSE_BREATHE_BABY -> {
-                return SoundEvents.HORSE_BREATHE_BABY;
-            }
-            case HORSE_DEATH_BABY -> {
-                return SoundEvents.HORSE_DEATH_BABY;
-            }
-            case HORSE_EAT_BABY -> {
-                return SoundEvents.HORSE_EAT_BABY;
-            }
-            case HORSE_HURT_BABY -> {
-                return SoundEvents.HORSE_HURT_BABY;
-            }
-            case HORSE_LAND_BABY -> {
-                return SoundEvents.HORSE_LAND_BABY;
-            }
-            case HORSE_STEP_BABY -> {
-                return SoundEvents.HORSE_STEP_BABY;
-            }
-            case NOTE_BLOCK_TRUMPET -> {
-                return SoundEvents.NOTE_BLOCK_TRUMPET.value();
-            }
-            case NOTE_BLOCK_TRUMPET_EXPOSED -> {
-                return SoundEvents.NOTE_BLOCK_TRUMPET_EXPOSED.value();
-            }
-            case NOTE_BLOCK_TRUMPET_OXIDIZED -> {
-                return SoundEvents.NOTE_BLOCK_TRUMPET_OXIDIZED.value();
-            }
-            case NOTE_BLOCK_TRUMPET_WEATHERED -> {
-                return SoundEvents.NOTE_BLOCK_TRUMPET_WEATHERED.value();
-            }
-            case PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
-            }
-            case PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
-            }
-            case PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().value();
-            }
-            case PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
-            }
-            case PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
-            }
-            case PICKY_CHICKEN_AMBIENT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().ambientSound().value();
-            }
-            case PICKY_CHICKEN_DEATH_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().deathSound().value();
-            }
-            case PICKY_CHICKEN_HURT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().hurtSound().value();
-            }
-            case PICKY_CHICKEN_STEP_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().stepSound().value();
-            }
-            case PICKY_CHICKEN_AMBIENT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().ambientSound().value();
-            }
-            case PICKY_CHICKEN_DEATH -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().deathSound().value();
-            }
-            case PICKY_CHICKEN_HURT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().hurtSound().value();
-            }
-            case PICKY_CHICKEN_STEP -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().stepSound().value();
-            }
-            case MINI_PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().stepSound().value();
-            }
-            case MINI_PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().ambientSound().value();
-            }
-            case MINI_PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().eatSound().value();
-            }
-            case MINI_PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().hurtSound().value();
-            }
-            case MINI_PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().deathSound().value();
-            }
-            case MINI_PIG_STEP -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().stepSound().value();
-            }
-            case MINI_PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().ambientSound().value();
-            }
-            case MINI_PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().eatSound().value();
-            }
-            case MINI_PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().hurtSound().value();
-            }
-            case MINI_PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().deathSound().value();
-            }
-            case BIG_PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().stepSound().value();
-            }
-            case BIG_PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().ambientSound().value();
-            }
-            case BIG_PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().eatSound().value();
-            }
-            case BIG_PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().hurtSound().value();
-            }
-            case BIG_PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().deathSound().value();
-            }
-            case BIG_PIG_STEP -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().stepSound().value();
-            }
-            case BIG_PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().ambientSound().value();
-            }
-            case BIG_PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().eatSound().value();
-            }
-            case BIG_PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().hurtSound().value();
-            }
-            case BIG_PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().deathSound().value();
-            }
-            case WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
-            }
-            case WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
-            }
-            case WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().growlSound().value();
-            }
-            case WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
-            }
-            case WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().pantSound().value();
-            }
-            case WOLF_STEP_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
-            }
-            case WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().whineSound().value();
-            }
-            case PUGLIN_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().growlSound().value();
-            }
-            case PUGLIN_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().hurtSound().value();
-            }
-            case PUGLIN_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().whineSound().value();
-            }
-            case PUGLIN_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().pantSound().value();
-            }
-            case PUGLIN_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().deathSound().value();
-            }
-            case PUGLIN_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().ambientSound().value();
-            }
-            case SAD_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().growlSound().value();
-            }
-            case SAD_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().hurtSound().value();
-            }
-            case SAD_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().whineSound().value();
-            }
-            case SAD_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().pantSound().value();
-            }
-            case SAD_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().deathSound().value();
-            }
-            case SAD_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().ambientSound().value();
-            }
-            case ANGRY_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().growlSound().value();
-            }
-            case ANGRY_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().hurtSound().value();
-            }
-            case ANGRY_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().whineSound().value();
-            }
-            case ANGRY_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().pantSound().value();
-            }
-            case ANGRY_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().deathSound().value();
-            }
-            case ANGRY_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().ambientSound().value();
-            }
-            case GRUMPY_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().growlSound().value();
-            }
-            case GRUMPY_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().hurtSound().value();
-            }
-            case GRUMPY_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().whineSound().value();
-            }
-            case GRUMPY_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().pantSound().value();
-            }
-            case GRUMPY_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().deathSound().value();
-            }
-            case GRUMPY_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().ambientSound().value();
-            }
-            case BIG_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().growlSound().value();
-            }
-            case BIG_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().hurtSound().value();
-            }
-            case BIG_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().whineSound().value();
-            }
-            case BIG_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().pantSound().value();
-            }
-            case BIG_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().deathSound().value();
-            }
-            case BIG_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().ambientSound().value();
-            }
-            case CUTE_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().growlSound().value();
-            }
-            case CUTE_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().hurtSound().value();
-            }
-            case CUTE_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().whineSound().value();
-            }
-            case CUTE_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().pantSound().value();
-            }
-            case CUTE_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().deathSound().value();
-            }
-            case CUTE_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().ambientSound().value();
-            }
-            case PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().value();
-            }
-            case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND -> {
+            case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND, CAT_AMBIENT_BABY, CAT_STRAY_AMBIENT_BABY, CAT_DEATH_BABY,
+                 CAT_EAT_BABY, CAT_HISS_BABY, CAT_BEG_FOR_FOOD_BABY, CAT_HURT_BABY, CAT_PURR_BABY, CAT_PURREOW_BABY,
+                 ROYAL_CAT_AMBIENT, ROYAL_CAT_STRAY_AMBIENT, ROYAL_CAT_DEATH, ROYAL_CAT_EAT, ROYAL_CAT_HISS,
+                 ROYAL_CAT_BEG_FOR_FOOD, ROYAL_CAT_HURT, ROYAL_CAT_PURR, ROYAL_CAT_PURREOW, ROYAL_CAT_AMBIENT_BABY,
+                 ROYAL_CAT_STRAY_AMBIENT_BABY, ROYAL_CAT_DEATH_BABY, ROYAL_CAT_EAT_BABY, ROYAL_CAT_HISS_BABY,
+                 ROYAL_CAT_BEG_FOR_FOOD_BABY, ROYAL_CAT_HURT_BABY, ROYAL_CAT_PURR_BABY, ROYAL_CAT_PURREOW_BABY,
+                 CHICKEN_AMBIENT_BABY, CHICKEN_DEATH_BABY, CHICKEN_HURT_BABY, CHICKEN_STEP_BABY, MOODY_COW_AMBIENT,
+                 MOODY_COW_DEATH, MOODY_COW_HURT, MOODY_COW_STEP, GOLDEN_DANDELION_USE, GOLDEN_DANDELION_UNUSE,
+                 HORSE_AMBIENT_BABY, HORSE_ANGRY_BABY, HORSE_BREATHE_BABY, HORSE_DEATH_BABY, HORSE_EAT_BABY, HORSE_HURT_BABY,
+                 HORSE_LAND_BABY, HORSE_STEP_BABY, NOTE_BLOCK_TRUMPET, NOTE_BLOCK_TRUMPET_EXPOSED, NOTE_BLOCK_TRUMPET_OXIDIZED,
+                 NOTE_BLOCK_TRUMPET_WEATHERED, PIG_STEP_BABY, PIG_AMBIENT_BABY, PIG_EAT_BABY, PIG_HURT_BABY, PIG_DEATH_BABY,
+                 PICKY_CHICKEN_AMBIENT_BABY, PICKY_CHICKEN_DEATH_BABY, PICKY_CHICKEN_HURT_BABY, PICKY_CHICKEN_STEP_BABY,
+                 PICKY_CHICKEN_AMBIENT, PICKY_CHICKEN_DEATH, PICKY_CHICKEN_HURT, PICKY_CHICKEN_STEP, MINI_PIG_STEP_BABY,
+                 MINI_PIG_AMBIENT_BABY, MINI_PIG_EAT_BABY, MINI_PIG_HURT_BABY, MINI_PIG_DEATH_BABY, MINI_PIG_STEP,
+                 MINI_PIG_AMBIENT, MINI_PIG_EAT, MINI_PIG_HURT, MINI_PIG_DEATH, BIG_PIG_STEP_BABY, BIG_PIG_AMBIENT_BABY,
+                 BIG_PIG_EAT_BABY, BIG_PIG_HURT_BABY, BIG_PIG_DEATH_BABY, BIG_PIG_STEP, BIG_PIG_AMBIENT, BIG_PIG_EAT,
+                 BIG_PIG_HURT, BIG_PIG_DEATH, WOLF_AMBIENT_BABY, WOLF_DEATH_BABY, WOLF_GROWL_BABY, WOLF_HURT_BABY,
+                 WOLF_PANT_BABY, WOLF_STEP_BABY, WOLF_WHINE_BABY, PUGLIN_WOLF_GROWL_BABY, PUGLIN_WOLF_HURT_BABY,
+                 PUGLIN_WOLF_WHINE_BABY, PUGLIN_WOLF_PANT_BABY, PUGLIN_WOLF_DEATH_BABY, PUGLIN_WOLF_AMBIENT_BABY,
+                 SAD_WOLF_GROWL_BABY, SAD_WOLF_HURT_BABY, SAD_WOLF_WHINE_BABY, SAD_WOLF_PANT_BABY, SAD_WOLF_DEATH_BABY,
+                 SAD_WOLF_AMBIENT_BABY, ANGRY_WOLF_GROWL_BABY, ANGRY_WOLF_HURT_BABY, ANGRY_WOLF_WHINE_BABY,
+                 ANGRY_WOLF_PANT_BABY, ANGRY_WOLF_DEATH_BABY, ANGRY_WOLF_AMBIENT_BABY, GRUMPY_WOLF_GROWL_BABY,
+                 GRUMPY_WOLF_HURT_BABY, GRUMPY_WOLF_WHINE_BABY, GRUMPY_WOLF_PANT_BABY, GRUMPY_WOLF_DEATH_BABY,
+                 GRUMPY_WOLF_AMBIENT_BABY, BIG_WOLF_GROWL_BABY, BIG_WOLF_HURT_BABY, BIG_WOLF_WHINE_BABY, BIG_WOLF_PANT_BABY,
+                 BIG_WOLF_DEATH_BABY, BIG_WOLF_AMBIENT_BABY, CUTE_WOLF_GROWL_BABY, CUTE_WOLF_HURT_BABY, CUTE_WOLF_WHINE_BABY,
+                 CUTE_WOLF_PANT_BABY, CUTE_WOLF_DEATH_BABY, CUTE_WOLF_AMBIENT_BABY, PIG_EAT -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
