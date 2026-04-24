@@ -124,7 +124,9 @@ public enum SoundTypeHolder {
     RESIN,
     RESIN_BRICKS,
     IRON,
-    DRIED_GHAST;
+    DRIED_GHAST,
+    COPPER_GOLEM_STATUE,
+    SHELF;
 
     public static SoundType getSoundType(SoundTypeHolder soundTypeHolder) {
         switch (soundTypeHolder) {
@@ -479,7 +481,7 @@ public enum SoundTypeHolder {
             case RESIN_BRICKS -> {
                 return SoundType.RESIN_BRICKS;
             }
-            case DRIED_GHAST, IRON, LEAF_LITTER, CACTUS_FLOWER -> {
+            case DRIED_GHAST, IRON, LEAF_LITTER, CACTUS_FLOWER, COPPER_GOLEM_STATUE, SHELF -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound type that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
