@@ -7268,204 +7268,6 @@ public enum SoundEventsHolder {
             case WEATHER_END_FLASH -> {
                 return SoundEvents.WEATHER_END_FLASH;
             }
-            case ARMOR_EQUIP_NAUTILUS -> {
-                return SoundEvents.ARMOR_EQUIP_NAUTILUS.value();
-            }
-            case ARMOR_UNEQUIP_NAUTILUS -> {
-                return SoundEvents.ARMOR_UNEQUIP_NAUTILUS.value();
-            }
-            case BABY_NAUTILUS_AMBIENT -> {
-                return SoundEvents.BABY_NAUTILUS_AMBIENT;
-            }
-            case BABY_NAUTILUS_AMBIENT_ON_LAND -> {
-                return SoundEvents.BABY_NAUTILUS_AMBIENT_ON_LAND;
-            }
-            case BABY_NAUTILUS_DEATH -> {
-                return SoundEvents.BABY_NAUTILUS_DEATH;
-            }
-            case BABY_NAUTILUS_DEATH_ON_LAND -> {
-                return SoundEvents.BABY_NAUTILUS_DEATH_ON_LAND;
-            }
-            case BABY_NAUTILUS_EAT -> {
-                return SoundEvents.BABY_NAUTILUS_EAT;
-            }
-            case BABY_NAUTILUS_HURT -> {
-                return SoundEvents.BABY_NAUTILUS_HURT;
-            }
-            case BABY_NAUTILUS_HURT_ON_LAND -> {
-                return SoundEvents.BABY_NAUTILUS_HURT_ON_LAND;
-            }
-            case NAUTILUS_RIDING -> {
-                return SoundEvents.NAUTILUS_RIDING;
-            }
-            case BABY_NAUTILUS_SWIM -> {
-                return SoundEvents.BABY_NAUTILUS_SWIM;
-            }
-            case CAMEL_HUSK_AMBIENT -> {
-                return SoundEvents.CAMEL_HUSK_AMBIENT;
-            }
-            case CAMEL_HUSK_DASH -> {
-                return SoundEvents.CAMEL_HUSK_DASH;
-            }
-            case CAMEL_HUSK_DASH_READY -> {
-                return SoundEvents.CAMEL_HUSK_DASH_READY;
-            }
-            case CAMEL_HUSK_DEATH -> {
-                return SoundEvents.CAMEL_HUSK_DEATH;
-            }
-            case CAMEL_HUSK_EAT -> {
-                return SoundEvents.CAMEL_HUSK_EAT;
-            }
-            case CAMEL_HUSK_HURT -> {
-                return SoundEvents.CAMEL_HUSK_HURT;
-            }
-            case CAMEL_HUSK_SADDLE -> {
-                return SoundEvents.CAMEL_HUSK_SADDLE.value();
-            }
-            case CAMEL_HUSK_SIT -> {
-                return SoundEvents.CAMEL_HUSK_SIT;
-            }
-            case CAMEL_HUSK_STAND -> {
-                return SoundEvents.CAMEL_HUSK_STAND;
-            }
-            case CAMEL_HUSK_STEP -> {
-                return SoundEvents.CAMEL_HUSK_STEP;
-            }
-            case CAMEL_HUSK_STEP_SAND -> {
-                return SoundEvents.CAMEL_HUSK_STEP_SAND;
-            }
-            case LUNGE_1 -> {
-                return SoundEvents.LUNGE_1.value();
-            }
-            case LUNGE_2 -> {
-                return SoundEvents.LUNGE_2.value();
-            }
-            case LUNGE_3 -> {
-                return SoundEvents.LUNGE_3.value();
-            }
-            case NAUTILUS_AMBIENT -> {
-                return SoundEvents.NAUTILUS_AMBIENT;
-            }
-            case NAUTILUS_AMBIENT_ON_LAND -> {
-                return SoundEvents.NAUTILUS_AMBIENT_ON_LAND;
-            }
-            case NAUTILUS_DASH -> {
-                return SoundEvents.NAUTILUS_DASH;
-            }
-            case NAUTILUS_DASH_ON_LAND -> {
-                return SoundEvents.NAUTILUS_DASH_ON_LAND;
-            }
-            case NAUTILUS_DASH_READY -> {
-                return SoundEvents.NAUTILUS_DASH_READY;
-            }
-            case NAUTILUS_DASH_READY_ON_LAND -> {
-                return SoundEvents.NAUTILUS_DASH_READY_ON_LAND;
-            }
-            case NAUTILUS_DEATH -> {
-                return SoundEvents.NAUTILUS_DEATH;
-            }
-            case NAUTILUS_DEATH_ON_LAND -> {
-                return SoundEvents.NAUTILUS_DEATH_ON_LAND;
-            }
-            case NAUTILUS_EAT -> {
-                return SoundEvents.NAUTILUS_EAT;
-            }
-            case NAUTILUS_HURT -> {
-                return SoundEvents.NAUTILUS_HURT;
-            }
-            case NAUTILUS_HURT_ON_LAND -> {
-                return SoundEvents.NAUTILUS_HURT_ON_LAND;
-            }
-            case NAUTILUS_SWIM -> {
-                return SoundEvents.NAUTILUS_SWIM;
-            }
-            case PARCHED_AMBIENT -> {
-                return SoundEvents.PARCHED_AMBIENT;
-            }
-            case PARCHED_DEATH -> {
-                return SoundEvents.PARCHED_DEATH;
-            }
-            case PARCHED_HURT -> {
-                return SoundEvents.PARCHED_HURT;
-            }
-            case PARCHED_STEP -> {
-                return SoundEvents.PARCHED_STEP;
-            }
-            case PARROT_IMITATE_CAMEL_HUSK -> {
-                return SoundEvents.PARROT_IMITATE_CAMEL_HUSK;
-            }
-            case PARROT_IMITATE_PARCHED -> {
-                return SoundEvents.PARROT_IMITATE_PARCHED;
-            }
-            case PARROT_IMITATE_ZOMBIE_HUSK -> {
-                return SoundEvents.PARROT_IMITATE_ZOMBIE_HORSE;
-            }
-            case PARROT_IMITATE_ZOMBIE_NAUTILUS -> {
-                return SoundEvents.PARROT_IMITATE_ZOMBIE_NAUTILUS;
-            }
-            case SPEAR_USE -> {
-                return SoundEvents.SPEAR_USE.value();
-            }
-            case SPEAR_HIT -> {
-                return SoundEvents.SPEAR_HIT.value();
-            }
-            case SPEAR_ATTACK -> {
-                return SoundEvents.SPEAR_ATTACK.value();
-            }
-            case SPEAR_WOOD_USE -> {
-                return SoundEvents.SPEAR_WOOD_USE.value();
-            }
-            case SPEAR_WOOD_HIT -> {
-                return SoundEvents.SPEAR_WOOD_HIT.value();
-            }
-            case SPEAR_WOOD_ATTACK -> {
-                return SoundEvents.SPEAR_WOOD_ATTACK.value();
-            }
-            case ZOMBIE_HORSE_EAT -> {
-                return SoundEvents.ZOMBIE_HORSE_EAT;
-            }
-            case ZOMBIE_NAUTILUS_AMBIENT -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_AMBIENT;
-            }
-            case ZOMBIE_NAUTILUS_AMBIENT_ON_LAND -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_AMBIENT_ON_LAND;
-            }
-            case ZOMBIE_NAUTILUS_DASH -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DASH;
-            }
-            case ZOMBIE_NAUTILUS_DASH_ON_LAND -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DASH_ON_LAND;
-            }
-            case ZOMBIE_NAUTILUS_DASH_READY -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DASH_READY;
-            }
-            case ZOMBIE_NAUTILUS_DASH_READY_ON_LAND -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DASH_READY_ON_LAND;
-            }
-            case ZOMBIE_NAUTILUS_DEATH -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DEATH;
-            }
-            case ZOMBIE_NAUTILUS_DEATH_ON_LAND -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_DEATH_ON_LAND;
-            }
-            case ZOMBIE_NAUTILUS_EAT -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_EAT;
-            }
-            case ZOMBIE_NAUTILUS_HURT -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_HURT;
-            }
-            case ZOMBIE_NAUTILUS_HURT_ON_LAND -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_HURT_ON_LAND;
-            }
-            case ZOMBIE_NAUTILUS_SWIM -> {
-                return SoundEvents.ZOMBIE_NAUTILUS_SWIM;
-            }
-            case NAUTILUS_SADDLE_UNDERWATER_EQUIP -> {
-                return SoundEvents.NAUTILUS_SADDLE_UNDERWATER_EQUIP.value();
-            }
-            case NAUTILUS_SADDLE_EQUIP -> {
-                return SoundEvents.NAUTILUS_SADDLE_EQUIP.value();
-            }
             case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND, CAT_AMBIENT_BABY, CAT_STRAY_AMBIENT_BABY, CAT_DEATH_BABY,
                  CAT_EAT_BABY, CAT_HISS_BABY, CAT_BEG_FOR_FOOD_BABY, CAT_HURT_BABY, CAT_PURR_BABY, CAT_PURREOW_BABY,
                  ROYAL_CAT_AMBIENT, ROYAL_CAT_STRAY_AMBIENT, ROYAL_CAT_DEATH, ROYAL_CAT_EAT, ROYAL_CAT_HISS,
@@ -7491,7 +7293,21 @@ public enum SoundEventsHolder {
                  GRUMPY_WOLF_HURT_BABY, GRUMPY_WOLF_WHINE_BABY, GRUMPY_WOLF_PANT_BABY, GRUMPY_WOLF_DEATH_BABY,
                  GRUMPY_WOLF_AMBIENT_BABY, BIG_WOLF_GROWL_BABY, BIG_WOLF_HURT_BABY, BIG_WOLF_WHINE_BABY, BIG_WOLF_PANT_BABY,
                  BIG_WOLF_DEATH_BABY, BIG_WOLF_AMBIENT_BABY, CUTE_WOLF_GROWL_BABY, CUTE_WOLF_HURT_BABY, CUTE_WOLF_WHINE_BABY,
-                 CUTE_WOLF_PANT_BABY, CUTE_WOLF_DEATH_BABY, CUTE_WOLF_AMBIENT_BABY, PIG_EAT -> {
+                 CUTE_WOLF_PANT_BABY, CUTE_WOLF_DEATH_BABY, CUTE_WOLF_AMBIENT_BABY, PIG_EAT, ARMOR_EQUIP_NAUTILUS,
+                 ARMOR_UNEQUIP_NAUTILUS, BABY_NAUTILUS_AMBIENT, BABY_NAUTILUS_AMBIENT_ON_LAND, BABY_NAUTILUS_DEATH,
+                 BABY_NAUTILUS_DEATH_ON_LAND, BABY_NAUTILUS_EAT, BABY_NAUTILUS_HURT, BABY_NAUTILUS_HURT_ON_LAND,
+                 NAUTILUS_RIDING, BABY_NAUTILUS_SWIM, CAMEL_HUSK_AMBIENT, CAMEL_HUSK_DASH, CAMEL_HUSK_DASH_READY,
+                 CAMEL_HUSK_DEATH, CAMEL_HUSK_EAT, CAMEL_HUSK_HURT, CAMEL_HUSK_SADDLE, CAMEL_HUSK_SIT, CAMEL_HUSK_STAND,
+                 CAMEL_HUSK_STEP, CAMEL_HUSK_STEP_SAND, LUNGE_1, LUNGE_2, LUNGE_3, NAUTILUS_AMBIENT, NAUTILUS_AMBIENT_ON_LAND,
+                 NAUTILUS_DASH, NAUTILUS_DASH_ON_LAND, NAUTILUS_DASH_READY, NAUTILUS_DASH_READY_ON_LAND, NAUTILUS_DEATH,
+                 NAUTILUS_DEATH_ON_LAND, NAUTILUS_EAT, NAUTILUS_HURT, NAUTILUS_HURT_ON_LAND, NAUTILUS_SWIM, PARCHED_AMBIENT,
+                 PARCHED_DEATH, PARCHED_HURT, PARCHED_STEP, PARROT_IMITATE_CAMEL_HUSK, PARROT_IMITATE_PARCHED,
+                 PARROT_IMITATE_ZOMBIE_HUSK, PARROT_IMITATE_ZOMBIE_NAUTILUS, SPEAR_USE, SPEAR_HIT, SPEAR_ATTACK,
+                 SPEAR_WOOD_USE, SPEAR_WOOD_HIT, SPEAR_WOOD_ATTACK, ZOMBIE_HORSE_EAT, ZOMBIE_NAUTILUS_AMBIENT,
+                 ZOMBIE_NAUTILUS_AMBIENT_ON_LAND, ZOMBIE_NAUTILUS_DASH, ZOMBIE_NAUTILUS_DASH_ON_LAND,
+                 ZOMBIE_NAUTILUS_DASH_READY, ZOMBIE_NAUTILUS_DASH_READY_ON_LAND, ZOMBIE_NAUTILUS_DEATH,
+                 ZOMBIE_NAUTILUS_DEATH_ON_LAND, ZOMBIE_NAUTILUS_EAT, ZOMBIE_NAUTILUS_HURT, ZOMBIE_NAUTILUS_HURT_ON_LAND,
+                 ZOMBIE_NAUTILUS_SWIM, NAUTILUS_SADDLE_UNDERWATER_EQUIP, NAUTILUS_SADDLE_EQUIP -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");
                 return null;
             }
