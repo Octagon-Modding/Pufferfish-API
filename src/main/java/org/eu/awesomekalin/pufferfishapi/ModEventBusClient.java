@@ -8,7 +8,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 import java.util.function.Consumer;
 
-@Mod.EventBusSubscriber(modid = PufferfishAPI.MODID, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = PufferfishAPI.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventBusClient {
     public static final ObjectArrayList<Consumer<FMLClientSetupEvent>> SCREENS_TO_REGISTER = new ObjectArrayList<>();
 
