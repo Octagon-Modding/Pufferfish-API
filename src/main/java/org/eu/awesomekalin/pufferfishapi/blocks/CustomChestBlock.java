@@ -110,14 +110,14 @@ public class CustomChestBlock extends BaseEntityBlock {
         protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
             super.saveAdditional(tag, registries);
             //output.putInt("slots", chestSettings.slotPositions.length);
-            inventory.serializeNBT(registries);
+            tag.put("inventory", inventory.serializeNBT(registries));
         }
 
         @Override
         protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
             super.loadAdditional(tag, registries);
             //this.slots = input.getInt("slots").get();
-            inventory.deserializeNBT(registries, tag);
+            inventory.deserializeNBT(registries, tag.getCompound("inventory"));
         }
 
         public void drops() {
