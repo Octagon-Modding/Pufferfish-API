@@ -8,7 +8,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 import java.util.function.Consumer;
 
-@EventBusSubscriber(modid = PufferfishAPI.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = PufferfishAPI.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventBusClient {
     public static final ObjectArrayList<Consumer<RegisterMenuScreensEvent>> SCREENS_TO_REGISTER = new ObjectArrayList<>();
 
