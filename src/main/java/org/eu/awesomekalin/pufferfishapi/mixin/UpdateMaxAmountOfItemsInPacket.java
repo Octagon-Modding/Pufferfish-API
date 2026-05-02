@@ -23,11 +23,6 @@ abstract class UpdateMaxAmountOfItemsInPacket {
     @Final
     private static StreamCodec<RegistryFriendlyByteBuf, Int2ObjectMap<ItemStack>> SLOTS_STREAM_CODEC;
 
-    @Shadow
-    @Mutable
-    @Final
-    public static StreamCodec<RegistryFriendlyByteBuf, ServerboundContainerClickPacket> STREAM_CODEC;
-
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void onClassInit(CallbackInfo ci) {
         // Increase slot limit
