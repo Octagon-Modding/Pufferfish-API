@@ -1,4 +1,4 @@
-name: Build Fabric 26.1
+name: Build Fabric 26.2
 
 on: [push, pull_request]
 
@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           path: ./build/libs/*
-          name: Pufferfish API for Fabric 26.1
+          name: Pufferfish API for Fabric 26.2

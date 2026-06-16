@@ -14,7 +14,7 @@ public class PufferfishAPI implements ModInitializer {
     }
 
     public static String getMinecraftVersion() {
-        return "26.1.2";
+        return "26.2";
     }
 
     public static String getModLoader() {
