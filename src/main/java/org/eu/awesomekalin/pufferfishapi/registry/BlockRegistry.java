@@ -1,6 +1,8 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
+import net.minecraft.Util;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.util.datafix.fixes.References;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -15,6 +17,7 @@ import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Supplier;
 
 public class BlockRegistry {
