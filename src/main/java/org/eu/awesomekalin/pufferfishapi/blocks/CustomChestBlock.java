@@ -31,7 +31,6 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class CustomChestBlock extends BaseEntityBlock {
-    public static final MapCodec<CustomChestBlock> CODEC = simpleCodec(CustomChestBlock::new);
     private Supplier<List<BlockEntityType<?>>> blockEntityRenderersSupplier;
     private int position;
     private ChestSettings chestSettings;
@@ -45,11 +44,6 @@ public class CustomChestBlock extends BaseEntityBlock {
         this.blockEntityRenderersSupplier = blockEntityRenderersSupplier;
         this.position = position;
         this.chestSettings = chestSettings;
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Nullable
