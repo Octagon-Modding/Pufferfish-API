@@ -10,7 +10,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.neoforged.neoforge.items.SlotItemHandler;
+import net.neoforged.neoforge.transfer.item.ResourceHandlerSlot;
 import org.eu.awesomekalin.pufferfishapi.blocks.CustomChestBlock;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
 
@@ -33,7 +33,7 @@ public class ChestMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         for (var i = 0; i < chestSettings.slotPositions.length; i++) {
-            this.addSlot(new SlotItemHandler(this.blockEntity.inventory, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1]));
+            this.addSlot(new ResourceHandlerSlot(this.blockEntity.inventory, this.blockEntity.inventory::set, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1]));
         }
     }
 

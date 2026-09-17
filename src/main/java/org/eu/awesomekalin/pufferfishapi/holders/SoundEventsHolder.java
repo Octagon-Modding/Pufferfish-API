@@ -2230,13 +2230,13 @@ public enum SoundEventsHolder {
                 return SoundEvents.ARROW_SHOOT;
             }
             case AXE_STRIP -> {
-                return SoundEvents.AXE_STRIP;
+                return SoundEvents.AXE_STRIP.value();
             }
             case AXE_SCRAPE -> {
-                return SoundEvents.AXE_SCRAPE;
+                return SoundEvents.AXE_SCRAPE.value();
             }
             case AXE_WAX_OFF -> {
-                return SoundEvents.AXE_WAX_OFF;
+                return SoundEvents.AXE_WAX_OFF.value();
             }
             case AXOLOTL_ATTACK -> {
                 return SoundEvents.AXOLOTL_ATTACK;
@@ -4114,7 +4114,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.TRIAL_SPAWNER_EJECT_ITEM;
             }
             case HOE_TILL -> {
-                return SoundEvents.HOE_TILL;
+                return SoundEvents.HOE_TILL.value();
             }
             case HOGLIN_AMBIENT -> {
                 return SoundEvents.HOGLIN_AMBIENT;
@@ -5761,7 +5761,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.SHROOMLIGHT_FALL;
             }
             case SHOVEL_FLATTEN -> {
-                return SoundEvents.SHOVEL_FLATTEN;
+                return SoundEvents.SHOVEL_FLATTEN.value();
             }
             case SHULKER_AMBIENT -> {
                 return SoundEvents.SHULKER_AMBIENT;

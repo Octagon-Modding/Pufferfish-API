@@ -1,6 +1,5 @@
 package org.eu.awesomekalin.pufferfishapi.blocks;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -22,16 +21,18 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.BlockHitResult;
-import net.neoforged.neoforge.items.ItemStackHandler;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.item.ItemStacksResourceHandler;
+import org.eu.awesomekalin.pufferfishapi.PufferfishAPI;
 import org.eu.awesomekalin.pufferfishapi.menus.ChestMenu;
 import org.eu.awesomekalin.pufferfishapi.util.ChestSettings;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Supplier;
 
 public class CustomChestBlock extends BaseEntityBlock {
-    public static final MapCodec<CustomChestBlock> CODEC = simpleCodec(CustomChestBlock::new);
     private Supplier<List<Supplier<BlockEntityType<?>>>> blockEntityRenderersSupplier;
     private int position;
     private ChestSettings chestSettings;
@@ -45,11 +46,6 @@ public class CustomChestBlock extends BaseEntityBlock {
         this.blockEntityRenderersSupplier = blockEntityRenderersSupplier;
         this.position = position;
         this.chestSettings = chestSettings;
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Nullable
@@ -68,7 +64,7 @@ public class CustomChestBlock extends BaseEntityBlock {
     }
 
     public static class CustomChestBlockEntity extends BlockEntity implements MenuProvider {
-        public ItemStackHandler inventory;
+        public ItemStacksResourceHandler inventory;
         private final int maxStackSize;
         private final ChestSettings chestSettings;
         private int slots;
@@ -79,14 +75,14 @@ public class CustomChestBlock extends BaseEntityBlock {
             this.chestSettings = chestSettings;
             this.slots = chestSettings.slotPositions.length;
 
-            inventory = new ItemStackHandler(chestSettings.slotPositions.length) {
+            inventory = new ItemStacksResourceHandler(chestSettings.slotPositions.length) {
                 @Override
-                protected int getStackLimit(int slot, ItemStack stack) {
-                    return maxStackSize;
+                protected int getCapacity(int index, ItemResource resource) {
+                    return resource.isEmpty() ? maxStackSize : Math.min(resource.getMaxStackSize(), maxStackSize);
                 }
 
                 @Override
-                protected void onContentsChanged(int slot) {
+                protected void onContentsChanged(int slot, @NotNull ItemStack previousContents) {
                     setChanged();
                     assert level != null;
                     if(!level.isClientSide()) {
@@ -111,9 +107,9 @@ public class CustomChestBlock extends BaseEntityBlock {
         }
 
         public void drops() {
-            SimpleContainer inv = new SimpleContainer(inventory.getSlots());
-            for(int i = 0; i < inventory.getSlots(); i++) {
-                inv.setItem(i, inventory.getStackInSlot(i));
+            SimpleContainer inv = new SimpleContainer(chestSettings.slotPositions.length);
+            for(int i = 0; i < chestSettings.slotPositions.length; i++) {
+                inv.setItem(i, inventory.getResource(i).toStack(inventory.getAmountAsInt(i)));
             }
 
             Containers.dropContents(this.level, this.worldPosition, inv);
