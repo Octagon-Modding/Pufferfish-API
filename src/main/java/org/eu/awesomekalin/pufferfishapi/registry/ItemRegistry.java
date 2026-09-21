@@ -101,26 +101,32 @@ public class ItemRegistry {
     }
 
     public ItemRegistryHolder registerAxe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new AxeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackSpeed,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(
+                getBasicProperties(toolHolder.name).axe(
+                        getToolMaterial(toolHolder),
+                        toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerShovel(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new ShovelItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackDamage,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(
+                getBasicProperties(toolHolder.name).shovel(
+                        getToolMaterial(toolHolder),
+                        toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
         )));
     }
 
     public ItemRegistryHolder registerHoe(ToolHolder toolHolder) {
-        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new HoeItem(getToolMaterial(toolHolder),
-                toolHolder.attackDamage,
-                toolHolder.attackDamage,
-                getBasicProperties(toolHolder.name)
+        return new ItemRegistryHolder(register.register(toolHolder.name, () -> new Item(
+                getBasicProperties(toolHolder.name).hoe(
+                        getToolMaterial(toolHolder),
+                        toolHolder.attackDamage,
+                        toolHolder.attackSpeed
+                )
         )));
     }
 
