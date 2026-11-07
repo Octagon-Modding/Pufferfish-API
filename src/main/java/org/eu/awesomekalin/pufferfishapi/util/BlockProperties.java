@@ -3,7 +3,8 @@ package org.eu.awesomekalin.pufferfishapi.util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.sounds.BlockSoundSet;
+import net.minecraft.world.level.block.sounds.BlockSoundSets;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.eu.awesomekalin.pufferfishapi.holders.SoundTypeHolder;
 import org.jetbrains.annotations.Nullable;
@@ -11,14 +12,14 @@ import org.jetbrains.annotations.Nullable;
 public class BlockProperties {
     private final float destroyTime;
     private final float explosionResistance;
-    private final SoundType sound;
+    private final ResourceKey<BlockSoundSet> sound;
     private final int lightLevel;
     private final float friction;
 
     public BlockProperties(float destroyTime, float explosionResistance, @Nullable SoundTypeHolder soundType, int lightLevel) {
         this.destroyTime = destroyTime;
         this.explosionResistance = explosionResistance;
-        this.sound = soundType != null ? SoundTypeHolder.getSoundType(soundType) : SoundType.STONE;
+        this.sound = soundType != null ? SoundTypeHolder.getSoundType(soundType) : BlockSoundSets.STONE;
         this.lightLevel = lightLevel;
         this.friction = 0.6f;
     }
@@ -26,7 +27,7 @@ public class BlockProperties {
     public BlockProperties(float destroyTime, float explosionResistance, @Nullable SoundTypeHolder soundType, int lightLevel, float friction) {
         this.destroyTime = destroyTime;
         this.explosionResistance = explosionResistance;
-        this.sound = soundType != null ? SoundTypeHolder.getSoundType(soundType) : SoundType.STONE;
+        this.sound = soundType != null ? SoundTypeHolder.getSoundType(soundType) : BlockSoundSets.STONE;
         this.lightLevel = lightLevel;
         this.friction = friction;
     }

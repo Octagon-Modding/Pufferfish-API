@@ -1,5 +1,6 @@
 package org.eu.awesomekalin.pufferfishapi.registry;
 
+import net.minecraft.client.core.registries.BuiltInClientRegistries;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,7 +24,7 @@ public class MenuRegistry {
 
     public MenuRegistryHolder<ChestMenu> registerChestMenu(String name, ChestSettings chestSettings) {
         final MenuType<@NotNull ChestMenu> SCREEN_HANDLER = Registry.register(BuiltInRegistries.MENU, Identifier.fromNamespaceAndPath(this.modId, name), new MenuType<>((containerId, inventory) -> new ChestMenu(containerId, inventory, chestSettings), FeatureFlagSet.of()));
-        MenuScreens.register((MenuType<@NotNull ChestMenu>) SCREEN_HANDLER, (MenuScreens.ScreenConstructor<ChestMenu, ChestScreen>) (menu, inventory, component) -> new ChestScreen(menu, inventory, chestSettings));
+        MenuScreens.register(BuiltInClientRegistries.MENU_SCREEN, (MenuType<@NotNull ChestMenu>) SCREEN_HANDLER, (MenuScreens.ScreenConstructor<ChestMenu, ChestScreen>) (menu, inventory, component) -> new ChestScreen(menu, inventory, chestSettings));
         return new MenuRegistryHolder<>(SCREEN_HANDLER);
     }
 }

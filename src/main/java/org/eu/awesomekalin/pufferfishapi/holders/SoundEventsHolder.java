@@ -2062,76 +2062,76 @@ public enum SoundEventsHolder {
                 return SoundEvents.AMBIENT_UNDERWATER_LOOP_ADDITIONS_ULTRA_RARE;
             }
             case AMETHYST_BLOCK_BREAK -> {
-                return SoundEvents.AMETHYST_BLOCK_BREAK;
+                return SoundEvents.AMETHYST_BLOCK.breakSound().get().value();
             }
             case AMETHYST_BLOCK_CHIME -> {
                 return SoundEvents.AMETHYST_BLOCK_CHIME;
             }
             case AMETHYST_BLOCK_FALL -> {
-                return SoundEvents.AMETHYST_BLOCK_FALL;
+                return SoundEvents.AMETHYST_BLOCK.fallSound().get().value();
             }
             case AMETHYST_BLOCK_HIT -> {
-                return SoundEvents.AMETHYST_BLOCK_HIT;
+                return SoundEvents.AMETHYST_BLOCK.hitSound().get().value();
             }
             case AMETHYST_BLOCK_PLACE -> {
-                return SoundEvents.AMETHYST_BLOCK_PLACE;
+                return SoundEvents.AMETHYST_BLOCK.placeSound().get().value();
             }
             case AMETHYST_BLOCK_RESONATE -> {
                 return SoundEvents.AMETHYST_BLOCK_RESONATE;
             }
             case AMETHYST_BLOCK_STEP -> {
-                return SoundEvents.AMETHYST_BLOCK_STEP;
+                return SoundEvents.AMETHYST_BLOCK.stepSound().get().value();
             }
             case AMETHYST_CLUSTER_BREAK -> {
-                return SoundEvents.AMETHYST_CLUSTER_BREAK;
+                return SoundEvents.AMETHYST_CLUSTER.breakSound().get().value();
             }
             case AMETHYST_CLUSTER_FALL -> {
-                return SoundEvents.AMETHYST_CLUSTER_FALL;
+                return SoundEvents.AMETHYST_CLUSTER.fallSound().get().value();
             }
             case AMETHYST_CLUSTER_HIT -> {
-                return SoundEvents.AMETHYST_CLUSTER_HIT;
+                return SoundEvents.AMETHYST_CLUSTER.hitSound().get().value();
             }
             case AMETHYST_CLUSTER_PLACE -> {
-                return SoundEvents.AMETHYST_CLUSTER_PLACE;
+                return SoundEvents.AMETHYST_CLUSTER.placeSound().get().value();
             }
             case AMETHYST_CLUSTER_STEP -> {
-                return SoundEvents.AMETHYST_CLUSTER_STEP;
+                return SoundEvents.AMETHYST_CLUSTER.stepSound().get().value();
             }
             case ANCIENT_DEBRIS_BREAK -> {
-                return SoundEvents.ANCIENT_DEBRIS_BREAK;
+                return SoundEvents.ANCIENT_DEBRIS.breakSound().get().value();
             }
             case ANCIENT_DEBRIS_STEP -> {
-                return SoundEvents.ANCIENT_DEBRIS_STEP;
+                return SoundEvents.ANCIENT_DEBRIS.stepSound().get().value();
             }
             case ANCIENT_DEBRIS_PLACE -> {
-                return SoundEvents.ANCIENT_DEBRIS_PLACE;
+                return SoundEvents.ANCIENT_DEBRIS.placeSound().get().value();
             }
             case ANCIENT_DEBRIS_HIT -> {
-                return SoundEvents.ANCIENT_DEBRIS_HIT;
+                return SoundEvents.ANCIENT_DEBRIS.hitSound().get().value();
             }
             case ANCIENT_DEBRIS_FALL -> {
-                return SoundEvents.ANCIENT_DEBRIS_FALL;
+                return SoundEvents.ANCIENT_DEBRIS.fallSound().get().value();
             }
             case ANVIL_BREAK -> {
-                return SoundEvents.ANVIL_BREAK;
+                return SoundEvents.ANVIL.breakSound().get().value();
             }
             case ANVIL_DESTROY -> {
                 return SoundEvents.ANVIL_DESTROY;
             }
             case ANVIL_FALL -> {
-                return SoundEvents.ANVIL_FALL;
+                return SoundEvents.ANVIL.fallSound().get().value();
             }
             case ANVIL_HIT -> {
-                return SoundEvents.ANVIL_HIT;
+                return SoundEvents.ANVIL.hitSound().get().value();
             }
             case ANVIL_LAND -> {
                 return SoundEvents.ANVIL_LAND;
             }
             case ANVIL_PLACE -> {
-                return SoundEvents.ANVIL_PLACE;
+                return SoundEvents.ANVIL.placeSound().get().value();
             }
             case ANVIL_STEP -> {
-                return SoundEvents.ANVIL_STEP;
+                return SoundEvents.ANVIL.stepSound().get().value();
             }
             case ANVIL_USE -> {
                 return SoundEvents.ANVIL_USE;
@@ -2260,73 +2260,73 @@ public enum SoundEventsHolder {
                 return SoundEvents.AXOLOTL_SWIM;
             }
             case AZALEA_BREAK -> {
-                return SoundEvents.AZALEA_BREAK;
+                return SoundEvents.AZALEA.breakSound().get().value();
             }
             case AZALEA_FALL -> {
-                return SoundEvents.AZALEA_FALL;
+                return SoundEvents.AZALEA.fallSound().get().value();
             }
             case AZALEA_HIT -> {
-                return SoundEvents.AZALEA_HIT;
+                return SoundEvents.AZALEA.hitSound().get().value();
             }
             case AZALEA_PLACE -> {
-                return SoundEvents.AZALEA_PLACE;
+                return SoundEvents.AZALEA.placeSound().get().value();
             }
             case AZALEA_STEP -> {
-                return SoundEvents.AZALEA_STEP;
+                return SoundEvents.AZALEA.stepSound().get().value();
             }
             case AZALEA_LEAVES_BREAK -> {
-                return SoundEvents.AZALEA_LEAVES_BREAK;
+                return SoundEvents.AZALEA_LEAVES.breakSound().get().value();
             }
             case AZALEA_LEAVES_FALL -> {
-                return SoundEvents.AZALEA_LEAVES_FALL;
+                return SoundEvents.AZALEA_LEAVES.fallSound().get().value();
             }
             case AZALEA_LEAVES_HIT -> {
-                return SoundEvents.AZALEA_LEAVES_HIT;
+                return SoundEvents.AZALEA_LEAVES.hitSound().get().value();
             }
             case AZALEA_LEAVES_PLACE -> {
-                return SoundEvents.AZALEA_LEAVES_PLACE;
+                return SoundEvents.AZALEA_LEAVES.placeSound().get().value();
             }
             case AZALEA_LEAVES_STEP -> {
-                return SoundEvents.AZALEA_LEAVES_STEP;
+                return SoundEvents.AZALEA_LEAVES.stepSound().get().value();
             }
             case BAMBOO_BREAK -> {
-                return SoundEvents.BAMBOO_BREAK;
+                return SoundEvents.BAMBOO.breakSound().get().value();
             }
             case BAMBOO_FALL -> {
-                return SoundEvents.BAMBOO_FALL;
+                return SoundEvents.BAMBOO.fallSound().get().value();
             }
             case BAMBOO_HIT -> {
-                return SoundEvents.BAMBOO_HIT;
+                return SoundEvents.BAMBOO.hitSound().get().value();
             }
             case BAMBOO_PLACE -> {
-                return SoundEvents.BAMBOO_PLACE;
+                return SoundEvents.BAMBOO.placeSound().get().value();
             }
             case BAMBOO_STEP -> {
-                return SoundEvents.BAMBOO_STEP;
+                return SoundEvents.BAMBOO.stepSound().get().value();
             }
             case BAMBOO_SAPLING_BREAK -> {
-                return SoundEvents.BAMBOO_SAPLING_BREAK;
+                return SoundEvents.BAMBOO_SAPLING.breakSound().get().value();
             }
             case BAMBOO_SAPLING_HIT -> {
-                return SoundEvents.BAMBOO_SAPLING_HIT;
+                return SoundEvents.BAMBOO_SAPLING.hitSound().get().value();
             }
             case BAMBOO_SAPLING_PLACE -> {
-                return SoundEvents.BAMBOO_SAPLING_PLACE;
+                return SoundEvents.BAMBOO_SAPLING.placeSound().get().value();
             }
             case BAMBOO_WOOD_BREAK -> {
-                return SoundEvents.BAMBOO_WOOD_BREAK;
+                return SoundEvents.BAMBOO_WOOD.breakSound().get().value();
             }
             case BAMBOO_WOOD_FALL -> {
-                return SoundEvents.BAMBOO_WOOD_FALL;
+                return SoundEvents.BAMBOO_WOOD.fallSound().get().value();
             }
             case BAMBOO_WOOD_HIT -> {
-                return SoundEvents.BAMBOO_WOOD_HIT;
+                return SoundEvents.BAMBOO_WOOD.hitSound().get().value();
             }
             case BAMBOO_WOOD_PLACE -> {
-                return SoundEvents.BAMBOO_WOOD_PLACE;
+                return SoundEvents.BAMBOO_WOOD.placeSound().get().value();
             }
             case BAMBOO_WOOD_STEP -> {
-                return SoundEvents.BAMBOO_WOOD_STEP;
+                return SoundEvents.BAMBOO_WOOD.stepSound().get().value();
             }
             case BAMBOO_WOOD_DOOR_CLOSE -> {
                 return SoundEvents.BAMBOO_WOOD_DOOR_CLOSE;
@@ -2365,19 +2365,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.BARREL_OPEN;
             }
             case BASALT_BREAK -> {
-                return SoundEvents.BASALT_BREAK;
+                return SoundEvents.BASALT.breakSound().get().value();
             }
             case BASALT_STEP -> {
-                return SoundEvents.BASALT_STEP;
+                return SoundEvents.BASALT.stepSound().get().value();
             }
             case BASALT_PLACE -> {
-                return SoundEvents.BASALT_PLACE;
+                return SoundEvents.BASALT.placeSound().get().value();
             }
             case BASALT_HIT -> {
-                return SoundEvents.BASALT_HIT;
+                return SoundEvents.BASALT.hitSound().get().value();
             }
             case BASALT_FALL -> {
-                return SoundEvents.BASALT_FALL;
+                return SoundEvents.BASALT.fallSound().get().value();
             }
             case BAT_AMBIENT -> {
                 return SoundEvents.BAT_AMBIENT;
@@ -2446,19 +2446,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.BELL_RESONATE;
             }
             case BIG_DRIPLEAF_BREAK -> {
-                return SoundEvents.BIG_DRIPLEAF_BREAK;
+                return SoundEvents.BIG_DRIPLEAF.breakSound().get().value();
             }
             case BIG_DRIPLEAF_FALL -> {
-                return SoundEvents.BIG_DRIPLEAF_FALL;
+                return SoundEvents.BIG_DRIPLEAF.fallSound().get().value();
             }
             case BIG_DRIPLEAF_HIT -> {
-                return SoundEvents.BIG_DRIPLEAF_HIT;
+                return SoundEvents.BIG_DRIPLEAF.hitSound().get().value();
             }
             case BIG_DRIPLEAF_PLACE -> {
-                return SoundEvents.BIG_DRIPLEAF_PLACE;
+                return SoundEvents.BIG_DRIPLEAF.placeSound().get().value();
             }
             case BIG_DRIPLEAF_STEP -> {
-                return SoundEvents.BIG_DRIPLEAF_STEP;
+                return SoundEvents.BIG_DRIPLEAF.stepSound().get().value();
             }
             case BLAZE_AMBIENT -> {
                 return SoundEvents.BLAZE_AMBIENT;
@@ -2497,19 +2497,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.BOGGED_STEP;
             }
             case BONE_BLOCK_BREAK -> {
-                return SoundEvents.BONE_BLOCK_BREAK;
+                return SoundEvents.BONE_BLOCK.breakSound().get().value();
             }
             case BONE_BLOCK_FALL -> {
-                return SoundEvents.BONE_BLOCK_FALL;
+                return SoundEvents.BONE_BLOCK.fallSound().get().value();
             }
             case BONE_BLOCK_HIT -> {
-                return SoundEvents.BONE_BLOCK_HIT;
+                return SoundEvents.BONE_BLOCK.hitSound().get().value();
             }
             case BONE_BLOCK_PLACE -> {
-                return SoundEvents.BONE_BLOCK_PLACE;
+                return SoundEvents.BONE_BLOCK.placeSound().get().value();
             }
             case BONE_BLOCK_STEP -> {
-                return SoundEvents.BONE_BLOCK_STEP;
+                return SoundEvents.BONE_BLOCK.stepSound().get().value();
             }
             case BONE_MEAL_USE -> {
                 return SoundEvents.BONE_MEAL_USE;
@@ -2620,7 +2620,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.BUCKET_EMPTY_LAVA;
             }
             case BUCKET_EMPTY_POWDER_SNOW -> {
-                return SoundEvents.BUCKET_EMPTY_POWDER_SNOW;
+                return SoundEvents.BUCKET_EMPTY_POWDER_SNOW.value();
             }
             case BUCKET_EMPTY_TADPOLE -> {
                 return SoundEvents.BUCKET_EMPTY_TADPOLE;
@@ -2659,19 +2659,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.CAKE_ADD_CANDLE;
             }
             case CALCITE_BREAK -> {
-                return SoundEvents.CALCITE_BREAK;
+                return SoundEvents.CALCITE.breakSound().get().value();
             }
             case CALCITE_STEP -> {
-                return SoundEvents.CALCITE_STEP;
+                return SoundEvents.CALCITE.stepSound().get().value();
             }
             case CALCITE_PLACE -> {
-                return SoundEvents.CALCITE_PLACE;
+                return SoundEvents.CALCITE.placeSound().get().value();
             }
             case CALCITE_HIT -> {
-                return SoundEvents.CALCITE_HIT;
+                return SoundEvents.CALCITE.hitSound().get().value();
             }
             case CALCITE_FALL -> {
-                return SoundEvents.CALCITE_FALL;
+                return SoundEvents.CALCITE.fallSound().get().value();
             }
             case CAMEL_AMBIENT -> {
                 return SoundEvents.CAMEL_AMBIENT;
@@ -2713,142 +2713,142 @@ public enum SoundEventsHolder {
                 return SoundEvents.CANDLE_AMBIENT;
             }
             case CANDLE_BREAK -> {
-                return SoundEvents.CANDLE_BREAK;
+                return SoundEvents.CANDLE.breakSound().get().value();
             }
             case CANDLE_EXTINGUISH -> {
                 return SoundEvents.CANDLE_EXTINGUISH;
             }
             case CANDLE_FALL -> {
-                return SoundEvents.CANDLE_FALL;
+                return SoundEvents.CANDLE.fallSound().get().value();
             }
             case CANDLE_HIT -> {
-                return SoundEvents.CANDLE_HIT;
+                return SoundEvents.CANDLE.hitSound().get().value();
             }
             case CANDLE_PLACE -> {
-                return SoundEvents.CANDLE_PLACE;
+                return SoundEvents.CANDLE.placeSound().get().value();
             }
             case CANDLE_STEP -> {
-                return SoundEvents.CANDLE_STEP;
+                return SoundEvents.CANDLE.stepSound().get().value();
             }
             case CAT_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().get().value();
             }
             case CAT_STRAY_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().strayAmbientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().strayAmbientSound().get().value();
             }
             case CAT_DEATH -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().get().value();
             }
             case CAT_EAT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().get().value();
             }
             case CAT_HISS -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hissSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hissSound().get().value();
             }
             case CAT_BEG_FOR_FOOD -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().begForFoodSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().begForFoodSound().get().value();
             }
             case CAT_HURT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().get().value();
             }
             case CAT_PURR -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purrSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purrSound().get().value();
             }
             case CAT_PURREOW -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purreowSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().purreowSound().get().value();
             }
             case CAVE_VINES_BREAK -> {
-                return SoundEvents.CAVE_VINES_BREAK;
+                return SoundEvents.CAVE_VINES.breakSound().get().value();
             }
             case CAVE_VINES_FALL -> {
-                return SoundEvents.CAVE_VINES_FALL;
+                return SoundEvents.CAVE_VINES.fallSound().get().value();
             }
             case CAVE_VINES_HIT -> {
-                return SoundEvents.CAVE_VINES_HIT;
+                return SoundEvents.CAVE_VINES.hitSound().get().value();
             }
             case CAVE_VINES_PLACE -> {
-                return SoundEvents.CAVE_VINES_PLACE;
+                return SoundEvents.CAVE_VINES.placeSound().get().value();
             }
             case CAVE_VINES_STEP -> {
-                return SoundEvents.CAVE_VINES_STEP;
+                return SoundEvents.CAVE_VINES.stepSound().get().value();
             }
             case CAVE_VINES_PICK_BERRIES -> {
                 return SoundEvents.CAVE_VINES_PICK_BERRIES;
             }
             case CHAIN_BREAK -> {
-                return SoundEvents.CHAIN_BREAK;
+                return SoundEvents.CHAIN.breakSound().get().value();
             }
             case CHAIN_FALL -> {
-                return SoundEvents.CHAIN_FALL;
+                return SoundEvents.CHAIN.fallSound().get().value();
             }
             case CHAIN_HIT -> {
-                return SoundEvents.CHAIN_HIT;
+                return SoundEvents.CHAIN.hitSound().get().value();
             }
             case CHAIN_PLACE -> {
-                return SoundEvents.CHAIN_PLACE;
+                return SoundEvents.CHAIN.placeSound().get().value();
             }
             case CHAIN_STEP -> {
-                return SoundEvents.CHAIN_STEP;
+                return SoundEvents.CHAIN.stepSound().get().value();
             }
             case CHERRY_WOOD_BREAK -> {
-                return SoundEvents.CHERRY_WOOD_BREAK;
+                return SoundEvents.CHERRY_WOOD.breakSound().get().value();
             }
             case CHERRY_WOOD_FALL -> {
-                return SoundEvents.CHERRY_WOOD_FALL;
+                return SoundEvents.CHERRY_WOOD.fallSound().get().value();
             }
             case CHERRY_WOOD_HIT -> {
-                return SoundEvents.CHERRY_WOOD_HIT;
+                return SoundEvents.CHERRY_WOOD.hitSound().get().value();
             }
             case CHERRY_WOOD_PLACE -> {
-                return SoundEvents.CHERRY_WOOD_PLACE;
+                return SoundEvents.CHERRY_WOOD.placeSound().get().value();
             }
             case CHERRY_WOOD_STEP -> {
-                return SoundEvents.CHERRY_WOOD_STEP;
+                return SoundEvents.CHERRY_WOOD.stepSound().get().value();
             }
             case CHERRY_SAPLING_BREAK -> {
-                return SoundEvents.CHERRY_SAPLING_BREAK;
+                return SoundEvents.CHERRY_SAPLING.breakSound().get().value();
             }
             case CHERRY_SAPLING_FALL -> {
-                return SoundEvents.CHERRY_SAPLING_FALL;
+                return SoundEvents.CHERRY_SAPLING.fallSound().get().value();
             }
             case CHERRY_SAPLING_HIT -> {
-                return SoundEvents.CHERRY_SAPLING_HIT;
+                return SoundEvents.CHERRY_SAPLING.hitSound().get().value();
             }
             case CHERRY_SAPLING_PLACE -> {
-                return SoundEvents.CHERRY_SAPLING_PLACE;
+                return SoundEvents.CHERRY_SAPLING.placeSound().get().value();
             }
             case CHERRY_SAPLING_STEP -> {
-                return SoundEvents.CHERRY_SAPLING_STEP;
+                return SoundEvents.CHERRY_SAPLING.stepSound().get().value();
             }
             case CHERRY_LEAVES_BREAK -> {
-                return SoundEvents.CHERRY_LEAVES_BREAK;
+                return SoundEvents.CHERRY_LEAVES.breakSound().get().value();
             }
             case CHERRY_LEAVES_FALL -> {
-                return SoundEvents.CHERRY_LEAVES_FALL;
+                return SoundEvents.CHERRY_LEAVES.fallSound().get().value();
             }
             case CHERRY_LEAVES_HIT -> {
-                return SoundEvents.CHERRY_LEAVES_HIT;
+                return SoundEvents.CHERRY_LEAVES.hitSound().get().value();
             }
             case CHERRY_LEAVES_PLACE -> {
-                return SoundEvents.CHERRY_LEAVES_PLACE;
+                return SoundEvents.CHERRY_LEAVES.placeSound().get().value();
             }
             case CHERRY_LEAVES_STEP -> {
-                return SoundEvents.CHERRY_LEAVES_STEP;
+                return SoundEvents.CHERRY_LEAVES.stepSound().get().value();
             }
             case CHERRY_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN.stepSound().get().value();
             }
             case CHERRY_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN.breakSound().get().value();
             }
             case CHERRY_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN.fallSound().get().value();
             }
             case CHERRY_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN.hitSound().get().value();
             }
             case CHERRY_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.CHERRY_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.CHERRY_WOOD_HANGING_SIGN.placeSound().get().value();
             }
             case CHERRY_WOOD_DOOR_CLOSE -> {
                 return SoundEvents.CHERRY_WOOD_DOOR_CLOSE;
@@ -2890,28 +2890,28 @@ public enum SoundEventsHolder {
                 return SoundEvents.CHEST_OPEN;
             }
             case CHICKEN_AMBIENT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().get().value();
             }
             case CHICKEN_DEATH -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().get().value();
             }
             case CHICKEN_EGG -> {
                 return SoundEvents.CHICKEN_EGG;
             }
             case CHICKEN_HURT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().get().value();
             }
             case CHICKEN_STEP -> {
-                return SoundEvents.CHICKEN_STEP.value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).adultSounds().stepSound().get().value();
             }
             case CHISELED_BOOKSHELF_BREAK -> {
-                return SoundEvents.CHISELED_BOOKSHELF_BREAK;
+                return SoundEvents.CHISELED_BOOKSHELF.breakSound().get().value();
             }
             case CHISELED_BOOKSHELF_FALL -> {
-                return SoundEvents.CHISELED_BOOKSHELF_FALL;
+                return SoundEvents.CHISELED_BOOKSHELF.fallSound().get().value();
             }
             case CHISELED_BOOKSHELF_HIT -> {
-                return SoundEvents.CHISELED_BOOKSHELF_HIT;
+                return SoundEvents.CHISELED_BOOKSHELF.hitSound().get().value();
             }
             case CHISELED_BOOKSHELF_INSERT -> {
                 return SoundEvents.CHISELED_BOOKSHELF_INSERT;
@@ -2920,7 +2920,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.CHISELED_BOOKSHELF_INSERT_ENCHANTED;
             }
             case CHISELED_BOOKSHELF_STEP -> {
-                return SoundEvents.CHISELED_BOOKSHELF_STEP;
+                return SoundEvents.CHISELED_BOOKSHELF.stepSound().get().value();
             }
             case CHISELED_BOOKSHELF_PICKUP -> {
                 return SoundEvents.CHISELED_BOOKSHELF_PICKUP;
@@ -2929,7 +2929,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.CHISELED_BOOKSHELF_PICKUP_ENCHANTED;
             }
             case CHISELED_BOOKSHELF_PLACE -> {
-                return SoundEvents.CHISELED_BOOKSHELF_PLACE;
+                return SoundEvents.CHISELED_BOOKSHELF.placeSound().get().value();
             }
             case CHORUS_FLOWER_DEATH -> {
                 return SoundEvents.CHORUS_FLOWER_DEATH;
@@ -2941,19 +2941,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.CHORUS_FRUIT_TELEPORT;
             }
             case COBWEB_BREAK -> {
-                return SoundEvents.COBWEB_BREAK;
+                return SoundEvents.COBWEB.breakSound().get().value();
             }
             case COBWEB_STEP -> {
-                return SoundEvents.COBWEB_STEP;
+                return SoundEvents.COBWEB.stepSound().get().value();
             }
             case COBWEB_PLACE -> {
-                return SoundEvents.COBWEB_PLACE;
+                return SoundEvents.COBWEB.placeSound().get().value();
             }
             case COBWEB_HIT -> {
-                return SoundEvents.COBWEB_HIT;
+                return SoundEvents.COBWEB.hitSound().get().value();
             }
             case COBWEB_FALL -> {
-                return SoundEvents.COBWEB_FALL;
+                return SoundEvents.COBWEB.fallSound().get().value();
             }
             case COD_AMBIENT -> {
                 return SoundEvents.COD_AMBIENT;
@@ -2998,19 +2998,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.CONDUIT_DEACTIVATE;
             }
             case COPPER_BULB_BREAK -> {
-                return SoundEvents.COPPER_BULB_BREAK;
+                return SoundEvents.COPPER_BULB.breakSound().get().value();
             }
             case COPPER_BULB_STEP -> {
-                return SoundEvents.COPPER_BULB_STEP;
+                return SoundEvents.COPPER_BULB.stepSound().get().value();
             }
             case COPPER_BULB_PLACE -> {
-                return SoundEvents.COPPER_BULB_PLACE;
+                return SoundEvents.COPPER_BULB.placeSound().get().value();
             }
             case COPPER_BULB_HIT -> {
-                return SoundEvents.COPPER_BULB_HIT;
+                return SoundEvents.COPPER_BULB.hitSound().get().value();
             }
             case COPPER_BULB_FALL -> {
-                return SoundEvents.COPPER_BULB_FALL;
+                return SoundEvents.COPPER_BULB.fallSound().get().value();
             }
             case COPPER_BULB_TURN_ON -> {
                 return SoundEvents.COPPER_BULB_TURN_ON;
@@ -3019,19 +3019,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.COPPER_BULB_TURN_OFF;
             }
             case COPPER_BREAK -> {
-                return SoundEvents.COPPER_BREAK;
+                return SoundEvents.COPPER.breakSound().get().value();
             }
             case COPPER_STEP -> {
-                return SoundEvents.COPPER_STEP;
+                return SoundEvents.COPPER.stepSound().get().value();
             }
             case COPPER_PLACE -> {
-                return SoundEvents.COPPER_PLACE;
+                return SoundEvents.COPPER.placeSound().get().value();
             }
             case COPPER_HIT -> {
-                return SoundEvents.COPPER_HIT;
+                return SoundEvents.COPPER.hitSound().get().value();
             }
             case COPPER_FALL -> {
-                return SoundEvents.COPPER_FALL;
+                return SoundEvents.COPPER.fallSound().get().value();
             }
             case COPPER_DOOR_CLOSE -> {
                 return SoundEvents.COPPER_DOOR_CLOSE;
@@ -3040,19 +3040,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.COPPER_DOOR_OPEN;
             }
             case COPPER_GRATE_BREAK -> {
-                return SoundEvents.COPPER_GRATE_BREAK;
+                return SoundEvents.COPPER_GRATE.breakSound().get().value();
             }
             case COPPER_GRATE_STEP -> {
-                return SoundEvents.COPPER_GRATE_STEP;
+                return SoundEvents.COPPER_GRATE.stepSound().get().value();
             }
             case COPPER_GRATE_PLACE -> {
-                return SoundEvents.COPPER_GRATE_PLACE;
+                return SoundEvents.COPPER_GRATE.placeSound().get().value();
             }
             case COPPER_GRATE_HIT -> {
-                return SoundEvents.COPPER_GRATE_HIT;
+                return SoundEvents.COPPER_GRATE.hitSound().get().value();
             }
             case COPPER_GRATE_FALL -> {
-                return SoundEvents.COPPER_GRATE_FALL;
+                return SoundEvents.COPPER_GRATE.fallSound().get().value();
             }
             case COPPER_TRAPDOOR_CLOSE -> {
                 return SoundEvents.COPPER_TRAPDOOR_CLOSE;
@@ -3061,34 +3061,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.COPPER_TRAPDOOR_OPEN;
             }
             case CORAL_BLOCK_BREAK -> {
-                return SoundEvents.CORAL_BLOCK_BREAK;
+                return SoundEvents.CORAL_BLOCK.breakSound().get().value();
             }
             case CORAL_BLOCK_FALL -> {
-                return SoundEvents.CORAL_BLOCK_FALL;
+                return SoundEvents.CORAL_BLOCK.fallSound().get().value();
             }
             case CORAL_BLOCK_HIT -> {
-                return SoundEvents.CORAL_BLOCK_HIT;
+                return SoundEvents.CORAL_BLOCK.hitSound().get().value();
             }
             case CORAL_BLOCK_PLACE -> {
-                return SoundEvents.CORAL_BLOCK_PLACE;
+                return SoundEvents.CORAL_BLOCK.placeSound().get().value();
             }
             case CORAL_BLOCK_STEP -> {
-                return SoundEvents.CORAL_BLOCK_STEP;
+                return SoundEvents.CORAL_BLOCK.stepSound().get().value();
             }
             case COW_AMBIENT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).ambientSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).ambientSound().get().value();
             }
             case COW_DEATH -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).deathSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).deathSound().get().value();
             }
             case COW_HURT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).hurtSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).hurtSound().get().value();
             }
             case COW_MILK -> {
                 return SoundEvents.COW_MILK;
             }
             case COW_STEP -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).stepSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.CLASSIC).stepSound().get().value();
             }
             case CRAFTER_CRAFT -> {
                 return SoundEvents.CRAFTER_CRAFT;
@@ -3130,22 +3130,22 @@ public enum SoundEventsHolder {
                 return SoundEvents.CREAKING_TWITCH;
             }
             case CREAKING_HEART_BREAK -> {
-                return SoundEvents.CREAKING_HEART_BREAK;
+                return SoundEvents.CREAKING_HEART.breakSound().get().value();
             }
             case CREAKING_HEART_FALL -> {
-                return SoundEvents.CREAKING_HEART_FALL;
+                return SoundEvents.CREAKING_HEART.fallSound().get().value();
             }
             case CREAKING_HEART_HIT -> {
-                return SoundEvents.CREAKING_HEART_HIT;
+                return SoundEvents.CREAKING_HEART.hitSound().get().value();
             }
             case CREAKING_HEART_HURT -> {
                 return SoundEvents.CREAKING_HEART_HURT;
             }
             case CREAKING_HEART_PLACE -> {
-                return SoundEvents.CREAKING_HEART_PLACE;
+                return SoundEvents.CREAKING_HEART.placeSound().get().value();
             }
             case CREAKING_HEART_STEP -> {
-                return SoundEvents.CREAKING_HEART_STEP;
+                return SoundEvents.CREAKING_HEART.stepSound().get().value();
             }
             case CREAKING_HEART_IDLE -> {
                 return SoundEvents.CREAKING_HEART_IDLE;
@@ -3163,10 +3163,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.CREEPER_PRIMED;
             }
             case CROP_BREAK -> {
-                return SoundEvents.CROP_BREAK;
+                return SoundEvents.CROP_BREAK.value();
             }
             case CROP_PLANTED -> {
-                return SoundEvents.CROP_PLANTED;
+                return SoundEvents.CROP_PLANTED.value();
             }
             case CROSSBOW_HIT -> {
                 return SoundEvents.CROSSBOW_HIT;
@@ -3193,13 +3193,13 @@ public enum SoundEventsHolder {
                 return SoundEvents.CROSSBOW_SHOOT;
             }
             case DECORATED_POT_BREAK -> {
-                return SoundEvents.DECORATED_POT_BREAK;
+                return SoundEvents.DECORATED_POT.breakSound().get().value();
             }
             case DECORATED_POT_FALL -> {
-                return SoundEvents.DECORATED_POT_FALL;
+                return SoundEvents.DECORATED_POT.fallSound().get().value();
             }
             case DECORATED_POT_HIT -> {
-                return SoundEvents.DECORATED_POT_HIT;
+                return SoundEvents.DECORATED_POT.hitSound().get().value();
             }
             case DECORATED_POT_INSERT -> {
                 return SoundEvents.DECORATED_POT_INSERT;
@@ -3208,58 +3208,58 @@ public enum SoundEventsHolder {
                 return SoundEvents.DECORATED_POT_INSERT_FAIL;
             }
             case DECORATED_POT_STEP -> {
-                return SoundEvents.DECORATED_POT_STEP;
+                return SoundEvents.DECORATED_POT.stepSound().get().value();
             }
             case DECORATED_POT_PLACE -> {
-                return SoundEvents.DECORATED_POT_PLACE;
+                return SoundEvents.DECORATED_POT.placeSound().get().value();
             }
             case DECORATED_POT_SHATTER -> {
-                return SoundEvents.DECORATED_POT_SHATTER;
+                return SoundEvents.DECORATED_POT_SHATTER.value();
             }
             case DEEPSLATE_BRICKS_BREAK -> {
-                return SoundEvents.DEEPSLATE_BRICKS_BREAK;
+                return SoundEvents.DEEPSLATE_BRICKS.breakSound().get().value();
             }
             case DEEPSLATE_BRICKS_FALL -> {
-                return SoundEvents.DEEPSLATE_BRICKS_FALL;
+                return SoundEvents.DEEPSLATE_BRICKS.fallSound().get().value();
             }
             case DEEPSLATE_BRICKS_HIT -> {
-                return SoundEvents.DEEPSLATE_BRICKS_HIT;
+                return SoundEvents.DEEPSLATE_BRICKS.hitSound().get().value();
             }
             case DEEPSLATE_BRICKS_PLACE -> {
-                return SoundEvents.DEEPSLATE_BRICKS_PLACE;
+                return SoundEvents.DEEPSLATE_BRICKS.placeSound().get().value();
             }
             case DEEPSLATE_BRICKS_STEP -> {
-                return SoundEvents.DEEPSLATE_BRICKS_STEP;
+                return SoundEvents.DEEPSLATE_BRICKS.stepSound().get().value();
             }
             case DEEPSLATE_BREAK -> {
-                return SoundEvents.DEEPSLATE_BREAK;
+                return SoundEvents.DEEPSLATE.breakSound().get().value();
             }
             case DEEPSLATE_FALL -> {
-                return SoundEvents.DEEPSLATE_FALL;
+                return SoundEvents.DEEPSLATE.fallSound().get().value();
             }
             case DEEPSLATE_HIT -> {
-                return SoundEvents.DEEPSLATE_HIT;
+                return SoundEvents.DEEPSLATE.hitSound().get().value();
             }
             case DEEPSLATE_PLACE -> {
-                return SoundEvents.DEEPSLATE_PLACE;
+                return SoundEvents.DEEPSLATE.placeSound().get().value();
             }
             case DEEPSLATE_STEP -> {
-                return SoundEvents.DEEPSLATE_STEP;
+                return SoundEvents.DEEPSLATE.stepSound().get().value();
             }
             case DEEPSLATE_TILES_BREAK -> {
-                return SoundEvents.DEEPSLATE_TILES_BREAK;
+                return SoundEvents.DEEPSLATE_TILES.breakSound().get().value();
             }
             case DEEPSLATE_TILES_FALL -> {
-                return SoundEvents.DEEPSLATE_TILES_FALL;
+                return SoundEvents.DEEPSLATE_TILES.breakSound().get().value();
             }
             case DEEPSLATE_TILES_HIT -> {
-                return SoundEvents.DEEPSLATE_TILES_HIT;
+                return SoundEvents.DEEPSLATE_TILES.hitSound().get().value();
             }
             case DEEPSLATE_TILES_PLACE -> {
-                return SoundEvents.DEEPSLATE_TILES_PLACE;
+                return SoundEvents.DEEPSLATE_TILES.placeSound().get().value();
             }
             case DEEPSLATE_TILES_STEP -> {
-                return SoundEvents.DEEPSLATE_TILES_STEP;
+                return SoundEvents.DEEPSLATE_TILES.stepSound().get().value();
             }
             case DISPENSER_DISPENSE -> {
                 return SoundEvents.DISPENSER_DISPENSE;
@@ -3322,34 +3322,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.DONKEY_JUMP;
             }
             case DRIPSTONE_BLOCK_BREAK -> {
-                return SoundEvents.DRIPSTONE_BLOCK_BREAK;
+                return SoundEvents.DRIPSTONE_BLOCK.breakSound().get().value();
             }
             case DRIPSTONE_BLOCK_STEP -> {
-                return SoundEvents.DRIPSTONE_BLOCK_STEP;
+                return SoundEvents.DRIPSTONE_BLOCK.stepSound().get().value();
             }
             case DRIPSTONE_BLOCK_PLACE -> {
-                return SoundEvents.DRIPSTONE_BLOCK_PLACE;
+                return SoundEvents.DRIPSTONE_BLOCK.placeSound().get().value();
             }
             case DRIPSTONE_BLOCK_HIT -> {
-                return SoundEvents.DRIPSTONE_BLOCK_HIT;
+                return SoundEvents.DRIPSTONE_BLOCK.hitSound().get().value();
             }
             case DRIPSTONE_BLOCK_FALL -> {
-                return SoundEvents.DRIPSTONE_BLOCK_FALL;
+                return SoundEvents.DRIPSTONE_BLOCK.fallSound().get().value();
             }
             case POINTED_DRIPSTONE_BREAK -> {
-                return SoundEvents.POINTED_DRIPSTONE_BREAK;
+                return SoundEvents.POINTED_DRIPSTONE.breakSound().get().value();
             }
             case POINTED_DRIPSTONE_STEP -> {
-                return SoundEvents.POINTED_DRIPSTONE_STEP;
+                return SoundEvents.POINTED_DRIPSTONE.stepSound().get().value();
             }
             case POINTED_DRIPSTONE_PLACE -> {
-                return SoundEvents.POINTED_DRIPSTONE_PLACE;
+                return SoundEvents.POINTED_DRIPSTONE.placeSound().get().value();
             }
             case POINTED_DRIPSTONE_HIT -> {
-                return SoundEvents.POINTED_DRIPSTONE_HIT;
+                return SoundEvents.POINTED_DRIPSTONE.hitSound().get().value();
             }
             case POINTED_DRIPSTONE_FALL -> {
-                return SoundEvents.POINTED_DRIPSTONE_FALL;
+                return SoundEvents.POINTED_DRIPSTONE.fallSound().get().value();
             }
             case POINTED_DRIPSTONE_LAND -> {
                 return SoundEvents.POINTED_DRIPSTONE_LAND;
@@ -3613,19 +3613,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.FLINTANDSTEEL_USE;
             }
             case FLOWERING_AZALEA_BREAK -> {
-                return SoundEvents.FLOWERING_AZALEA_BREAK;
+                return SoundEvents.FLOWERING_AZALEA.breakSound().get().value();
             }
             case FLOWERING_AZALEA_FALL -> {
-                return SoundEvents.FLOWERING_AZALEA_FALL;
+                return SoundEvents.FLOWERING_AZALEA.fallSound().get().value();
             }
             case FLOWERING_AZALEA_HIT -> {
-                return SoundEvents.FLOWERING_AZALEA_HIT;
+                return SoundEvents.FLOWERING_AZALEA.hitSound().get().value();
             }
             case FLOWERING_AZALEA_PLACE -> {
-                return SoundEvents.FLOWERING_AZALEA_PLACE;
+                return SoundEvents.FLOWERING_AZALEA.placeSound().get().value();
             }
             case FLOWERING_AZALEA_STEP -> {
-                return SoundEvents.FLOWERING_AZALEA_STEP;
+                return SoundEvents.FLOWERING_AZALEA.stepSound().get().value();
             }
             case FOX_AGGRO -> {
                 return SoundEvents.FOX_AGGRO;
@@ -3661,67 +3661,67 @@ public enum SoundEventsHolder {
                 return SoundEvents.FOX_TELEPORT;
             }
             case SUSPICIOUS_SAND_BREAK -> {
-                return SoundEvents.SUSPICIOUS_SAND_BREAK;
+                return SoundEvents.SUSPICIOUS_SAND.breakSound().get().value();
             }
             case SUSPICIOUS_SAND_STEP -> {
-                return SoundEvents.SUSPICIOUS_SAND_STEP;
+                return SoundEvents.SUSPICIOUS_SAND.stepSound().get().value();
             }
             case SUSPICIOUS_SAND_PLACE -> {
-                return SoundEvents.SUSPICIOUS_SAND_PLACE;
+                return SoundEvents.SUSPICIOUS_SAND.placeSound().get().value();
             }
             case SUSPICIOUS_SAND_HIT -> {
-                return SoundEvents.SUSPICIOUS_SAND_HIT;
+                return SoundEvents.SUSPICIOUS_SAND.hitSound().get().value();
             }
             case SUSPICIOUS_SAND_FALL -> {
-                return SoundEvents.SUSPICIOUS_SAND_FALL;
+                return SoundEvents.SUSPICIOUS_SAND.fallSound().get().value();
             }
             case SUSPICIOUS_GRAVEL_BREAK -> {
-                return SoundEvents.SUSPICIOUS_GRAVEL_BREAK;
+                return SoundEvents.SUSPICIOUS_GRAVEL.breakSound().get().value();
             }
             case SUSPICIOUS_GRAVEL_STEP -> {
-                return SoundEvents.SUSPICIOUS_GRAVEL_STEP;
+                return SoundEvents.SUSPICIOUS_GRAVEL.stepSound().get().value();
             }
             case SUSPICIOUS_GRAVEL_PLACE -> {
-                return SoundEvents.SUSPICIOUS_GRAVEL_PLACE;
+                return SoundEvents.SUSPICIOUS_GRAVEL.placeSound().get().value();
             }
             case SUSPICIOUS_GRAVEL_HIT -> {
-                return SoundEvents.SUSPICIOUS_GRAVEL_HIT;
+                return SoundEvents.SUSPICIOUS_GRAVEL.hitSound().get().value();
             }
             case SUSPICIOUS_GRAVEL_FALL -> {
-                return SoundEvents.SUSPICIOUS_GRAVEL_FALL;
+                return SoundEvents.SUSPICIOUS_GRAVEL.fallSound().get().value();
             }
             case FROGLIGHT_BREAK -> {
-                return SoundEvents.FROGLIGHT_BREAK;
+                return SoundEvents.FROGLIGHT.breakSound().get().value();
             }
             case FROGLIGHT_FALL -> {
-                return SoundEvents.FROGLIGHT_FALL;
+                return SoundEvents.FROGLIGHT.fallSound().get().value();
             }
             case FROGLIGHT_HIT -> {
-                return SoundEvents.FROGLIGHT_HIT;
+                return SoundEvents.FROGLIGHT.hitSound().get().value();
             }
             case FROGLIGHT_PLACE -> {
-                return SoundEvents.FROGLIGHT_PLACE;
+                return SoundEvents.FROGLIGHT.placeSound().get().value();
             }
             case FROGLIGHT_STEP -> {
-                return SoundEvents.FROGLIGHT_STEP;
+                return SoundEvents.FROGLIGHT.stepSound().get().value();
             }
             case FROGSPAWNSTEP -> {
-                return SoundEvents.FROGSPAWNSTEP;
+                return SoundEvents.FROGSPAWN.stepSound().get().value();
             }
             case FROGSPAWN_BREAK -> {
-                return SoundEvents.FROGSPAWN_BREAK;
+                return SoundEvents.FROGSPAWN.breakSound().get().value();
             }
             case FROGSPAWN_FALL -> {
-                return SoundEvents.FROGSPAWN_FALL;
+                return SoundEvents.FROGSPAWN.fallSound().get().value();
             }
             case FROGSPAWN_HATCH -> {
                 return SoundEvents.FROGSPAWN_HATCH;
             }
             case FROGSPAWN_HIT -> {
-                return SoundEvents.FROGSPAWN_HIT;
+                return SoundEvents.FROGSPAWN.hitSound().get().value();
             }
             case FROGSPAWN_PLACE -> {
-                return SoundEvents.FROGSPAWN_PLACE;
+                return SoundEvents.FROGSPAWN.placeSound().get().value();
             }
             case FROG_AMBIENT -> {
                 return SoundEvents.FROG_AMBIENT;
@@ -3748,19 +3748,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.FROG_TONGUE;
             }
             case ROOTS_BREAK -> {
-                return SoundEvents.ROOTS_BREAK;
+                return SoundEvents.ROOTS.breakSound().get().value();
             }
             case ROOTS_STEP -> {
-                return SoundEvents.ROOTS_STEP;
+                return SoundEvents.ROOTS.stepSound().get().value();
             }
             case ROOTS_PLACE -> {
-                return SoundEvents.ROOTS_PLACE;
+                return SoundEvents.ROOTS.placeSound().get().value();
             }
             case ROOTS_HIT -> {
-                return SoundEvents.ROOTS_HIT;
+                return SoundEvents.ROOTS.hitSound().get().value();
             }
             case ROOTS_FALL -> {
-                return SoundEvents.ROOTS_FALL;
+                return SoundEvents.ROOTS.fallSound().get().value();
             }
             case FURNACE_FIRE_CRACKLE -> {
                 return SoundEvents.FURNACE_FIRE_CRACKLE;
@@ -3817,34 +3817,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.GHAST_WARN;
             }
             case GILDED_BLACKSTONE_BREAK -> {
-                return SoundEvents.GILDED_BLACKSTONE_BREAK;
+                return SoundEvents.GILDED_BLACKSTONE.breakSound().get().value();
             }
             case GILDED_BLACKSTONE_FALL -> {
-                return SoundEvents.GILDED_BLACKSTONE_FALL;
+                return SoundEvents.GILDED_BLACKSTONE.fallSound().get().value();
             }
             case GILDED_BLACKSTONE_HIT -> {
-                return SoundEvents.GILDED_BLACKSTONE_HIT;
+                return SoundEvents.GILDED_BLACKSTONE.hitSound().get().value();
             }
             case GILDED_BLACKSTONE_PLACE -> {
-                return SoundEvents.GILDED_BLACKSTONE_PLACE;
+                return SoundEvents.GILDED_BLACKSTONE.placeSound().get().value();
             }
             case GILDED_BLACKSTONE_STEP -> {
-                return SoundEvents.GILDED_BLACKSTONE_STEP;
+                return SoundEvents.GILDED_BLACKSTONE.stepSound().get().value();
             }
             case GLASS_BREAK -> {
-                return SoundEvents.GLASS_BREAK;
+                return SoundEvents.GLASS.breakSound().get().value();
             }
             case GLASS_FALL -> {
-                return SoundEvents.GLASS_FALL;
+                return SoundEvents.GLASS.fallSound().get().value();
             }
             case GLASS_HIT -> {
-                return SoundEvents.GLASS_HIT;
+                return SoundEvents.GLASS.hitSound().get().value();
             }
             case GLASS_PLACE -> {
-                return SoundEvents.GLASS_PLACE;
+                return SoundEvents.GLASS.placeSound().get().value();
             }
             case GLASS_STEP -> {
-                return SoundEvents.GLASS_STEP;
+                return SoundEvents.GLASS.stepSound().get().value();
             }
             case GLOW_INK_SAC_USE -> {
                 return SoundEvents.GLOW_INK_SAC_USE;
@@ -3931,34 +3931,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.GOAT_STEP;
             }
             case GRASS_BREAK -> {
-                return SoundEvents.GRASS_BREAK;
+                return SoundEvents.GRASS.breakSound().get().value();
             }
             case GRASS_FALL -> {
-                return SoundEvents.GRASS_FALL;
+                return SoundEvents.GRASS.fallSound().get().value();
             }
             case GRASS_HIT -> {
-                return SoundEvents.GRASS_HIT;
+                return SoundEvents.GRASS.hitSound().get().value();
             }
             case GRASS_PLACE -> {
-                return SoundEvents.GRASS_PLACE;
+                return SoundEvents.GRASS.placeSound().get().value();
             }
             case GRASS_STEP -> {
-                return SoundEvents.GRASS_STEP;
+                return SoundEvents.GRASS.stepSound().get().value();
             }
             case GRAVEL_BREAK -> {
-                return SoundEvents.GRAVEL_BREAK;
+                return SoundEvents.GRAVEL.breakSound().get().value();
             }
             case GRAVEL_FALL -> {
-                return SoundEvents.GRAVEL_FALL;
+                return SoundEvents.GRAVEL.fallSound().get().value();
             }
             case GRAVEL_HIT -> {
-                return SoundEvents.GRAVEL_HIT;
+                return SoundEvents.GRAVEL.hitSound().get().value();
             }
             case GRAVEL_PLACE -> {
-                return SoundEvents.GRAVEL_PLACE;
+                return SoundEvents.GRAVEL.placeSound().get().value();
             }
             case GRAVEL_STEP -> {
-                return SoundEvents.GRAVEL_STEP;
+                return SoundEvents.GRAVEL.stepSound().get().value();
             }
             case GRINDSTONE_USE -> {
                 return SoundEvents.GRINDSTONE_USE;
@@ -3991,94 +3991,94 @@ public enum SoundEventsHolder {
                 return SoundEvents.GUARDIAN_HURT_LAND;
             }
             case HANGING_ROOTS_BREAK -> {
-                return SoundEvents.HANGING_ROOTS_BREAK;
+                return SoundEvents.HANGING_ROOTS.breakSound().get().value();
             }
             case HANGING_ROOTS_FALL -> {
-                return SoundEvents.HANGING_ROOTS_FALL;
+                return SoundEvents.HANGING_ROOTS.fallSound().get().value();
             }
             case HANGING_ROOTS_HIT -> {
-                return SoundEvents.HANGING_ROOTS_HIT;
+                return SoundEvents.HANGING_ROOTS.hitSound().get().value();
             }
             case HANGING_ROOTS_PLACE -> {
-                return SoundEvents.HANGING_ROOTS_PLACE;
+                return SoundEvents.HANGING_ROOTS.placeSound().get().value();
             }
             case HANGING_ROOTS_STEP -> {
-                return SoundEvents.HANGING_ROOTS_STEP;
+                return SoundEvents.HANGING_ROOTS.stepSound().get().value();
             }
             case HANGING_SIGN_STEP -> {
-                return SoundEvents.HANGING_SIGN_STEP;
+                return SoundEvents.HANGING_SIGN.stepSound().get().value();
             }
             case HANGING_SIGN_BREAK -> {
-                return SoundEvents.HANGING_SIGN_BREAK;
+                return SoundEvents.HANGING_SIGN.breakSound().get().value();
             }
             case HANGING_SIGN_FALL -> {
-                return SoundEvents.HANGING_SIGN_FALL;
+                return SoundEvents.HANGING_SIGN.fallSound().get().value();
             }
             case HANGING_SIGN_HIT -> {
-                return SoundEvents.HANGING_SIGN_HIT;
+                return SoundEvents.HANGING_SIGN.hitSound().get().value();
             }
             case HANGING_SIGN_PLACE -> {
-                return SoundEvents.HANGING_SIGN_PLACE;
+                return SoundEvents.HANGING_SIGN.placeSound().get().value();
             }
             case HEAVY_CORE_BREAK -> {
-                return SoundEvents.HEAVY_CORE_BREAK;
+                return SoundEvents.HEAVY_CORE.breakSound().get().value();
             }
             case HEAVY_CORE_FALL -> {
-                return SoundEvents.HEAVY_CORE_FALL;
+                return SoundEvents.HEAVY_CORE.fallSound().get().value();
             }
             case HEAVY_CORE_HIT -> {
-                return SoundEvents.HEAVY_CORE_HIT;
+                return SoundEvents.HEAVY_CORE.hitSound().get().value();
             }
             case HEAVY_CORE_PLACE -> {
-                return SoundEvents.HEAVY_CORE_PLACE;
+                return SoundEvents.HEAVY_CORE.placeSound().get().value();
             }
             case HEAVY_CORE_STEP -> {
-                return SoundEvents.HEAVY_CORE_STEP;
+                return SoundEvents.HEAVY_CORE.stepSound().get().value();
             }
             case NETHER_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.NETHER_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN.stepSound().get().value();
             }
             case NETHER_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.NETHER_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN.breakSound().get().value();
             }
             case NETHER_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.NETHER_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN.fallSound().get().value();
             }
             case NETHER_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.NETHER_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN.hitSound().get().value();
             }
             case NETHER_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.NETHER_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.NETHER_WOOD_HANGING_SIGN.placeSound().get().value();
             }
             case BAMBOO_WOOD_HANGING_SIGN_STEP -> {
-                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_STEP;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN.stepSound().get().value();
             }
             case BAMBOO_WOOD_HANGING_SIGN_BREAK -> {
-                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_BREAK;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN.breakSound().get().value();
             }
             case BAMBOO_WOOD_HANGING_SIGN_FALL -> {
-                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_FALL;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN.fallSound().get().value();
             }
             case BAMBOO_WOOD_HANGING_SIGN_HIT -> {
-                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_HIT;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN.hitSound().get().value();
             }
             case BAMBOO_WOOD_HANGING_SIGN_PLACE -> {
-                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN_PLACE;
+                return SoundEvents.BAMBOO_WOOD_HANGING_SIGN.placeSound().get().value();
             }
             case TRIAL_SPAWNER_BREAK -> {
-                return SoundEvents.TRIAL_SPAWNER_BREAK;
+                return SoundEvents.TRIAL_SPAWNER.breakSound().get().value();
             }
             case TRIAL_SPAWNER_STEP -> {
-                return SoundEvents.TRIAL_SPAWNER_STEP;
+                return SoundEvents.TRIAL_SPAWNER.stepSound().get().value();
             }
             case TRIAL_SPAWNER_PLACE -> {
-                return SoundEvents.TRIAL_SPAWNER_PLACE;
+                return SoundEvents.TRIAL_SPAWNER.placeSound().get().value();
             }
             case TRIAL_SPAWNER_HIT -> {
-                return SoundEvents.TRIAL_SPAWNER_HIT;
+                return SoundEvents.TRIAL_SPAWNER.hitSound().get().value();
             }
             case TRIAL_SPAWNER_FALL -> {
-                return SoundEvents.TRIAL_SPAWNER_FALL;
+                return SoundEvents.TRIAL_SPAWNER.fallSound().get().value();
             }
             case TRIAL_SPAWNER_SPAWN_MOB -> {
                 return SoundEvents.TRIAL_SPAWNER_SPAWN_MOB;
@@ -4141,22 +4141,22 @@ public enum SoundEventsHolder {
                 return SoundEvents.HOGLIN_STEP;
             }
             case HONEY_BLOCK_BREAK -> {
-                return SoundEvents.HONEY_BLOCK_BREAK;
+                return SoundEvents.HONEY_BLOCK.breakSound().get().value();
             }
             case HONEY_BLOCK_FALL -> {
-                return SoundEvents.HONEY_BLOCK_FALL;
+                return SoundEvents.HONEY_BLOCK.fallSound().get().value();
             }
             case HONEY_BLOCK_HIT -> {
-                return SoundEvents.HONEY_BLOCK_HIT;
+                return SoundEvents.HONEY_BLOCK.hitSound().get().value();
             }
             case HONEY_BLOCK_PLACE -> {
-                return SoundEvents.HONEY_BLOCK_PLACE;
+                return SoundEvents.HONEY_BLOCK.placeSound().get().value();
             }
             case HONEY_BLOCK_SLIDE -> {
                 return SoundEvents.HONEY_BLOCK_SLIDE;
             }
             case HONEY_BLOCK_STEP -> {
-                return SoundEvents.HONEY_BLOCK_STEP;
+                return SoundEvents.HONEY_BLOCK.stepSound().get().value();
             }
             case HONEYCOMB_WAX_ON -> {
                 return SoundEvents.HONEYCOMB_WAX_ON;
@@ -4336,40 +4336,40 @@ public enum SoundEventsHolder {
                 return SoundEvents.ITEM_PICKUP;
             }
             case LADDER_BREAK -> {
-                return SoundEvents.LADDER_BREAK;
+                return SoundEvents.LADDER.breakSound().get().value();
             }
             case LADDER_FALL -> {
-                return SoundEvents.LADDER_FALL;
+                return SoundEvents.LADDER.fallSound().get().value();
             }
             case LADDER_HIT -> {
-                return SoundEvents.LADDER_HIT;
+                return SoundEvents.LADDER.hitSound().get().value();
             }
             case LADDER_PLACE -> {
-                return SoundEvents.LADDER_PLACE;
+                return SoundEvents.LADDER.placeSound().get().value();
             }
             case LADDER_STEP -> {
-                return SoundEvents.LADDER_STEP;
+                return SoundEvents.LADDER.stepSound().get().value();
             }
             case LANTERN_BREAK -> {
-                return SoundEvents.LANTERN_BREAK;
+                return SoundEvents.LANTERN.breakSound().get().value();
             }
             case LANTERN_FALL -> {
-                return SoundEvents.LANTERN_FALL;
+                return SoundEvents.LANTERN.fallSound().get().value();
             }
             case LANTERN_HIT -> {
-                return SoundEvents.LANTERN_HIT;
+                return SoundEvents.LANTERN.hitSound().get().value();
             }
             case LANTERN_PLACE -> {
-                return SoundEvents.LANTERN_PLACE;
+                return SoundEvents.LANTERN.placeSound().get().value();
             }
             case LANTERN_STEP -> {
-                return SoundEvents.LANTERN_STEP;
+                return SoundEvents.LANTERN.stepSound().get().value();
             }
             case LARGE_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.LARGE_AMETHYST_BUD_BREAK;
+                return SoundEvents.LARGE_AMETHYST_BUD.breakSound().get().value();
             }
             case LARGE_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.LARGE_AMETHYST_BUD_PLACE;
+                return SoundEvents.LARGE_AMETHYST_BUD.placeSound().get().value();
             }
             case LAVA_AMBIENT -> {
                 return SoundEvents.LAVA_AMBIENT;
@@ -4429,19 +4429,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.MAGMA_CUBE_DEATH_SMALL;
             }
             case LODESTONE_BREAK -> {
-                return SoundEvents.LODESTONE_BREAK;
+                return SoundEvents.LODESTONE.breakSound().get().value();
             }
             case LODESTONE_STEP -> {
-                return SoundEvents.LODESTONE_STEP;
+                return SoundEvents.LODESTONE.stepSound().get().value();
             }
             case LODESTONE_PLACE -> {
-                return SoundEvents.LODESTONE_PLACE;
+                return SoundEvents.LODESTONE.placeSound().get().value();
             }
             case LODESTONE_HIT -> {
-                return SoundEvents.LODESTONE_HIT;
+                return SoundEvents.LODESTONE.hitSound().get().value();
             }
             case LODESTONE_FALL -> {
-                return SoundEvents.LODESTONE_FALL;
+                return SoundEvents.LODESTONE.fallSound().get().value();
             }
             case LODESTONE_COMPASS_LOCK -> {
                 return SoundEvents.LODESTONE_COMPASS_LOCK;
@@ -4474,37 +4474,37 @@ public enum SoundEventsHolder {
                 return SoundEvents.MAGMA_CUBE_SQUISH_SMALL;
             }
             case MANGROVE_ROOTS_BREAK -> {
-                return SoundEvents.MANGROVE_ROOTS_BREAK;
+                return SoundEvents.MANGROVE_ROOTS.breakSound().get().value();
             }
             case MANGROVE_ROOTS_FALL -> {
-                return SoundEvents.MANGROVE_ROOTS_FALL;
+                return SoundEvents.MANGROVE_ROOTS.fallSound().get().value();
             }
             case MANGROVE_ROOTS_HIT -> {
-                return SoundEvents.MANGROVE_ROOTS_HIT;
+                return SoundEvents.MANGROVE_ROOTS.hitSound().get().value();
             }
             case MANGROVE_ROOTS_PLACE -> {
-                return SoundEvents.MANGROVE_ROOTS_PLACE;
+                return SoundEvents.MANGROVE_ROOTS.placeSound().get().value();
             }
             case MANGROVE_ROOTS_STEP -> {
-                return SoundEvents.MANGROVE_ROOTS_STEP;
+                return SoundEvents.MANGROVE_ROOTS.stepSound().get().value();
             }
             case MEDIUM_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.MEDIUM_AMETHYST_BUD_BREAK;
+                return SoundEvents.MEDIUM_AMETHYST_BUD.breakSound().get().value();
             }
             case MEDIUM_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.MEDIUM_AMETHYST_BUD_PLACE;
+                return SoundEvents.MEDIUM_AMETHYST_BUD.placeSound().get().value();
             }
             case METAL_BREAK -> {
-                return SoundEvents.METAL_BREAK;
+                return SoundEvents.METAL.breakSound().get().value();
             }
             case METAL_FALL -> {
-                return SoundEvents.METAL_FALL;
+                return SoundEvents.METAL.fallSound().get().value();
             }
             case METAL_HIT -> {
-                return SoundEvents.METAL_HIT;
+                return SoundEvents.METAL.hitSound().get().value();
             }
             case METAL_PLACE -> {
-                return SoundEvents.METAL_PLACE;
+                return SoundEvents.METAL.placeSound().get().value();
             }
             case METAL_PRESSURE_PLATE_CLICK_OFF -> {
                 return SoundEvents.METAL_PRESSURE_PLATE_CLICK_OFF;
@@ -4513,7 +4513,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.METAL_PRESSURE_PLATE_CLICK_ON;
             }
             case METAL_STEP -> {
-                return SoundEvents.METAL_STEP;
+                return SoundEvents.METAL.stepSound().get().value();
             }
             case MINECART_INSIDE_UNDERWATER -> {
                 return SoundEvents.MINECART_INSIDE_UNDERWATER;
@@ -4540,94 +4540,94 @@ public enum SoundEventsHolder {
                 return SoundEvents.MOOSHROOM_SHEAR;
             }
             case MOSS_CARPET_BREAK -> {
-                return SoundEvents.MOSS_CARPET_BREAK;
+                return SoundEvents.MOSS_CARPET.breakSound().get().value();
             }
             case MOSS_CARPET_FALL -> {
-                return SoundEvents.MOSS_CARPET_FALL;
+                return SoundEvents.MOSS_CARPET.fallSound().get().value();
             }
             case MOSS_CARPET_HIT -> {
-                return SoundEvents.MOSS_CARPET_HIT;
+                return SoundEvents.MOSS_CARPET.hitSound().get().value();
             }
             case MOSS_CARPET_PLACE -> {
-                return SoundEvents.MOSS_CARPET_PLACE;
+                return SoundEvents.MOSS_CARPET.placeSound().get().value();
             }
             case MOSS_CARPET_STEP -> {
-                return SoundEvents.MOSS_CARPET_STEP;
+                return SoundEvents.MOSS_CARPET.stepSound().get().value();
             }
             case PINK_PETALS_BREAK -> {
-                return SoundEvents.PINK_PETALS_BREAK;
+                return SoundEvents.PINK_PETALS.breakSound().get().value();
             }
             case PINK_PETALS_FALL -> {
-                return SoundEvents.PINK_PETALS_FALL;
+                return SoundEvents.PINK_PETALS.fallSound().get().value();
             }
             case PINK_PETALS_HIT -> {
-                return SoundEvents.PINK_PETALS_HIT;
+                return SoundEvents.PINK_PETALS.hitSound().get().value();
             }
             case PINK_PETALS_PLACE -> {
-                return SoundEvents.PINK_PETALS_PLACE;
+                return SoundEvents.PINK_PETALS.placeSound().get().value();
             }
             case PINK_PETALS_STEP -> {
-                return SoundEvents.PINK_PETALS_STEP;
+                return SoundEvents.PINK_PETALS.stepSound().get().value();
             }
             case MOSS_BREAK -> {
-                return SoundEvents.MOSS_BREAK;
+                return SoundEvents.MOSS.breakSound().get().value();
             }
             case MOSS_FALL -> {
-                return SoundEvents.MOSS_FALL;
+                return SoundEvents.MOSS.fallSound().get().value();
             }
             case MOSS_HIT -> {
-                return SoundEvents.MOSS_HIT;
+                return SoundEvents.MOSS.hitSound().get().value();
             }
             case MOSS_PLACE -> {
-                return SoundEvents.MOSS_PLACE;
+                return SoundEvents.MOSS.placeSound().get().value();
             }
             case MOSS_STEP -> {
-                return SoundEvents.MOSS_STEP;
+                return SoundEvents.MOSS.stepSound().get().value();
             }
             case MUD_BREAK -> {
-                return SoundEvents.MUD_BREAK;
+                return SoundEvents.MUD.breakSound().get().value();
             }
             case MUD_FALL -> {
-                return SoundEvents.MUD_FALL;
+                return SoundEvents.MUD.fallSound().get().value();
             }
             case MUD_HIT -> {
-                return SoundEvents.MUD_HIT;
+                return SoundEvents.MUD.hitSound().get().value();
             }
             case MUD_PLACE -> {
-                return SoundEvents.MUD_PLACE;
+                return SoundEvents.MUD.placeSound().get().value();
             }
             case MUD_STEP -> {
-                return SoundEvents.MUD_STEP;
+                return SoundEvents.MUD.stepSound().get().value();
             }
             case MUD_BRICKS_BREAK -> {
-                return SoundEvents.MUD_BRICKS_BREAK;
+                return SoundEvents.MUD_BRICKS.breakSound().get().value();
             }
             case MUD_BRICKS_FALL -> {
-                return SoundEvents.MUD_BRICKS_FALL;
+                return SoundEvents.MUD_BRICKS.fallSound().get().value();
             }
             case MUD_BRICKS_HIT -> {
-                return SoundEvents.MUD_BRICKS_HIT;
+                return SoundEvents.MUD_BRICKS.hitSound().get().value();
             }
             case MUD_BRICKS_PLACE -> {
-                return SoundEvents.MUD_BRICKS_PLACE;
+                return SoundEvents.MUD_BRICKS.placeSound().get().value();
             }
             case MUD_BRICKS_STEP -> {
-                return SoundEvents.MUD_BRICKS_STEP;
+                return SoundEvents.MUD_BRICKS.stepSound().get().value();
             }
             case MUDDY_MANGROVE_ROOTS_BREAK -> {
-                return SoundEvents.MUDDY_MANGROVE_ROOTS_BREAK;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS.breakSound().get().value();
             }
             case MUDDY_MANGROVE_ROOTS_FALL -> {
-                return SoundEvents.MUDDY_MANGROVE_ROOTS_FALL;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS.fallSound().get().value();
             }
             case MUDDY_MANGROVE_ROOTS_HIT -> {
-                return SoundEvents.MUDDY_MANGROVE_ROOTS_HIT;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS.hitSound().get().value();
             }
             case MUDDY_MANGROVE_ROOTS_PLACE -> {
-                return SoundEvents.MUDDY_MANGROVE_ROOTS_PLACE;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS.placeSound().get().value();
             }
             case MUDDY_MANGROVE_ROOTS_STEP -> {
-                return SoundEvents.MUDDY_MANGROVE_ROOTS_STEP;
+                return SoundEvents.MUDDY_MANGROVE_ROOTS.stepSound().get().value();
             }
             case MULE_AMBIENT -> {
                 return SoundEvents.MULE_AMBIENT;
@@ -4801,40 +4801,40 @@ public enum SoundEventsHolder {
                 return SoundEvents.MUSIC_UNDER_WATER.value();
             }
             case NETHER_BRICKS_BREAK -> {
-                return SoundEvents.NETHER_BRICKS_BREAK;
+                return SoundEvents.NETHER_BRICKS.breakSound().get().value();
             }
             case NETHER_BRICKS_STEP -> {
-                return SoundEvents.NETHER_BRICKS_STEP;
+                return SoundEvents.NETHER_BRICKS.stepSound().get().value();
             }
             case NETHER_BRICKS_PLACE -> {
-                return SoundEvents.NETHER_BRICKS_PLACE;
+                return SoundEvents.NETHER_BRICKS.placeSound().get().value();
             }
             case NETHER_BRICKS_HIT -> {
-                return SoundEvents.NETHER_BRICKS_HIT;
+                return SoundEvents.NETHER_BRICKS.hitSound().get().value();
             }
             case NETHER_BRICKS_FALL -> {
-                return SoundEvents.NETHER_BRICKS_FALL;
+                return SoundEvents.NETHER_BRICKS.fallSound().get().value();
             }
             case NETHER_WART_BREAK -> {
-                return SoundEvents.NETHER_WART_BREAK;
+                return SoundEvents.NETHER_WART_BREAK.value();
             }
             case NETHER_WART_PLANTED -> {
-                return SoundEvents.NETHER_WART_PLANTED;
+                return SoundEvents.NETHER_WART_PLANTED.value();
             }
             case NETHER_WOOD_BREAK -> {
-                return SoundEvents.NETHER_WOOD_BREAK;
+                return SoundEvents.NETHER_WOOD.breakSound().get().value();
             }
             case NETHER_WOOD_FALL -> {
-                return SoundEvents.NETHER_WOOD_FALL;
+                return SoundEvents.NETHER_WOOD.fallSound().get().value();
             }
             case NETHER_WOOD_HIT -> {
-                return SoundEvents.NETHER_WOOD_HIT;
+                return SoundEvents.NETHER_WOOD.hitSound().get().value();
             }
             case NETHER_WOOD_PLACE -> {
-                return SoundEvents.NETHER_WOOD_PLACE;
+                return SoundEvents.NETHER_WOOD.placeSound().get().value();
             }
             case NETHER_WOOD_STEP -> {
-                return SoundEvents.NETHER_WOOD_STEP;
+                return SoundEvents.NETHER_WOOD.stepSound().get().value();
             }
             case NETHER_WOOD_DOOR_CLOSE -> {
                 return SoundEvents.NETHER_WOOD_DOOR_CLOSE;
@@ -4867,139 +4867,139 @@ public enum SoundEventsHolder {
                 return SoundEvents.NETHER_WOOD_FENCE_GATE_OPEN;
             }
             case PACKED_MUD_BREAK -> {
-                return SoundEvents.PACKED_MUD_BREAK;
+                return SoundEvents.PACKED_MUD.breakSound().get().value();
             }
             case PACKED_MUD_FALL -> {
-                return SoundEvents.PACKED_MUD_FALL;
+                return SoundEvents.PACKED_MUD.fallSound().get().value();
             }
             case PACKED_MUD_HIT -> {
-                return SoundEvents.PACKED_MUD_HIT;
+                return SoundEvents.PACKED_MUD.hitSound().get().value();
             }
             case PACKED_MUD_PLACE -> {
-                return SoundEvents.PACKED_MUD_PLACE;
+                return SoundEvents.PACKED_MUD.placeSound().get().value();
             }
             case PACKED_MUD_STEP -> {
-                return SoundEvents.PACKED_MUD_STEP;
+                return SoundEvents.PACKED_MUD.stepSound().get().value();
             }
             case STEM_BREAK -> {
-                return SoundEvents.STEM_BREAK;
+                return SoundEvents.STEM.breakSound().get().value();
             }
             case STEM_STEP -> {
-                return SoundEvents.STEM_STEP;
+                return SoundEvents.STEM.stepSound().get().value();
             }
             case STEM_PLACE -> {
-                return SoundEvents.STEM_PLACE;
+                return SoundEvents.STEM.placeSound().get().value();
             }
             case STEM_HIT -> {
-                return SoundEvents.STEM_HIT;
+                return SoundEvents.STEM.hitSound().get().value();
             }
             case STEM_FALL -> {
-                return SoundEvents.STEM_FALL;
+                return SoundEvents.STEM.fallSound().get().value();
             }
             case NYLIUM_BREAK -> {
-                return SoundEvents.NYLIUM_BREAK;
+                return SoundEvents.NYLIUM.breakSound().get().value();
             }
             case NYLIUM_STEP -> {
-                return SoundEvents.NYLIUM_STEP;
+                return SoundEvents.NYLIUM.stepSound().get().value();
             }
             case NYLIUM_PLACE -> {
-                return SoundEvents.NYLIUM_PLACE;
+                return SoundEvents.NYLIUM.placeSound().get().value();
             }
             case NYLIUM_HIT -> {
-                return SoundEvents.NYLIUM_HIT;
+                return SoundEvents.NYLIUM.hitSound().get().value();
             }
             case NYLIUM_FALL -> {
-                return SoundEvents.NYLIUM_FALL;
+                return SoundEvents.NYLIUM.fallSound().get().value();
             }
             case NETHER_SPROUTS_BREAK -> {
-                return SoundEvents.NETHER_SPROUTS_BREAK;
+                return SoundEvents.NETHER_SPROUTS.breakSound().get().value();
             }
             case NETHER_SPROUTS_STEP -> {
-                return SoundEvents.NETHER_SPROUTS_STEP;
+                return SoundEvents.NETHER_SPROUTS.stepSound().get().value();
             }
             case NETHER_SPROUTS_PLACE -> {
-                return SoundEvents.NETHER_SPROUTS_PLACE;
+                return SoundEvents.NETHER_SPROUTS.placeSound().get().value();
             }
             case NETHER_SPROUTS_HIT -> {
-                return SoundEvents.NETHER_SPROUTS_HIT;
+                return SoundEvents.NETHER_SPROUTS.hitSound().get().value();
             }
             case NETHER_SPROUTS_FALL -> {
-                return SoundEvents.NETHER_SPROUTS_FALL;
+                return SoundEvents.NETHER_SPROUTS.fallSound().get().value();
             }
             case FUNGUS_BREAK -> {
-                return SoundEvents.FUNGUS_BREAK;
+                return SoundEvents.FUNGUS.breakSound().get().value();
             }
             case FUNGUS_STEP -> {
-                return SoundEvents.FUNGUS_STEP;
+                return SoundEvents.FUNGUS.stepSound().get().value();
             }
             case FUNGUS_PLACE -> {
-                return SoundEvents.FUNGUS_PLACE;
+                return SoundEvents.FUNGUS.placeSound().get().value();
             }
             case FUNGUS_HIT -> {
-                return SoundEvents.FUNGUS_HIT;
+                return SoundEvents.FUNGUS.hitSound().get().value();
             }
             case FUNGUS_FALL -> {
-                return SoundEvents.FUNGUS_FALL;
+                return SoundEvents.FUNGUS.fallSound().get().value();
             }
             case WEEPING_VINES_BREAK -> {
-                return SoundEvents.WEEPING_VINES_BREAK;
+                return SoundEvents.WEEPING_VINES.breakSound().get().value();
             }
             case WEEPING_VINES_STEP -> {
-                return SoundEvents.WEEPING_VINES_STEP;
+                return SoundEvents.WEEPING_VINES.stepSound().get().value();
             }
             case WEEPING_VINES_PLACE -> {
-                return SoundEvents.WEEPING_VINES_PLACE;
+                return SoundEvents.WEEPING_VINES.placeSound().get().value();
             }
             case WEEPING_VINES_HIT -> {
-                return SoundEvents.WEEPING_VINES_HIT;
+                return SoundEvents.WEEPING_VINES.hitSound().get().value();
             }
             case WEEPING_VINES_FALL -> {
-                return SoundEvents.WEEPING_VINES_FALL;
+                return SoundEvents.WEEPING_VINES.fallSound().get().value();
             }
             case WART_BLOCK_BREAK -> {
-                return SoundEvents.WART_BLOCK_BREAK;
+                return SoundEvents.WART_BLOCK.breakSound().get().value();
             }
             case WART_BLOCK_STEP -> {
-                return SoundEvents.WART_BLOCK_STEP;
+                return SoundEvents.WART_BLOCK.stepSound().get().value();
             }
             case WART_BLOCK_PLACE -> {
-                return SoundEvents.WART_BLOCK_PLACE;
+                return SoundEvents.WART_BLOCK.placeSound().get().value();
             }
             case WART_BLOCK_HIT -> {
-                return SoundEvents.WART_BLOCK_HIT;
+                return SoundEvents.WART_BLOCK.hitSound().get().value();
             }
             case WART_BLOCK_FALL -> {
-                return SoundEvents.WART_BLOCK_FALL;
+                return SoundEvents.WART_BLOCK.fallSound().get().value();
             }
             case NETHERITE_BLOCK_BREAK -> {
-                return SoundEvents.NETHERITE_BLOCK_BREAK;
+                return SoundEvents.NETHERITE_BLOCK.breakSound().get().value();
             }
             case NETHERITE_BLOCK_STEP -> {
-                return SoundEvents.NETHERITE_BLOCK_STEP;
+                return SoundEvents.NETHERITE_BLOCK.stepSound().get().value();
             }
             case NETHERITE_BLOCK_PLACE -> {
-                return SoundEvents.NETHERITE_BLOCK_PLACE;
+                return SoundEvents.NETHERITE_BLOCK.placeSound().get().value();
             }
             case NETHERITE_BLOCK_HIT -> {
-                return SoundEvents.NETHERITE_BLOCK_HIT;
+                return SoundEvents.NETHERITE_BLOCK.hitSound().get().value();
             }
             case NETHERITE_BLOCK_FALL -> {
-                return SoundEvents.NETHERITE_BLOCK_FALL;
+                return SoundEvents.NETHERITE_BLOCK.fallSound().get().value();
             }
             case NETHERRACK_BREAK -> {
-                return SoundEvents.NETHERRACK_BREAK;
+                return SoundEvents.NETHERRACK.breakSound().get().value();
             }
             case NETHERRACK_STEP -> {
-                return SoundEvents.NETHERRACK_STEP;
+                return SoundEvents.NETHERRACK.stepSound().get().value();
             }
             case NETHERRACK_PLACE -> {
-                return SoundEvents.NETHERRACK_PLACE;
+                return SoundEvents.NETHERRACK.placeSound().get().value();
             }
             case NETHERRACK_HIT -> {
-                return SoundEvents.NETHERRACK_HIT;
+                return SoundEvents.NETHERRACK.hitSound().get().value();
             }
             case NETHERRACK_FALL -> {
-                return SoundEvents.NETHERRACK_FALL;
+                return SoundEvents.NETHERRACK.fallSound().get().value();
             }
             case NOTE_BLOCK_BASEDRUM -> {
                 return SoundEvents.NOTE_BLOCK_BASEDRUM.value();
@@ -5266,13 +5266,13 @@ public enum SoundEventsHolder {
                 return SoundEvents.PHANTOM_SWOOP;
             }
             case PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().get().value();
             }
             case PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().get().value();
             }
             case PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().get().value();
             }
             case PIG_SADDLE -> {
                 return SoundEvents.PIG_SADDLE.value();
@@ -5428,19 +5428,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.POLAR_BEAR_WARNING;
             }
             case POLISHED_DEEPSLATE_BREAK -> {
-                return SoundEvents.POLISHED_DEEPSLATE_BREAK;
+                return SoundEvents.POLISHED_DEEPSLATE.breakSound().get().value();
             }
             case POLISHED_DEEPSLATE_FALL -> {
-                return SoundEvents.POLISHED_DEEPSLATE_FALL;
+                return SoundEvents.POLISHED_DEEPSLATE.fallSound().get().value();
             }
             case POLISHED_DEEPSLATE_HIT -> {
-                return SoundEvents.POLISHED_DEEPSLATE_HIT;
+                return SoundEvents.POLISHED_DEEPSLATE.hitSound().get().value();
             }
             case POLISHED_DEEPSLATE_PLACE -> {
-                return SoundEvents.POLISHED_DEEPSLATE_PLACE;
+                return SoundEvents.POLISHED_DEEPSLATE.placeSound().get().value();
             }
             case POLISHED_DEEPSLATE_STEP -> {
-                return SoundEvents.POLISHED_DEEPSLATE_STEP;
+                return SoundEvents.POLISHED_DEEPSLATE.stepSound().get().value();
             }
             case PORTAL_AMBIENT -> {
                 return SoundEvents.PORTAL_AMBIENT;
@@ -5452,19 +5452,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.PORTAL_TRIGGER;
             }
             case POWDER_SNOW_BREAK -> {
-                return SoundEvents.POWDER_SNOW_BREAK;
+                return SoundEvents.POWDER_SNOW.breakSound().get().value();
             }
             case POWDER_SNOW_FALL -> {
-                return SoundEvents.POWDER_SNOW_FALL;
+                return SoundEvents.POWDER_SNOW.fallSound().get().value();
             }
             case POWDER_SNOW_HIT -> {
-                return SoundEvents.POWDER_SNOW_HIT;
+                return SoundEvents.POWDER_SNOW.hitSound().get().value();
             }
             case POWDER_SNOW_PLACE -> {
-                return SoundEvents.POWDER_SNOW_PLACE;
+                return SoundEvents.POWDER_SNOW.placeSound().get().value();
             }
             case POWDER_SNOW_STEP -> {
-                return SoundEvents.POWDER_SNOW_STEP;
+                return SoundEvents.POWDER_SNOW.stepSound().get().value();
             }
             case PUFFER_FISH_BLOW_OUT -> {
                 return SoundEvents.PUFFER_FISH_BLOW_OUT;
@@ -5530,34 +5530,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.RAVAGER_ROAR;
             }
             case NETHER_GOLD_ORE_BREAK -> {
-                return SoundEvents.NETHER_GOLD_ORE_BREAK;
+                return SoundEvents.NETHER_GOLD_ORE.breakSound().get().value();
             }
             case NETHER_GOLD_ORE_FALL -> {
-                return SoundEvents.NETHER_GOLD_ORE_FALL;
+                return SoundEvents.NETHER_GOLD_ORE.fallSound().get().value();
             }
             case NETHER_GOLD_ORE_HIT -> {
-                return SoundEvents.NETHER_GOLD_ORE_HIT;
+                return SoundEvents.NETHER_GOLD_ORE.hitSound().get().value();
             }
             case NETHER_GOLD_ORE_PLACE -> {
-                return SoundEvents.NETHER_GOLD_ORE_PLACE;
+                return SoundEvents.NETHER_GOLD_ORE.placeSound().get().value();
             }
             case NETHER_GOLD_ORE_STEP -> {
-                return SoundEvents.NETHER_GOLD_ORE_STEP;
+                return SoundEvents.NETHER_GOLD_ORE.stepSound().get().value();
             }
             case NETHER_ORE_BREAK -> {
-                return SoundEvents.NETHER_ORE_BREAK;
+                return SoundEvents.NETHER_ORE.breakSound().get().value();
             }
             case NETHER_ORE_FALL -> {
-                return SoundEvents.NETHER_ORE_FALL;
+                return SoundEvents.NETHER_ORE.fallSound().get().value();
             }
             case NETHER_ORE_HIT -> {
-                return SoundEvents.NETHER_ORE_HIT;
+                return SoundEvents.NETHER_ORE.hitSound().get().value();
             }
             case NETHER_ORE_PLACE -> {
-                return SoundEvents.NETHER_ORE_PLACE;
+                return SoundEvents.NETHER_ORE.placeSound().get().value();
             }
             case NETHER_ORE_STEP -> {
-                return SoundEvents.NETHER_ORE_STEP;
+                return SoundEvents.NETHER_ORE.stepSound().get().value();
             }
             case REDSTONE_TORCH_BURNOUT -> {
                 return SoundEvents.REDSTONE_TORCH_BURNOUT;
@@ -5575,19 +5575,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.RESPAWN_ANCHOR_SET_SPAWN;
             }
             case ROOTED_DIRT_BREAK -> {
-                return SoundEvents.ROOTED_DIRT_BREAK;
+                return SoundEvents.ROOTED_DIRT.breakSound().get().value();
             }
             case ROOTED_DIRT_FALL -> {
-                return SoundEvents.ROOTED_DIRT_FALL;
+                return SoundEvents.ROOTED_DIRT.fallSound().get().value();
             }
             case ROOTED_DIRT_HIT -> {
-                return SoundEvents.ROOTED_DIRT_HIT;
+                return SoundEvents.ROOTED_DIRT.hitSound().get().value();
             }
             case ROOTED_DIRT_PLACE -> {
-                return SoundEvents.ROOTED_DIRT_PLACE;
+                return SoundEvents.ROOTED_DIRT.placeSound().get().value();
             }
             case ROOTED_DIRT_STEP -> {
-                return SoundEvents.ROOTED_DIRT_STEP;
+                return SoundEvents.ROOTED_DIRT.stepSound().get().value();
             }
             case SALMON_AMBIENT -> {
                 return SoundEvents.SALMON_AMBIENT;
@@ -5602,34 +5602,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.SALMON_HURT;
             }
             case SAND_BREAK -> {
-                return SoundEvents.SAND_BREAK;
+                return SoundEvents.SAND.breakSound().get().value();
             }
             case SAND_FALL -> {
-                return SoundEvents.SAND_FALL;
+                return SoundEvents.SAND.fallSound().get().value();
             }
             case SAND_HIT -> {
-                return SoundEvents.SAND_HIT;
+                return SoundEvents.SAND.hitSound().get().value();
             }
             case SAND_PLACE -> {
-                return SoundEvents.SAND_PLACE;
+                return SoundEvents.SAND.placeSound().get().value();
             }
             case SAND_STEP -> {
-                return SoundEvents.SAND_STEP;
+                return SoundEvents.SAND.stepSound().get().value();
             }
             case SCAFFOLDING_BREAK -> {
-                return SoundEvents.SCAFFOLDING_BREAK;
+                return SoundEvents.SCAFFOLDING.breakSound().get().value();
             }
             case SCAFFOLDING_FALL -> {
-                return SoundEvents.SCAFFOLDING_FALL;
+                return SoundEvents.SCAFFOLDING.fallSound().get().value();
             }
             case SCAFFOLDING_HIT -> {
-                return SoundEvents.SCAFFOLDING_HIT;
+                return SoundEvents.SCAFFOLDING.hitSound().get().value();
             }
             case SCAFFOLDING_PLACE -> {
-                return SoundEvents.SCAFFOLDING_PLACE;
+                return SoundEvents.SCAFFOLDING.placeSound().get().value();
             }
             case SCAFFOLDING_STEP -> {
-                return SoundEvents.SCAFFOLDING_STEP;
+                return SoundEvents.SCAFFOLDING.stepSound().get().value();
             }
             case SCULK_BLOCK_SPREAD -> {
                 return SoundEvents.SCULK_BLOCK_SPREAD;
@@ -5638,37 +5638,37 @@ public enum SoundEventsHolder {
                 return SoundEvents.SCULK_BLOCK_CHARGE;
             }
             case SCULK_BLOCK_BREAK -> {
-                return SoundEvents.SCULK_BLOCK_BREAK;
+                return SoundEvents.SCULK.breakSound().get().value();
             }
             case SCULK_BLOCK_FALL -> {
-                return SoundEvents.SCULK_BLOCK_FALL;
+                return SoundEvents.SCULK.fallSound().get().value();
             }
             case SCULK_BLOCK_HIT -> {
-                return SoundEvents.SCULK_BLOCK_HIT;
+                return SoundEvents.SCULK.hitSound().get().value();
             }
             case SCULK_BLOCK_PLACE -> {
-                return SoundEvents.SCULK_BLOCK_PLACE;
+                return SoundEvents.SCULK.placeSound().get().value();
             }
             case SCULK_BLOCK_STEP -> {
-                return SoundEvents.SCULK_BLOCK_STEP;
+                return SoundEvents.SCULK.stepSound().get().value();
             }
             case SCULK_CATALYST_BLOOM -> {
                 return SoundEvents.SCULK_CATALYST_BLOOM;
             }
             case SCULK_CATALYST_BREAK -> {
-                return SoundEvents.SCULK_CATALYST_BREAK;
+                return SoundEvents.SCULK_CATALYST.breakSound().get().value();
             }
             case SCULK_CATALYST_FALL -> {
-                return SoundEvents.SCULK_CATALYST_FALL;
+                return SoundEvents.SCULK_CATALYST.fallSound().get().value();
             }
             case SCULK_CATALYST_HIT -> {
-                return SoundEvents.SCULK_CATALYST_HIT;
+                return SoundEvents.SCULK_CATALYST.hitSound().get().value();
             }
             case SCULK_CATALYST_PLACE -> {
-                return SoundEvents.SCULK_CATALYST_PLACE;
+                return SoundEvents.SCULK_CATALYST.placeSound().get().value();
             }
             case SCULK_CATALYST_STEP -> {
-                return SoundEvents.SCULK_CATALYST_STEP;
+                return SoundEvents.SCULK_CATALYST.stepSound().get().value();
             }
             case SCULK_CLICKING -> {
                 return SoundEvents.SCULK_CLICKING;
@@ -5677,52 +5677,52 @@ public enum SoundEventsHolder {
                 return SoundEvents.SCULK_CLICKING_STOP;
             }
             case SCULK_SENSOR_BREAK -> {
-                return SoundEvents.SCULK_SENSOR_BREAK;
+                return SoundEvents.SCULK_SENSOR.breakSound().get().value();
             }
             case SCULK_SENSOR_FALL -> {
-                return SoundEvents.SCULK_SENSOR_FALL;
+                return SoundEvents.SCULK_SENSOR.fallSound().get().value();
             }
             case SCULK_SENSOR_HIT -> {
-                return SoundEvents.SCULK_SENSOR_HIT;
+                return SoundEvents.SCULK_SENSOR.hitSound().get().value();
             }
             case SCULK_SENSOR_PLACE -> {
-                return SoundEvents.SCULK_SENSOR_PLACE;
+                return SoundEvents.SCULK_SENSOR.placeSound().get().value();
             }
             case SCULK_SENSOR_STEP -> {
-                return SoundEvents.SCULK_SENSOR_STEP;
+                return SoundEvents.SCULK_SENSOR.stepSound().get().value();
             }
             case SCULK_SHRIEKER_BREAK -> {
-                return SoundEvents.SCULK_SHRIEKER_BREAK;
+                return SoundEvents.SCULK_SHRIEKER.breakSound().get().value();
             }
             case SCULK_SHRIEKER_FALL -> {
-                return SoundEvents.SCULK_SHRIEKER_FALL;
+                return SoundEvents.SCULK_SHRIEKER.fallSound().get().value();
             }
             case SCULK_SHRIEKER_HIT -> {
-                return SoundEvents.SCULK_SHRIEKER_HIT;
+                return SoundEvents.SCULK_SHRIEKER.hitSound().get().value();
             }
             case SCULK_SHRIEKER_PLACE -> {
-                return SoundEvents.SCULK_SHRIEKER_PLACE;
+                return SoundEvents.SCULK_SHRIEKER.placeSound().get().value();
             }
             case SCULK_SHRIEKER_SHRIEK -> {
                 return SoundEvents.SCULK_SHRIEKER_SHRIEK;
             }
             case SCULK_SHRIEKER_STEP -> {
-                return SoundEvents.SCULK_SHRIEKER_STEP;
+                return SoundEvents.SCULK_SHRIEKER.stepSound().get().value();
             }
             case SCULK_VEIN_BREAK -> {
-                return SoundEvents.SCULK_VEIN_BREAK;
+                return SoundEvents.SCULK_VEIN.breakSound().get().value();
             }
             case SCULK_VEIN_FALL -> {
-                return SoundEvents.SCULK_VEIN_FALL;
+                return SoundEvents.SCULK_VEIN.fallSound().get().value();
             }
             case SCULK_VEIN_HIT -> {
-                return SoundEvents.SCULK_VEIN_HIT;
+                return SoundEvents.SCULK_VEIN.hitSound().get().value();
             }
             case SCULK_VEIN_PLACE -> {
-                return SoundEvents.SCULK_VEIN_PLACE;
+                return SoundEvents.SCULK_VEIN.placeSound().get().value();
             }
             case SCULK_VEIN_STEP -> {
-                return SoundEvents.SCULK_VEIN_STEP;
+                return SoundEvents.SCULK_VEIN.stepSound().get().value();
             }
             case SHEEP_AMBIENT -> {
                 return SoundEvents.SHEEP_AMBIENT;
@@ -5746,19 +5746,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.SHIELD_BREAK.value();
             }
             case SHROOMLIGHT_BREAK -> {
-                return SoundEvents.SHROOMLIGHT_BREAK;
+                return SoundEvents.SHROOMLIGHT.breakSound().get().value();
             }
             case SHROOMLIGHT_STEP -> {
-                return SoundEvents.SHROOMLIGHT_STEP;
+                return SoundEvents.SHROOMLIGHT.stepSound().get().value();
             }
             case SHROOMLIGHT_PLACE -> {
-                return SoundEvents.SHROOMLIGHT_PLACE;
+                return SoundEvents.SHROOMLIGHT.placeSound().get().value();
             }
             case SHROOMLIGHT_HIT -> {
-                return SoundEvents.SHROOMLIGHT_HIT;
+                return SoundEvents.SHROOMLIGHT.hitSound().get().value();
             }
             case SHROOMLIGHT_FALL -> {
-                return SoundEvents.SHROOMLIGHT_FALL;
+                return SoundEvents.SHROOMLIGHT.fallSound().get().value();
             }
             case SHOVEL_FLATTEN -> {
                 return SoundEvents.SHOVEL_FLATTEN.value();
@@ -5869,130 +5869,130 @@ public enum SoundEventsHolder {
                 return SoundEvents.SLIME_SQUISH;
             }
             case SLIME_BLOCK_BREAK -> {
-                return SoundEvents.SLIME_BLOCK_BREAK;
+                return SoundEvents.SLIME_BLOCK.breakSound().get().value();
             }
             case SLIME_BLOCK_FALL -> {
-                return SoundEvents.SLIME_BLOCK_FALL;
+                return SoundEvents.SLIME_BLOCK.fallSound().get().value();
             }
             case SLIME_BLOCK_HIT -> {
-                return SoundEvents.SLIME_BLOCK_HIT;
+                return SoundEvents.SLIME_BLOCK.hitSound().get().value();
             }
             case SLIME_BLOCK_PLACE -> {
-                return SoundEvents.SLIME_BLOCK_PLACE;
+                return SoundEvents.SLIME_BLOCK.placeSound().get().value();
             }
             case SLIME_BLOCK_STEP -> {
-                return SoundEvents.SLIME_BLOCK_STEP;
+                return SoundEvents.SLIME_BLOCK.stepSound().get().value();
             }
             case SMALL_AMETHYST_BUD_BREAK -> {
-                return SoundEvents.SMALL_AMETHYST_BUD_BREAK;
+                return SoundEvents.SMALL_AMETHYST_BUD.breakSound().get().value();
             }
             case SMALL_AMETHYST_BUD_PLACE -> {
-                return SoundEvents.SMALL_AMETHYST_BUD_PLACE;
+                return SoundEvents.SMALL_AMETHYST_BUD.placeSound().get().value();
             }
             case SMALL_DRIPLEAF_BREAK -> {
-                return SoundEvents.SMALL_DRIPLEAF_BREAK;
+                return SoundEvents.SMALL_DRIPLEAF.breakSound().get().value();
             }
             case SMALL_DRIPLEAF_FALL -> {
-                return SoundEvents.SMALL_DRIPLEAF_FALL;
+                return SoundEvents.SMALL_DRIPLEAF.fallSound().get().value();
             }
             case SMALL_DRIPLEAF_HIT -> {
-                return SoundEvents.SMALL_DRIPLEAF_HIT;
+                return SoundEvents.SMALL_DRIPLEAF.hitSound().get().value();
             }
             case SMALL_DRIPLEAF_PLACE -> {
-                return SoundEvents.SMALL_DRIPLEAF_PLACE;
+                return SoundEvents.SMALL_DRIPLEAF.placeSound().get().value();
             }
             case SMALL_DRIPLEAF_STEP -> {
-                return SoundEvents.SMALL_DRIPLEAF_STEP;
+                return SoundEvents.SMALL_DRIPLEAF.stepSound().get().value();
             }
             case SOUL_SAND_BREAK -> {
-                return SoundEvents.SOUL_SAND_BREAK;
+                return SoundEvents.SOUL_SAND.breakSound().get().value();
             }
             case SOUL_SAND_STEP -> {
-                return SoundEvents.SOUL_SAND_STEP;
+                return SoundEvents.SOUL_SAND.stepSound().get().value();
             }
             case SOUL_SAND_PLACE -> {
-                return SoundEvents.SOUL_SAND_PLACE;
+                return SoundEvents.SOUL_SAND.placeSound().get().value();
             }
             case SOUL_SAND_HIT -> {
-                return SoundEvents.SOUL_SAND_HIT;
+                return SoundEvents.SOUL_SAND.hitSound().get().value();
             }
             case SOUL_SAND_FALL -> {
-                return SoundEvents.SOUL_SAND_FALL;
+                return SoundEvents.SOUL_SAND.fallSound().get().value();
             }
             case SOUL_SOIL_BREAK -> {
-                return SoundEvents.SOUL_SOIL_BREAK;
+                return SoundEvents.SOUL_SOIL.breakSound().get().value();
             }
             case SOUL_SOIL_STEP -> {
-                return SoundEvents.SOUL_SOIL_STEP;
+                return SoundEvents.SOUL_SOIL.stepSound().get().value();
             }
             case SOUL_SOIL_PLACE -> {
-                return SoundEvents.SOUL_SOIL_PLACE;
+                return SoundEvents.SOUL_SOIL.placeSound().get().value();
             }
             case SOUL_SOIL_HIT -> {
-                return SoundEvents.SOUL_SOIL_HIT;
+                return SoundEvents.SOUL_SOIL.hitSound().get().value();
             }
             case SOUL_SOIL_FALL -> {
-                return SoundEvents.SOUL_SOIL_FALL;
+                return SoundEvents.SOUL_SOIL.fallSound().get().value();
             }
             case SOUL_ESCAPE -> {
                 return SoundEvents.SOUL_ESCAPE.value();
             }
             case SPAWNER_BREAK -> {
-                return SoundEvents.SPAWNER_BREAK;
+                return SoundEvents.SPAWNER.breakSound().get().value();
             }
             case SPAWNER_FALL -> {
-                return SoundEvents.SPAWNER_FALL;
+                return SoundEvents.SPAWNER.fallSound().get().value();
             }
             case SPAWNER_HIT -> {
-                return SoundEvents.SPAWNER_HIT;
+                return SoundEvents.SPAWNER.hitSound().get().value();
             }
             case SPAWNER_PLACE -> {
-                return SoundEvents.SPAWNER_PLACE;
+                return SoundEvents.SPAWNER.placeSound().get().value();
             }
             case SPAWNER_STEP -> {
-                return SoundEvents.SPAWNER_STEP;
+                return SoundEvents.SPAWNER.stepSound().get().value();
             }
             case RESIN_BREAK -> {
-                return SoundEvents.RESIN_BREAK;
+                return SoundEvents.RESIN.breakSound().get().value();
             }
             case RESIN_FALL -> {
-                return SoundEvents.RESIN_FALL;
+                return SoundEvents.RESIN.fallSound().get().value();
             }
             case RESIN_PLACE -> {
-                return SoundEvents.RESIN_PLACE;
+                return SoundEvents.RESIN.placeSound().get().value();
             }
             case RESIN_STEP -> {
-                return SoundEvents.RESIN_STEP;
+                return SoundEvents.RESIN.stepSound().get().value();
             }
             case RESIN_BRICKS_BREAK -> {
-                return SoundEvents.RESIN_BRICKS_BREAK;
+                return SoundEvents.RESIN_BRICKS.breakSound().get().value();
             }
             case RESIN_BRICKS_FALL -> {
-                return SoundEvents.RESIN_BRICKS_FALL;
+                return SoundEvents.RESIN_BRICKS.fallSound().get().value();
             }
             case RESIN_BRICKS_HIT -> {
-                return SoundEvents.RESIN_BRICKS_HIT;
+                return SoundEvents.RESIN_BRICKS.hitSound().get().value();
             }
             case RESIN_BRICKS_PLACE -> {
-                return SoundEvents.RESIN_BRICKS_PLACE;
+                return SoundEvents.RESIN_BRICKS.placeSound().get().value();
             }
             case RESIN_BRICKS_STEP -> {
-                return SoundEvents.RESIN_BRICKS_STEP;
+                return SoundEvents.RESIN_BRICKS.stepSound().get().value();
             }
             case SPORE_BLOSSOM_BREAK -> {
-                return SoundEvents.SPORE_BLOSSOM_BREAK;
+                return SoundEvents.SPORE_BLOSSOM.breakSound().get().value();
             }
             case SPORE_BLOSSOM_FALL -> {
-                return SoundEvents.SPORE_BLOSSOM_FALL;
+                return SoundEvents.SPORE_BLOSSOM.fallSound().get().value();
             }
             case SPORE_BLOSSOM_HIT -> {
-                return SoundEvents.SPORE_BLOSSOM_HIT;
+                return SoundEvents.SPORE_BLOSSOM.hitSound().get().value();
             }
             case SPORE_BLOSSOM_PLACE -> {
-                return SoundEvents.SPORE_BLOSSOM_PLACE;
+                return SoundEvents.SPORE_BLOSSOM.placeSound().get().value();
             }
             case SPORE_BLOSSOM_STEP -> {
-                return SoundEvents.SPORE_BLOSSOM_STEP;
+                return SoundEvents.SPORE_BLOSSOM.stepSound().get().value();
             }
             case STRIDER_AMBIENT -> {
                 return SoundEvents.STRIDER_AMBIENT;
@@ -6088,10 +6088,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.SNOWBALL_THROW;
             }
             case SNOW_BREAK -> {
-                return SoundEvents.SNOW_BREAK;
+                return SoundEvents.SNOW.breakSound().get().value();
             }
             case SNOW_FALL -> {
-                return SoundEvents.SNOW_FALL;
+                return SoundEvents.SNOW.fallSound().get().value();
             }
             case SNOW_GOLEM_AMBIENT -> {
                 return SoundEvents.SNOW_GOLEM_AMBIENT;
@@ -6109,13 +6109,13 @@ public enum SoundEventsHolder {
                 return SoundEvents.SNOW_GOLEM_SHEAR;
             }
             case SNOW_HIT -> {
-                return SoundEvents.SNOW_HIT;
+                return SoundEvents.SNOW.hitSound().get().value();
             }
             case SNOW_PLACE -> {
-                return SoundEvents.SNOW_PLACE;
+                return SoundEvents.SNOW.placeSound().get().value();
             }
             case SNOW_STEP -> {
-                return SoundEvents.SNOW_STEP;
+                return SoundEvents.SNOW.stepSound().get().value();
             }
             case SPIDER_AMBIENT -> {
                 return SoundEvents.SPIDER_AMBIENT;
@@ -6136,19 +6136,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.SPLASH_POTION_THROW;
             }
             case SPONGE_BREAK -> {
-                return SoundEvents.SPONGE_BREAK;
+                return SoundEvents.SPONGE.breakSound().get().value();
             }
             case SPONGE_FALL -> {
-                return SoundEvents.SPONGE_FALL;
+                return SoundEvents.SPONGE.fallSound().get().value();
             }
             case SPONGE_HIT -> {
-                return SoundEvents.SPONGE_HIT;
+                return SoundEvents.SPONGE.hitSound().get().value();
             }
             case SPONGE_PLACE -> {
-                return SoundEvents.SPONGE_PLACE;
+                return SoundEvents.SPONGE.placeSound().get().value();
             }
             case SPONGE_STEP -> {
-                return SoundEvents.SPONGE_STEP;
+                return SoundEvents.SPONGE.stepSound().get().value();
             }
             case SPONGE_ABSORB -> {
                 return SoundEvents.SPONGE_ABSORB;
@@ -6172,7 +6172,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.SQUID_SQUIRT;
             }
             case STONE_BREAK -> {
-                return SoundEvents.STONE_BREAK;
+                return SoundEvents.STONE.breakSound().get().value();
             }
             case STONE_BUTTON_CLICK_OFF -> {
                 return SoundEvents.STONE_BUTTON_CLICK_OFF;
@@ -6181,13 +6181,13 @@ public enum SoundEventsHolder {
                 return SoundEvents.STONE_BUTTON_CLICK_ON;
             }
             case STONE_FALL -> {
-                return SoundEvents.STONE_FALL;
+                return SoundEvents.STONE.fallSound().get().value();
             }
             case STONE_HIT -> {
-                return SoundEvents.STONE_HIT;
+                return SoundEvents.STONE.hitSound().get().value();
             }
             case STONE_PLACE -> {
-                return SoundEvents.STONE_PLACE;
+                return SoundEvents.STONE.placeSound().get().value();
             }
             case STONE_PRESSURE_PLATE_CLICK_OFF -> {
                 return SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF;
@@ -6196,7 +6196,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON;
             }
             case STONE_STEP -> {
-                return SoundEvents.STONE_STEP;
+                return SoundEvents.STONE.stepSound().get().value();
             }
             case STRAY_AMBIENT -> {
                 return SoundEvents.STRAY_AMBIENT;
@@ -6211,10 +6211,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.STRAY_STEP;
             }
             case SWEET_BERRY_BUSH_BREAK -> {
-                return SoundEvents.SWEET_BERRY_BUSH_BREAK;
+                return SoundEvents.SWEET_BERRY_BUSH.breakSound().get().value();
             }
             case SWEET_BERRY_BUSH_PLACE -> {
-                return SoundEvents.SWEET_BERRY_BUSH_PLACE;
+                return SoundEvents.SWEET_BERRY_BUSH.placeSound().get().value();
             }
             case SWEET_BERRY_BUSH_PICK_BERRIES -> {
                 return SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES;
@@ -6289,49 +6289,49 @@ public enum SoundEventsHolder {
                 return SoundEvents.TROPICAL_FISH_HURT;
             }
             case TUFF_BREAK -> {
-                return SoundEvents.TUFF_BREAK;
+                return SoundEvents.TUFF.breakSound().get().value();
             }
             case TUFF_STEP -> {
-                return SoundEvents.TUFF_STEP;
+                return SoundEvents.TUFF.stepSound().get().value();
             }
             case TUFF_PLACE -> {
-                return SoundEvents.TUFF_PLACE;
+                return SoundEvents.TUFF.placeSound().get().value();
             }
             case TUFF_HIT -> {
-                return SoundEvents.TUFF_HIT;
+                return SoundEvents.TUFF.hitSound().get().value();
             }
             case TUFF_FALL -> {
-                return SoundEvents.TUFF_FALL;
+                return SoundEvents.TUFF.fallSound().get().value();
             }
             case TUFF_BRICKS_BREAK -> {
-                return SoundEvents.TUFF_BRICKS_BREAK;
+                return SoundEvents.TUFF_BRICKS.breakSound().get().value();
             }
             case TUFF_BRICKS_FALL -> {
-                return SoundEvents.TUFF_BRICKS_FALL;
+                return SoundEvents.TUFF_BRICKS.fallSound().get().value();
             }
             case TUFF_BRICKS_HIT -> {
-                return SoundEvents.TUFF_BRICKS_HIT;
+                return SoundEvents.TUFF_BRICKS.hitSound().get().value();
             }
             case TUFF_BRICKS_PLACE -> {
-                return SoundEvents.TUFF_BRICKS_PLACE;
+                return SoundEvents.TUFF_BRICKS.placeSound().get().value();
             }
             case TUFF_BRICKS_STEP -> {
-                return SoundEvents.TUFF_BRICKS_STEP;
+                return SoundEvents.TUFF_BRICKS.stepSound().get().value();
             }
             case POLISHED_TUFF_BREAK -> {
-                return SoundEvents.POLISHED_TUFF_BREAK;
+                return SoundEvents.POLISHED_TUFF.breakSound().get().value();
             }
             case POLISHED_TUFF_FALL -> {
-                return SoundEvents.POLISHED_TUFF_FALL;
+                return SoundEvents.POLISHED_TUFF.fallSound().get().value();
             }
             case POLISHED_TUFF_HIT -> {
-                return SoundEvents.POLISHED_TUFF_HIT;
+                return SoundEvents.POLISHED_TUFF.hitSound().get().value();
             }
             case POLISHED_TUFF_PLACE -> {
-                return SoundEvents.POLISHED_TUFF_PLACE;
+                return SoundEvents.POLISHED_TUFF.placeSound().get().value();
             }
             case POLISHED_TUFF_STEP -> {
-                return SoundEvents.POLISHED_TUFF_STEP;
+                return SoundEvents.POLISHED_TUFF.stepSound().get().value();
             }
             case TURTLE_AMBIENT_LAND -> {
                 return SoundEvents.TURTLE_AMBIENT_LAND;
@@ -6403,7 +6403,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.VAULT_AMBIENT;
             }
             case VAULT_BREAK -> {
-                return SoundEvents.VAULT_BREAK;
+                return SoundEvents.VAULT.breakSound().get().value();
             }
             case VAULT_CLOSE_SHUTTER -> {
                 return SoundEvents.VAULT_CLOSE_SHUTTER;
@@ -6418,10 +6418,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.VAULT_REJECT_REWARDED_PLAYER;
             }
             case VAULT_FALL -> {
-                return SoundEvents.VAULT_FALL;
+                return SoundEvents.VAULT.fallSound().get().value();
             }
             case VAULT_HIT -> {
-                return SoundEvents.VAULT_HIT;
+                return SoundEvents.VAULT.hitSound().get().value();
             }
             case VAULT_INSERT_ITEM -> {
                 return SoundEvents.VAULT_INSERT_ITEM;
@@ -6433,10 +6433,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.VAULT_OPEN_SHUTTER;
             }
             case VAULT_PLACE -> {
-                return SoundEvents.VAULT_PLACE;
+                return SoundEvents.VAULT.placeSound().get().value();
             }
             case VAULT_STEP -> {
-                return SoundEvents.VAULT_STEP;
+                return SoundEvents.VAULT.stepSound().get().value();
             }
             case VEX_AMBIENT -> {
                 return SoundEvents.VEX_AMBIENT;
@@ -6523,22 +6523,22 @@ public enum SoundEventsHolder {
                 return SoundEvents.VINDICATOR_HURT;
             }
             case VINE_BREAK -> {
-                return SoundEvents.VINE_BREAK;
+                return SoundEvents.VINE.breakSound().get().value();
             }
             case VINE_FALL -> {
-                return SoundEvents.VINE_FALL;
+                return SoundEvents.VINE.fallSound().get().value();
             }
             case VINE_HIT -> {
-                return SoundEvents.VINE_HIT;
+                return SoundEvents.VINE.hitSound().get().value();
             }
             case VINE_PLACE -> {
-                return SoundEvents.VINE_PLACE;
+                return SoundEvents.VINE.placeSound().get().value();
             }
             case VINE_STEP -> {
-                return SoundEvents.VINE_STEP;
+                return SoundEvents.VINE.stepSound().get().value();
             }
             case LILY_PAD_PLACE -> {
-                return SoundEvents.LILY_PAD_PLACE;
+                return SoundEvents.LILY_PAD.placeSound().get().value();
             }
             case WANDERING_TRADER_AMBIENT -> {
                 return SoundEvents.WANDERING_TRADER_AMBIENT;
@@ -6550,10 +6550,10 @@ public enum SoundEventsHolder {
                 return SoundEvents.WANDERING_TRADER_DISAPPEARED;
             }
             case WANDERING_TRADER_DRINK_MILK -> {
-                return SoundEvents.WANDERING_TRADER_DRINK_MILK;
+                return SoundEvents.WANDERING_TRADER_DRINK_MILK.value();
             }
             case WANDERING_TRADER_DRINK_POTION -> {
-                return SoundEvents.WANDERING_TRADER_DRINK_POTION;
+                return SoundEvents.WANDERING_TRADER_DRINK_POTION.value();
             }
             case WANDERING_TRADER_HURT -> {
                 return SoundEvents.WANDERING_TRADER_HURT;
@@ -6646,37 +6646,37 @@ public enum SoundEventsHolder {
                 return SoundEvents.WEATHER_RAIN_ABOVE;
             }
             case WET_GRASS_BREAK -> {
-                return SoundEvents.WET_GRASS_BREAK;
+                return SoundEvents.WET_GRASS.breakSound().get().value();
             }
             case WET_GRASS_FALL -> {
-                return SoundEvents.WET_GRASS_FALL;
+                return SoundEvents.WET_GRASS.fallSound().get().value();
             }
             case WET_GRASS_HIT -> {
-                return SoundEvents.WET_GRASS_HIT;
+                return SoundEvents.WET_GRASS.hitSound().get().value();
             }
             case WET_GRASS_PLACE -> {
-                return SoundEvents.WET_GRASS_PLACE;
+                return SoundEvents.WET_GRASS.placeSound().get().value();
             }
             case WET_GRASS_STEP -> {
-                return SoundEvents.WET_GRASS_STEP;
+                return SoundEvents.WET_GRASS.stepSound().get().value();
             }
             case WET_SPONGE_BREAK -> {
-                return SoundEvents.WET_SPONGE_BREAK;
+                return SoundEvents.WET_SPONGE.breakSound().get().value();
             }
             case WET_SPONGE_DRIES -> {
                 return SoundEvents.WET_SPONGE_DRIES;
             }
             case WET_SPONGE_FALL -> {
-                return SoundEvents.WET_SPONGE_FALL;
+                return SoundEvents.WET_SPONGE.fallSound().get().value();
             }
             case WET_SPONGE_HIT -> {
-                return SoundEvents.WET_SPONGE_HIT;
+                return SoundEvents.WET_SPONGE.hitSound().get().value();
             }
             case WET_SPONGE_PLACE -> {
-                return SoundEvents.WET_SPONGE_PLACE;
+                return SoundEvents.WET_SPONGE.placeSound().get().value();
             }
             case WET_SPONGE_STEP -> {
-                return SoundEvents.WET_SPONGE_STEP;
+                return SoundEvents.WET_SPONGE.stepSound().get().value();
             }
             case WIND_CHARGE_BURST -> {
                 return SoundEvents.WIND_CHARGE_BURST.value();
@@ -6745,28 +6745,28 @@ public enum SoundEventsHolder {
                 return SoundEvents.WOLF_ARMOR_REPAIR;
             }
             case WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().get().value();
             }
             case WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().deathSound().get().value();
             }
             case WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().growlSound().get().value();
             }
             case WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().hurtSound().get().value();
             }
             case WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().pantSound().get().value();
             }
             case WOLF_SHAKE -> {
                 return SoundEvents.WOLF_SHAKE;
             }
             case WOLF_STEP -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().stepSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().stepSound().get().value();
             }
             case WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().whineSound().get().value();
             }
             case WOODEN_DOOR_CLOSE -> {
                 return SoundEvents.WOODEN_DOOR_CLOSE;
@@ -6793,34 +6793,34 @@ public enum SoundEventsHolder {
                 return SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON;
             }
             case WOOD_BREAK -> {
-                return SoundEvents.WOOD_BREAK;
+                return SoundEvents.WOOD.breakSound().get().value();
             }
             case WOOD_FALL -> {
-                return SoundEvents.WOOD_FALL;
+                return SoundEvents.WOOD.fallSound().get().value();
             }
             case WOOD_HIT -> {
-                return SoundEvents.WOOD_HIT;
+                return SoundEvents.WOOD.hitSound().get().value();
             }
             case WOOD_PLACE -> {
-                return SoundEvents.WOOD_PLACE;
+                return SoundEvents.WOOD.placeSound().get().value();
             }
             case WOOD_STEP -> {
-                return SoundEvents.WOOD_STEP;
+                return SoundEvents.WOOD.stepSound().get().value();
             }
             case WOOL_BREAK -> {
-                return SoundEvents.WOOL_BREAK;
+                return SoundEvents.WOOL.breakSound().get().value();
             }
             case WOOL_FALL -> {
-                return SoundEvents.WOOL_FALL;
+                return SoundEvents.WOOL.fallSound().get().value();
             }
             case WOOL_HIT -> {
-                return SoundEvents.WOOL_HIT;
+                return SoundEvents.WOOL.hitSound().get().value();
             }
             case WOOL_PLACE -> {
-                return SoundEvents.WOOL_PLACE;
+                return SoundEvents.WOOL.placeSound().get().value();
             }
             case WOOL_STEP -> {
-                return SoundEvents.WOOL_STEP;
+                return SoundEvents.WOOL.stepSound().get().value();
             }
             case ZOGLIN_AMBIENT -> {
                 return SoundEvents.ZOGLIN_AMBIENT;
@@ -6919,130 +6919,130 @@ public enum SoundEventsHolder {
                 return SoundEvents.APPLY_EFFECT_RAID_OMEN;
             }
             case PUGLIN_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().growlSound().get().value();
             }
             case PUGLIN_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().hurtSound().get().value();
             }
             case PUGLIN_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().whineSound().get().value();
             }
             case PUGLIN_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().pantSound().get().value();
             }
             case PUGLIN_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().deathSound().get().value();
             }
             case PUGLIN_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).adultSounds().ambientSound().get().value();
             }
             case SAD_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().growlSound().get().value();
             }
             case SAD_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().hurtSound().get().value();
             }
             case SAD_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().whineSound().get().value();
             }
             case SAD_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().pantSound().get().value();
             }
             case SAD_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().deathSound().get().value();
             }
             case SAD_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).adultSounds().ambientSound().get().value();
             }
             case ANGRY_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().growlSound().get().value();
             }
             case ANGRY_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().hurtSound().get().value();
             }
             case ANGRY_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().whineSound().get().value();
             }
             case ANGRY_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().pantSound().get().value();
             }
             case ANGRY_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().deathSound().get().value();
             }
             case ANGRY_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).adultSounds().ambientSound().get().value();
             }
             case GRUMPY_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().growlSound().get().value();
             }
             case GRUMPY_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().hurtSound().get().value();
             }
             case GRUMPY_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().whineSound().get().value();
             }
             case GRUMPY_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().pantSound().get().value();
             }
             case GRUMPY_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().deathSound().get().value();
             }
             case GRUMPY_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).adultSounds().ambientSound().get().value();
             }
             case BIG_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().growlSound().get().value();
             }
             case BIG_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().hurtSound().get().value();
             }
             case BIG_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().whineSound().get().value();
             }
             case BIG_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().pantSound().get().value();
             }
             case BIG_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().deathSound().get().value();
             }
             case BIG_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).adultSounds().ambientSound().get().value();
             }
             case CUTE_WOLF_GROWL -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().growlSound().get().value();
             }
             case CUTE_WOLF_HURT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().hurtSound().get().value();
             }
             case CUTE_WOLF_WHINE -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().whineSound().get().value();
             }
             case CUTE_WOLF_PANT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().pantSound().get().value();
             }
             case CUTE_WOLF_DEATH -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().deathSound().get().value();
             }
             case CUTE_WOLF_AMBIENT -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).adultSounds().ambientSound().get().value();
             }
             case FIREFLY_BUSH_IDLE -> {
                 return SoundEvents.FIREFLY_BUSH_IDLE;
             }
             case LEAF_LITTER_BREAK -> {
-                return SoundEvents.LEAF_LITTER_BREAK;
+                return SoundEvents.LEAF_LITTER.breakSound().get().value();
             }
             case LEAF_LITTER_STEP -> {
-                return SoundEvents.LEAF_LITTER_STEP;
+                return SoundEvents.LEAF_LITTER.stepSound().get().value();
             }
             case LEAF_LITTER_PLACE -> {
-                return SoundEvents.LEAF_LITTER_PLACE;
+                return SoundEvents.LEAF_LITTER.placeSound().get().value();
             }
             case LEAF_LITTER_HIT -> {
-                return SoundEvents.LEAF_LITTER_HIT;
+                return SoundEvents.LEAF_LITTER.hitSound().get().value();
             }
             case LEAF_LITTER_FALL -> {
-                return SoundEvents.LEAF_LITTER_FALL;
+                return SoundEvents.LEAF_LITTER.fallSound().get().value();
             }
             case DEAD_BUSH_IDLE -> {
                 return SoundEvents.DEAD_BUSH_IDLE;
@@ -7051,28 +7051,28 @@ public enum SoundEventsHolder {
                 return SoundEvents.SAND_IDLE;
             }
             case IRON_BREAK -> {
-                return SoundEvents.IRON_BREAK;
+                return SoundEvents.IRON.breakSound().get().value();
             }
             case IRON_STEP -> {
-                return SoundEvents.IRON_STEP;
+                return SoundEvents.IRON.stepSound().get().value();
             }
             case IRON_PLACE -> {
-                return SoundEvents.IRON_PLACE;
+                return SoundEvents.IRON.placeSound().get().value();
             }
             case IRON_HIT -> {
-                return SoundEvents.IRON_HIT;
+                return SoundEvents.IRON.hitSound().get().value();
             }
             case IRON_FALL -> {
-                return SoundEvents.IRON_FALL;
+                return SoundEvents.IRON.fallSound().get().value();
             }
             case DRIED_GHAST_BREAK -> {
-                return SoundEvents.DRIED_GHAST_BREAK;
+                return SoundEvents.DRIED_GHAST.breakSound().get().value();
             }
             case DRIED_GHAST_STEP -> {
-                return SoundEvents.DRIED_GHAST_STEP;
+                return SoundEvents.DRIED_GHAST.stepSound().get().value();
             }
             case DRIED_GHAST_FALL -> {
-                return SoundEvents.DRIED_GHAST_FALL;
+                return SoundEvents.DRIED_GHAST.fallSound().get().value();
             }
             case DRIED_GHAST_AMBIENT -> {
                 return SoundEvents.DRIED_GHAST_AMBIENT;
@@ -7138,7 +7138,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.MUSIC_DISC_TEARS.value();
             }
             case SHEARS_SNIP -> {
-                return SoundEvents.SHEARS_SNIP;
+                return SoundEvents.SHEARS_SNIP.value();
             }
             case SADDLE_UNEQUIP -> {
                 return SoundEvents.SADDLE_UNEQUIP.value();
@@ -7216,19 +7216,19 @@ public enum SoundEventsHolder {
                 return SoundEvents.COPPER_GOLEM_BECOME_STATUE;
             }
             case COPPER_GOLEM_STATUE_BREAK -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_BREAK;
+                return SoundEvents.COPPER_GOLEM_STATUE.breakSound().get().value();
             }
             case COPPER_GOLEM_STATUE_PLACE -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_PLACE;
+                return SoundEvents.COPPER_GOLEM_STATUE.placeSound().get().value();
             }
             case COPPER_GOLEM_STATUE_HIT -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_HIT;
+                return SoundEvents.COPPER_GOLEM_STATUE.hitSound().get().value();
             }
             case COPPER_GOLEM_STATUE_STEP -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_STEP;
+                return SoundEvents.COPPER_GOLEM_STATUE.stepSound().get().value();
             }
             case COPPER_GOLEM_STATUE_FALL -> {
-                return SoundEvents.COPPER_GOLEM_STATUE_FALL;
+                return SoundEvents.COPPER_GOLEM_STATUE.fallSound().get().value();
             }
             case COPPER_GOLEM_SPAWN -> {
                 return SoundEvents.COPPER_GOLEM_SPAWN;
@@ -7240,22 +7240,22 @@ public enum SoundEventsHolder {
                 return SoundEvents.SHELF_ACTIVATE;
             }
             case SHELF_BREAK -> {
-                return SoundEvents.SHELF_BREAK;
+                return SoundEvents.SHELF.breakSound().get().value();
             }
             case SHELF_DEACTIVATE -> {
                 return SoundEvents.SHELF_DEACTIVATE;
             }
             case SHELF_FALL -> {
-                return SoundEvents.SHELF_FALL;
+                return SoundEvents.SHELF.fallSound().get().value();
             }
             case SHELF_HIT -> {
-                return SoundEvents.SHELF_HIT;
+                return SoundEvents.SHELF.hitSound().get().value();
             }
             case SHELF_MULTI_SWAP -> {
                 return SoundEvents.SHELF_MULTI_SWAP;
             }
             case SHELF_PLACE -> {
-                return SoundEvents.SHELF_PLACE;
+                return SoundEvents.SHELF.placeSound().get().value();
             }
             case SHELF_PLACE_ITEM -> {
                 return SoundEvents.SHELF_PLACE_ITEM;
@@ -7264,7 +7264,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.SHELF_SINGLE_SWAP;
             }
             case SHELF_STEP -> {
-                return SoundEvents.SHELF_STEP;
+                return SoundEvents.SHELF.stepSound().get().value();
             }
             case SHELF_TAKE_ITEM -> {
                 return SoundEvents.SHELF_TAKE_ITEM;
@@ -7471,109 +7471,109 @@ public enum SoundEventsHolder {
                 return SoundEvents.NAUTILUS_SADDLE_EQUIP.value();
             }
             case CAT_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().get().value();
             }
             case CAT_STRAY_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().strayAmbientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().strayAmbientSound().get().value();
             }
             case CAT_DEATH_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().get().value();
             }
             case CAT_EAT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().get().value();
             }
             case CAT_HISS_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hissSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hissSound().get().value();
             }
             case CAT_BEG_FOR_FOOD_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().begForFoodSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().begForFoodSound().get().value();
             }
             case CAT_HURT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().get().value();
             }
             case CAT_PURR_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purrSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purrSound().get().value();
             }
             case CAT_PURREOW_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purreowSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).babySounds().purreowSound().get().value();
             }
             case ROYAL_CAT_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().ambientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().ambientSound().get().value();
             }
             case ROYAL_CAT_STRAY_AMBIENT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().strayAmbientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().strayAmbientSound().get().value();
             }
             case ROYAL_CAT_DEATH -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().deathSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().deathSound().get().value();
             }
             case ROYAL_CAT_EAT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().eatSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().eatSound().get().value();
             }
             case ROYAL_CAT_HISS -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hissSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hissSound().get().value();
             }
             case ROYAL_CAT_BEG_FOR_FOOD -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().begForFoodSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().begForFoodSound().get().value();
             }
             case ROYAL_CAT_HURT -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hurtSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().hurtSound().get().value();
             }
             case ROYAL_CAT_PURR -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purrSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purrSound().get().value();
             }
             case ROYAL_CAT_PURREOW -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purreowSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).adultSounds().purreowSound().get().value();
             }
             case ROYAL_CAT_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().ambientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().ambientSound().get().value();
             }
             case ROYAL_CAT_STRAY_AMBIENT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().strayAmbientSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().strayAmbientSound().get().value();
             }
             case ROYAL_CAT_DEATH_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().deathSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().deathSound().get().value();
             }
             case ROYAL_CAT_EAT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().eatSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().eatSound().get().value();
             }
             case ROYAL_CAT_HISS_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hissSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hissSound().get().value();
             }
             case ROYAL_CAT_BEG_FOR_FOOD_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().begForFoodSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().begForFoodSound().get().value();
             }
             case ROYAL_CAT_HURT_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hurtSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().hurtSound().get().value();
             }
             case ROYAL_CAT_PURR_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purrSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purrSound().get().value();
             }
             case ROYAL_CAT_PURREOW_BABY -> {
-                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purreowSound().value();
+                return SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.ROYAL).babySounds().purreowSound().get().value();
             }
             case CHICKEN_AMBIENT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().get().value();
             }
             case CHICKEN_DEATH_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().get().value();
             }
             case CHICKEN_HURT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().get().value();
             }
             case CHICKEN_STEP_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().get().value();
             }
             case MOODY_COW_AMBIENT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).ambientSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).ambientSound().get().value();
             }
             case MOODY_COW_DEATH -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).deathSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).deathSound().get().value();
             }
             case MOODY_COW_HURT -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).hurtSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).hurtSound().get().value();
             }
             case MOODY_COW_STEP -> {
-                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).stepSound().value();
+                return SoundEvents.COW_SOUNDS.get(CowSoundVariants.SoundSet.MOODY).stepSound().get().value();
             }
             case GOLDEN_DANDELION_USE -> {
                 return SoundEvents.GOLDEN_DANDELION_USE;
@@ -7618,235 +7618,235 @@ public enum SoundEventsHolder {
                 return SoundEvents.NOTE_BLOCK_TRUMPET_WEATHERED.value();
             }
             case PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().get().value();
             }
             case PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().ambientSound().get().value();
             }
             case PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().eatSound().get().value();
             }
             case PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().get().value();
             }
             case PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().get().value();
             }
             case PICKY_CHICKEN_AMBIENT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().ambientSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().ambientSound().get().value();
             }
             case PICKY_CHICKEN_DEATH_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().deathSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().deathSound().get().value();
             }
             case PICKY_CHICKEN_HURT_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().hurtSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().hurtSound().get().value();
             }
             case PICKY_CHICKEN_STEP_BABY -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().stepSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).babySounds().stepSound().get().value();
             }
             case PICKY_CHICKEN_AMBIENT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().ambientSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().ambientSound().get().value();
             }
             case PICKY_CHICKEN_DEATH -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().deathSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().deathSound().get().value();
             }
             case PICKY_CHICKEN_HURT -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().hurtSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().hurtSound().get().value();
             }
             case PICKY_CHICKEN_STEP -> {
-                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().stepSound().value();
+                return SoundEvents.CHICKEN_SOUNDS.get(ChickenSoundVariants.SoundSet.PICKY).adultSounds().stepSound().get().value();
             }
             case MINI_PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().stepSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().stepSound().get().value();
             }
             case MINI_PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().ambientSound().get().value();
             }
             case MINI_PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().eatSound().get().value();
             }
             case MINI_PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().hurtSound().get().value();
             }
             case MINI_PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).babySounds().deathSound().get().value();
             }
             case MINI_PIG_STEP -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().stepSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().stepSound().get().value();
             }
             case MINI_PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().ambientSound().get().value();
             }
             case MINI_PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().eatSound().get().value();
             }
             case MINI_PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().hurtSound().get().value();
             }
             case MINI_PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.MINI).adultSounds().deathSound().get().value();
             }
             case BIG_PIG_STEP_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().stepSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().stepSound().get().value();
             }
             case BIG_PIG_AMBIENT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().ambientSound().get().value();
             }
             case BIG_PIG_EAT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().eatSound().get().value();
             }
             case BIG_PIG_HURT_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().hurtSound().get().value();
             }
             case BIG_PIG_DEATH_BABY -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).babySounds().deathSound().get().value();
             }
             case BIG_PIG_STEP -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().stepSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().stepSound().get().value();
             }
             case BIG_PIG_AMBIENT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().ambientSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().ambientSound().get().value();
             }
             case BIG_PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().eatSound().get().value();
             }
             case BIG_PIG_HURT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().hurtSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().hurtSound().get().value();
             }
             case BIG_PIG_DEATH -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().deathSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.BIG).adultSounds().deathSound().get().value();
             }
             case WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound().get().value();
             }
             case WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().deathSound().get().value();
             }
             case WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().growlSound().get().value();
             }
             case WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().hurtSound().get().value();
             }
             case WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().pantSound().get().value();
             }
             case WOLF_STEP_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().stepSound().get().value();
             }
             case WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CLASSIC).babySounds().whineSound().get().value();
             }
             case PUGLIN_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().growlSound().get().value();
             }
             case PUGLIN_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().hurtSound().get().value();
             }
             case PUGLIN_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().whineSound().get().value();
             }
             case PUGLIN_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().pantSound().get().value();
             }
             case PUGLIN_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().deathSound().get().value();
             }
             case PUGLIN_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.PUGLIN).babySounds().ambientSound().get().value();
             }
             case SAD_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().growlSound().get().value();
             }
             case SAD_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().hurtSound().get().value();
             }
             case SAD_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().whineSound().get().value();
             }
             case SAD_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().pantSound().get().value();
             }
             case SAD_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().deathSound().get().value();
             }
             case SAD_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.SAD).babySounds().ambientSound().get().value();
             }
             case ANGRY_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().growlSound().get().value();
             }
             case ANGRY_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().hurtSound().get().value();
             }
             case ANGRY_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().whineSound().get().value();
             }
             case ANGRY_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().pantSound().get().value();
             }
             case ANGRY_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().deathSound().get().value();
             }
             case ANGRY_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.ANGRY).babySounds().ambientSound().get().value();
             }
             case GRUMPY_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().growlSound().get().value();
             }
             case GRUMPY_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().hurtSound().get().value();
             }
             case GRUMPY_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().whineSound().get().value();
             }
             case GRUMPY_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().pantSound().get().value();
             }
             case GRUMPY_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().deathSound().get().value();
             }
             case GRUMPY_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.GRUMPY).babySounds().ambientSound().get().value();
             }
             case BIG_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().growlSound().get().value();
             }
             case BIG_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().hurtSound().get().value();
             }
             case BIG_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().whineSound().get().value();
             }
             case BIG_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().pantSound().get().value();
             }
             case BIG_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().deathSound().get().value();
             }
             case BIG_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.BIG).babySounds().ambientSound().get().value();
             }
             case CUTE_WOLF_GROWL_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().growlSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().growlSound().get().value();
             }
             case CUTE_WOLF_HURT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().hurtSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().hurtSound().get().value();
             }
             case CUTE_WOLF_WHINE_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().whineSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().whineSound().get().value();
             }
             case CUTE_WOLF_PANT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().pantSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().pantSound().get().value();
             }
             case CUTE_WOLF_DEATH_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().deathSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().deathSound().get().value();
             }
             case CUTE_WOLF_AMBIENT_BABY -> {
-                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().ambientSound().value();
+                return SoundEvents.WOLF_SOUNDS.get(WolfSoundVariants.SoundSet.CUTE).babySounds().ambientSound().get().value();
             }
             case PIG_EAT -> {
-                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().value();
+                return SoundEvents.PIG_SOUNDS.get(PigSoundVariants.SoundSet.CLASSIC).adultSounds().eatSound().get().value();
             }
             case WOLF_HOWL, PUFFER_FISH_AMBIENT, SAND_WIND -> {
                 PufferfishAPI.LOGGER.warn("Mod attempted to use sound effect that is not available in " + PufferfishAPI.getMinecraftVersion() + ". This may cause issues.");

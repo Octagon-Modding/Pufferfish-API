@@ -28,7 +28,7 @@ public class ChestMenu extends AbstractContainerMenu {
         addPlayerHotbar(playerInv);
 
         for (var i = 0; i < chestSettings.slotPositions.length; i++) {
-            this.addSlot(new Slot(inv, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1]));
+            this.addSlot(new Slot(inv, i, chestSettings.slotPositions[i][0], chestSettings.slotPositions[i][1], Slot.Section.CONTAINER));
         }
     }
 
@@ -81,13 +81,13 @@ public class ChestMenu extends AbstractContainerMenu {
 
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 9; i < 36; i++) {
-            this.addSlot(new Slot(playerInventory, i, this.chestSettings.inventorySlotPositions[i-9][0], this.chestSettings.inventorySlotPositions[i-9][1]));
+            this.addSlot(new Slot(playerInventory, i, this.chestSettings.inventorySlotPositions[i-9][0], this.chestSettings.inventorySlotPositions[i-9][1], Slot.Section.INVENTORY));
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; i++) {
-            this.addSlot(new Slot(playerInventory, i, this.chestSettings.hotbarSlotPositions[i][0], this.chestSettings.hotbarSlotPositions[i][1]));
+            this.addSlot(new Slot(playerInventory, i, this.chestSettings.hotbarSlotPositions[i][0], this.chestSettings.hotbarSlotPositions[i][1], Slot.Section.HOTBAR));
         }
     }
 }
