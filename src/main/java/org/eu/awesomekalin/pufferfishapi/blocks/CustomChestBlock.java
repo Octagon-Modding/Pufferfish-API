@@ -1,8 +1,7 @@
 package org.eu.awesomekalin.pufferfishapi.blocks;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.HolderLookup;
+import net.minecraft.core.HolderGetter;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -102,8 +101,8 @@ public class CustomChestBlock extends BaseEntityBlock {
         }
 
         @Override
-        public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
-            return saveWithoutMetadata(pRegistries);
+        public CompoundTag getUpdateTag(final HolderGetter.Provider registries) {
+            return saveWithoutMetadata(registries);
         }
 
         @Override

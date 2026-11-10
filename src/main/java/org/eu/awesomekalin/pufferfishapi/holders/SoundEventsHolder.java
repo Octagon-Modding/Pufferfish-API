@@ -2206,7 +2206,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.ARMOR_EQUIP_WOLF.value();
             }
             case ARMOR_UNEQUIP_WOLF -> {
-                return SoundEvents.ARMOR_UNEQUIP_WOLF;
+                return SoundEvents.ARMOR_UNEQUIP_WOLF.value();
             }
             case ARMOR_STAND_BREAK -> {
                 return SoundEvents.ARMOR_STAND_BREAK;
@@ -7117,7 +7117,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.HARNESS_EQUIP.value();
             }
             case HAPPY_GHAST_UNEQUIP -> {
-                return SoundEvents.HARNESS_UNEQUIP;
+                return SoundEvents.HARNESS_UNEQUIP.value();
             }
             case HAPPY_GHAST_GOGGLES_UP -> {
                 return SoundEvents.HARNESS_GOGGLES_UP;
