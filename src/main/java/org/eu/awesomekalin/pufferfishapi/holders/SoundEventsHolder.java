@@ -2473,7 +2473,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.BLAZE_HURT;
             }
             case BLAZE_SHOOT -> {
-                return SoundEvents.BLAZE_SHOOT;
+                return SoundEvents.BLAZE_SHOOT.value();
             }
             case BOAT_PADDLE_LAND -> {
                 return SoundEvents.BOAT_PADDLE_LAND;
@@ -2605,7 +2605,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.BUBBLE_COLUMN_WHIRLPOOL_INSIDE;
             }
             case BUBBLE_POP -> {
-                return SoundEvents.BUBBLE_POP;
+                return SoundEvents.HUD_BUBBLE_POP;
             }
             case BUCKET_EMPTY -> {
                 return SoundEvents.BUCKET_EMPTY;
@@ -3268,7 +3268,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.DISPENSER_FAIL;
             }
             case DISPENSER_LAUNCH -> {
-                return SoundEvents.DISPENSER_LAUNCH;
+                return SoundEvents.DISPENSER_LAUNCH.value();
             }
             case DOLPHIN_AMBIENT -> {
                 return SoundEvents.DOLPHIN_AMBIENT;
@@ -3583,7 +3583,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.FIREWORK_ROCKET_LAUNCH;
             }
             case FIREWORK_ROCKET_SHOOT -> {
-                return SoundEvents.FIREWORK_ROCKET_SHOOT;
+                return SoundEvents.FIREWORK_ROCKET_SHOOT.value();
             }
             case FIREWORK_ROCKET_TWINKLE -> {
                 return SoundEvents.FIREWORK_ROCKET_TWINKLE;
@@ -4159,7 +4159,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.HONEY_BLOCK.stepSound().get().value();
             }
             case HONEYCOMB_WAX_ON -> {
-                return SoundEvents.HONEYCOMB_WAX_ON;
+                return SoundEvents.HONEYCOMB_WAX_ON.value();
             }
             case HONEY_DRINK -> {
                 return SoundEvents.HONEY_DRINK.value();
@@ -6682,7 +6682,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.WIND_CHARGE_BURST.value();
             }
             case WIND_CHARGE_THROW -> {
-                return SoundEvents.WIND_CHARGE_THROW;
+                return SoundEvents.WIND_CHARGE_THROW.value();
             }
             case WITCH_AMBIENT -> {
                 return SoundEvents.WITCH_AMBIENT;
