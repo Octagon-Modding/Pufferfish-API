@@ -2515,7 +2515,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.BONE_MEAL_USE;
             }
             case BOOK_PAGE_TURN -> {
-                return SoundEvents.BOOK_PAGE_TURN;
+                return SoundEvents.BOOK_PAGE_TURN.value();
             }
             case BOOK_PUT -> {
                 return SoundEvents.BOOK_PUT;
@@ -6373,7 +6373,7 @@ public enum SoundEventsHolder {
                 return SoundEvents.UI_BUTTON_CLICK.value();
             }
             case UI_LOOM_SELECT_PATTERN -> {
-                return SoundEvents.UI_LOOM_SELECT_PATTERN;
+                return SoundEvents.UI_LOOM_SELECT_PATTERN.value();
             }
             case UI_LOOM_TAKE_RESULT -> {
                 return SoundEvents.UI_LOOM_TAKE_RESULT;
@@ -6385,16 +6385,16 @@ public enum SoundEventsHolder {
                 return SoundEvents.UI_STONECUTTER_TAKE_RESULT;
             }
             case UI_STONECUTTER_SELECT_RECIPE -> {
-                return SoundEvents.UI_STONECUTTER_SELECT_RECIPE;
+                return SoundEvents.UI_STONECUTTER_SELECT_RECIPE.value();
             }
             case UI_TOAST_CHALLENGE_COMPLETE -> {
-                return SoundEvents.UI_TOAST_CHALLENGE_COMPLETE;
+                return SoundEvents.UI_TOAST_CHALLENGE_COMPLETE.value();
             }
             case UI_TOAST_IN -> {
-                return SoundEvents.UI_TOAST_IN;
+                return SoundEvents.UI_TOAST_IN.value();
             }
             case UI_TOAST_OUT -> {
-                return SoundEvents.UI_TOAST_OUT;
+                return SoundEvents.UI_TOAST_OUT.value();
             }
             case VAULT_ACTIVATE -> {
                 return SoundEvents.VAULT_ACTIVATE;
